@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState, useRef, useCallback, useEffect } from "react";
+import Image from "next/image";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { TwoToneHeading } from "@/components/ui/TwoToneHeading";
-import { ParticleMorphCanvas } from "@/components/ui/ParticleMorphCanvas";
 
 interface WhyCard {
   title: string;
@@ -287,24 +287,26 @@ export function WhySection({ data }: WhySectionProps) {
               return (
                 <div
                   key={item.id}
-                  className="w-full shrink-0 min-w-full min-h-[460px] sm:min-h-[500px] lg:min-h-[540px] flex flex-col justify-between p-6 sm:p-10 lg:p-12 relative select-none"
+                  className="group w-full shrink-0 min-w-full min-h-[460px] sm:min-h-[500px] lg:min-h-[560px] flex flex-col justify-between p-6 sm:p-10 lg:p-12 relative select-none"
                 >
-                  {/* Interactive Particle Morph Background Container */}
+                  {/* High-Resolution Photographic Artwork Background */}
                   <div className="absolute inset-0 overflow-hidden select-none">
-                    <ParticleMorphCanvas
-                      imageSrc={item.image}
-                      title={item.title}
-                      accentColor="#fe1e34"
-                      isActive={isActive}
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      priority={idx === 0}
+                      sizes="(max-width: 1280px) 100vw, 1280px"
+                      className="object-cover object-center scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
                     />
 
-                    {/* Dramatic Multi-Stop Obsidian Vignette Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/75 to-transparent pointer-events-none" />
-                    <div className="absolute inset-0 bg-radial from-transparent via-[#080808]/40 to-[#080808] pointer-events-none" />
+                    {/* Editorial Contrast Gradient: Image clearly visible on top/right, typography crystal-clear on bottom/left */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/60 to-black/20 pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#080808]/90 via-[#080808]/40 to-transparent pointer-events-none" />
 
                     {/* Arterial Red Ambient Glow Accent */}
                     <div
-                      className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-[#fe1e34]/15 blur-[90px] pointer-events-none"
+                      className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-[#fe1e34]/20 blur-[90px] pointer-events-none"
                       aria-hidden="true"
                     />
                   </div>
