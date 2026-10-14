@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { TwoToneHeading } from "@/components/ui/TwoToneHeading";
 import { Button } from "@/components/ui/Button";
+import Image from "next/image";
 import Link from "next/link";
 
 export function generateStaticParams() {
@@ -66,10 +67,22 @@ export default async function ServicesPage({
           {t.services.items.map((cat, idx) => (
             <div
               key={cat.id || idx}
-              className="flex flex-col justify-between rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8 hover:border-[var(--color-border-strong)] transition-all"
+              className="group flex flex-col justify-between rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-7 hover:border-[var(--color-border-strong)] transition-all hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
             >
               <div className="space-y-4">
-                <div className="flex items-center justify-between">
+                {/* Poster Mockup Image */}
+                <div className="relative w-full aspect-[16/10] rounded-[6px] overflow-hidden bg-[#121214] border border-[var(--color-border)]">
+                  <Image
+                    src={`/images/services/service-${cat.id}.jpg`}
+                    alt={cat.category}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+                </div>
+
+                <div className="flex items-center justify-between pt-1">
                   <span className="font-mono text-xs font-semibold text-[var(--color-red)] tracking-wider">
                     0{idx + 1}
                   </span>
@@ -78,7 +91,7 @@ export default async function ServicesPage({
                   </span>
                 </div>
 
-                <h2 className="font-heading text-xl font-bold text-[var(--color-text)]">
+                <h2 className="font-heading text-xl font-bold text-[var(--color-text)] group-hover:text-[var(--color-red)] transition-colors">
                   {cat.category}
                 </h2>
 

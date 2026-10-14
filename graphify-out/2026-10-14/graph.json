@@ -144,7 +144,7 @@
       "file_type": "code",
       "norm_label": "navlabels",
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L12"
+      "source_location": "L11"
     },
     {
       "id": "src_components_layout_pillnav_pillnavprops",
@@ -157,7 +157,7 @@
       "file_type": "code",
       "norm_label": "pillnavprops",
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L24"
+      "source_location": "L23"
     },
     {
       "id": "src_components_ui_langtoggle_langtoggleprops",
@@ -235,7 +235,7 @@
       "file_type": "code",
       "norm_label": "herodata",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L6"
+      "source_location": "L4"
     },
     {
       "id": "src_components_sections_hero_heroprops",
@@ -248,7 +248,20 @@
       "file_type": "code",
       "norm_label": "heroprops",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L25"
+      "source_location": "L28"
+    },
+    {
+      "id": "src_components_ui_marquee_marqueeprops",
+      "label": "MarqueeProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "(site)/page.tsx",
+      "file_type": "code",
+      "norm_label": "marqueeprops",
+      "source_file": "src/components/ui/Marquee.tsx",
+      "source_location": "L1"
     },
     {
       "id": "src_components_sections_contactform_contactformprops",
@@ -457,19 +470,6 @@
       "norm_label": "featurecardprops",
       "source_file": "src/components/ui/FeatureCard.tsx",
       "source_location": "L3"
-    },
-    {
-      "id": "src_components_ui_marquee_marqueeprops",
-      "label": "MarqueeProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "design/page.tsx",
-      "file_type": "code",
-      "norm_label": "marqueeprops",
-      "source_file": "src/components/ui/Marquee.tsx",
-      "source_location": "L1"
     },
     {
       "id": "src_components_sections_faqsection_faqdata",
@@ -1021,7 +1021,7 @@
       "file_type": "code",
       "norm_label": "pillnav()",
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L29"
+      "source_location": "L28"
     },
     {
       "id": "src_components_ui_langtoggle_langtoggle",
@@ -1201,7 +1201,7 @@
       "file_type": "code",
       "norm_label": "hero()",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L31"
+      "source_location": "L34"
     },
     {
       "id": "src_components_sections_whysection_whysection",
@@ -1214,6 +1214,18 @@
       "norm_label": "whysection()",
       "source_file": "src/components/sections/WhySection.tsx",
       "source_location": "L20"
+    },
+    {
+      "id": "src_components_ui_marquee_marquee",
+      "label": "Marquee()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "(site)/page.tsx",
+      "file_type": "code",
+      "norm_label": "marquee()",
+      "source_file": "src/components/ui/Marquee.tsx",
+      "source_location": "L6"
     },
     {
       "id": "src_components_ui_turnstilewidget_turnstilewidget",
@@ -1538,18 +1550,6 @@
       "norm_label": "featurecard()",
       "source_file": "src/components/ui/FeatureCard.tsx",
       "source_location": "L9"
-    },
-    {
-      "id": "src_components_ui_marquee_marquee",
-      "label": "Marquee()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "design/page.tsx",
-      "file_type": "code",
-      "norm_label": "marquee()",
-      "source_file": "src/components/ui/Marquee.tsx",
-      "source_location": "L6"
     },
     {
       "id": "src_components_sections_faqsection_faqsection",
@@ -4135,6 +4135,17 @@
       "file_type": "code",
       "norm_label": "hero.tsx",
       "source_file": "src/components/sections/Hero.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_marquee",
+      "label": "Marquee.tsx",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "(site)/page.tsx",
+      "file_type": "code",
+      "norm_label": "marquee.tsx",
+      "source_file": "src/components/ui/Marquee.tsx",
       "source_location": "L1"
     },
     {
@@ -8240,17 +8251,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_ui_marquee",
-      "label": "Marquee.tsx",
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "design/page.tsx",
-      "file_type": "code",
-      "norm_label": "marquee.tsx",
-      "source_file": "src/components/ui/Marquee.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_components_sections_faqsection",
       "label": "FaqSection.tsx",
       "_origin": "ast",
@@ -12266,18 +12266,6 @@
     },
     {
       "source": "src_components_layout_pillnav",
-      "target": "src_components_ui_button_button",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_layout_pillnav",
       "target": "src_components_ui_logo_logo",
       "relation": "imports",
       "_origin": "ast",
@@ -12502,42 +12490,6 @@
       "context": "import",
       "source_file": "src/components/sections/FaqSection.tsx",
       "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_sections_hero",
-      "target": "src_components_ui_button_button",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_sections_hero",
-      "target": "src_components_ui_sectionlabel_sectionlabel",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_sections_hero",
-      "target": "src_components_ui_twotoneheading_twotoneheading",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -14064,18 +14016,6 @@
     },
     {
       "source": "src_components_layout_pillnav",
-      "target": "src_components_ui_button",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_layout_pillnav",
       "target": "ref_react",
       "relation": "imports_from",
       "_origin": "ast",
@@ -14323,43 +14263,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_sections_hero",
-      "target": "src_components_ui_button",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/sections/Hero.tsx",
       "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_sections_hero",
-      "target": "src_components_ui_sectionlabel",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_sections_hero",
-      "target": "src_components_ui_twotoneheading",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -21114,7 +21018,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L12",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -21125,7 +21029,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L24",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -21136,7 +21040,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L29",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -21301,7 +21205,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L25",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -21312,7 +21216,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L31",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -21323,7 +21227,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L6",
+      "source_location": "L4",
       "weight": 1.0
     },
     {

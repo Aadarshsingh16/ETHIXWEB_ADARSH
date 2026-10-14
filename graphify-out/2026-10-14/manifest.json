@@ -60,9 +60,9 @@
     "semantic_hash": ""
   },
   "src/components/layout/PillNav.tsx": {
-    "mtime": 1791985826.3152092,
-    "seen": 1791985916.1496685,
-    "ast_hash": "117364d0eec1e08a65ab45a3bef4721d",
+    "mtime": 1791987346.4437344,
+    "seen": 1791987397.983106,
+    "ast_hash": "842077f77db058370575788a6e229b02",
     "semantic_hash": ""
   },
   "src/components/layout/StickyWhatsApp.tsx": {
@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "src/components/sections/Hero.tsx": {
-    "mtime": 1791985194.784886,
-    "seen": 1791985442.9692316,
-    "ast_hash": "bceba430709d8adef0158681ccec72a8",
+    "mtime": 1791986529.885026,
+    "seen": 1791986672.0118217,
+    "ast_hash": "85aaa3d195744e84df548f792efa1b37",
     "semantic_hash": ""
   },
   "src/components/sections/PricingSection.tsx": {
@@ -150,15 +150,15 @@
     "semantic_hash": ""
   },
   "src/components/ui/LangToggle.tsx": {
-    "mtime": 1791985814.2891753,
-    "seen": 1791985916.1496685,
-    "ast_hash": "e9f31acaa2aeb60991041a83c43460f8",
+    "mtime": 1791987299.3078635,
+    "seen": 1791987397.983106,
+    "ast_hash": "842e60ae050a94c3e2c60b403484db65",
     "semantic_hash": ""
   },
   "src/components/ui/Logo.tsx": {
-    "mtime": 1791979567.0214677,
-    "seen": 1791979669.9618785,
-    "ast_hash": "e58fbe22d17423d0f5eee9e1da1531b9",
+    "mtime": 1791987260.521886,
+    "seen": 1791987397.983106,
+    "ast_hash": "58bfc29f697443be52f7a028b729e1f6",
     "semantic_hash": ""
   },
   "src/components/ui/Marquee.tsx": {
@@ -192,15 +192,15 @@
     "semantic_hash": ""
   },
   "src/components/ui/StatusPill.tsx": {
-    "mtime": 1791985656.9818099,
-    "seen": 1791985916.1496685,
-    "ast_hash": "8e4b60b5a50dd089706cd90be7f0901b",
+    "mtime": 1791987277.8728638,
+    "seen": 1791987397.983106,
+    "ast_hash": "df0bc6ac7bd8a13df0f9f26f938b3d76",
     "semantic_hash": ""
   },
   "src/components/ui/TwoToneHeading.tsx": {
-    "mtime": 1791985273.2331975,
-    "seen": 1791985442.9692316,
-    "ast_hash": "0f21c1c3d53abad6208b9e56b0d6262e",
+    "mtime": 1791987085.3121326,
+    "seen": 1791987193.6218767,
+    "ast_hash": "8d895b52f1308f13116db4b2acb35e9b",
     "semantic_hash": ""
   },
   "src/components/ui/WorkCard.tsx": {
@@ -210,16 +210,16 @@
     "semantic_hash": ""
   },
   "src/content/en.ts": {
-    "mtime": 1791973785.5170677,
-    "seen": 1791975259.5855215,
-    "ast_hash": "bc630f9fa756dde3b8b6d4e4f699132a",
-    "semantic_hash": "bc630f9fa756dde3b8b6d4e4f699132a"
+    "mtime": 1791986272.5722606,
+    "seen": 1791986672.0118217,
+    "ast_hash": "6e68ef1d09081de660ffb29abf638c99",
+    "semantic_hash": ""
   },
   "src/content/hi.ts": {
-    "mtime": 1791973830.5461159,
-    "seen": 1791975259.5855215,
-    "ast_hash": "3da19424df58c4d582c8c8f49f1af8d3",
-    "semantic_hash": "3da19424df58c4d582c8c8f49f1af8d3"
+    "mtime": 1791986299.8173182,
+    "seen": 1791986672.0118217,
+    "ast_hash": "6485b13cc96a079318e5413b8a311552",
+    "semantic_hash": ""
   },
   "src/lib/fonts.ts": {
     "mtime": 1791982633.0898275,
@@ -780,9 +780,9 @@
     "semantic_hash": ""
   },
   "src/app/[lang]/(site)/services/page.tsx": {
-    "mtime": 1791985216.7878985,
-    "seen": 1791985442.9692316,
-    "ast_hash": "aca6db8a9a884d0d566ea0fb0d7677b9",
+    "mtime": 1791987103.7887127,
+    "seen": 1791987193.6218767,
+    "ast_hash": "e2ec4a02e11d967e752710feffa8b406",
     "semantic_hash": ""
   },
   "src/app/error.tsx": {
@@ -810,9 +810,9 @@
     "semantic_hash": ""
   },
   "src/components/ui/ThemeToggle.tsx": {
-    "mtime": 1791985693.8629704,
-    "seen": 1791985916.1496685,
-    "ast_hash": "4500bfca285e152a5788245051aebf09",
+    "mtime": 1791987314.824595,
+    "seen": 1791987397.983106,
+    "ast_hash": "9756a7cd030a2f1b5e8ca967a509a5e8",
     "semantic_hash": ""
   },
   "design/E-commerce_website_UI_mockup_serum_20261014175636.jpg": {
@@ -903,6 +903,18 @@
     "mtime": 1791982719.9204242,
     "seen": 1791983820.701107,
     "ast_hash": "3898d4e70f2955f8e229e5d52c0f1a2a",
+    "semantic_hash": ""
+  },
+  "public/images/concept/hero-card-1.jpg": {
+    "mtime": 1791980173.5410163,
+    "seen": 1791986672.0118217,
+    "ast_hash": "945f1a83a6553a2b77e85761bf1af18f",
+    "semantic_hash": ""
+  },
+  "public/images/concept/hero-card-2.jpg": {
+    "mtime": 1791980352.5912187,
+    "seen": 1791986672.0118217,
+    "ast_hash": "3ea1197ca85376efc72a70b406c2c943",
     "semantic_hash": ""
   }
 }

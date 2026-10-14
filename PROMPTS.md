@@ -95,3 +95,46 @@ Place these in `/public/images/concept/`. These match the 5 Indian operational d
 
 ## 5. CSS Animation Placeholder Instructions
 When video files or custom renders are not yet loaded, our Next.js frontend runs silky CSS-only animated placeholders (`pulse-dot`, `ambient-void-glow`, and `jaali-shimmer`) that simulate the dark gallery movement without requiring external dependencies or hurting PageSpeed scores.
+
+---
+
+## 6. Service Section Category Posters (Services Grid)
+
+Place these in `/public/images/services/`. Use **Midjourney v6.1**, **Flux 1.1 Pro**, or **DALL-E 3** with aspect ratio `16:10` (`--ar 16:10`):
+
+### Prompt S1 — Container 01: Website Redesign & Headless Engineering (`service-website.jpg`)
+> **Aspect Ratio:** `16:10` (`--ar 16:10`)  
+> **Target Path:** `/public/images/services/service-website.jpg`  
+> **Prompt:**  
+> `High-fashion editorial tech mockup of an ultra-minimalist laptop screen floating over pitch-black matte obsidian stone (#080808). The screen displays a lightning-fast headless Next.js web application interface with razor-sharp bone-white (#fcfcfc) typography, an ultra-fast performance score badge 'PageSpeed 99 / LCP 0.6s', and a subtle arterial red (#fe1e34) accent hairline. Studio rim lighting, raytraced reflections, Vogue editorial aesthetic, 8k resolution --ar 16:10 --v 6.1`
+
+### Prompt S2 — Container 02: 24/7 AI Receptionists & WhatsApp Agents (`service-ai.jpg`)
+> **Aspect Ratio:** `16:10` (`--ar 16:10`)  
+> **Target Path:** `/public/images/services/service-ai.jpg`  
+> **Prompt:**  
+> `Cinematic macro photograph of a sleek dark glass smartphone floating in deep black void (#080808). On the screen, a clean bilingual WhatsApp Business API conversational flow confirms a client appointment in real-time, featuring a glowing emerald green verified checkmark (#25D366) and arterial red pulse node. Subtle volumetric smoke drift in background, high-end studio lighting, 8k resolution --ar 16:10 --v 6.1`
+
+### Prompt S3 — Container 03: Performance Growth & Local Acquisition (`service-growth.jpg`)
+> **Aspect Ratio:** `16:10` (`--ar 16:10`)  
+> **Target Path:** `/public/images/services/service-growth.jpg`  
+> **Prompt:**  
+> `Dark luxury editorial marketing dashboard displayed on a frameless OLED monitor. Minimalist conversion trajectory graphs with steep growth curves glowing in vivid arterial red (#fe1e34), live Indian city conversion heatmaps (Mumbai, Delhi-NCR, Bengaluru), clean bone-white metrics '+310% ROAS', Google Maps pin overlays. Dark monochrome obsidian background, brutalist high-fashion aesthetic, 8k resolution --ar 16:10 --v 6.1`
+
+### Prompt S4 — Container 04: Server-Side Analytics & Attribution (`service-data.jpg`)
+> **Aspect Ratio:** `16:10` (`--ar 16:10`)  
+> **Target Path:** `/public/images/services/service-data.jpg`  
+> **Prompt:**  
+> `Minimalist architectural data telemetry console on a dark titanium plate. Holographic clean stream of conversion events showing Rupee revenue attribution '₹18,40,000 Verified UPI', server-side GA4 data flow nodes, bone-white monospace typography, arterial red tracking indicators. Extreme precision, editorial lighting, clean geometry, 8k resolution --ar 16:10 --v 6.1`
+
+### Prompt S5 — Container 05: WCAG 2.2 AA Accessibility & Inclusive Design (`service-accessibility.jpg`)
+> **Aspect Ratio:** `16:10` (`--ar 16:10`)  
+> **Target Path:** `/public/images/services/service-accessibility.jpg`  
+> **Prompt:**  
+> `Conceptual high-contrast dual-layer graphic display in pitch-black void. Side-by-side comparison of bilingual Devanagari Hindi script and Latin typography with perfect 7:1 contrast ratios, tactile keyboard focus ring in arterial red (#fe1e34), accessible screen-reader visual soundwave nodes. Brutalist minimalist editorial layout, museum gallery aesthetic, 8k resolution --ar 16:10 --v 6.1`
+
+### Prompt S6 — Container 06: Dedicated Operations & IST Mission-Critical Upkeep (`service-support.jpg`)
+> **Aspect Ratio:** `16:10` (`--ar 16:10`)  
+> **Target Path:** `/public/images/services/service-support.jpg`  
+> **Prompt:**  
+> `High-tech server operations monitoring interface floating in deep matte black space. Displays a circular 99.99% uptime status ring, Mumbai BOM data center latency gauge '12ms Response', and a frosted glass status pill badge 'ONLINE · IST' with a vivid green pulse dot. Atmospheric obsidian reflections, subtle arterial red rim lighting, clean high-tech luxury, 8k resolution --ar 16:10 --v 6.1`
+
