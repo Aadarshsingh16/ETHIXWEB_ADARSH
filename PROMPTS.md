@@ -138,3 +138,34 @@ Place these in `/public/images/services/`. Use **Midjourney v6.1**, **Flux 1.1 P
 > **Prompt:**  
 > `High-tech server operations monitoring interface floating in deep matte black space. Displays a circular 99.99% uptime status ring, Mumbai BOM data center latency gauge '12ms Response', and a frosted glass status pill badge 'ONLINE · IST' with a vivid green pulse dot. Atmospheric obsidian reflections, subtle arterial red rim lighting, clean high-tech luxury, 8k resolution --ar 16:10 --v 6.1`
 
+---
+
+## 7. Why Ethixweb Parallax Section Backgrounds
+
+Place these in `/public/images/why/`. Use **Midjourney v6.1**, **Flux 1.1 Pro**, or **DALL-E 3** with cinematic aspect ratio `16:9` (`--ar 16:9`):
+
+### Prompt P1 — Component 01: WhatsApp-First Operations (`why-whatsapp.jpg`)
+> **Aspect Ratio:** `16:9` (`--ar 16:9`)  
+> **Target Path:** `/public/images/why/why-whatsapp.jpg`  
+> **Prompt:**  
+> `Cinematic editorial photograph of a modern high-end architectural smartphone resting on a dark slate marble surface in an obsidian minimalist studio. Ambient green WhatsApp message notification reflections illuminate the dark space. In the background, subtle holographic network nodes connect Mumbai, Delhi, and Bengaluru across a deep black void (#080808). Ultra-clean luxury editorial photography, Hasselblad medium format, dramatic soft rim lighting, arterial red (#fe1e34) accent pin, 8k resolution --ar 16:9 --v 6.1`
+
+### Prompt P2 — Component 02: Dedicated IST Support (`why-ist.jpg`)
+> **Aspect Ratio:** `16:9` (`--ar 16:9`)  
+> **Target Path:** `/public/images/why/why-ist.jpg`  
+> **Prompt:**  
+> `High-fashion architectural photograph of a sleek nighttime design studio overlooking the Mumbai skyline at dusk. Warm interior amber light meets deep blue twilight through floor-to-ceiling glass. Minimalist dark wood workstation, titanium laptop displaying code in Indian Standard Time (IST), artistic red geometric sculpture in the background. Calm, focused, premium editorial atmosphere, Vogue Living interior design photography, 8k resolution --ar 16:9 --v 6.1`
+
+### Prompt P3 — Component 03: One Accountable Team (`why-team.jpg`)
+> **Aspect Ratio:** `16:9` (`--ar 16:9`)  
+> **Target Path:** `/public/images/why/why-team.jpg`  
+> **Prompt:**  
+> `Cinematic black-and-white editorial portrait of a multidisciplinary creative tech studio team collaborating around a dark monolithic conference table in an atmospheric modern loft. Crisp dramatic side lighting, high contrast shadows, laptops and architectural sketches on table. A single arterial red (#fe1e34) laser line projects across the back concrete wall. High fashion corporate editorial, Kinfolk magazine style, 8k resolution --ar 16:9 --v 6.1`
+
+### Prompt P4 — Component 04: Transparent Rupee (₹) Pricing (`why-pricing.jpg`)
+> **Aspect Ratio:** `16:9` (`--ar 16:9`)  
+> **Target Path:** `/public/images/why/why-pricing.jpg`  
+> **Prompt:**  
+> `Sculptural graphic concept of a glowing metallic Indian Rupee symbol (₹) carved from brushed titanium and obsidian stone, floating in deep black void (#080808). Delicate arterial red laser lines scan across the symbol, creating subtle holographic tax invoice grid lines and geometric wireframes. Cinematic luxury lighting, extreme precision, luxury fintech editorial aesthetics, 8k resolution --ar 16:9 --v 6.1`
+
+

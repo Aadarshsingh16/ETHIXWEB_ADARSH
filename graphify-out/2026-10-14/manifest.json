@@ -780,9 +780,9 @@
     "semantic_hash": ""
   },
   "src/app/[lang]/(site)/services/page.tsx": {
-    "mtime": 1791987103.7887127,
-    "seen": 1791987193.6218767,
-    "ast_hash": "e2ec4a02e11d967e752710feffa8b406",
+    "mtime": 1791987542.8557134,
+    "seen": 1791987624.7995067,
+    "ast_hash": "e946947b6cab290f267d23fd352e04e2",
     "semantic_hash": ""
   },
   "src/app/error.tsx": {
@@ -900,9 +900,9 @@
     "semantic_hash": ""
   },
   "PROMPTS.md": {
-    "mtime": 1791982719.9204242,
-    "seen": 1791983820.701107,
-    "ast_hash": "3898d4e70f2955f8e229e5d52c0f1a2a",
+    "mtime": 1791987565.9964538,
+    "seen": 1791987624.7995067,
+    "ast_hash": "1e04d5751f76068ebbd2e62b68ac3af2",
     "semantic_hash": ""
   },
   "public/images/concept/hero-card-1.jpg": {
@@ -915,6 +915,42 @@
     "mtime": 1791980352.5912187,
     "seen": 1791986672.0118217,
     "ast_hash": "3ea1197ca85376efc72a70b406c2c943",
+    "semantic_hash": ""
+  },
+  "public/images/services/service-accessibility.jpg": {
+    "mtime": 1791981093.8464751,
+    "seen": 1791987624.7995067,
+    "ast_hash": "25aff4c04371164b2bf30bbbf4fb2a90",
+    "semantic_hash": ""
+  },
+  "public/images/services/service-ai.jpg": {
+    "mtime": 1791980352.5912187,
+    "seen": 1791987624.7995067,
+    "ast_hash": "3ea1197ca85376efc72a70b406c2c943",
+    "semantic_hash": ""
+  },
+  "public/images/services/service-data.jpg": {
+    "mtime": 1791980887.6354077,
+    "seen": 1791987624.7995067,
+    "ast_hash": "9724038d71e1e18928401120d531af8d",
+    "semantic_hash": ""
+  },
+  "public/images/services/service-growth.jpg": {
+    "mtime": 1791980667.5120287,
+    "seen": 1791987624.7995067,
+    "ast_hash": "e57be3af35e1e31deb6297e15de6a1bd",
+    "semantic_hash": ""
+  },
+  "public/images/services/service-support.jpg": {
+    "mtime": 1791980173.5410163,
+    "seen": 1791987624.7995067,
+    "ast_hash": "945f1a83a6553a2b77e85761bf1af18f",
+    "semantic_hash": ""
+  },
+  "public/images/services/service-website.jpg": {
+    "mtime": 1791980796.545745,
+    "seen": 1791987624.7995067,
+    "ast_hash": "0acf5fd46676b114247c1bfaf4c74012",
     "semantic_hash": ""
   }
 }

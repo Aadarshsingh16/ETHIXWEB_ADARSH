@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "src/components/sections/WhySection.tsx": {
-    "mtime": 1791985291.8751059,
-    "seen": 1791985442.9692316,
-    "ast_hash": "d466ecc760d00877eb84a88c6c62014d",
+    "mtime": 1791987768.5220764,
+    "seen": 1791987887.4748487,
+    "ast_hash": "0a647c723659cccfa471066254568ead",
     "semantic_hash": ""
   },
   "src/components/sections/WorkSection.tsx": {
@@ -900,9 +900,9 @@
     "semantic_hash": ""
   },
   "PROMPTS.md": {
-    "mtime": 1791987565.9964538,
-    "seen": 1791987624.7995067,
-    "ast_hash": "1e04d5751f76068ebbd2e62b68ac3af2",
+    "mtime": 1791987792.8646498,
+    "seen": 1791987887.4748487,
+    "ast_hash": "e6e5947d11a90ed39dc2eb23ffd4693b",
     "semantic_hash": ""
   },
   "public/images/concept/hero-card-1.jpg": {
@@ -951,6 +951,30 @@
     "mtime": 1791980796.545745,
     "seen": 1791987624.7995067,
     "ast_hash": "0acf5fd46676b114247c1bfaf4c74012",
+    "semantic_hash": ""
+  },
+  "public/images/why/why-ist.jpg": {
+    "mtime": 1791980173.5410163,
+    "seen": 1791987887.4748487,
+    "ast_hash": "945f1a83a6553a2b77e85761bf1af18f",
+    "semantic_hash": ""
+  },
+  "public/images/why/why-pricing.jpg": {
+    "mtime": 1791980796.545745,
+    "seen": 1791987887.4748487,
+    "ast_hash": "0acf5fd46676b114247c1bfaf4c74012",
+    "semantic_hash": ""
+  },
+  "public/images/why/why-team.jpg": {
+    "mtime": 1791980352.5912187,
+    "seen": 1791987887.4748487,
+    "ast_hash": "3ea1197ca85376efc72a70b406c2c943",
+    "semantic_hash": ""
+  },
+  "public/images/why/why-whatsapp.jpg": {
+    "mtime": 1791980887.6354077,
+    "seen": 1791987887.4748487,
+    "ast_hash": "9724038d71e1e18928401120d531af8d",
     "semantic_hash": ""
   }
 }
