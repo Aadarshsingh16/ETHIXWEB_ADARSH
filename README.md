@@ -2,7 +2,7 @@
 
 An India-specific redesign of [ethixweb.com](https://www.ethixweb.com): a fast, premium site for Indian businesses with a working enquiry pipeline and a protected admin dashboard.
 
-- **Live:** https://YOUR-VERCEL-URL
+- **Live:** https://ethixweb-adarsh.vercel.app
 - **Repo:** https://github.com/Aadarshsingh16/ETHIXWEB_ADARSH
 - **Demo admin:** `/admin/login` — Email: `admin@ethixweb.com` · Password: `admin123` *(1-click autofill enabled)*
 
@@ -55,10 +55,20 @@ Editorial, type-led layout inspired by a modern agency reference (black hero, tw
 - Consistent JSON errors with proper status codes (400/401/403/404/422/429/500).
 - Secrets live in environment variables; only `.env.example` is committed.
 
-## PageSpeed Insights
-| Mobile | Desktop |
+## PageSpeed Insights (Official Audit Results)
+
+Tested on [Google PageSpeed Insights](https://pagespeed.web.dev/) on the deployed production Vercel URL (`https://ethixweb-adarsh.vercel.app/`):
+
+| Device | Performance | Accessibility | Best Practices | SEO | First Contentful Paint | Largest Contentful Paint | Total Blocking Time | Cumulative Layout Shift |
+|---|---|---|---|---|---|---|---|---|
+| **Desktop** | **99 / 100** 🟢 | **92 / 100** 🟢 | **100 / 100** 🟢 | **100 / 100** 🟢 | **0.3 s** | **0.6 s** | **30 ms** | **0** |
+| **Mobile** | **97 / 100** 🟢 | **92 / 100** 🟢 | **100 / 100** 🟢 | **100 / 100** 🟢 | **1.1 s** | **2.5 s** | **30 ms** | **0** |
+
+> **Audit Details**: Zero layout shift (`CLS: 0`), minimal CPU blocking (`TBT: 30ms`), and instant visual painting (`FCP: 0.3s Desktop / 1.1s Mobile`). Achieved through pure CSS transitions, canvas-based particle acceleration, native system fonts, and static-first Next.js App Router architecture.
+
+| Desktop (99/100) | Mobile (97/100) |
 |---|---|
-| ![mobile](docs/pagespeed/mobile.png) | ![desktop](docs/pagespeed/desktop.png) |
+| ![Desktop PageSpeed Audit](public/pagespeed/desktop.png) | ![Mobile PageSpeed Audit](public/pagespeed/mobile.png) |
 
 ## Run locally
 ```bash
