@@ -23,7 +23,7 @@ export function Button({
 }: ButtonProps) {
   // SVZ Design Tokens: 8px radius, crisp uppercase typography, tracked letter-spacing
   const baseStyles =
-    "inline-flex items-center justify-center gap-2.5 h-11 px-5 rounded-[8px] text-[12px] font-mono font-medium uppercase tracking-[0.12em] select-none transition-all duration-160 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe1e34] active:scale-[0.98]";
+    "inline-flex items-center justify-center gap-2 h-11 px-5 rounded-[8px] text-[12px] font-mono font-medium uppercase tracking-[0.12em] select-none whitespace-nowrap transition-all duration-160 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe1e34] active:scale-[0.98]";
 
   const variantStyles: Record<ButtonVariant, string> = {
     primary:

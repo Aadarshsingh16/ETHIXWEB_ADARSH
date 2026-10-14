@@ -76,12 +76,12 @@ export function PillNav({ lang, labels }: PillNavProps) {
           </nav>
 
           {/* Right Controls */}
-          <div className="flex items-center gap-2.5 sm:gap-3">
+          <div className="flex items-center gap-2 sm:gap-2.5">
             <div className="hidden sm:block">
-              <StatusPill onlineText={labels.onlineIst} offlineText={labels.offlineIst} />
+              <StatusPill />
             </div>
 
-            <LangToggle currentLang={lang} currentPath={pathname} theme="dark" />
+            <LangToggle currentLang={lang} currentPath={pathname} />
 
             <ThemeToggle />
 
@@ -90,7 +90,7 @@ export function PillNav({ lang, labels }: PillNavProps) {
               <Button
                 variant="discovery"
                 href={`/${lang}/contact`}
-                className="h-9 px-4 text-[11px] tracking-[0.14em]"
+                className="h-8 px-3.5 text-[11px] tracking-[0.14em] rounded-[6px] whitespace-nowrap"
               >
                 {labels.cta}
               </Button>

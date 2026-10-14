@@ -24,9 +24,9 @@
     "semantic_hash": "51e2a282d92c917a53957f17abceb764"
   },
   "src/app/[lang]/(site)/layout.tsx": {
-    "mtime": 1791977818.4364712,
-    "seen": 1791977957.8910658,
-    "ast_hash": "08fd7c97251c95ad002224cd216bbaee",
+    "mtime": 1791985115.5653765,
+    "seen": 1791985442.9692316,
+    "ast_hash": "994a46e916092b7eb4c32b23cedf4282",
     "semantic_hash": ""
   },
   "src/app/[lang]/(site)/page.tsx": {
@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "src/app/layout.tsx": {
-    "mtime": 1791982653.9281318,
-    "seen": 1791983820.701107,
-    "ast_hash": "c3eda28d9c11856ea17a8a56410c300d",
+    "mtime": 1791985079.4099734,
+    "seen": 1791985442.9692316,
+    "ast_hash": "889eefb17293d75560c4163f1afedd33",
     "semantic_hash": ""
   },
   "src/app/page.tsx": {
@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "src/components/sections/Hero.tsx": {
-    "mtime": 1791984486.885838,
-    "seen": 1791984597.9914227,
-    "ast_hash": "9843de795a8aa5293ffa2d62b99e4ce5",
+    "mtime": 1791985194.784886,
+    "seen": 1791985442.9692316,
+    "ast_hash": "bceba430709d8adef0158681ccec72a8",
     "semantic_hash": ""
   },
   "src/components/sections/PricingSection.tsx": {
@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "src/components/sections/WhySection.tsx": {
-    "mtime": 1791982943.0227225,
-    "seen": 1791983820.701107,
-    "ast_hash": "adef74852503230b9e7f04fdc07a9e3e",
+    "mtime": 1791985291.8751059,
+    "seen": 1791985442.9692316,
+    "ast_hash": "d466ecc760d00877eb84a88c6c62014d",
     "semantic_hash": ""
   },
   "src/components/sections/WorkSection.tsx": {
@@ -198,15 +198,15 @@
     "semantic_hash": ""
   },
   "src/components/ui/TwoToneHeading.tsx": {
-    "mtime": 1791982750.8728726,
-    "seen": 1791983820.701107,
-    "ast_hash": "9f5b84bd2d72c87fdc1c6eee9ce64e47",
+    "mtime": 1791985273.2331975,
+    "seen": 1791985442.9692316,
+    "ast_hash": "0f21c1c3d53abad6208b9e56b0d6262e",
     "semantic_hash": ""
   },
   "src/components/ui/WorkCard.tsx": {
-    "mtime": 1791984459.161364,
-    "seen": 1791984597.992645,
-    "ast_hash": "2c689510cda7f49247e98ec962b1bd61",
+    "mtime": 1791985312.8890896,
+    "seen": 1791985442.9692316,
+    "ast_hash": "ad2c305ea0a6511d7e2aafb3ed2532c8",
     "semantic_hash": ""
   },
   "src/content/en.ts": {
@@ -642,9 +642,9 @@
     "semantic_hash": ""
   },
   "src/app/[lang]/(site)/contact/page.tsx": {
-    "mtime": 1791983496.7495368,
-    "seen": 1791983820.701107,
-    "ast_hash": "fc977dc0fa8b639b2de19e2b8209b43e",
+    "mtime": 1791985225.4771962,
+    "seen": 1791985442.9692316,
+    "ast_hash": "a85c81bc6ed79f7da728b09d82c6eb27",
     "semantic_hash": ""
   },
   "src/app/api/leads/route.ts": {
@@ -768,21 +768,21 @@
     "semantic_hash": ""
   },
   "src/app/[lang]/(site)/about/page.tsx": {
-    "mtime": 1791983475.434558,
-    "seen": 1791983820.701107,
-    "ast_hash": "caeea0fe836331c28f825cc93df5c9d8",
+    "mtime": 1791985208.9062982,
+    "seen": 1791985442.9692316,
+    "ast_hash": "04a81d0403408750ba77407aab759176",
     "semantic_hash": ""
   },
   "src/app/[lang]/(site)/privacy/page.tsx": {
-    "mtime": 1791983509.193938,
-    "seen": 1791983820.701107,
-    "ast_hash": "ad9652b77ed5a984d2c5e638decd0d0e",
+    "mtime": 1791985248.062596,
+    "seen": 1791985442.9692316,
+    "ast_hash": "8efde9251932a4fbf5efef222dd312b0",
     "semantic_hash": ""
   },
   "src/app/[lang]/(site)/services/page.tsx": {
-    "mtime": 1791983482.9031866,
-    "seen": 1791983820.701107,
-    "ast_hash": "896d66db240b9deb0f406e58a712c898",
+    "mtime": 1791985216.7878985,
+    "seen": 1791985442.9692316,
+    "ast_hash": "aca6db8a9a884d0d566ea0fb0d7677b9",
     "semantic_hash": ""
   },
   "src/app/error.tsx": {
@@ -810,9 +810,9 @@
     "semantic_hash": ""
   },
   "src/components/ui/ThemeToggle.tsx": {
-    "mtime": 1791979598.3427587,
-    "seen": 1791979669.9618785,
-    "ast_hash": "f93368cac830fcbdf0423554c6821450",
+    "mtime": 1791985098.7190127,
+    "seen": 1791985442.9692316,
+    "ast_hash": "2f915d678ae4330a9ab1c6a9a5c294ab",
     "semantic_hash": ""
   },
   "design/E-commerce_website_UI_mockup_serum_20261014175636.jpg": {
