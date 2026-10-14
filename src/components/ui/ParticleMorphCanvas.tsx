@@ -136,9 +136,9 @@ export function ParticleMorphCanvas({
       const dt = Math.min((timeNow - lastTime) / 1000, 0.1);
       lastTime = timeNow;
 
-      // Smooth spring interpolation toward target morph (1 = Image, 0 = Globe)
+      // Snappy, instant spring interpolation (reaches target in ~180ms)
       const diff = targetMorph.current - morphValue.current;
-      morphValue.current += diff * Math.min(dt * 7.5, 0.38);
+      morphValue.current += diff * Math.min(dt * 18, 0.65);
 
       const m = morphValue.current;
       const globeFactor = 1 - m; // 0 when image, 1 when globe
@@ -236,15 +236,39 @@ export function ParticleMorphCanvas({
     return () => ro.disconnect();
   }, []);
 
-  // Hold to form particle globe; release to return to image
+  const pointerDownTime = useRef<number>(0);
+  const wasGlobeOnDown = useRef<boolean>(false);
+
+  // Instant single-touch toggle + hold support
   const handlePointerDown = useCallback(() => {
-    setIsPressed(true);
-    targetMorph.current = 0; // Morph to 3D Globe
+    pointerDownTime.current = performance.now();
+    wasGlobeOnDown.current = targetMorph.current === 0;
+
+    // Trigger immediately on the very first millisecond of touch
+    if (wasGlobeOnDown.current) {
+      targetMorph.current = 1;
+      setIsPressed(false);
+    } else {
+      targetMorph.current = 0;
+      setIsPressed(true);
+    }
   }, []);
 
   const handlePointerUp = useCallback(() => {
-    setIsPressed(false);
-    targetMorph.current = 1; // Return to Image
+    const elapsed = performance.now() - pointerDownTime.current;
+
+    // If quick tap (< 280ms) and was starting from image:
+    // keep it in 3D globe mode so the user can enjoy the motion without holding!
+    if (elapsed < 280) {
+      if (!wasGlobeOnDown.current) {
+        targetMorph.current = 0;
+        setIsPressed(true);
+      }
+    } else {
+      // Long press release: return to image
+      targetMorph.current = 1;
+      setIsPressed(false);
+    }
   }, []);
 
   return (
@@ -255,7 +279,7 @@ export function ParticleMorphCanvas({
       onPointerLeave={handlePointerUp}
       role="button"
       tabIndex={0}
-      aria-label={`${title} - Hold to form particle globe, release to view image`}
+      aria-label={`${title} - Tap or hold to form particle globe`}
       onKeyDown={(e) => {
         if (e.key === " " || e.key === "Enter") {
           const next = targetMorph.current === 1 ? 0 : 1;
@@ -285,8 +309,8 @@ export function ParticleMorphCanvas({
           />
           <span>
             {isPressed
-              ? "● Holding: Particle Globe Active"
-              : "Hold anywhere to form particle globe"}
+              ? "● 3D Particle Globe Active · Tap to view image"
+              : "Tap or hold to form 3D particle globe"}
           </span>
         </div>
       </div>
