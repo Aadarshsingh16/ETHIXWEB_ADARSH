@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { TwoToneHeading } from "@/components/ui/TwoToneHeading";
@@ -94,7 +95,7 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
         {/* Concept Architecture Cards Preview */}
         <div className="pt-8 border-t border-[#242426] grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
           {/* Concept Card 1: D2C */}
-          <div className="group rounded-[20px] bg-[#161617] border border-[#242426] p-5 space-y-3 transition-all duration-200 hover:border-[#38383B] flex flex-col justify-between">
+          <div className="group rounded-[20px] bg-[#161617] border border-[#242426] p-5 space-y-3 transition-all duration-200 hover:border-[#38383B] flex flex-col justify-between overflow-hidden">
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#242426] text-[#A1A1A6]">
@@ -113,18 +114,24 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
               </p>
             </div>
 
-            {/* Visual Micro-Preview / Image Placeholder */}
-            <div className="mt-3 rounded-xl bg-[#0C0C0D] border border-[#242426] p-3 flex items-center justify-between text-xs font-mono text-[#A1A1A6]">
-              <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#16A34A]" />
-                <span className="text-white">checkout.store.ethixweb.in</span>
+            {/* Visual Image Preview */}
+            <div className="relative mt-3 w-full h-36 sm:h-44 rounded-xl overflow-hidden border border-[#242426] bg-[#0C0C0D]">
+              <Image
+                src="/images/concept/hero-d2c.jpg"
+                alt={data.conceptCard1.title}
+                fill
+                className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div className="absolute inset-x-0 bottom-0 p-2.5 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between text-xs font-mono">
+                <span className="text-white/90">checkout.store.ethixweb.in</span>
+                <span className="text-[#C1272D] font-bold">₹1,499 UPI</span>
               </div>
-              <span className="text-[#C1272D] font-bold">₹1,499 UPI</span>
             </div>
           </div>
 
           {/* Concept Card 2: Clinic */}
-          <div className="group rounded-[20px] bg-[#161617] border border-[#242426] p-5 space-y-3 transition-all duration-200 hover:border-[#38383B] flex flex-col justify-between">
+          <div className="group rounded-[20px] bg-[#161617] border border-[#242426] p-5 space-y-3 transition-all duration-200 hover:border-[#38383B] flex flex-col justify-between overflow-hidden">
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#242426] text-[#A1A1A6]">
@@ -143,13 +150,19 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
               </p>
             </div>
 
-            {/* Visual Micro-Preview / Image Placeholder */}
-            <div className="mt-3 rounded-xl bg-[#0C0C0D] border border-[#242426] p-3 flex items-center justify-between text-xs font-mono text-[#A1A1A6]">
-              <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#25D366]" />
-                <span className="text-white">drverma.clinic.ethixweb.in</span>
+            {/* Visual Image Preview */}
+            <div className="relative mt-3 w-full h-36 sm:h-44 rounded-xl overflow-hidden border border-[#242426] bg-[#0C0C0D]">
+              <Image
+                src="/images/concept/hero-clinic.jpg"
+                alt={data.conceptCard2.title}
+                fill
+                className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              <div className="absolute inset-x-0 bottom-0 p-2.5 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between text-xs font-mono">
+                <span className="text-white/90">drverma.clinic.ethixweb.in</span>
+                <span className="text-[#25D366] font-bold">Slot: 02:30 PM IST</span>
               </div>
-              <span className="text-[#25D366] font-bold">Slot: 02:30 PM IST</span>
             </div>
           </div>
         </div>

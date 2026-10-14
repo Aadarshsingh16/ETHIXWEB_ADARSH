@@ -90,9 +90,9 @@
     "semantic_hash": ""
   },
   "src/components/sections/Hero.tsx": {
-    "mtime": 1791979203.5373638,
-    "seen": 1791979669.9618785,
-    "ast_hash": "12c40b0ea915e00650f9801769e09c52",
+    "mtime": 1791981241.469519,
+    "seen": 1791981410.347607,
+    "ast_hash": "52a9fe0e08fc5563201b5b5b2eb2160d",
     "semantic_hash": ""
   },
   "src/components/sections/PricingSection.tsx": {
@@ -204,9 +204,9 @@
     "semantic_hash": ""
   },
   "src/components/ui/WorkCard.tsx": {
-    "mtime": 1791979298.4495885,
-    "seen": 1791979669.9618785,
-    "ast_hash": "ed84f47dacce8512b17f28556c356b58",
+    "mtime": 1791981279.6474135,
+    "seen": 1791981410.347607,
+    "ast_hash": "ac29cfe67103c07a1848978798525f85",
     "semantic_hash": ""
   },
   "src/content/en.ts": {
@@ -813,6 +813,90 @@
     "mtime": 1791979598.3427587,
     "seen": 1791979669.9618785,
     "ast_hash": "f93368cac830fcbdf0423554c6821450",
+    "semantic_hash": ""
+  },
+  "design/E-commerce_website_UI_mockup_serum_20261014175636.jpg": {
+    "mtime": 1791980796.545745,
+    "seen": 1791981410.348627,
+    "ast_hash": "0acf5fd46676b114247c1bfaf4c74012",
+    "semantic_hash": ""
+  },
+  "design/Hero Concept Card 1.jpg": {
+    "mtime": 1791980173.5410163,
+    "seen": 1791981410.348627,
+    "ast_hash": "945f1a83a6553a2b77e85761bf1af18f",
+    "semantic_hash": ""
+  },
+  "design/Hero Concept Card 2.jpg": {
+    "mtime": 1791980352.5912187,
+    "seen": 1791981410.348627,
+    "ast_hash": "3ea1197ca85376efc72a70b406c2c943",
+    "semantic_hash": ""
+  },
+  "design/Laptop_displaying_EdTech_landing\u2026_20261014175427.jpg": {
+    "mtime": 1791980667.5120287,
+    "seen": 1791981410.348627,
+    "ast_hash": "e57be3af35e1e31deb6297e15de6a1bd",
+    "semantic_hash": ""
+  },
+  "design/Monitor_displaying_dental_appoin\u2026_20261014175807.jpg": {
+    "mtime": 1791980887.6354077,
+    "seen": 1791981410.348627,
+    "ast_hash": "9724038d71e1e18928401120d531af8d",
+    "semantic_hash": ""
+  },
+  "design/Real_estate_website_interface_mo\u2026_20261014175910.jpg": {
+    "mtime": 1791980951.2166681,
+    "seen": 1791981410.348627,
+    "ast_hash": "2bca074bbd459b76ebaf0e1f41a48009",
+    "semantic_hash": ""
+  },
+  "design/Tablet_displaying_digital_jewelr\u2026_20261014180133.jpg": {
+    "mtime": 1791981093.8464751,
+    "seen": 1791981410.348627,
+    "ast_hash": "25aff4c04371164b2bf30bbbf4fb2a90",
+    "semantic_hash": ""
+  },
+  "public/images/concept/hero-clinic.jpg": {
+    "mtime": 1791980352.5912187,
+    "seen": 1791981410.348627,
+    "ast_hash": "3ea1197ca85376efc72a70b406c2c943",
+    "semantic_hash": ""
+  },
+  "public/images/concept/hero-d2c.jpg": {
+    "mtime": 1791980173.5410163,
+    "seen": 1791981410.348627,
+    "ast_hash": "945f1a83a6553a2b77e85761bf1af18f",
+    "semantic_hash": ""
+  },
+  "public/images/concept/work-clinic.jpg": {
+    "mtime": 1791980887.6354077,
+    "seen": 1791981410.348627,
+    "ast_hash": "9724038d71e1e18928401120d531af8d",
+    "semantic_hash": ""
+  },
+  "public/images/concept/work-d2c.jpg": {
+    "mtime": 1791980796.545745,
+    "seen": 1791981410.348627,
+    "ast_hash": "0acf5fd46676b114247c1bfaf4c74012",
+    "semantic_hash": ""
+  },
+  "public/images/concept/work-edtech.jpg": {
+    "mtime": 1791980667.5120287,
+    "seen": 1791981410.348627,
+    "ast_hash": "e57be3af35e1e31deb6297e15de6a1bd",
+    "semantic_hash": ""
+  },
+  "public/images/concept/work-jewellery.jpg": {
+    "mtime": 1791981093.8464751,
+    "seen": 1791981410.348627,
+    "ast_hash": "25aff4c04371164b2bf30bbbf4fb2a90",
+    "semantic_hash": ""
+  },
+  "public/images/concept/work-realestate.jpg": {
+    "mtime": 1791980951.2166681,
+    "seen": 1791981410.348627,
+    "ast_hash": "2bca074bbd459b76ebaf0e1f41a48009",
     "semantic_hash": ""
   }
 }

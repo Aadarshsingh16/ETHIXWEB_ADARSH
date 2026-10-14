@@ -53,7 +53,7 @@
       "file_type": "code",
       "norm_label": "projectitem",
       "source_file": "src/components/ui/WorkCard.tsx",
-      "source_location": "L3"
+      "source_location": "L4"
     },
     {
       "id": "src_components_ui_workcard_workcardprops",
@@ -66,7 +66,7 @@
       "file_type": "code",
       "norm_label": "workcardprops",
       "source_file": "src/components/ui/WorkCard.tsx",
-      "source_location": "L11"
+      "source_location": "L12"
     },
     {
       "id": "src_lib_i18n_lang",
@@ -599,7 +599,7 @@
       "file_type": "code",
       "norm_label": "herodata",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L5"
+      "source_location": "L6"
     },
     {
       "id": "src_components_sections_hero_heroprops",
@@ -612,7 +612,7 @@
       "file_type": "code",
       "norm_label": "heroprops",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "src_components_sections_pricingsection_planitem",
@@ -805,7 +805,7 @@
       "file_type": "code",
       "norm_label": "workcard()",
       "source_file": "src/components/ui/WorkCard.tsx",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "src_middleware_middleware",
@@ -1093,7 +1093,7 @@
       "file_type": "code",
       "norm_label": "hero()",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "src_components_sections_processsection_processsection",
@@ -12190,7 +12190,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L1",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -12202,7 +12202,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L2",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -12214,7 +12214,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -14005,7 +14005,7 @@
     },
     {
       "source": "src_components_sections_hero",
-      "target": "src_components_ui_button",
+      "target": "ref_next",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -14017,7 +14017,7 @@
     },
     {
       "source": "src_components_sections_hero",
-      "target": "src_components_ui_sectionlabel",
+      "target": "src_components_ui_button",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -14029,7 +14029,7 @@
     },
     {
       "source": "src_components_sections_hero",
-      "target": "src_components_ui_twotoneheading",
+      "target": "src_components_ui_sectionlabel",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -14037,6 +14037,18 @@
       "context": "import",
       "source_file": "src/components/sections/Hero.tsx",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sections_hero",
+      "target": "src_components_ui_twotoneheading",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/sections/Hero.tsx",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -14373,6 +14385,18 @@
       "context": "import",
       "source_file": "src/components/ui/WorkCard.tsx",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_workcard",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ui/WorkCard.tsx",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -20702,7 +20726,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -20713,7 +20737,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -20724,7 +20748,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -21417,7 +21441,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/WorkCard.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -21428,7 +21452,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/WorkCard.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -21439,7 +21463,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/WorkCard.tsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -22366,5 +22390,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d96c0925e1acf00cd15d11dfc1da2376f70f342d"
+  "built_at_commit": "cdd98e7283e38efe79c178edfa97f5d048f30caa"
 }

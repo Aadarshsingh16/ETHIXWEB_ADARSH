@@ -1,17 +1,17 @@
 # Graph Report - ETHIXWEB  (2026-10-14)
 
 ## Corpus Check
-- 127 files · ~70,974 words
+- 127 files · ~142,754 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 2, .example 2, .css 2)
 
 ## Summary
-- 826 nodes · 1096 edges · 72 communities (66 shown, 6 thin omitted)
+- 826 nodes · 1098 edges · 72 communities (66 shown, 6 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 20 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d96c0925`
+- Built from commit: `cdd98e72`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -90,7 +90,7 @@
 - TwoToneHeading.tsx
 
 ## God Nodes (most connected - your core abstractions)
-1. `next` - 31 edges
+1. `next` - 33 edges
 2. `HttpError` - 19 edges
 3. `getDictionary()` - 19 edges
 4. `requireAdmin()` - 19 edges
@@ -390,12 +390,12 @@ Nodes (13): HeroData, HeroProps, PlanItem, PricingData, PricingSection(), Pricin
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `next` connect `next` to `package.json`, `(site)/page.tsx`, `app/layout.tsx`, `ServicesSection.tsx`, `getDictionary`, `HttpError`, `AboutTeaser.tsx`?**
-  _High betweenness centrality (0.084) - this node is a cross-community bridge._
+- **Why does `next` connect `next` to `WorkSection.tsx`, `package.json`, `(site)/page.tsx`, `app/layout.tsx`, `ServicesSection.tsx`, `getDictionary`, `TwoToneHeading.tsx`, `HttpError`, `AboutTeaser.tsx`?**
+  _High betweenness centrality (0.087) - this node is a cross-community bridge._
 - **Why does `requireAdmin()` connect `HttpError` to `PHASES — build in small milestones, verify, then move on`, `next`, `Leads backend skill`, `Leads backend skill`, `PHASES — build in small milestones, verify, then move on`, `04 — Backend: leads, admin, security`, `04 — Backend: leads, admin, security`, `Leads backend skill`?**
-  _High betweenness centrality (0.064) - this node is a cross-community bridge._
-- **Why does `react` connect `next` to `WorkSection.tsx`, `package.json`, `ContactForm.tsx`, `WhySection.tsx`, `TwoToneHeading.tsx`, `PHASES — build in small milestones, verify, then move on`, `AboutTeaser.tsx`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+  _High betweenness centrality (0.065) - this node is a cross-community bridge._
+- **Why does `ContactForm()` connect `PHASES — build in small milestones, verify, then move on` to `getDictionary`, `ContactForm.tsx`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **Are the 7 inferred relationships involving `requireAdmin()` (e.g. with `Admin` and `Admin`) actually correct?**
   _`requireAdmin()` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `eslintConfig`, `nextConfig`, `name` to the rest of the system?**
