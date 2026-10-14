@@ -66,6 +66,23 @@
   --dur-reveal:  480ms;
   --dur-hero:    700ms;
 
+  /* Default Theme: SVZ Void Canvas Dark Theme (Primary) */
+  --color-bg:             #080808;
+  --color-surface:        #171617;
+  --color-surface-hover:  #262525;
+  --color-border:         #262525;
+  --color-border-strong:  #393939;
+  --color-text:           #fcfcfc;
+  --color-text-secondary: #d4d2d2;
+  --color-text-muted:     #b5b2b2;
+  --color-fade:           #525252;
+  --color-red:            #fe1e34;
+  --color-card:           #171617;
+  --color-card-border:    #262525;
+  --color-input-bg:       #171617;
+}
+
+html.light {
   /* Light Theme (Inverted Linen Surface) */
   --color-bg:             #f3efef;
   --color-surface:        #ffffff;
@@ -83,7 +100,6 @@
 }
 
 .dark {
-  /* SVZ Void Canvas Dark Theme (Primary) */
   --color-bg:             #080808;
   --color-surface:        #171617;
   --color-surface-hover:  #262525;

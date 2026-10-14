@@ -89,7 +89,7 @@ export function WorkCard({ project, index }: WorkCardProps) {
                 src={`/images/concept/work-${project.id}.jpg`}
                 alt={project.title}
                 fill
-                className="object-cover object-top transition-transform duration-300 group-hover/img:scale-105"
+                className="object-contain sm:object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>

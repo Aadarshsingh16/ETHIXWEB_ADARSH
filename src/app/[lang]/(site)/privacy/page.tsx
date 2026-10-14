@@ -43,7 +43,7 @@ export default async function PrivacyPage({
   const t = getDictionary(lang);
 
   return (
-    <div className="py-12 md:py-20">
+    <div className="pt-28 sm:pt-36 pb-16 md:pb-24">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Header */}
         <div>

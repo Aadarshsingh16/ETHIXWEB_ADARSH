@@ -28,7 +28,7 @@ function getSnapshot(): boolean {
 }
 
 function getServerSnapshot(): boolean {
-  return false;
+  return true;
 }
 
 interface ThemeToggleProps {
@@ -42,11 +42,13 @@ export function ThemeToggle({ className = "" }: ThemeToggleProps) {
     const nextDark = !isDark;
     if (nextDark) {
       document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
       try {
         localStorage.setItem("theme", "dark");
       } catch {}
     } else {
       document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light");
       try {
         localStorage.setItem("theme", "light");
       } catch {}

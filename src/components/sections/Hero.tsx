@@ -35,7 +35,7 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
   )}`;
 
   return (
-    <section className="w-full bg-[#080808] border-b border-[#262525] py-16 sm:py-24 lg:py-28 mb-16 sm:mb-24 relative overflow-hidden">
+    <section className="w-full bg-[#080808] border-b border-[#262525] pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-24 mb-16 sm:mb-24 relative overflow-hidden">
       {/* Subtle Arterial Red ambient glow in top-right */}
       <div
         className="absolute -top-40 -right-40 w-[420px] h-[420px] rounded-full bg-[#fe1e34]/15 blur-[120px] pointer-events-none animate-glow-pulse"
@@ -98,13 +98,13 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
           </div>
         </div>
 
-        {/* SVZ Concept Architecture Cards — 8px Radius with 1px Arterial Red Border on Featured */}
-        <div className="pt-10 border-t border-[#262525] grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
+        {/* SVZ Concept Architecture Cards — Redesigned with Spacious Mockup Showcase */}
+        <div className="pt-10 border-t border-[#262525] grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {/* Concept Card 1: D2C (Featured Arterial Red Border) */}
-          <div className="group rounded-[8px] bg-[#171617] border border-[#fe1e34] p-6 space-y-4 transition-all duration-200 hover:border-[#fe1e34] flex flex-col justify-between overflow-hidden shadow-[0_0_24px_rgba(254,30,52,0.12)]">
+          <div className="group rounded-[8px] bg-[#171617] border border-[#fe1e34] p-6 sm:p-7 space-y-4 transition-all duration-300 hover:border-[#fe1e34] hover:shadow-[0_0_30px_rgba(254,30,52,0.14)] flex flex-col justify-between overflow-hidden shadow-[0_0_24px_rgba(254,30,52,0.12)]">
             <div className="space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-[3px] bg-[#262525] text-[#d4d2d2]">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-[3px] bg-[#262525] text-[#d4d2d2] border border-[#393939]">
                   {data.conceptCard1.badge}
                 </span>
                 <span className="text-[11px] font-mono text-[#16A34A] flex items-center gap-1.5 uppercase tracking-wider">
@@ -112,35 +112,45 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
                   UPI + COD Ready
                 </span>
               </div>
-              <h3 className="text-[20px] font-bold text-[#fcfcfc] tracking-tight uppercase font-[family-name:var(--font-display)]">
+              <h3 className="text-[22px] font-bold text-[#fcfcfc] tracking-tight uppercase font-[family-name:var(--font-display)] group-hover:text-[#fe1e34] transition-colors duration-200">
                 {data.conceptCard1.title}
               </h3>
-              <p className="text-[14px] text-[#d4d2d2] leading-relaxed font-light">
+              <p className="text-[14px] text-[#b5b2b2] leading-relaxed font-light">
                 {data.conceptCard1.desc}
               </p>
             </div>
 
-            {/* Visual Image Preview */}
-            <div className="relative mt-3 w-full h-40 sm:h-48 rounded-[6px] overflow-hidden border border-[#262525] bg-[#080808]">
-              <Image
-                src="/images/concept/hero-d2c.jpg"
-                alt={data.conceptCard1.title}
-                fill
-                className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/95 via-black/60 to-transparent flex items-center justify-between text-xs font-mono">
-                <span className="text-[#fcfcfc] font-medium tracking-wider">checkout.store.ethixweb.in</span>
-                <span className="text-[#fe1e34] font-bold">₹1,499 UPI</span>
+            {/* Visual Image Showcase — Generous aspect ratio with browser chrome */}
+            <div className="mt-4 rounded-[6px] border border-[#262525] bg-[#080808] overflow-hidden flex flex-col">
+              {/* Browser chrome header */}
+              <div className="flex items-center justify-between px-3.5 py-2.5 border-b border-[#262525] bg-[#121213] text-[11px] font-mono">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
+                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
+                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
+                  <span className="text-[#8e8c8c] ml-1.5 tracking-wider text-[11px]">checkout.store.ethixweb.in</span>
+                </div>
+                <span className="text-[#fe1e34] font-bold text-[10px] tracking-widest uppercase">₹1,499 UPI</span>
+              </div>
+
+              {/* Full-view Image Container */}
+              <div className="relative w-full aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-[#080808]">
+                <Image
+                  src="/images/concept/hero-d2c.jpg"
+                  alt={data.conceptCard1.title}
+                  fill
+                  className="object-contain sm:object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>
 
           {/* Concept Card 2: Clinic Booking */}
-          <div className="group rounded-[8px] bg-[#171617] border border-[#262525] p-6 space-y-4 transition-all duration-200 hover:border-[#393939] flex flex-col justify-between overflow-hidden">
+          <div className="group rounded-[8px] bg-[#171617] border border-[#262525] p-6 sm:p-7 space-y-4 transition-all duration-300 hover:border-[#393939] hover:shadow-[0_0_24px_rgba(255,255,255,0.04)] flex flex-col justify-between overflow-hidden">
             <div className="space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-[3px] bg-[#262525] text-[#d4d2d2]">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-[3px] bg-[#262525] text-[#d4d2d2] border border-[#393939]">
                   {data.conceptCard2.badge}
                 </span>
                 <span className="text-[11px] font-mono text-[#25D366] flex items-center gap-1.5 uppercase tracking-wider">
@@ -148,26 +158,36 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
                   WhatsApp Synced
                 </span>
               </div>
-              <h3 className="text-[20px] font-bold text-[#fcfcfc] tracking-tight uppercase font-[family-name:var(--font-display)]">
+              <h3 className="text-[22px] font-bold text-[#fcfcfc] tracking-tight uppercase font-[family-name:var(--font-display)] group-hover:text-[#fe1e34] transition-colors duration-200">
                 {data.conceptCard2.title}
               </h3>
-              <p className="text-[14px] text-[#d4d2d2] leading-relaxed font-light">
+              <p className="text-[14px] text-[#b5b2b2] leading-relaxed font-light">
                 {data.conceptCard2.desc}
               </p>
             </div>
 
-            {/* Visual Image Preview */}
-            <div className="relative mt-3 w-full h-40 sm:h-48 rounded-[6px] overflow-hidden border border-[#262525] bg-[#080808]">
-              <Image
-                src="/images/concept/hero-clinic.jpg"
-                alt={data.conceptCard2.title}
-                fill
-                className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/95 via-black/60 to-transparent flex items-center justify-between text-xs font-mono">
-                <span className="text-[#fcfcfc] font-medium tracking-wider">drverma.clinic.ethixweb.in</span>
-                <span className="text-[#25D366] font-bold">Slot: 02:30 PM IST</span>
+            {/* Visual Image Showcase — Generous aspect ratio with browser chrome */}
+            <div className="mt-4 rounded-[6px] border border-[#262525] bg-[#080808] overflow-hidden flex flex-col">
+              {/* Browser chrome header */}
+              <div className="flex items-center justify-between px-3.5 py-2.5 border-b border-[#262525] bg-[#121213] text-[11px] font-mono">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
+                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
+                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
+                  <span className="text-[#8e8c8c] ml-1.5 tracking-wider text-[11px]">drverma.clinic.ethixweb.in</span>
+                </div>
+                <span className="text-[#25D366] font-bold text-[10px] tracking-widest uppercase">Slot: 02:30 PM IST</span>
+              </div>
+
+              {/* Full-view Image Container */}
+              <div className="relative w-full aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-[#080808]">
+                <Image
+                  src="/images/concept/hero-clinic.jpg"
+                  alt={data.conceptCard2.title}
+                  fill
+                  className="object-contain sm:object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>

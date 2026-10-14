@@ -52,16 +52,16 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${interTight.variable} ${inter.variable} ${editorialSerif.variable} ${notoDeva.variable} scroll-smooth`}
+      className={`${interTight.variable} ${inter.variable} ${editorialSerif.variable} ${notoDeva.variable} scroll-smooth dark`}
     >
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}else{document.documentElement.classList.remove('dark')}}catch(e){}})()`,
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.classList.remove('dark');document.documentElement.classList.add('light')}else{document.documentElement.classList.add('dark');document.documentElement.classList.remove('light')}}catch(e){}})()`,
           }}
         />
       </head>
-      <body className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)] font-sans antialiased selection:bg-[#C1272D] selection:text-white transition-colors duration-200">
+      <body className="min-h-screen bg-[#080808] text-[var(--color-text)] font-sans antialiased selection:bg-[#fe1e34] selection:text-white transition-colors duration-200">
         {children}
       </body>
     </html>

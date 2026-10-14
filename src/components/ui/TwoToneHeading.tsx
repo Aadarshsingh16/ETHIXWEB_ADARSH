@@ -20,10 +20,8 @@ export function TwoToneHeading({
   italicFade = true,
 }: TwoToneHeadingProps) {
   const isDark = theme === "dark";
-  const mainColor = isDark ? "text-[#fcfcfc]" : "text-[#080808] dark:text-[#fcfcfc]";
-  const fadeColor = isDark
-    ? "text-[#d4d2d2]/80"
-    : "text-[#525252] dark:text-[#d4d2d2]/80";
+  const mainColor = isDark ? "text-[#fcfcfc]" : "text-[#080808]";
+  const fadeColor = isDark ? "text-[#d4d2d2]/80" : "text-[#525252]";
 
   const sizeClasses = {
     xl: "text-[46px] sm:text-[68px] lg:text-[96px] xl:text-[120px] leading-[0.92] tracking-[-0.055em] font-bold font-[family-name:var(--font-display)]",

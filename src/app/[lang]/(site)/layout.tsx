@@ -25,7 +25,7 @@ export default async function SiteLayout({
         }}
       />
       <PillNav lang={lang} labels={dict.nav} />
-      <main className="flex-1 pt-24 sm:pt-28 pb-16">{children}</main>
+      <main className="flex-1">{children}</main>
       <Footer lang={lang} data={dict.footer} />
       <StickyWhatsApp
         lang={lang}
