@@ -43,6 +43,7 @@ export function ParticleMorphCanvas({
   const targetMorph = useRef(0);
   const globeAngle = useRef(0);
   const particlesRef = useRef<Particle[]>([]);
+  const imgElementRef = useRef<HTMLImageElement | null>(null);
 
   // Sample image and construct particle systems
   useEffect(() => {
@@ -53,13 +54,15 @@ export function ParticleMorphCanvas({
 
     img.onload = () => {
       if (!active) return;
+      imgElementRef.current = img;
+
       const offscreen = document.createElement("canvas");
       const ctx = offscreen.getContext("2d", { willReadFrequently: true });
       if (!ctx) return;
 
       // Sample density
       const sampleCols = 70;
-      const imgAspect = img.naturalWidth / img.naturalHeight;
+      const imgAspect = img.naturalWidth / img.naturalHeight || 16 / 10;
       const sampleRows = Math.round(sampleCols / imgAspect);
       offscreen.width = sampleCols;
       offscreen.height = sampleRows;
@@ -132,10 +135,10 @@ export function ParticleMorphCanvas({
 
       // Smooth spring interpolation toward target morph (0 = globe, 1 = image)
       const diff = targetMorph.current - morphValue.current;
-      morphValue.current += diff * Math.min(dt * 8, 0.3);
+      morphValue.current += diff * Math.min(dt * 7, 0.35);
 
       // Rotate globe when in globe state
-      globeAngle.current += dt * 0.5 * (1 - morphValue.current);
+      globeAngle.current += dt * 0.45 * (1 - morphValue.current);
 
       const width = canvas.width;
       const height = canvas.height;
@@ -143,22 +146,38 @@ export function ParticleMorphCanvas({
 
       const centerX = width / 2;
       const centerY = height / 2;
-      const globeRadius = Math.min(width, height) * 0.32;
-      const imgWidth = Math.min(width * 0.82, height * 0.82 * (16 / 10));
+      const globeRadius = Math.min(width, height) * 0.34;
+      const imgWidth = Math.min(width * 0.9, height * 0.9 * (16 / 10));
       const imgHeight = imgWidth / (16 / 10);
 
       const cosYaw = Math.cos(globeAngle.current);
       const sinYaw = Math.sin(globeAngle.current);
       const m = morphValue.current;
 
+      // 1. Draw High-Resolution Image fading in as particles settle
+      if (m > 0.08 && imgElementRef.current) {
+        ctx.save();
+        const fadeAlpha = Math.min(1, Math.max(0, (m - 0.08) / 0.82));
+        ctx.globalAlpha = fadeAlpha;
+        ctx.drawImage(
+          imgElementRef.current,
+          centerX - imgWidth / 2,
+          centerY - imgHeight / 2,
+          imgWidth,
+          imgHeight
+        );
+        ctx.restore();
+      }
+
+      // 2. Draw 3D Morphed Particles
       const particles = particlesRef.current;
       const count = particles.length;
 
       for (let i = 0; i < count; i++) {
         const p = particles[i];
 
-        // 1. Globe state position with subtle organic turbulence
-        const turb = Math.sin(timeNow * 0.002 * p.speed + p.phase) * 0.04;
+        // Globe state position with organic rotation
+        const turb = Math.sin(timeNow * 0.002 * p.speed + p.phase) * 0.035;
         const spunX = (p.sphereX * cosYaw + p.sphereZ * sinYaw) * (1 + turb);
         const spunY = p.sphereY * (1 + turb);
         const spunZ = -p.sphereX * sinYaw + p.sphereZ * cosYaw;
@@ -166,20 +185,20 @@ export function ParticleMorphCanvas({
         const sphereScreenX = centerX + spunX * globeRadius;
         const sphereScreenY = centerY + spunY * globeRadius;
 
-        // 2. Image state position
+        // Image state position
         const imgScreenX = centerX + (p.imgX * imgWidth) / 2;
         const imgScreenY = centerY + (p.imgY * imgHeight) / 2;
 
-        // Interpolated position
+        // Interpolated position between 3D sphere and 2D photograph
         const posX = sphereScreenX * (1 - m) + imgScreenX * m;
         const posY = sphereScreenY * (1 - m) + imgScreenY * m;
 
-        // Depth perspective & alpha
-        const depthAlpha = (1 - m) * ((spunZ + 1.2) / 2.4) + m * 1.0;
-        const finalAlpha = Math.max(0.1, Math.min(1, p.a * depthAlpha));
+        // Alpha and depth lighting
+        const depthAlpha = (1 - m) * ((spunZ + 1.2) / 2.4) + m * (1 - m * 0.5);
+        const finalAlpha = Math.max(0.18, Math.min(1, p.a * depthAlpha));
 
         ctx.fillStyle = `rgba(${p.r}, ${p.g}, ${p.b}, ${finalAlpha})`;
-        const curSize = p.size * (0.8 + 0.3 * (1 - m));
+        const curSize = p.size * (0.9 + 0.3 * (1 - m));
         ctx.fillRect(posX - curSize / 2, posY - curSize / 2, curSize, curSize);
       }
 
@@ -230,11 +249,12 @@ export function ParticleMorphCanvas({
       onPointerLeave={handlePointerUp}
       role="button"
       tabIndex={0}
-      aria-label={`${title} - Hold to form photograph, release to form particle globe`}
+      aria-label={`${title} - Hold anywhere to assemble image from rotating particles`}
       onKeyDown={(e) => {
         if (e.key === " " || e.key === "Enter") {
-          targetMorph.current = targetMorph.current === 0 ? 1 : 0;
-          setIsPressed(targetMorph.current === 1);
+          const next = targetMorph.current === 0 ? 1 : 0;
+          targetMorph.current = next;
+          setIsPressed(next === 1);
         }
       }}
     >
@@ -259,7 +279,7 @@ export function ParticleMorphCanvas({
           />
           <span>
             {isPressed
-              ? "● Holding: Assembled Image"
+              ? "● Holding: Image Assembled"
               : "Hold anywhere to assemble image"}
           </span>
         </div>

@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState, useRef, useCallback, useEffect } from "react";
-import Image from "next/image";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { TwoToneHeading } from "@/components/ui/TwoToneHeading";
+import { ParticleMorphCanvas } from "@/components/ui/ParticleMorphCanvas";
 
 interface WhyCard {
   title: string;
@@ -289,20 +289,18 @@ export function WhySection({ data }: WhySectionProps) {
                   key={item.id}
                   className="group w-full shrink-0 min-w-full min-h-[460px] sm:min-h-[500px] lg:min-h-[560px] flex flex-col justify-between p-6 sm:p-10 lg:p-12 relative select-none"
                 >
-                  {/* High-Resolution Photographic Artwork Background */}
+                  {/* Interactive Particle Morph Background with Hold Motion */}
                   <div className="absolute inset-0 overflow-hidden select-none">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      fill
-                      priority={idx === 0}
-                      sizes="(max-width: 1280px) 100vw, 1280px"
-                      className="object-cover object-center scale-100 group-hover:scale-105 transition-transform duration-700 ease-out"
+                    <ParticleMorphCanvas
+                      imageSrc={item.image}
+                      title={item.title}
+                      accentColor="#fe1e34"
+                      isActive={isActive}
                     />
 
-                    {/* Editorial Contrast Gradient: Image clearly visible on top/right, typography crystal-clear on bottom/left */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/60 to-black/20 pointer-events-none" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#080808]/90 via-[#080808]/40 to-transparent pointer-events-none" />
+                    {/* Editorial Contrast Gradient: Photo shines through when assembled, text crystal clear */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/50 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#080808]/80 via-[#080808]/30 to-transparent pointer-events-none" />
 
                     {/* Arterial Red Ambient Glow Accent */}
                     <div
