@@ -50,11 +50,11 @@ export function AboutTeaser({ lang, data }: AboutTeaserProps) {
               ))}
             </div>
 
-            <h3 className="text-[26px] sm:text-[30px] font-semibold text-[#0C0C0D] tracking-tight">
+            <h3 className="text-[26px] sm:text-[30px] font-semibold text-[#0C0C0D] dark:text-white tracking-tight">
               {data.statTrustpilot}
             </h3>
 
-            <p className="text-[15px] text-[#6E6E73] leading-relaxed">
+            <p className="text-[15px] text-[#6E6E73] dark:text-[#A1A1A6] leading-relaxed">
               Real client ratings verified on Trustpilot for global development and digital operations excellence.
             </p>
 
@@ -75,22 +75,22 @@ export function AboutTeaser({ lang, data }: AboutTeaserProps) {
         {/* ChamferCard 2: 22 Services & Hub */}
         <ChamferCard theme="light">
           <div className="space-y-4">
-            <div className="w-10 h-10 rounded-full bg-[#FDECEC] text-[#C1272D] flex items-center justify-center font-bold">
+            <div className="w-10 h-10 rounded-full bg-[#FDECEC] dark:bg-[#C1272D]/20 text-[#C1272D] flex items-center justify-center font-bold">
               ✦
             </div>
 
-            <h3 className="text-[26px] sm:text-[30px] font-semibold text-[#0C0C0D] tracking-tight">
+            <h3 className="text-[26px] sm:text-[30px] font-semibold text-[#0C0C0D] dark:text-white tracking-tight">
               {data.statServices}
             </h3>
 
-            <p className="text-[15px] text-[#6E6E73] leading-relaxed">
+            <p className="text-[15px] text-[#6E6E73] dark:text-[#A1A1A6] leading-relaxed">
               {data.statAvailability}. Seattle, Utah, New York, Canada, UK, and our specialized India delivery team.
             </p>
 
             <div>
               <Link
                 href={`/${lang}/about`}
-                className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#0C0C0D] hover:text-[#C1272D] transition-colors"
+                className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#0C0C0D] dark:text-white hover:text-[#C1272D] transition-colors"
               >
                 <span>Read our India story</span>
                 <span aria-hidden="true">→</span>

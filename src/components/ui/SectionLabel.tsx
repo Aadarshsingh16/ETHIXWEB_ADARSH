@@ -10,7 +10,7 @@ export function SectionLabel({
   className = "",
 }: SectionLabelProps) {
   const isDark = theme === "dark";
-  const textColor = isDark ? "text-[#A1A1A6]" : "text-[#6E6E73]";
+  const textColor = isDark ? "text-[#A1A1A6]" : "text-[#6E6E73] dark:text-[#A1A1A6]";
 
   return (
     <div className={`inline-flex items-center gap-2 text-[13px] font-medium tracking-normal ${textColor} ${className}`}>

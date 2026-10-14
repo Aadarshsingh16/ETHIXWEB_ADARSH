@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Brand */
   --color-red-500: #C1272D;
@@ -44,6 +46,38 @@
   --dur-ui:      220ms;
   --dur-reveal:  480ms;
   --dur-hero:    700ms;
+
+  /* Light Theme Semantic Tokens */
+  --color-bg:             #F5F5F7;
+  --color-surface:        #FFFFFF;
+  --color-surface-hover:  #EEEEF0;
+  --color-border:         #E6E6E8;
+  --color-border-strong:  #D1D1D6;
+  --color-text:           #0C0C0D;
+  --color-text-secondary: #6E6E73;
+  --color-text-muted:     #6E6E73;
+  --color-fade:           #A1A1A6;
+  --color-red:            #C1272D;
+  --color-card:           #FFFFFF;
+  --color-card-border:    #E6E6E8;
+  --color-input-bg:       #FFFFFF;
+}
+
+.dark {
+  /* Dark Theme Semantic Tokens */
+  --color-bg:             #0C0C0D;
+  --color-surface:        #161617;
+  --color-surface-hover:  #242426;
+  --color-border:         #242426;
+  --color-border-strong:  #38383B;
+  --color-text:           #FFFFFF;
+  --color-text-secondary: #A1A1A6;
+  --color-text-muted:     #A1A1A6;
+  --color-fade:           #6E6E73;
+  --color-red:            #C1272D;
+  --color-card:           #161617;
+  --color-card-border:    #242426;
+  --color-input-bg:       #161617;
 }
 
 /* Global resets & typography */
@@ -55,10 +89,11 @@ html {
 }
 
 body {
-  background-color: var(--color-mist);
-  color: var(--color-ink);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-family: var(--font-sans);
   overflow-x: hidden;
+  transition: background-color 200ms ease, color 200ms ease;
 }
 
 /* Lang specific font selection */

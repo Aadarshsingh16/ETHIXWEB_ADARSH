@@ -74,8 +74,8 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 13,
-      "community_name": "i18n.ts",
+      "community": 10,
+      "community_name": "getDictionary",
       "file_type": "code",
       "norm_label": "lang",
       "source_file": "src/lib/i18n.ts",
@@ -88,11 +88,37 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "code",
       "norm_label": "statuspillprops",
       "source_file": "src/components/ui/StatusPill.tsx",
       "source_location": "L5"
+    },
+    {
+      "id": "src_components_sections_ctaband_ctabanddata",
+      "label": "CtaBandData",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "(site)/page.tsx",
+      "file_type": "code",
+      "norm_label": "ctabanddata",
+      "source_file": "src/components/sections/CtaBand.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_components_sections_ctaband_ctabandprops",
+      "label": "CtaBandProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "(site)/page.tsx",
+      "file_type": "code",
+      "norm_label": "ctabandprops",
+      "source_file": "src/components/sections/CtaBand.tsx",
+      "source_location": "L10"
     },
     {
       "id": "src_components_ui_marquee_marqueeprops",
@@ -160,108 +186,17 @@
       "source_location": "L65"
     },
     {
-      "id": "src_components_sections_processsection_processdata",
-      "label": "ProcessData",
+      "id": "src_components_ui_langtoggle_langtoggleprops",
+      "label": "LangToggleProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 37,
-      "community_name": "ProcessSection.tsx",
+      "community": 4,
+      "community_name": "design/page.tsx",
       "file_type": "code",
-      "norm_label": "processdata",
-      "source_file": "src/components/sections/ProcessSection.tsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "src_components_sections_processsection_processsectionprops",
-      "label": "ProcessSectionProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "ProcessSection.tsx",
-      "file_type": "code",
-      "norm_label": "processsectionprops",
-      "source_file": "src/components/sections/ProcessSection.tsx",
-      "source_location": "L18"
-    },
-    {
-      "id": "src_components_sections_processsection_stepitem",
-      "label": "StepItem",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "ProcessSection.tsx",
-      "file_type": "code",
-      "norm_label": "stepitem",
-      "source_file": "src/components/sections/ProcessSection.tsx",
-      "source_location": "L5"
-    },
-    {
-      "id": "src_components_ui_processcard_processcardprops",
-      "label": "ProcessCardProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "ProcessSection.tsx",
-      "file_type": "code",
-      "norm_label": "processcardprops",
-      "source_file": "src/components/ui/ProcessCard.tsx",
-      "source_location": "L7"
-    },
-    {
-      "id": "src_components_ui_processcard_stepitem",
-      "label": "StepItem",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "ProcessSection.tsx",
-      "file_type": "code",
-      "norm_label": "stepitem",
-      "source_file": "src/components/ui/ProcessCard.tsx",
+      "norm_label": "langtoggleprops",
+      "source_file": "src/components/ui/LangToggle.tsx",
       "source_location": "L1"
-    },
-    {
-      "id": "src_components_sections_pricingsection_planitem",
-      "label": "PlanItem",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "PricingSection.tsx",
-      "file_type": "code",
-      "norm_label": "planitem",
-      "source_file": "src/components/sections/PricingSection.tsx",
-      "source_location": "L5"
-    },
-    {
-      "id": "src_components_sections_pricingsection_pricingdata",
-      "label": "PricingData",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "PricingSection.tsx",
-      "file_type": "code",
-      "norm_label": "pricingdata",
-      "source_file": "src/components/sections/PricingSection.tsx",
-      "source_location": "L14"
-    },
-    {
-      "id": "src_components_sections_pricingsection_pricingsectionprops",
-      "label": "PricingSectionProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "PricingSection.tsx",
-      "file_type": "code",
-      "norm_label": "pricingsectionprops",
-      "source_file": "src/components/sections/PricingSection.tsx",
-      "source_location": "L22"
     },
     {
       "id": "src_components_ui_pricingcard_planitem",
@@ -270,7 +205,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "PricingSection.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
       "norm_label": "planitem",
       "source_file": "src/components/ui/PricingCard.tsx",
@@ -283,11 +218,37 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "PricingSection.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
       "norm_label": "pricingcardprops",
       "source_file": "src/components/ui/PricingCard.tsx",
       "source_location": "L12"
+    },
+    {
+      "id": "src_components_ui_processcard_processcardprops",
+      "label": "ProcessCardProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "processcardprops",
+      "source_file": "src/components/ui/ProcessCard.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_components_ui_processcard_stepitem",
+      "label": "StepItem",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "stepitem",
+      "source_file": "src/components/ui/ProcessCard.tsx",
+      "source_location": "L1"
     },
     {
       "id": "src_lib_http_httperror",
@@ -335,7 +296,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 50,
-      "community_name": "design/page.tsx",
+      "community_name": "AboutTeaser.tsx",
       "file_type": "code",
       "norm_label": "aboutteaserdata",
       "source_file": "src/components/sections/AboutTeaser.tsx",
@@ -348,7 +309,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 50,
-      "community_name": "design/page.tsx",
+      "community_name": "AboutTeaser.tsx",
       "file_type": "code",
       "norm_label": "aboutteaserprops",
       "source_file": "src/components/sections/AboutTeaser.tsx",
@@ -361,7 +322,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 50,
-      "community_name": "design/page.tsx",
+      "community_name": "AboutTeaser.tsx",
       "file_type": "code",
       "norm_label": "chamfercardprops",
       "source_file": "src/components/ui/ChamferCard.tsx",
@@ -374,7 +335,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 51,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "FaqSection.tsx",
       "file_type": "code",
       "norm_label": "faqdata",
       "source_file": "src/components/sections/FaqSection.tsx",
@@ -387,7 +348,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 51,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "FaqSection.tsx",
       "file_type": "code",
       "norm_label": "faqitem",
       "source_file": "src/components/sections/FaqSection.tsx",
@@ -400,23 +361,36 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 51,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "FaqSection.tsx",
       "file_type": "code",
       "norm_label": "faqsectionprops",
       "source_file": "src/components/sections/FaqSection.tsx",
       "source_location": "L20"
     },
     {
-      "id": "src_components_ui_twotoneheading_twotoneheadingprops",
-      "label": "TwoToneHeadingProps",
+      "id": "src_components_ui_faqaccordion_faqaccordionprops",
+      "label": "FaqAccordionProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 51,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "FaqSection.tsx",
       "file_type": "code",
-      "norm_label": "twotoneheadingprops",
-      "source_file": "src/components/ui/TwoToneHeading.tsx",
+      "norm_label": "faqaccordionprops",
+      "source_file": "src/components/ui/FaqAccordion.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "src_components_ui_faqaccordion_faqitem",
+      "label": "FaqItem",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "FaqSection.tsx",
+      "file_type": "code",
+      "norm_label": "faqitem",
+      "source_file": "src/components/ui/FaqAccordion.tsx",
       "source_location": "L3"
     },
     {
@@ -482,7 +456,7 @@
       "file_type": "code",
       "norm_label": "navlabels",
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L11"
+      "source_location": "L12"
     },
     {
       "id": "src_components_layout_pillnav_pillnavprops",
@@ -495,7 +469,7 @@
       "file_type": "code",
       "norm_label": "pillnavprops",
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L23"
+      "source_location": "L24"
     },
     {
       "id": "src_components_layout_stickywhatsapp_stickywhatsappprops",
@@ -509,32 +483,6 @@
       "norm_label": "stickywhatsappprops",
       "source_file": "src/components/layout/StickyWhatsApp.tsx",
       "source_location": "L6"
-    },
-    {
-      "id": "src_components_sections_ctaband_ctabanddata",
-      "label": "CtaBandData",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "ctabanddata",
-      "source_file": "src/components/sections/CtaBand.tsx",
-      "source_location": "L3"
-    },
-    {
-      "id": "src_components_sections_ctaband_ctabandprops",
-      "label": "CtaBandProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "ctabandprops",
-      "source_file": "src/components/sections/CtaBand.tsx",
-      "source_location": "L10"
     },
     {
       "id": "src_components_ui_button_buttonprops",
@@ -563,45 +511,6 @@
       "source_location": "L4"
     },
     {
-      "id": "src_components_ui_faqaccordion_faqaccordionprops",
-      "label": "FaqAccordionProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "faqaccordionprops",
-      "source_file": "src/components/ui/FaqAccordion.tsx",
-      "source_location": "L8"
-    },
-    {
-      "id": "src_components_ui_faqaccordion_faqitem",
-      "label": "FaqItem",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "faqitem",
-      "source_file": "src/components/ui/FaqAccordion.tsx",
-      "source_location": "L3"
-    },
-    {
-      "id": "src_components_ui_langtoggle_langtoggleprops",
-      "label": "LangToggleProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "langtoggleprops",
-      "source_file": "src/components/ui/LangToggle.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_components_ui_logo_logoprops",
       "label": "LogoProps",
       "_callable": true,
@@ -613,6 +522,19 @@
       "norm_label": "logoprops",
       "source_file": "src/components/ui/Logo.tsx",
       "source_location": "L3"
+    },
+    {
+      "id": "src_components_ui_themetoggle_themetoggleprops",
+      "label": "ThemeToggleProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "themetoggleprops",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L34"
     },
     {
       "id": "src_components_sections_whysection_whycard",
@@ -673,7 +595,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 74,
-      "community_name": "SectionLabel.tsx",
+      "community_name": "TwoToneHeading.tsx",
       "file_type": "code",
       "norm_label": "herodata",
       "source_file": "src/components/sections/Hero.tsx",
@@ -686,11 +608,89 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 74,
-      "community_name": "SectionLabel.tsx",
+      "community_name": "TwoToneHeading.tsx",
       "file_type": "code",
       "norm_label": "heroprops",
       "source_file": "src/components/sections/Hero.tsx",
       "source_location": "L24"
+    },
+    {
+      "id": "src_components_sections_pricingsection_planitem",
+      "label": "PlanItem",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "planitem",
+      "source_file": "src/components/sections/PricingSection.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_components_sections_pricingsection_pricingdata",
+      "label": "PricingData",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "pricingdata",
+      "source_file": "src/components/sections/PricingSection.tsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "src_components_sections_pricingsection_pricingsectionprops",
+      "label": "PricingSectionProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "pricingsectionprops",
+      "source_file": "src/components/sections/PricingSection.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "src_components_sections_processsection_processdata",
+      "label": "ProcessData",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "processdata",
+      "source_file": "src/components/sections/ProcessSection.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_components_sections_processsection_processsectionprops",
+      "label": "ProcessSectionProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "processsectionprops",
+      "source_file": "src/components/sections/ProcessSection.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "src_components_sections_processsection_stepitem",
+      "label": "StepItem",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "stepitem",
+      "source_file": "src/components/sections/ProcessSection.tsx",
+      "source_location": "L5"
     },
     {
       "id": "src_components_ui_sectionlabel_sectionlabelprops",
@@ -699,11 +699,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 74,
-      "community_name": "SectionLabel.tsx",
+      "community_name": "TwoToneHeading.tsx",
       "file_type": "code",
       "norm_label": "sectionlabelprops",
       "source_file": "src/components/ui/SectionLabel.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_twotoneheading_twotoneheadingprops",
+      "label": "TwoToneHeadingProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "twotoneheadingprops",
+      "source_file": "src/components/ui/TwoToneHeading.tsx",
+      "source_location": "L3"
     },
     {
       "id": "src_components_sections_servicessection_serviceitem",
@@ -831,18 +844,6 @@
       "source_location": "L12"
     },
     {
-      "id": "src_app_lang_site_about_page_generatestaticparams",
-      "label": "generateStaticParams()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "getDictionary",
-      "file_type": "code",
-      "norm_label": "generatestaticparams()",
-      "source_file": "src/app/[lang]/(site)/about/page.tsx",
-      "source_location": "L8"
-    },
-    {
       "id": "src_app_lang_site_contact_page_contactpage",
       "label": "ContactPage()",
       "_callable": true,
@@ -889,6 +890,18 @@
       "norm_label": "generatemetadata()",
       "source_file": "src/app/[lang]/(site)/page.tsx",
       "source_location": "L18"
+    },
+    {
+      "id": "src_app_lang_site_page_homepage",
+      "label": "HomePage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "homepage()",
+      "source_file": "src/app/[lang]/(site)/page.tsx",
+      "source_location": "L45"
     },
     {
       "id": "src_app_lang_site_privacy_page_generatemetadata",
@@ -992,7 +1005,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "code",
       "norm_label": "contactform()",
       "source_file": "src/components/sections/ContactForm.tsx",
@@ -1004,7 +1017,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "code",
       "norm_label": "getonlinesnapshot()",
       "source_file": "src/components/ui/StatusPill.tsx",
@@ -1016,7 +1029,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "code",
       "norm_label": "getserversnapshot()",
       "source_file": "src/components/ui/StatusPill.tsx",
@@ -1028,7 +1041,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "code",
       "norm_label": "statuspill()",
       "source_file": "src/components/ui/StatusPill.tsx",
@@ -1040,7 +1053,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "code",
       "norm_label": "subscribe()",
       "source_file": "src/components/ui/StatusPill.tsx",
@@ -1059,28 +1072,16 @@
       "source_location": "L14"
     },
     {
-      "id": "src_app_lang_site_page_homepage",
-      "label": "HomePage()",
+      "id": "src_components_sections_ctaband_ctaband",
+      "label": "CtaBand()",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
       "community_name": "(site)/page.tsx",
       "file_type": "code",
-      "norm_label": "homepage()",
-      "source_file": "src/app/[lang]/(site)/page.tsx",
-      "source_location": "L45"
-    },
-    {
-      "id": "src_components_sections_faqsection_faqsection",
-      "label": "FaqSection()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "(site)/page.tsx",
-      "file_type": "code",
-      "norm_label": "faqsection()",
-      "source_file": "src/components/sections/FaqSection.tsx",
-      "source_location": "L24"
+      "norm_label": "ctaband()",
+      "source_file": "src/components/sections/CtaBand.tsx",
+      "source_location": "L15"
     },
     {
       "id": "src_components_sections_hero_hero",
@@ -1093,6 +1094,18 @@
       "norm_label": "hero()",
       "source_file": "src/components/sections/Hero.tsx",
       "source_location": "L30"
+    },
+    {
+      "id": "src_components_sections_processsection_processsection",
+      "label": "ProcessSection()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "(site)/page.tsx",
+      "file_type": "code",
+      "norm_label": "processsection()",
+      "source_file": "src/components/sections/ProcessSection.tsx",
+      "source_location": "L22"
     },
     {
       "id": "src_components_ui_marquee_marquee",
@@ -1131,40 +1144,40 @@
       "source_location": "L42"
     },
     {
-      "id": "src_components_sections_processsection_processsection",
-      "label": "ProcessSection()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "ProcessSection.tsx",
-      "file_type": "code",
-      "norm_label": "processsection()",
-      "source_file": "src/components/sections/ProcessSection.tsx",
-      "source_location": "L22"
-    },
-    {
-      "id": "src_components_ui_processcard_processcard",
-      "label": "ProcessCard()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "ProcessSection.tsx",
-      "file_type": "code",
-      "norm_label": "processcard()",
-      "source_file": "src/components/ui/ProcessCard.tsx",
-      "source_location": "L12"
-    },
-    {
-      "id": "src_components_sections_pricingsection_pricingsection",
-      "label": "PricingSection()",
+      "id": "src_app_lang_design_page_designtokenspage",
+      "label": "DesignTokensPage()",
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "PricingSection.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
-      "norm_label": "pricingsection()",
-      "source_file": "src/components/sections/PricingSection.tsx",
-      "source_location": "L27"
+      "norm_label": "designtokenspage()",
+      "source_file": "src/app/[lang]/design/page.tsx",
+      "source_location": "L19"
+    },
+    {
+      "id": "src_app_lang_design_page_generatestaticparams",
+      "label": "generateStaticParams()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "generatestaticparams()",
+      "source_file": "src/app/[lang]/design/page.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "src_components_ui_langtoggle_langtoggle",
+      "label": "LangToggle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "langtoggle()",
+      "source_file": "src/components/ui/LangToggle.tsx",
+      "source_location": "L8"
     },
     {
       "id": "src_components_ui_pricingcard_pricingcard",
@@ -1172,11 +1185,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "PricingSection.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
       "norm_label": "pricingcard()",
       "source_file": "src/components/ui/PricingCard.tsx",
       "source_location": "L17"
+    },
+    {
+      "id": "src_components_ui_processcard_processcard",
+      "label": "ProcessCard()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "processcard()",
+      "source_file": "src/components/ui/ProcessCard.tsx",
+      "source_location": "L12"
     },
     {
       "id": "src_app_api_admin_leads_export_route_get",
@@ -1395,36 +1420,12 @@
       "source_location": "L10"
     },
     {
-      "id": "src_app_lang_design_page_designtokenspage",
-      "label": "DesignTokensPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "design/page.tsx",
-      "file_type": "code",
-      "norm_label": "designtokenspage()",
-      "source_file": "src/app/[lang]/design/page.tsx",
-      "source_location": "L19"
-    },
-    {
-      "id": "src_app_lang_design_page_generatestaticparams",
-      "label": "generateStaticParams()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "design/page.tsx",
-      "file_type": "code",
-      "norm_label": "generatestaticparams()",
-      "source_file": "src/app/[lang]/design/page.tsx",
-      "source_location": "L15"
-    },
-    {
       "id": "src_components_sections_aboutteaser_aboutteaser",
       "label": "AboutTeaser()",
       "_callable": true,
       "_origin": "ast",
       "community": 50,
-      "community_name": "design/page.tsx",
+      "community_name": "AboutTeaser.tsx",
       "file_type": "code",
       "norm_label": "aboutteaser()",
       "source_file": "src/components/sections/AboutTeaser.tsx",
@@ -1436,23 +1437,35 @@
       "_callable": true,
       "_origin": "ast",
       "community": 50,
-      "community_name": "design/page.tsx",
+      "community_name": "AboutTeaser.tsx",
       "file_type": "code",
       "norm_label": "chamfercard()",
       "source_file": "src/components/ui/ChamferCard.tsx",
       "source_location": "L9"
     },
     {
-      "id": "src_components_ui_twotoneheading_twotoneheading",
-      "label": "TwoToneHeading()",
+      "id": "src_components_sections_faqsection_faqsection",
+      "label": "FaqSection()",
       "_callable": true,
       "_origin": "ast",
       "community": 51,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "FaqSection.tsx",
       "file_type": "code",
-      "norm_label": "twotoneheading()",
-      "source_file": "src/components/ui/TwoToneHeading.tsx",
-      "source_location": "L12"
+      "norm_label": "faqsection()",
+      "source_file": "src/components/sections/FaqSection.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "src_components_ui_faqaccordion_faqaccordion",
+      "label": "FaqAccordion()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "FaqSection.tsx",
+      "file_type": "code",
+      "norm_label": "faqaccordion()",
+      "source_file": "src/components/ui/FaqAccordion.tsx",
+      "source_location": "L15"
     },
     {
       "id": "src_app_admin_login_page_adminloginpage",
@@ -1513,6 +1526,18 @@
       "norm_label": "errorboundary()",
       "source_file": "src/app/error.tsx",
       "source_location": "L7"
+    },
+    {
+      "id": "src_app_lang_site_about_page_generatestaticparams",
+      "label": "generateStaticParams()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "generatestaticparams()",
+      "source_file": "src/app/[lang]/(site)/about/page.tsx",
+      "source_location": "L8"
     },
     {
       "id": "src_app_lang_site_layout_generatestaticparams",
@@ -1644,7 +1669,7 @@
       "file_type": "code",
       "norm_label": "pillnav()",
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "src_components_layout_stickywhatsapp_stickywhatsapp",
@@ -1659,18 +1684,6 @@
       "source_location": "L12"
     },
     {
-      "id": "src_components_sections_ctaband_ctaband",
-      "label": "CtaBand()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "ctaband()",
-      "source_file": "src/components/sections/CtaBand.tsx",
-      "source_location": "L15"
-    },
-    {
       "id": "src_components_ui_button_button",
       "label": "Button()",
       "_callable": true,
@@ -1683,30 +1696,6 @@
       "source_location": "L15"
     },
     {
-      "id": "src_components_ui_faqaccordion_faqaccordion",
-      "label": "FaqAccordion()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "faqaccordion()",
-      "source_file": "src/components/ui/FaqAccordion.tsx",
-      "source_location": "L15"
-    },
-    {
-      "id": "src_components_ui_langtoggle_langtoggle",
-      "label": "LangToggle()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "langtoggle()",
-      "source_file": "src/components/ui/LangToggle.tsx",
-      "source_location": "L8"
-    },
-    {
       "id": "src_components_ui_logo_logo",
       "label": "Logo()",
       "_callable": true,
@@ -1717,6 +1706,54 @@
       "norm_label": "logo()",
       "source_file": "src/components/ui/Logo.tsx",
       "source_location": "L9"
+    },
+    {
+      "id": "src_components_ui_themetoggle_getserversnapshot",
+      "label": "getServerSnapshot()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "getserversnapshot()",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L30"
+    },
+    {
+      "id": "src_components_ui_themetoggle_getsnapshot",
+      "label": "getSnapshot()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "getsnapshot()",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "src_components_ui_themetoggle_subscribe",
+      "label": "subscribe()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "subscribe()",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_components_ui_themetoggle_themetoggle",
+      "label": "ThemeToggle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "themetoggle()",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L38"
     },
     {
       "id": "src_app_layout_rootlayout",
@@ -1755,16 +1792,40 @@
       "source_location": "L9"
     },
     {
+      "id": "src_components_sections_pricingsection_pricingsection",
+      "label": "PricingSection()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "pricingsection()",
+      "source_file": "src/components/sections/PricingSection.tsx",
+      "source_location": "L27"
+    },
+    {
       "id": "src_components_ui_sectionlabel_sectionlabel",
       "label": "SectionLabel()",
       "_callable": true,
       "_origin": "ast",
       "community": 74,
-      "community_name": "SectionLabel.tsx",
+      "community_name": "TwoToneHeading.tsx",
       "file_type": "code",
       "norm_label": "sectionlabel()",
       "source_file": "src/components/ui/SectionLabel.tsx",
       "source_location": "L7"
+    },
+    {
+      "id": "src_components_ui_twotoneheading_twotoneheading",
+      "label": "TwoToneHeading()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "twotoneheading()",
+      "source_file": "src/components/ui/TwoToneHeading.tsx",
+      "source_location": "L12"
     },
     {
       "id": "src_components_sections_servicessection_servicessection",
@@ -2275,17 +2336,6 @@
       "source_location": "L28"
     },
     {
-      "id": "src_app_lang_site_about_page",
-      "label": "about/page.tsx",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "getDictionary",
-      "file_type": "code",
-      "norm_label": "about/page.tsx",
-      "source_file": "src/app/[lang]/(site)/about/page.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_app_lang_site_contact_page",
       "label": "contact/page.tsx",
       "_origin": "ast",
@@ -2317,6 +2367,72 @@
       "norm_label": "services/page.tsx",
       "source_file": "src/app/[lang]/(site)/services/page.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "src_content_en",
+      "label": "en.ts",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "en.ts",
+      "source_file": "src/content/en.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_content_en_en",
+      "label": "en",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "en",
+      "source_file": "src/content/en.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_content_hi",
+      "label": "hi.ts",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "hi.ts",
+      "source_file": "src/content/hi.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_content_hi_hi",
+      "label": "hi",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "hi",
+      "source_file": "src/content/hi.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_lib_i18n",
+      "label": "i18n.ts",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "i18n.ts",
+      "source_file": "src/lib/i18n.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_lib_i18n_default_locale",
+      "label": "DEFAULT_LOCALE",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "default_locale",
+      "source_file": "src/lib/i18n.ts",
+      "source_location": "L6"
     },
     {
       "id": "supabase_schema",
@@ -2539,77 +2655,11 @@
       "source_location": "L5"
     },
     {
-      "id": "src_content_en",
-      "label": "en.ts",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "i18n.ts",
-      "file_type": "code",
-      "norm_label": "en.ts",
-      "source_file": "src/content/en.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_content_en_en",
-      "label": "en",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "i18n.ts",
-      "file_type": "code",
-      "norm_label": "en",
-      "source_file": "src/content/en.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_content_hi",
-      "label": "hi.ts",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "i18n.ts",
-      "file_type": "code",
-      "norm_label": "hi.ts",
-      "source_file": "src/content/hi.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_content_hi_hi",
-      "label": "hi",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "i18n.ts",
-      "file_type": "code",
-      "norm_label": "hi",
-      "source_file": "src/content/hi.ts",
-      "source_location": "L3"
-    },
-    {
-      "id": "src_lib_i18n",
-      "label": "i18n.ts",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "i18n.ts",
-      "file_type": "code",
-      "norm_label": "i18n.ts",
-      "source_file": "src/lib/i18n.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_lib_i18n_default_locale",
-      "label": "DEFAULT_LOCALE",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "i18n.ts",
-      "file_type": "code",
-      "norm_label": "default_locale",
-      "source_file": "src/lib/i18n.ts",
-      "source_location": "L6"
-    },
-    {
       "id": "src_components_ui_statuspill",
       "label": "StatusPill.tsx",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "code",
       "norm_label": "statuspill.tsx",
       "source_file": "src/components/ui/StatusPill.tsx",
@@ -2620,7 +2670,7 @@
       "label": "docs/05-PERFORMANCE.md",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "docs/05-performance.md",
@@ -2632,7 +2682,7 @@
       "label": "05 \u2014 PageSpeed Insights 90+ (mobile AND desktop)",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "05 \u2014 pagespeed insights 90+ (mobile and desktop)",
@@ -2644,7 +2694,7 @@
       "label": "Budget rules for the agent",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "budget rules for the agent",
@@ -2656,7 +2706,7 @@
       "label": "If a score is below 90",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "if a score is below 90",
@@ -2668,7 +2718,7 @@
       "label": "Measuring correctly",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "measuring correctly",
@@ -2680,7 +2730,7 @@
       "label": "Targets (mobile)",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "targets (mobile)",
@@ -2692,7 +2742,7 @@
       "label": "What we do",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "what we do",
@@ -2704,7 +2754,7 @@
       "label": "PHASE 6 \u2014 Contact page + form, end-to-end (45m)",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "phase 6 \u2014 contact page + form, end-to-end (45m)",
@@ -2716,7 +2766,7 @@
       "label": "ethixweb-india-kit/docs/05-PERFORMANCE.md",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "ethixweb-india-kit/docs/05-performance.md",
@@ -2728,7 +2778,7 @@
       "label": "05 \u2014 PageSpeed Insights 90+ (mobile AND desktop)",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "05 \u2014 pagespeed insights 90+ (mobile and desktop)",
@@ -2740,7 +2790,7 @@
       "label": "Budget rules for the agent",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "budget rules for the agent",
@@ -2752,7 +2802,7 @@
       "label": "If a score is below 90",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "if a score is below 90",
@@ -2764,7 +2814,7 @@
       "label": "Measuring correctly",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "measuring correctly",
@@ -2776,7 +2826,7 @@
       "label": "Targets (mobile)",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "targets (mobile)",
@@ -2788,7 +2838,7 @@
       "label": "What we do",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "what we do",
@@ -2796,16 +2846,244 @@
       "source_location": "L8"
     },
     {
+      "id": "phases",
+      "label": "PHASES.md",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "phases.md",
+      "source_file": "PHASES.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "phases_agent_report_format_agent_must_end_every_phase_with_this",
+      "label": "Agent report format (agent must end every phase with this)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "agent report format (agent must end every phase with this)",
+      "source_file": "PHASES.md",
+      "source_location": "L16"
+    },
+    {
+      "id": "phases_hours_left_compress_like_this",
+      "label": "Hours left? Compress like this",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "hours left? compress like this",
+      "source_file": "PHASES.md",
+      "source_location": "L48"
+    },
+    {
+      "id": "phases_phase_0_setup_30m",
+      "label": "PHASE 0 \u2014 Setup (30m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 0 \u2014 setup (30m)",
+      "source_file": "PHASES.md",
+      "source_location": "L60"
+    },
+    {
+      "id": "phases_phase_10_india_layer_hindi_60m",
+      "label": "PHASE 10 \u2014 India layer + Hindi (60m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 10 \u2014 india layer + hindi (60m)",
+      "source_file": "PHASES.md",
+      "source_location": "L167"
+    },
+    {
+      "id": "phases_phase_11_polish_accessibility_45m",
+      "label": "PHASE 11 \u2014 Polish + accessibility (45m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 11 \u2014 polish + accessibility (45m)",
+      "source_file": "PHASES.md",
+      "source_location": "L175"
+    },
+    {
+      "id": "phases_phase_12_performance_60m",
+      "label": "PHASE 12 \u2014 Performance (60m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 12 \u2014 performance (60m)",
+      "source_file": "PHASES.md",
+      "source_location": "L181"
+    },
+    {
+      "id": "phases_phase_13_ship_75m",
+      "label": "PHASE 13 \u2014 Ship (75m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 13 \u2014 ship (75m)",
+      "source_file": "PHASES.md",
+      "source_location": "L188"
+    },
+    {
+      "id": "phases_phase_1_foundation_45m",
+      "label": "PHASE 1 \u2014 Foundation (45m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 1 \u2014 foundation (45m)",
+      "source_file": "PHASES.md",
+      "source_location": "L72"
+    },
+    {
+      "id": "phases_phase_2_hero_marquee_60m_biggest_design_score_moment",
+      "label": "PHASE 2 \u2014 Hero + marquee (60m)  \u2190 biggest design-score moment",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 2 \u2014 hero + marquee (60m)  \u2190 biggest design-score moment",
+      "source_file": "PHASES.md",
+      "source_location": "L85"
+    },
+    {
+      "id": "phases_phase_3_home_a_about_services_60m",
+      "label": "PHASE 3 \u2014 Home A: About + Services (60m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 3 \u2014 home a: about + services (60m)",
+      "source_file": "PHASES.md",
+      "source_location": "L98"
+    },
+    {
+      "id": "phases_phase_4_home_b_work_process_why_pricing_faq_cta_75m",
+      "label": "PHASE 4 \u2014 Home B: Work, Process, Why, Pricing, FAQ, CTA (75m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 4 \u2014 home b: work, process, why, pricing, faq, cta (75m)",
+      "source_file": "PHASES.md",
+      "source_location": "L109"
+    },
+    {
+      "id": "phases_phase_5_database_lead_api_no_ui_60m",
+      "label": "PHASE 5 \u2014 Database + lead API, no UI (60m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 5 \u2014 database + lead api, no ui (60m)",
+      "source_file": "PHASES.md",
+      "source_location": "L119"
+    },
+    {
       "id": "phases_phase_6_contact_page_form_end_to_end_45m",
       "label": "PHASE 6 \u2014 Contact page + form, end-to-end (45m)",
       "_origin": "ast",
       "community": 14,
-      "community_name": "StatusPill.tsx",
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "phase 6 \u2014 contact page + form, end-to-end (45m)",
       "source_file": "PHASES.md",
-      "source_location": "L131"
+      "source_location": "L132"
+    },
+    {
+      "id": "phases_phase_7_admin_auth_protected_shell_45m",
+      "label": "PHASE 7 \u2014 Admin auth + protected shell (45m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 7 \u2014 admin auth + protected shell (45m)",
+      "source_file": "PHASES.md",
+      "source_location": "L141"
+    },
+    {
+      "id": "phases_phase_8_admin_dashboard_60m",
+      "label": "PHASE 8 \u2014 Admin dashboard (60m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 8 \u2014 admin dashboard (60m)",
+      "source_file": "PHASES.md",
+      "source_location": "L150"
+    },
+    {
+      "id": "phases_phase_9_inner_pages_60m",
+      "label": "PHASE 9 \u2014 Inner pages (60m)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 9 \u2014 inner pages (60m)",
+      "source_file": "PHASES.md",
+      "source_location": "L159"
+    },
+    {
+      "id": "phases_phases_build_in_small_milestones_verify_then_move_on",
+      "label": "PHASES \u2014 build in small milestones, verify, then move on",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phases \u2014 build in small milestones, verify, then move on",
+      "source_file": "PHASES.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "phases_progress_tracker",
+      "label": "Progress tracker",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "progress tracker",
+      "source_file": "PHASES.md",
+      "source_location": "L28"
+    },
+    {
+      "id": "phases_the_loop_repeat_for_every_phase",
+      "label": "The loop (repeat for every phase)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "the loop (repeat for every phase)",
+      "source_file": "PHASES.md",
+      "source_location": "L5"
     },
     {
       "id": "docs_03_content",
@@ -3740,6 +4018,17 @@
       "file_type": "code",
       "norm_label": "(site)/page.tsx",
       "source_file": "src/app/[lang]/(site)/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_sections_ctaband",
+      "label": "CtaBand.tsx",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "(site)/page.tsx",
+      "file_type": "code",
+      "norm_label": "ctaband.tsx",
+      "source_file": "src/components/sections/CtaBand.tsx",
       "source_location": "L1"
     },
     {
@@ -6147,28 +6436,6 @@
       "source_location": "L5"
     },
     {
-      "id": "src_components_sections_processsection",
-      "label": "ProcessSection.tsx",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "ProcessSection.tsx",
-      "file_type": "code",
-      "norm_label": "processsection.tsx",
-      "source_file": "src/components/sections/ProcessSection.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_ui_processcard",
-      "label": "ProcessCard.tsx",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "ProcessSection.tsx",
-      "file_type": "code",
-      "norm_label": "processcard.tsx",
-      "source_file": "src/components/ui/ProcessCard.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "agents_skills_ethixweb_design_system_skill",
       "label": ".agents/skills/ethixweb-design-system/SKILL.md",
       "_origin": "ast",
@@ -6369,14 +6636,25 @@
       "source_location": "L18"
     },
     {
-      "id": "src_components_sections_pricingsection",
-      "label": "PricingSection.tsx",
+      "id": "src_app_lang_design_page",
+      "label": "design/page.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "PricingSection.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
-      "norm_label": "pricingsection.tsx",
-      "source_file": "src/components/sections/PricingSection.tsx",
+      "norm_label": "design/page.tsx",
+      "source_file": "src/app/[lang]/design/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_langtoggle",
+      "label": "LangToggle.tsx",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "langtoggle.tsx",
+      "source_file": "src/components/ui/LangToggle.tsx",
       "source_location": "L1"
     },
     {
@@ -6384,10 +6662,21 @@
       "label": "PricingCard.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "PricingSection.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
       "norm_label": "pricingcard.tsx",
       "source_file": "src/components/ui/PricingCard.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_processcard",
+      "label": "ProcessCard.tsx",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "processcard.tsx",
+      "source_file": "src/components/ui/ProcessCard.tsx",
       "source_location": "L1"
     },
     {
@@ -7618,22 +7907,11 @@
       "source_location": "L25"
     },
     {
-      "id": "src_app_lang_design_page",
-      "label": "design/page.tsx",
-      "_origin": "ast",
-      "community": 50,
-      "community_name": "design/page.tsx",
-      "file_type": "code",
-      "norm_label": "design/page.tsx",
-      "source_file": "src/app/[lang]/design/page.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_components_sections_aboutteaser",
       "label": "AboutTeaser.tsx",
       "_origin": "ast",
       "community": 50,
-      "community_name": "design/page.tsx",
+      "community_name": "AboutTeaser.tsx",
       "file_type": "code",
       "norm_label": "aboutteaser.tsx",
       "source_file": "src/components/sections/AboutTeaser.tsx",
@@ -7644,7 +7922,7 @@
       "label": "ChamferCard.tsx",
       "_origin": "ast",
       "community": 50,
-      "community_name": "design/page.tsx",
+      "community_name": "AboutTeaser.tsx",
       "file_type": "code",
       "norm_label": "chamfercard.tsx",
       "source_file": "src/components/ui/ChamferCard.tsx",
@@ -7655,21 +7933,21 @@
       "label": "FaqSection.tsx",
       "_origin": "ast",
       "community": 51,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "FaqSection.tsx",
       "file_type": "code",
       "norm_label": "faqsection.tsx",
       "source_file": "src/components/sections/FaqSection.tsx",
       "source_location": "L1"
     },
     {
-      "id": "src_components_ui_twotoneheading",
-      "label": "TwoToneHeading.tsx",
+      "id": "src_components_ui_faqaccordion",
+      "label": "FaqAccordion.tsx",
       "_origin": "ast",
       "community": 51,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "FaqSection.tsx",
       "file_type": "code",
-      "norm_label": "twotoneheading.tsx",
-      "source_file": "src/components/ui/TwoToneHeading.tsx",
+      "norm_label": "faqaccordion.tsx",
+      "source_file": "src/components/ui/FaqAccordion.tsx",
       "source_location": "L1"
     },
     {
@@ -8291,6 +8569,17 @@
       "source_location": "L1"
     },
     {
+      "id": "src_app_lang_site_about_page",
+      "label": "about/page.tsx",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "about/page.tsx",
+      "source_file": "src/app/[lang]/(site)/about/page.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "src_app_lang_site_layout",
       "label": "(site)/layout.tsx",
       "_origin": "ast",
@@ -8401,17 +8690,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_sections_ctaband",
-      "label": "CtaBand.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "ctaband.tsx",
-      "source_file": "src/components/sections/CtaBand.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_components_ui_button",
       "label": "Button.tsx",
       "_origin": "ast",
@@ -8423,28 +8701,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_ui_faqaccordion",
-      "label": "FaqAccordion.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "faqaccordion.tsx",
-      "source_file": "src/components/ui/FaqAccordion.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_ui_langtoggle",
-      "label": "LangToggle.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "langtoggle.tsx",
-      "source_file": "src/components/ui/LangToggle.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_components_ui_logo",
       "label": "Logo.tsx",
       "_origin": "ast",
@@ -8453,6 +8709,17 @@
       "file_type": "code",
       "norm_label": "logo.tsx",
       "source_file": "src/components/ui/Logo.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_themetoggle",
+      "label": "ThemeToggle.tsx",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "themetoggle.tsx",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
       "source_location": "L1"
     },
     {
@@ -9333,234 +9600,6 @@
       "source_location": "L6"
     },
     {
-      "id": "phases",
-      "label": "PHASES.md",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "phases.md",
-      "source_file": "PHASES.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "phases_agent_report_format_agent_must_end_every_phase_with_this",
-      "label": "Agent report format (agent must end every phase with this)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "agent report format (agent must end every phase with this)",
-      "source_file": "PHASES.md",
-      "source_location": "L16"
-    },
-    {
-      "id": "phases_hours_left_compress_like_this",
-      "label": "Hours left? Compress like this",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "hours left? compress like this",
-      "source_file": "PHASES.md",
-      "source_location": "L47"
-    },
-    {
-      "id": "phases_phase_0_setup_30m",
-      "label": "PHASE 0 \u2014 Setup (30m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 0 \u2014 setup (30m)",
-      "source_file": "PHASES.md",
-      "source_location": "L59"
-    },
-    {
-      "id": "phases_phase_10_india_layer_hindi_60m",
-      "label": "PHASE 10 \u2014 India layer + Hindi (60m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 10 \u2014 india layer + hindi (60m)",
-      "source_file": "PHASES.md",
-      "source_location": "L166"
-    },
-    {
-      "id": "phases_phase_11_polish_accessibility_45m",
-      "label": "PHASE 11 \u2014 Polish + accessibility (45m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 11 \u2014 polish + accessibility (45m)",
-      "source_file": "PHASES.md",
-      "source_location": "L174"
-    },
-    {
-      "id": "phases_phase_12_performance_60m",
-      "label": "PHASE 12 \u2014 Performance (60m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 12 \u2014 performance (60m)",
-      "source_file": "PHASES.md",
-      "source_location": "L180"
-    },
-    {
-      "id": "phases_phase_13_ship_75m",
-      "label": "PHASE 13 \u2014 Ship (75m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 13 \u2014 ship (75m)",
-      "source_file": "PHASES.md",
-      "source_location": "L187"
-    },
-    {
-      "id": "phases_phase_1_foundation_45m",
-      "label": "PHASE 1 \u2014 Foundation (45m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 1 \u2014 foundation (45m)",
-      "source_file": "PHASES.md",
-      "source_location": "L71"
-    },
-    {
-      "id": "phases_phase_2_hero_marquee_60m_biggest_design_score_moment",
-      "label": "PHASE 2 \u2014 Hero + marquee (60m)  \u2190 biggest design-score moment",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 2 \u2014 hero + marquee (60m)  \u2190 biggest design-score moment",
-      "source_file": "PHASES.md",
-      "source_location": "L84"
-    },
-    {
-      "id": "phases_phase_3_home_a_about_services_60m",
-      "label": "PHASE 3 \u2014 Home A: About + Services (60m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 3 \u2014 home a: about + services (60m)",
-      "source_file": "PHASES.md",
-      "source_location": "L97"
-    },
-    {
-      "id": "phases_phase_4_home_b_work_process_why_pricing_faq_cta_75m",
-      "label": "PHASE 4 \u2014 Home B: Work, Process, Why, Pricing, FAQ, CTA (75m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 4 \u2014 home b: work, process, why, pricing, faq, cta (75m)",
-      "source_file": "PHASES.md",
-      "source_location": "L108"
-    },
-    {
-      "id": "phases_phase_5_database_lead_api_no_ui_60m",
-      "label": "PHASE 5 \u2014 Database + lead API, no UI (60m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 5 \u2014 database + lead api, no ui (60m)",
-      "source_file": "PHASES.md",
-      "source_location": "L118"
-    },
-    {
-      "id": "phases_phase_7_admin_auth_protected_shell_45m",
-      "label": "PHASE 7 \u2014 Admin auth + protected shell (45m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 7 \u2014 admin auth + protected shell (45m)",
-      "source_file": "PHASES.md",
-      "source_location": "L140"
-    },
-    {
-      "id": "phases_phase_8_admin_dashboard_60m",
-      "label": "PHASE 8 \u2014 Admin dashboard (60m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 8 \u2014 admin dashboard (60m)",
-      "source_file": "PHASES.md",
-      "source_location": "L149"
-    },
-    {
-      "id": "phases_phase_9_inner_pages_60m",
-      "label": "PHASE 9 \u2014 Inner pages (60m)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phase 9 \u2014 inner pages (60m)",
-      "source_file": "PHASES.md",
-      "source_location": "L158"
-    },
-    {
-      "id": "phases_phases_build_in_small_milestones_verify_then_move_on",
-      "label": "PHASES \u2014 build in small milestones, verify, then move on",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "phases \u2014 build in small milestones, verify, then move on",
-      "source_file": "PHASES.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "phases_progress_tracker",
-      "label": "Progress tracker",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "progress tracker",
-      "source_file": "PHASES.md",
-      "source_location": "L28"
-    },
-    {
-      "id": "phases_the_loop_repeat_for_every_phase",
-      "label": "The loop (repeat for every phase)",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "the loop (repeat for every phase)",
-      "source_file": "PHASES.md",
-      "source_location": "L5"
-    },
-    {
       "id": "src_app_layout",
       "label": "app/layout.tsx",
       "_origin": "ast",
@@ -9664,10 +9703,32 @@
       "label": "Hero.tsx",
       "_origin": "ast",
       "community": 74,
-      "community_name": "SectionLabel.tsx",
+      "community_name": "TwoToneHeading.tsx",
       "file_type": "code",
       "norm_label": "hero.tsx",
       "source_file": "src/components/sections/Hero.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_sections_pricingsection",
+      "label": "PricingSection.tsx",
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "pricingsection.tsx",
+      "source_file": "src/components/sections/PricingSection.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_sections_processsection",
+      "label": "ProcessSection.tsx",
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "processsection.tsx",
+      "source_file": "src/components/sections/ProcessSection.tsx",
       "source_location": "L1"
     },
     {
@@ -9675,10 +9736,21 @@
       "label": "SectionLabel.tsx",
       "_origin": "ast",
       "community": 74,
-      "community_name": "SectionLabel.tsx",
+      "community_name": "TwoToneHeading.tsx",
       "file_type": "code",
       "norm_label": "sectionlabel.tsx",
       "source_file": "src/components/ui/SectionLabel.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_twotoneheading",
+      "label": "TwoToneHeading.tsx",
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "TwoToneHeading.tsx",
+      "file_type": "code",
+      "norm_label": "twotoneheading.tsx",
+      "source_file": "src/components/ui/TwoToneHeading.tsx",
       "source_location": "L1"
     },
     {
@@ -11871,6 +11943,18 @@
     },
     {
       "source": "src_components_layout_pillnav",
+      "target": "src_components_ui_button_button",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/layout/PillNav.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_pillnav",
       "target": "src_components_ui_logo_logo",
       "relation": "imports",
       "_origin": "ast",
@@ -11907,7 +11991,7 @@
     },
     {
       "source": "src_components_layout_pillnav",
-      "target": "src_components_ui_button_button",
+      "target": "src_components_ui_themetoggle_themetoggle",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -13669,6 +13753,18 @@
     },
     {
       "source": "src_components_layout_pillnav",
+      "target": "src_components_ui_button",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/layout/PillNav.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_layout_pillnav",
       "target": "ref_react",
       "relation": "imports_from",
       "_origin": "ast",
@@ -13729,7 +13825,7 @@
     },
     {
       "source": "src_components_layout_pillnav",
-      "target": "src_components_ui_button",
+      "target": "src_components_ui_themetoggle",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -14228,6 +14324,18 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ui/StatusPill.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_themetoggle",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
       "source_location": "L3",
       "weight": 1.0
     },
@@ -19373,7 +19481,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L108",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
@@ -19384,7 +19492,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L118",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -19395,7 +19503,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L131",
+      "source_location": "L132",
       "weight": 1.0
     },
     {
@@ -19406,7 +19514,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L140",
+      "source_location": "L141",
       "weight": 1.0
     },
     {
@@ -19417,7 +19525,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L149",
+      "source_location": "L150",
       "weight": 1.0
     },
     {
@@ -19428,7 +19536,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L158",
+      "source_location": "L159",
       "weight": 1.0
     },
     {
@@ -19450,7 +19558,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L166",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
@@ -19461,7 +19569,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L174",
+      "source_location": "L175",
       "weight": 1.0
     },
     {
@@ -19472,7 +19580,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L180",
+      "source_location": "L181",
       "weight": 1.0
     },
     {
@@ -19483,7 +19591,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L187",
+      "source_location": "L188",
       "weight": 1.0
     },
     {
@@ -19505,7 +19613,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L47",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -19527,7 +19635,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L59",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -19538,7 +19646,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L71",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -19549,7 +19657,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L84",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
@@ -19560,7 +19668,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L97",
+      "source_location": "L98",
       "weight": 1.0
     },
     {
@@ -20407,7 +20515,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -20418,7 +20526,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -20429,7 +20537,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -21188,6 +21296,61 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/StatusPill.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_themetoggle",
+      "target": "src_components_ui_themetoggle_getsnapshot",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_themetoggle",
+      "target": "src_components_ui_themetoggle_getserversnapshot",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_themetoggle",
+      "target": "src_components_ui_themetoggle_themetoggleprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_themetoggle",
+      "target": "src_components_ui_themetoggle_themetoggle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_themetoggle",
+      "target": "src_components_ui_themetoggle_subscribe",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/ThemeToggle.tsx",
       "source_location": "L5",
       "weight": 1.0
     },
@@ -21998,6 +22161,42 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_ui_themetoggle_themetoggle",
+      "target": "src_components_ui_themetoggle_getserversnapshot",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_themetoggle_themetoggle",
+      "target": "src_components_ui_themetoggle_getsnapshot",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_themetoggle_themetoggle",
+      "target": "src_components_ui_themetoggle_subscribe",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
       "source": "src_lib_validation",
       "target": "src_lib_validation_normalizephone",
       "relation": "indirect_call",
@@ -22054,7 +22253,7 @@
       "confidence_score": 0.95,
       "context": "ContactForm",
       "source_file": "PHASES.md",
-      "source_location": "L132",
+      "source_location": "L133",
       "weight": 1.0
     },
     {
@@ -22162,10 +22361,10 @@
       "confidence_score": 0.95,
       "context": "requireAdmin()",
       "source_file": "PHASES.md",
-      "source_location": "L141",
+      "source_location": "L142",
       "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "aa381a49e0d1a5791866059e7499a7bb81e59105"
+  "built_at_commit": "d96c0925e1acf00cd15d11dfc1da2376f70f342d"
 }

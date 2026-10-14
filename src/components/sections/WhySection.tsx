@@ -46,18 +46,18 @@ export function WhySection({ data }: WhySectionProps) {
               }`}
             >
               <div className="space-y-4">
-                <div className="w-9 h-9 rounded-full bg-[#FDECEC] text-[#C1272D] flex items-center justify-center font-bold text-sm">
+                <div className="w-9 h-9 rounded-full bg-[#FDECEC] dark:bg-[#C1272D]/20 text-[#C1272D] flex items-center justify-center font-bold text-sm">
                   ✦
                 </div>
-                <h3 className="text-[22px] sm:text-[24px] font-semibold text-[#0C0C0D] tracking-tight">
+                <h3 className="text-[22px] sm:text-[24px] font-semibold text-[#0C0C0D] dark:text-white tracking-tight">
                   {card.title}
                 </h3>
-                <p className="text-[15px] sm:text-[16px] text-[#6E6E73] leading-relaxed">
+                <p className="text-[15px] sm:text-[16px] text-[#6E6E73] dark:text-[#A1A1A6] leading-relaxed">
                   {card.desc}
                 </p>
               </div>
 
-              <div className="pt-6 mt-6 border-t border-[#E6E6E8] flex items-center justify-between text-[12px] font-mono text-[#A1A1A6]">
+              <div className="pt-6 mt-6 border-t border-[#E6E6E8] dark:border-[#242426] flex items-center justify-between text-[12px] font-mono text-[#A1A1A6]">
                 <span>ETHIXWEB INDIA SPECIFICATION</span>
                 <span className="text-[#C1272D] font-bold">VERIFIED</span>
               </div>

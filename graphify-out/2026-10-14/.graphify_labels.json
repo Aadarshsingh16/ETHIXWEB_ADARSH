@@ -13,7 +13,7 @@
   "11": "supabase/schema.sql",
   "12": "Detailed Step Protocol",
   "13": "i18n.ts",
-  "14": "PHASES — build in small milestones, verify, then move on",
+  "14": "StatusPill.tsx",
   "15": "03 — Content (EN + HI). No lorem ipsum. No invented facts.",
   "16": "03 — Content (EN + HI). No lorem ipsum. No invented facts.",
   "17": "02 — Design system",
@@ -35,6 +35,7 @@
   "33": "01 — Requirements checklist (from the Ethixweb brief)",
   "34": "08 — Submission checklist (Tally: https://tally.so/r/KY7Ao8)",
   "35": "graphify reference: extra exports and benchmark",
+  "36": "PHASES — build in small milestones, verify, then move on",
   "37": "ProcessSection.tsx",
   "38": "Ethixweb design system (India edition)",
   "39": "Ethixweb motion",
@@ -69,5 +70,8 @@
   "68": "workflows/graphify.md",
   "69": "Detailed Step Protocol",
   "70": "loop.md",
-  "71": "PHASES — build in small milestones, verify, then move on"
+  "71": "PHASES — build in small milestones, verify, then move on",
+  "72": "app/layout.tsx",
+  "73": "WhySection.tsx",
+  "74": "SectionLabel.tsx"
 }

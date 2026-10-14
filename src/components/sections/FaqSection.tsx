@@ -23,8 +23,8 @@ interface FaqSectionProps {
 
 export function FaqSection({ data }: FaqSectionProps) {
   return (
-    <section id="faq" className="px-4 sm:px-6 mb-16 sm:mb-24">
-      <div className="max-w-6xl mx-auto rounded-[28px] bg-[#0C0C0D] border border-[#242426] p-6 sm:p-12 lg:p-16 space-y-10">
+    <section id="faq" className="w-full bg-[#0C0C0D] border-y border-[#242426] py-16 sm:py-24 mb-16 sm:mb-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="max-w-3xl space-y-4">
           <SectionLabel theme="dark">{data.label}</SectionLabel>
           <TwoToneHeading

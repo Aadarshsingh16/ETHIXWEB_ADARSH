@@ -1,17 +1,17 @@
 # Graph Report - ETHIXWEB  (2026-10-14)
 
 ## Corpus Check
-- 126 files · ~70,245 words
+- 127 files · ~70,974 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 2, .example 2, .css 2)
 
 ## Summary
-- 820 nodes · 1085 edges · 75 communities (69 shown, 6 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.93)
+- 826 nodes · 1096 edges · 72 communities (66 shown, 6 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 20 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `aa381a49`
+- Built from commit: `d96c0925`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -20,7 +20,7 @@
 - package.json
 - (site)/page.tsx
 - ContactForm.tsx
-- PricingSection.tsx
+- design/page.tsx
 - compilerOptions
 - next
 - What You Must Do When Invoked
@@ -29,8 +29,7 @@
 - getDictionary
 - supabase/schema.sql
 - Detailed Step Protocol
-- i18n.ts
-- StatusPill.tsx
+- PHASES — build in small milestones, verify, then move on
 - 03 — Content (EN + HI). No lorem ipsum. No invented facts.
 - 03 — Content (EN + HI). No lorem ipsum. No invented facts.
 - 02 — Design system
@@ -53,7 +52,6 @@
 - 08 — Submission checklist (Tally: https://tally.so/r/KY7Ao8)
 - graphify reference: extra exports and benchmark
 - PHASES — build in small milestones, verify, then move on
-- ProcessSection.tsx
 - Ethixweb design system (India edition)
 - Ethixweb motion
 - Leads backend skill
@@ -66,8 +64,8 @@
 - India localization
 - India localization
 - India localization
-- design/page.tsx
-- TwoToneHeading.tsx
+- AboutTeaser.tsx
+- FaqSection.tsx
 - graphify reference: query, path, explain
 - PageSpeed 90+ skill
 - PageSpeed 90+ skill
@@ -87,10 +85,9 @@
 - workflows/graphify.md
 - Detailed Step Protocol
 - loop.md
-- PHASES — build in small milestones, verify, then move on
 - app/layout.tsx
 - WhySection.tsx
-- SectionLabel.tsx
+- TwoToneHeading.tsx
 
 ## God Nodes (most connected - your core abstractions)
 1. `next` - 31 edges
@@ -101,8 +98,8 @@
 6. `PHASES — build in small milestones, verify, then move on` - 19 edges
 7. `03 — Content (EN + HI). No lorem ipsum. No invented facts.` - 18 edges
 8. `03 — Content (EN + HI). No lorem ipsum. No invented facts.` - 18 edges
-9. `compilerOptions` - 16 edges
-10. `react` - 15 edges
+9. `react` - 16 edges
+10. `compilerOptions` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Admin` --references--> `requireAdmin()`  [INFERRED]
@@ -119,7 +116,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (75 total, 6 thin omitted)
+## Communities (72 total, 6 thin omitted)
 
 ### Community 0 - "WorkSection.tsx"
 Cohesion: 0.25
@@ -130,24 +127,24 @@ Cohesion: 0.05
 Nodes (39): eslintConfig, dependencies, next, react, react-dom, @supabase/ssr, @supabase/supabase-js, zod (+31 more)
 
 ### Community 2 - "(site)/page.tsx"
-Cohesion: 0.29
-Nodes (5): HomePage(), FaqSection(), Hero(), Marquee(), MarqueeProps
+Cohesion: 0.22
+Nodes (7): CtaBand(), CtaBandData, CtaBandProps, Hero(), ProcessSection(), Marquee(), MarqueeProps
 
 ### Community 3 - "ContactForm.tsx"
 Cohesion: 0.18
 Nodes (13): invalidPhoneResult, testPhones, validLeadResult, ContactFormProps, TurnstileWidget(), TurnstileWidgetProps, Window, BUDGETS (+5 more)
 
-### Community 4 - "PricingSection.tsx"
-Cohesion: 0.25
-Nodes (7): PlanItem, PricingData, PricingSection(), PricingSectionProps, PlanItem, PricingCard(), PricingCardProps
+### Community 4 - "design/page.tsx"
+Cohesion: 0.18
+Nodes (9): DesignTokensPage(), LangToggle(), LangToggleProps, PlanItem, PricingCard(), PricingCardProps, ProcessCard(), ProcessCardProps (+1 more)
 
 ### Community 5 - "compilerOptions"
 Cohesion: 0.11
 Nodes (18): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+10 more)
 
 ### Community 6 - "next"
-Cohesion: 0.05
-Nodes (32): nextConfig, next, react, AdminContent(), metadata, SiteLayout(), AdminDashboard(), Counts (+24 more)
+Cohesion: 0.06
+Nodes (29): nextConfig, next, react, AdminContent(), metadata, SiteLayout(), AdminDashboard(), Counts (+21 more)
 
 ### Community 7 - "What You Must Do When Invoked"
 Cohesion: 0.07
@@ -162,8 +159,8 @@ Cohesion: 0.36
 Nodes (6): leads_created_at_idx, leads_ip_hash_idx, leads_set_updated_at, leads_status_idx, public.leads, public.set_updated_at
 
 ### Community 10 - "getDictionary"
-Cohesion: 0.21
-Nodes (11): AboutPage(), generateMetadata(), ContactPage(), generateMetadata(), generateMetadata(), generateMetadata(), PrivacyPage(), generateMetadata() (+3 more)
+Cohesion: 0.16
+Nodes (16): AboutPage(), generateMetadata(), ContactPage(), generateMetadata(), generateMetadata(), HomePage(), generateMetadata(), PrivacyPage() (+8 more)
 
 ### Community 11 - "supabase/schema.sql"
 Cohesion: 0.36
@@ -173,13 +170,9 @@ Nodes (6): leads_created_at_idx, leads_ip_hash_idx, leads_set_updated_at, leads_
 Cohesion: 0.18
 Nodes (10): Autonomous Execution Loop (LOOP.md), Detailed Step Protocol, Phases Roadmap, Step 1: Implement (Scope-Enforced), Step 2: Verify (Automated Evidence), Step 3: Review (Quality & Security Guardrails), Step 4: Update Context & Checklists, Step 5: Auto-Advance Gate (+2 more)
 
-### Community 13 - "i18n.ts"
-Cohesion: 0.48
-Nodes (4): en, hi, DEFAULT_LOCALE, Lang
-
-### Community 14 - "StatusPill.tsx"
-Cohesion: 0.10
-Nodes (20): 05 — PageSpeed Insights 90+ (mobile AND desktop), Budget rules for the agent, If a score is below 90, Measuring correctly, Targets (mobile), What we do, PHASE 6 — Contact page + form, end-to-end (45m), 05 — PageSpeed Insights 90+ (mobile AND desktop) (+12 more)
+### Community 14 - "PHASES — build in small milestones, verify, then move on"
+Cohesion: 0.05
+Nodes (38): 05 — PageSpeed Insights 90+ (mobile AND desktop), Budget rules for the agent, If a score is below 90, Measuring correctly, Targets (mobile), What we do, PHASE 6 — Contact page + form, end-to-end (45m), 05 — PageSpeed Insights 90+ (mobile AND desktop) (+30 more)
 
 ### Community 15 - "03 — Content (EN + HI). No lorem ipsum. No invented facts."
 Cohesion: 0.11
@@ -269,10 +262,6 @@ Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only
 Cohesion: 0.11
 Nodes (18): Agent report format (agent must end every phase with this), Hours left? Compress like this, PHASE 0 — Setup (30m), PHASE 10 — India layer + Hindi (60m), PHASE 11 — Polish + accessibility (45m), PHASE 12 — Performance (60m), PHASE 13 — Ship (75m), PHASE 1 — Foundation (45m) (+10 more)
 
-### Community 37 - "ProcessSection.tsx"
-Cohesion: 0.25
-Nodes (7): ProcessData, ProcessSection(), ProcessSectionProps, StepItem, ProcessCard(), ProcessCardProps, StepItem
-
 ### Community 38 - "Ethixweb design system (India edition)"
 Cohesion: 0.25
 Nodes (7): Anti-patterns to reject, Before you finish a section, Design intent, Ethixweb design system (India edition), Layout skeleton, One memorable moment, Rules
@@ -321,13 +310,13 @@ Nodes (6): Accessibility for Hindi, Checklist of India features, Honesty rules, 
 Cohesion: 0.29
 Nodes (6): Accessibility for Hindi, Checklist of India features, Honesty rules, India localization, README design-rationale template, The India concept (one sentence)
 
-### Community 50 - "design/page.tsx"
-Cohesion: 0.24
-Nodes (6): DesignTokensPage(), AboutTeaser(), AboutTeaserData, AboutTeaserProps, ChamferCard(), ChamferCardProps
-
-### Community 51 - "TwoToneHeading.tsx"
+### Community 50 - "AboutTeaser.tsx"
 Cohesion: 0.33
-Nodes (5): FaqData, FaqItem, FaqSectionProps, TwoToneHeading(), TwoToneHeadingProps
+Nodes (5): AboutTeaser(), AboutTeaserData, AboutTeaserProps, ChamferCard(), ChamferCardProps
+
+### Community 51 - "FaqSection.tsx"
+Cohesion: 0.25
+Nodes (7): FaqData, FaqItem, FaqSection(), FaqSectionProps, FaqAccordion(), FaqAccordionProps, FaqItem
 
 ### Community 52 - "graphify reference: query, path, explain"
 Cohesion: 0.33
@@ -381,10 +370,6 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 Cohesion: 0.18
 Nodes (10): Autonomous Execution Loop (LOOP.md), Detailed Step Protocol, Phases Roadmap, Step 1: Implement (Scope-Enforced), Step 2: Verify (Automated Evidence), Step 3: Review (Quality & Security Guardrails), Step 4: Update Context & Checklists, Step 5: Auto-Advance Gate (+2 more)
 
-### Community 71 - "PHASES — build in small milestones, verify, then move on"
-Cohesion: 0.11
-Nodes (18): Agent report format (agent must end every phase with this), Hours left? Compress like this, PHASE 0 — Setup (30m), PHASE 10 — India layer + Hindi (60m), PHASE 11 — Polish + accessibility (45m), PHASE 12 — Performance (60m), PHASE 13 — Ship (75m), PHASE 1 — Foundation (45m) (+10 more)
-
 ### Community 72 - "app/layout.tsx"
 Cohesion: 0.31
 Nodes (6): metadata, viewport, inter, interTight, notoDeva, src_styles_globals
@@ -393,28 +378,28 @@ Nodes (6): metadata, viewport, inter, interTight, notoDeva, src_styles_globals
 Cohesion: 0.29
 Nodes (6): WhyCard, WhyData, WhySection(), WhySectionProps, FeatureCard(), FeatureCardProps
 
-### Community 74 - "SectionLabel.tsx"
-Cohesion: 0.40
-Nodes (4): HeroData, HeroProps, SectionLabel(), SectionLabelProps
+### Community 74 - "TwoToneHeading.tsx"
+Cohesion: 0.16
+Nodes (13): HeroData, HeroProps, PlanItem, PricingData, PricingSection(), PricingSectionProps, ProcessData, ProcessSectionProps (+5 more)
 
 ## Knowledge Gaps
-- **495 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+490 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 577 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **496 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+491 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 578 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `next` connect `next` to `package.json`, `(site)/page.tsx`, `app/layout.tsx`, `ServicesSection.tsx`, `getDictionary`, `HttpError`, `design/page.tsx`?**
-  _High betweenness centrality (0.083) - this node is a cross-community bridge._
-- **Why does `requireAdmin()` connect `HttpError` to `PHASES — build in small milestones, verify, then move on`, `next`, `PHASES — build in small milestones, verify, then move on`, `Leads backend skill`, `Leads backend skill`, `04 — Backend: leads, admin, security`, `04 — Backend: leads, admin, security`, `Leads backend skill`?**
+- **Why does `next` connect `next` to `package.json`, `(site)/page.tsx`, `app/layout.tsx`, `ServicesSection.tsx`, `getDictionary`, `HttpError`, `AboutTeaser.tsx`?**
+  _High betweenness centrality (0.084) - this node is a cross-community bridge._
+- **Why does `requireAdmin()` connect `HttpError` to `PHASES — build in small milestones, verify, then move on`, `next`, `Leads backend skill`, `Leads backend skill`, `PHASES — build in small milestones, verify, then move on`, `04 — Backend: leads, admin, security`, `04 — Backend: leads, admin, security`, `Leads backend skill`?**
   _High betweenness centrality (0.064) - this node is a cross-community bridge._
-- **Why does `ContactForm()` connect `StatusPill.tsx` to `getDictionary`, `ContactForm.tsx`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Why does `react` connect `next` to `WorkSection.tsx`, `package.json`, `ContactForm.tsx`, `WhySection.tsx`, `TwoToneHeading.tsx`, `PHASES — build in small milestones, verify, then move on`, `AboutTeaser.tsx`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
 - **Are the 7 inferred relationships involving `requireAdmin()` (e.g. with `Admin` and `Admin`) actually correct?**
   _`requireAdmin()` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `eslintConfig`, `nextConfig`, `name` to the rest of the system?**
-  _495 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _496 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.047619047619047616 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**

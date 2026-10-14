@@ -19,10 +19,10 @@ export function PricingCard({ plan, lang = "en" }: PricingCardProps) {
 
   return (
     <div
-      className={`rounded-[28px] p-8 sm:p-10 flex flex-col justify-between transition-transform duration-200 ease-out hover:-translate-y-1 ${
+      className={`rounded-[28px] p-8 sm:p-10 flex flex-col justify-between transition-all duration-200 ease-out hover:-translate-y-1 ${
         isPopular
-          ? "bg-[#0C0C0D] text-white border border-[#242426]"
-          : "bg-white text-[#0C0C0D] border border-[#E6E6E8]"
+          ? "bg-[#0C0C0D] text-white border border-[#242426] ring-1 ring-[#C1272D]/30"
+          : "bg-white dark:bg-[#161617] text-[#0C0C0D] dark:text-white border border-[#E6E6E8] dark:border-[#242426]"
       }`}
     >
       <div className="space-y-6">
@@ -47,11 +47,11 @@ export function PricingCard({ plan, lang = "en" }: PricingCardProps) {
           </span>
         </div>
 
-        <p className={`text-[15px] leading-relaxed ${isPopular ? "text-[#A1A1A6]" : "text-[#6E6E73]"}`}>
+        <p className={`text-[15px] leading-relaxed ${isPopular ? "text-[#A1A1A6]" : "text-[#6E6E73] dark:text-[#A1A1A6]"}`}>
           {plan.desc}
         </p>
 
-        <div className={`pt-6 border-t ${isPopular ? "border-[#242426]" : "border-[#E6E6E8]"} space-y-3`}>
+        <div className={`pt-6 border-t ${isPopular ? "border-[#242426]" : "border-[#E6E6E8] dark:border-[#242426]"} space-y-3`}>
           <div className="text-[13px] font-semibold uppercase tracking-wider text-[#A1A1A6]">
             What&apos;s included:
           </div>
@@ -61,7 +61,7 @@ export function PricingCard({ plan, lang = "en" }: PricingCardProps) {
                 <span className="text-[#C1272D] text-sm font-bold leading-tight" aria-hidden="true">
                   ✓
                 </span>
-                <span className={isPopular ? "text-[#E6E6E8]" : "text-[#0C0C0D]"}>{feature}</span>
+                <span className={isPopular ? "text-[#E6E6E8]" : "text-[#0C0C0D] dark:text-[#E6E6E8]"}>{feature}</span>
               </li>
             ))}
           </ul>

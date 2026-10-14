@@ -8,7 +8,6 @@ interface LogoProps {
 
 export function Logo({ lang = "en", theme = "dark", className = "" }: LogoProps) {
   const isDark = theme === "dark";
-  const textColor = isDark ? "#FFFFFF" : "#0C0C0D";
 
   return (
     <Link
@@ -21,13 +20,13 @@ export function Logo({ lang = "en", theme = "dark", className = "" }: LogoProps)
         viewBox="0 0 168 28"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-auto"
+        className={`h-6 w-auto ${isDark ? "text-white" : "text-[#0C0C0D] dark:text-white"}`}
         aria-hidden="true"
       >
         <text
           x="0"
           y="23"
-          fill={textColor}
+          fill="currentColor"
           fontFamily="var(--font-inter-tight), system-ui, sans-serif"
           fontWeight="800"
           fontSize="26"

@@ -14,7 +14,7 @@ export function FeatureCard({
   const isDark = theme === "dark";
   const styles = isDark
     ? "bg-[#161617] text-white border border-[#242426]"
-    : "bg-white text-[#0C0C0D] border border-[#E6E6E8]";
+    : "bg-white dark:bg-[#161617] text-[#0C0C0D] dark:text-white border border-[#E6E6E8] dark:border-[#242426]";
 
   return (
     <div

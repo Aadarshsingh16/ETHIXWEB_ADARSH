@@ -18,8 +18,8 @@ export function TwoToneHeading({
   className = "",
 }: TwoToneHeadingProps) {
   const isDark = theme === "dark";
-  const mainColor = isDark ? "text-white" : "text-[#0C0C0D]";
-  const fadeColor = isDark ? "text-[#6B6B70]" : "text-[#A1A1A6]";
+  const mainColor = isDark ? "text-white" : "text-[#0C0C0D] dark:text-white";
+  const fadeColor = isDark ? "text-[#6B6B70]" : "text-[#A1A1A6] dark:text-[#6B6B70]";
 
   const sizeClasses = {
     xl: "text-[40px] sm:text-[56px] lg:text-[76px] xl:text-[92px] leading-[1.02] tracking-[-0.03em] font-semibold font-[family-name:var(--font-display)]",

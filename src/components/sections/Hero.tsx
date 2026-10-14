@@ -34,69 +34,68 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
   )}`;
 
   return (
-    <section className="px-4 sm:px-6 mb-16 sm:mb-24">
-      {/* Dark Inset Card (Covix style, 28px radius) */}
-      <div className="relative max-w-6xl mx-auto rounded-[28px] bg-[#0C0C0D] border border-[#242426] p-6 sm:p-12 lg:p-16 overflow-hidden">
-        {/* Subtle red corner ambient glow */}
-        <div
-          className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#C1272D]/15 blur-3xl pointer-events-none"
-          aria-hidden="true"
-        />
+    <section className="w-full bg-[#0C0C0D] border-b border-[#242426] py-14 sm:py-20 lg:py-24 mb-16 sm:mb-24 relative overflow-hidden">
+      {/* Subtle red corner ambient glow */}
+      <div
+        className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#C1272D]/15 blur-3xl pointer-events-none"
+        aria-hidden="true"
+      />
 
-        {/* Jaali lattice pattern masked in top-right */}
-        <div className="absolute inset-0 jaali pointer-events-none" aria-hidden="true" />
+      {/* Jaali lattice pattern masked in top-right */}
+      <div className="absolute inset-0 jaali pointer-events-none" aria-hidden="true" />
 
-        <div className="relative z-10 space-y-8">
-          {/* Top Label with ✦ */}
-          <div>
-            <SectionLabel theme="dark">{data.label}</SectionLabel>
-          </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
+        {/* Top Label with ✦ */}
+        <div>
+          <SectionLabel theme="dark">{data.label}</SectionLabel>
+        </div>
 
-          {/* H1 Headline — Server rendered, painted at first frame for LCP 95+ */}
-          <div className="max-w-4xl space-y-4">
-            <TwoToneHeading
-              as="h1"
-              main={data.headingMain}
-              fade={data.headingFade}
-              size="xl"
-              theme="dark"
-            />
+        {/* H1 Headline — Server rendered, painted at first frame for LCP 95+ */}
+        <div className="max-w-4xl space-y-4">
+          <TwoToneHeading
+            as="h1"
+            main={data.headingMain}
+            fade={data.headingFade}
+            size="xl"
+            theme="dark"
+          />
 
-            {/* Bilingual Hindi sub-heading visible above the fold on English page */}
-            {!isHindi && (
-              <p
-                lang="hi"
-                className="text-[18px] sm:text-[22px] text-[#A1A1A6] font-medium font-[family-name:var(--font-deva)] tracking-normal"
-              >
-                आपका बिज़नेस, अब ऑनलाइन और हमेशा बुक।
-              </p>
-            )}
-
-            {/* Value Proposition with Indian market highlights */}
-            <p className="text-[17px] sm:text-[20px] text-[#A1A1A6] leading-relaxed max-w-2xl pt-2">
-              {data.sub}
-            </p>
-          </div>
-
-          {/* Action Row */}
-          <div className="flex flex-wrap items-center gap-4 pt-2">
-            <Button variant="accent" href={`/${lang}/contact`} arrow>
-              {data.ctaCall}
-            </Button>
-            <Button
-              variant="whatsapp"
-              href={whatsappUrl}
-              external
-              aria-label="Chat on WhatsApp (opens in a new tab)"
+          {/* Bilingual Hindi sub-heading visible above the fold on English page */}
+          {!isHindi && (
+            <p
+              lang="hi"
+              className="text-[18px] sm:text-[22px] text-[#A1A1A6] font-medium font-[family-name:var(--font-deva)] tracking-normal"
             >
-              {data.ctaWa}
-            </Button>
-          </div>
+              आपका बिज़नेस, अब ऑनलाइन और हमेशा बुक।
+            </p>
+          )}
 
-          {/* Concept Architecture Cards Preview */}
-          <div className="pt-8 border-t border-[#242426] grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
-            {/* Concept Card 1 */}
-            <div className="rounded-[20px] bg-[#161617] border border-[#242426] p-5 space-y-3 transition-colors duration-200 hover:border-[#38383B]">
+          {/* Value Proposition with Indian market highlights */}
+          <p className="text-[17px] sm:text-[20px] text-[#A1A1A6] leading-relaxed max-w-2xl pt-2">
+            {data.sub}
+          </p>
+        </div>
+
+        {/* Action Row */}
+        <div className="flex flex-wrap items-center gap-4 pt-2">
+          <Button variant="accent" href={`/${lang}/contact`} arrow>
+            {data.ctaCall}
+          </Button>
+          <Button
+            variant="whatsapp"
+            href={whatsappUrl}
+            external
+            aria-label="Chat on WhatsApp (opens in a new tab)"
+          >
+            {data.ctaWa}
+          </Button>
+        </div>
+
+        {/* Concept Architecture Cards Preview */}
+        <div className="pt-8 border-t border-[#242426] grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+          {/* Concept Card 1: D2C */}
+          <div className="group rounded-[20px] bg-[#161617] border border-[#242426] p-5 space-y-3 transition-all duration-200 hover:border-[#38383B] flex flex-col justify-between">
+            <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#242426] text-[#A1A1A6]">
                   {data.conceptCard1.badge}
@@ -114,8 +113,19 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
               </p>
             </div>
 
-            {/* Concept Card 2 */}
-            <div className="rounded-[20px] bg-[#161617] border border-[#242426] p-5 space-y-3 transition-colors duration-200 hover:border-[#38383B]">
+            {/* Visual Micro-Preview / Image Placeholder */}
+            <div className="mt-3 rounded-xl bg-[#0C0C0D] border border-[#242426] p-3 flex items-center justify-between text-xs font-mono text-[#A1A1A6]">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-[#16A34A]" />
+                <span className="text-white">checkout.store.ethixweb.in</span>
+              </div>
+              <span className="text-[#C1272D] font-bold">₹1,499 UPI</span>
+            </div>
+          </div>
+
+          {/* Concept Card 2: Clinic */}
+          <div className="group rounded-[20px] bg-[#161617] border border-[#242426] p-5 space-y-3 transition-all duration-200 hover:border-[#38383B] flex flex-col justify-between">
+            <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#242426] text-[#A1A1A6]">
                   {data.conceptCard2.badge}
@@ -132,14 +142,23 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
                 {data.conceptCard2.desc}
               </p>
             </div>
-          </div>
 
-          {/* Bottom Progress Line 01 ── 04 */}
-          <div className="flex items-center justify-between pt-2 text-[12px] font-mono text-[#6E6E73] select-none">
-            <span>DISCOVERY & ARCHITECTURE</span>
-            <span className="tracking-widest">01 ────────── 04</span>
-            <span>PRODUCTION DEPLOYMENT</span>
+            {/* Visual Micro-Preview / Image Placeholder */}
+            <div className="mt-3 rounded-xl bg-[#0C0C0D] border border-[#242426] p-3 flex items-center justify-between text-xs font-mono text-[#A1A1A6]">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-[#25D366]" />
+                <span className="text-white">drverma.clinic.ethixweb.in</span>
+              </div>
+              <span className="text-[#25D366] font-bold">Slot: 02:30 PM IST</span>
+            </div>
           </div>
+        </div>
+
+        {/* Bottom Progress Line 01 ── 04 */}
+        <div className="flex items-center justify-between pt-2 text-[12px] font-mono text-[#6E6E73] select-none">
+          <span>DISCOVERY & ARCHITECTURE</span>
+          <span className="tracking-widest">01 ────────── 04</span>
+          <span>PRODUCTION DEPLOYMENT</span>
         </div>
       </div>
     </section>

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Logo } from "@/components/ui/Logo";
 import { StatusPill } from "@/components/ui/StatusPill";
 import { LangToggle } from "@/components/ui/LangToggle";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { Button } from "@/components/ui/Button";
 
 interface NavLabels {
@@ -75,12 +76,14 @@ export function PillNav({ lang, labels }: PillNavProps) {
           </nav>
 
           {/* Right Controls */}
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-2 sm:gap-2.5">
             <div className="hidden sm:block">
               <StatusPill onlineText={labels.onlineIst} offlineText={labels.offlineIst} />
             </div>
 
             <LangToggle currentLang={lang} currentPath={pathname} theme="dark" />
+
+            <ThemeToggle />
 
             <div className="hidden md:block">
               <Button
@@ -129,8 +132,9 @@ export function PillNav({ lang, labels }: PillNavProps) {
               </Link>
             ))}
             <div className="pt-4 flex flex-col gap-3">
-              <div className="sm:hidden">
+              <div className="flex items-center justify-between">
                 <StatusPill onlineText={labels.onlineIst} offlineText={labels.offlineIst} />
+                <ThemeToggle />
               </div>
               <Button
                 variant="accent"
