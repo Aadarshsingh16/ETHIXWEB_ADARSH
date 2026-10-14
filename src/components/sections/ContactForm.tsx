@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useId } from "react";
+import { useState, useEffect, useRef, useId } from "react";
 import {
   CITIES,
   SERVICES,
@@ -38,11 +38,11 @@ interface ContactFormProps {
 
 export function ContactForm({ content }: ContactFormProps) {
   const formId = useId();
-  // Time-trap: record timestamp after component mounts on client to avoid prerender time error
-  const [startedAt, setStartedAt] = useState<number>(0);
+  // Time-trap: record timestamp via ref on client mount (avoids cascading re-renders)
+  const startedAtRef = useRef<number>(0);
 
   useEffect(() => {
-    setStartedAt(Date.now());
+    startedAtRef.current = Date.now();
   }, []);
 
   const [formData, setFormData] = useState({
@@ -116,7 +116,7 @@ export function ContactForm({ content }: ContactFormProps) {
       message: formData.message || undefined,
       consent: formData.consent as true,
       website: formData.website,
-      startedAt: startedAt || Date.now(),
+      startedAt: startedAtRef.current || Date.now(),
       turnstileToken: formData.turnstileToken,
     };
 

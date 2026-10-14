@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getDictionary, isValidLocale, type Lang } from "@/lib/i18n";
+import { getDictionary, isValidLocale } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { TwoToneHeading } from "@/components/ui/TwoToneHeading";

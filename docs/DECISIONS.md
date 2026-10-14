@@ -36,3 +36,4 @@ Rule: when you or the agent make a choice that is not obvious, add a row. One li
 | ID | Phase | Decision | Why | Alternatives | Trade-off |
 |---|---|---|---|---|---|
 | D16 | Phase 6 | Lazy Turnstile with 65px reserved container + client-side useEffect timestamp | Zero CLS on lazy challenge load; avoids Next.js 16 SSR Date.now() prerender error | Static Date.now() in state init | Milliseconds difference on hydration |
+| D17 | Phase 7 | Next.js 16 Partial Prerendering Suspense boundary for requireAdmin() in /admin | Prevents prerender error on dynamic cookies() while prerendering shell and streaming user session | instant=false blocking route | Requires Suspense wrapper around admin content |

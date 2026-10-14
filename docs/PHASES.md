@@ -35,7 +35,7 @@ Add to every build prompt: *"Do only Phase N. Stop after the report. Do not star
 | 4 | Home B: Work, Process, Why, Pricing, FAQ, CTA | 75m | ☑ | `b802c81` |
 | 5 | Database + lead API (no UI) | 60m | ☑ | phase-5 |
 | 6 | Contact page + form (end-to-end) | 45m | ☑ | phase-6 |
-| 7 | Admin auth + protected shell | 45m | ☐ | |
+| 7 | Admin auth + protected shell | 45m | ☑ | phase-7 |
 | 8 | Admin dashboard | 60m | ☐ | |
 | 9 | Inner pages (Services, About, Privacy, 404) | 60m | ☐ | |
 | 10 | India layer + Hindi | 60m | ☐ | |
