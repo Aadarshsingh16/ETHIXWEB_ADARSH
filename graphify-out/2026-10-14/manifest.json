@@ -396,9 +396,9 @@
     "semantic_hash": ""
   },
   "DECISIONS.md": {
-    "mtime": 1791976587.7152395,
-    "seen": 1791976611.3687713,
-    "ast_hash": "19641954795fa2a5eef670c6f598db48",
+    "mtime": 1791977104.413225,
+    "seen": 1791977129.6403775,
+    "ast_hash": "fcab811ffa176cebe0237316d10b0367",
     "semantic_hash": ""
   },
   "GEMINI.md": {
@@ -408,9 +408,9 @@
     "semantic_hash": ""
   },
   "PHASES.md": {
-    "mtime": 1791976568.3116248,
-    "seen": 1791976611.3687713,
-    "ast_hash": "97736445295be22ca93012789b246bc0",
+    "mtime": 1791977089.098666,
+    "seen": 1791977129.6403775,
+    "ast_hash": "2a6050afb2f1444a6e3acde791025dce",
     "semantic_hash": ""
   },
   "README.md": {
@@ -474,15 +474,15 @@
     "semantic_hash": ""
   },
   "docs/DECISIONS.md": {
-    "mtime": 1791976595.1092954,
-    "seen": 1791976611.3687713,
-    "ast_hash": "19641954795fa2a5eef670c6f598db48",
+    "mtime": 1791977111.3150203,
+    "seen": 1791977129.6403775,
+    "ast_hash": "fcab811ffa176cebe0237316d10b0367",
     "semantic_hash": ""
   },
   "docs/PHASES.md": {
-    "mtime": 1791976575.2728775,
-    "seen": 1791976611.3687713,
-    "ast_hash": "97736445295be22ca93012789b246bc0",
+    "mtime": 1791977095.6433675,
+    "seen": 1791977129.6403775,
+    "ast_hash": "2a6050afb2f1444a6e3acde791025dce",
     "semantic_hash": ""
   },
   "docs/REVIEW.md": {
@@ -642,9 +642,9 @@
     "semantic_hash": ""
   },
   "src/app/[lang]/(site)/contact/page.tsx": {
-    "mtime": 1791976425.6212103,
-    "seen": 1791976611.3677561,
-    "ast_hash": "4669973c46d924fffff53dcec4a0d885",
+    "mtime": 1791976793.108359,
+    "seen": 1791977129.6403775,
+    "ast_hash": "cfd8cb3531d21385628945a7e1a9e084",
     "semantic_hash": ""
   },
   "src/app/api/leads/route.ts": {
@@ -654,9 +654,9 @@
     "semantic_hash": ""
   },
   "src/components/sections/ContactForm.tsx": {
-    "mtime": 1791976517.469134,
-    "seen": 1791976611.3677561,
-    "ast_hash": "ac76c04d25f51eb6cfd350536b7942e3",
+    "mtime": 1791976777.248319,
+    "seen": 1791977129.6403775,
+    "ast_hash": "bc5878b3dae63618e19be5a5f80b6ed4",
     "semantic_hash": ""
   },
   "src/components/ui/TurnstileWidget.tsx": {
@@ -705,6 +705,42 @@
     "mtime": 1791976244.126485,
     "seen": 1791976611.3687713,
     "ast_hash": "e93dfc1cb676071cc722c56ec4742272",
+    "semantic_hash": ""
+  },
+  "src/app/admin/login/page.tsx": {
+    "mtime": 1791976883.0572786,
+    "seen": 1791977129.6403775,
+    "ast_hash": "06da400775bafa3aef96af959c651f1b",
+    "semantic_hash": ""
+  },
+  "src/app/admin/page.tsx": {
+    "mtime": 1791976986.918704,
+    "seen": 1791977129.6403775,
+    "ast_hash": "07ea2fab70a0c2adf9840f82ee35c17b",
+    "semantic_hash": ""
+  },
+  "src/app/api/admin/login/route.ts": {
+    "mtime": 1791976868.003262,
+    "seen": 1791977129.6403775,
+    "ast_hash": "c4cb44485ebfffc3d0a7cb2ab5f65545",
+    "semantic_hash": ""
+  },
+  "src/app/api/admin/logout/route.ts": {
+    "mtime": 1791976874.5690022,
+    "seen": 1791977129.6403775,
+    "ast_hash": "bdc194b6bbe14b801312841e4d08e71c",
+    "semantic_hash": ""
+  },
+  "src/components/admin/AdminLogoutButton.tsx": {
+    "mtime": 1791976703.4077356,
+    "seen": 1791977129.6403775,
+    "ast_hash": "ec0e3e088bfbfd285d86cd5113846e8b",
+    "semantic_hash": ""
+  },
+  "src/middleware.ts": {
+    "mtime": 1791976674.7363722,
+    "seen": 1791977129.6403775,
+    "ast_hash": "ed3c436d5c811900a4a5dd8959f2720e",
     "semantic_hash": ""
   }
 }

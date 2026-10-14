@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { requireAdmin } from "@/lib/supabase/admin";
 import { Logo } from "@/components/ui/Logo";
 import { AdminLogoutButton } from "@/components/admin/AdminLogoutButton";
+import { AdminDashboard } from "@/components/admin/AdminDashboard";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -58,34 +59,8 @@ async function AdminContent() {
             </div>
           </div>
 
-          {/* Quick Metrics Cards Placeholder */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { label: "Total Leads", count: "0" },
-              { label: "New / Uncontacted", count: "0" },
-              { label: "In Contact", count: "0" },
-              { label: "Won Deals", count: "0" },
-            ].map((stat) => (
-              <div
-                key={stat.label}
-                className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5"
-              >
-                <div className="text-xs font-medium text-[var(--color-text-muted)]">
-                  {stat.label}
-                </div>
-                <div className="mt-2 text-2xl font-bold font-mono">
-                  {stat.count}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Table Shell / Ready State for Phase 8 */}
-          <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 text-center text-[var(--color-text-muted)]">
-            <p className="text-sm">
-              Lead management tables and live filters ready. (Configuring in Phase 8)
-            </p>
-          </div>
+          {/* Full Interactive Admin Dashboard */}
+          <AdminDashboard />
         </div>
       </main>
     </>

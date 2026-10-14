@@ -1,17 +1,17 @@
 # Graph Report - ETHIXWEB  (2026-10-14)
 
 ## Corpus Check
-- 115 files · ~65,304 words
+- 119 files · ~67,852 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 2, .example 2, .css 2)
 
 ## Summary
-- 785 nodes · 962 edges · 72 communities (66 shown, 6 thin omitted)
+- 799 nodes · 1021 edges · 73 communities (67 shown, 6 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.93)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `78b584e0`
+- Built from commit: `0fabe103`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -22,7 +22,7 @@
 - ContactForm.tsx
 - PricingSection.tsx
 - compilerOptions
-- next
+- Button.tsx
 - What You Must Do When Invoked
 - ServicesSection.tsx
 - ethixweb-india-kit/supabase/schema.sql
@@ -30,7 +30,7 @@
 - supabase/schema.sql
 - Detailed Step Protocol
 - PHASES — build in small milestones, verify, then move on
-- PHASES — build in small milestones, verify, then move on
+- StatusPill.tsx
 - 03 — Content (EN + HI). No lorem ipsum. No invented facts.
 - 03 — Content (EN + HI). No lorem ipsum. No invented facts.
 - 02 — Design system
@@ -62,12 +62,12 @@
 - Leads backend skill
 - Ethixweb design system (India edition)
 - Ethixweb motion
-- leads/route.ts
+- next
 - India localization
 - India localization
 - India localization
 - design/page.tsx
-- SectionLabel.tsx
+- TwoToneHeading.tsx
 - graphify reference: query, path, explain
 - PageSpeed 90+ skill
 - PageSpeed 90+ skill
@@ -87,36 +87,37 @@
 - workflows/graphify.md
 - Detailed Step Protocol
 - loop.md
-- requireAdmin
+- PHASES — build in small milestones, verify, then move on
+- app/layout.tsx
 
 ## God Nodes (most connected - your core abstractions)
-1. `next` - 21 edges
-2. `PHASES — build in small milestones, verify, then move on` - 19 edges
-3. `PHASES — build in small milestones, verify, then move on` - 19 edges
-4. `03 — Content (EN + HI). No lorem ipsum. No invented facts.` - 18 edges
-5. `03 — Content (EN + HI). No lorem ipsum. No invented facts.` - 18 edges
-6. `compilerOptions` - 16 edges
-7. `react` - 13 edges
-8. `HttpError` - 12 edges
-9. `requireAdmin()` - 12 edges
-10. `What You Must Do When Invoked` - 12 edges
+1. `next` - 24 edges
+2. `HttpError` - 19 edges
+3. `requireAdmin()` - 19 edges
+4. `PHASES — build in small milestones, verify, then move on` - 19 edges
+5. `PHASES — build in small milestones, verify, then move on` - 19 edges
+6. `03 — Content (EN + HI). No lorem ipsum. No invented facts.` - 18 edges
+7. `03 — Content (EN + HI). No lorem ipsum. No invented facts.` - 18 edges
+8. `compilerOptions` - 16 edges
+9. `react` - 14 edges
+10. `fail()` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Admin` --references--> `requireAdmin()`  [INFERRED]
   .agents/skills/leads-backend/SKILL.md → src/lib/supabase/admin.ts
 - `Admin` --references--> `requireAdmin()`  [INFERRED]
   .claude/skills/leads-backend/SKILL.md → src/lib/supabase/admin.ts
+- `Admin auth guard (`src/lib/supabase/admin.ts`)` --references--> `requireAdmin()`  [INFERRED]
+  docs/04-BACKEND.md → src/lib/supabase/admin.ts
+- `PHASE 7 — Admin auth + protected shell (45m)` --references--> `requireAdmin()`  [INFERRED]
+  docs/PHASES.md → src/lib/supabase/admin.ts
 - `Admin` --references--> `requireAdmin()`  [INFERRED]
   ethixweb-india-kit/.claude/skills/leads-backend/SKILL.md → src/lib/supabase/admin.ts
-- `PHASE 6 — Contact page + form, end-to-end (45m)` --references--> `ContactForm()`  [INFERRED]
-  docs/PHASES.md → src/components/sections/ContactForm.tsx
-- `PHASE 6 — Contact page + form, end-to-end (45m)` --references--> `ContactForm()`  [INFERRED]
-  PHASES.md → src/components/sections/ContactForm.tsx
 
 ## Import Cycles
 - None detected.
 
-## Communities (72 total, 6 thin omitted)
+## Communities (73 total, 6 thin omitted)
 
 ### Community 0 - "WorkSection.tsx"
 Cohesion: 0.25
@@ -124,11 +125,11 @@ Nodes (7): ProjectItem, WorkData, WorkSection(), WorkSectionProps, ProjectItem, 
 
 ### Community 1 - "package.json"
 Cohesion: 0.05
-Nodes (40): eslintConfig, dependencies, next, react, react-dom, @supabase/ssr, @supabase/supabase-js, zod (+32 more)
+Nodes (37): eslintConfig, dependencies, next, react, react-dom, @supabase/ssr, @supabase/supabase-js, zod (+29 more)
 
 ### Community 2 - "(site)/page.tsx"
-Cohesion: 0.27
-Nodes (7): DesignTokensPage(), generateMetadata(), HomePage(), AboutTeaser(), Marquee(), MarqueeProps, getDictionary()
+Cohesion: 0.19
+Nodes (8): CtaBand(), CtaBandData, CtaBandProps, Hero(), HeroData, HeroProps, Marquee(), MarqueeProps
 
 ### Community 3 - "ContactForm.tsx"
 Cohesion: 0.18
@@ -142,9 +143,9 @@ Nodes (7): PlanItem, PricingData, PricingSection(), PricingSectionProps, PlanIte
 Cohesion: 0.11
 Nodes (18): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+10 more)
 
-### Community 6 - "next"
-Cohesion: 0.06
-Nodes (33): nextConfig, next, react, metadata, SiteLayout(), metadata, AdminLogoutButton(), Footer() (+25 more)
+### Community 6 - "Button.tsx"
+Cohesion: 0.07
+Nodes (28): react, AdminContent(), metadata, AdminDashboard(), Counts, Lead, AdminLogoutButton(), Footer() (+20 more)
 
 ### Community 7 - "What You Must Do When Invoked"
 Cohesion: 0.07
@@ -159,8 +160,8 @@ Cohesion: 0.36
 Nodes (6): leads_created_at_idx, leads_ip_hash_idx, leads_set_updated_at, leads_status_idx, public.leads, public.set_updated_at
 
 ### Community 10 - "contact/page.tsx"
-Cohesion: 0.27
-Nodes (7): ContactPage(), generateMetadata(), en, hi, DEFAULT_LOCALE, isValidLocale(), Lang
+Cohesion: 0.29
+Nodes (8): DesignTokensPage(), ContactPage(), generateMetadata(), SiteLayout(), generateMetadata(), HomePage(), getDictionary(), isValidLocale()
 
 ### Community 11 - "supabase/schema.sql"
 Cohesion: 0.36
@@ -172,11 +173,11 @@ Nodes (10): Autonomous Execution Loop (LOOP.md), Detailed Step Protocol, Phases 
 
 ### Community 13 - "PHASES — build in small milestones, verify, then move on"
 Cohesion: 0.11
-Nodes (17): Agent report format (agent must end every phase with this), Hours left? Compress like this, PHASE 0 — Setup (30m), PHASE 10 — India layer + Hindi (60m), PHASE 11 — Polish + accessibility (45m), PHASE 12 — Performance (60m), PHASE 13 — Ship (75m), PHASE 1 — Foundation (45m) (+9 more)
+Nodes (18): Agent report format (agent must end every phase with this), Hours left? Compress like this, PHASE 0 — Setup (30m), PHASE 10 — India layer + Hindi (60m), PHASE 11 — Polish + accessibility (45m), PHASE 12 — Performance (60m), PHASE 13 — Ship (75m), PHASE 1 — Foundation (45m) (+10 more)
 
-### Community 14 - "PHASES — build in small milestones, verify, then move on"
-Cohesion: 0.05
-Nodes (37): 05 — PageSpeed Insights 90+ (mobile AND desktop), Budget rules for the agent, If a score is below 90, Measuring correctly, Targets (mobile), What we do, PHASE 6 — Contact page + form, end-to-end (45m), 05 — PageSpeed Insights 90+ (mobile AND desktop) (+29 more)
+### Community 14 - "StatusPill.tsx"
+Cohesion: 0.10
+Nodes (20): 05 — PageSpeed Insights 90+ (mobile AND desktop), Budget rules for the agent, If a score is below 90, Measuring correctly, Targets (mobile), What we do, PHASE 6 — Contact page + form, end-to-end (45m), 05 — PageSpeed Insights 90+ (mobile AND desktop) (+12 more)
 
 ### Community 15 - "03 — Content (EN + HI). No lorem ipsum. No invented facts."
 Cohesion: 0.11
@@ -211,16 +212,16 @@ Cohesion: 0.15
 Nodes (12): Backend phases (5–8) — security review, Bug report format (when something fails, give the agent this), Final review (Phase 13), Layer 1 — Automated (agent runs, pastes output), Layer 2 — Human check (5 minutes, yourself), Layer 3 — Agent as reviewer (paste after each phase; the agent must NOT edit files in this step), Performance phases (2, 4, 6, 12), Phase scorecard (fill in at each gate; ≥ 80 to proceed) (+4 more)
 
 ### Community 23 - "04 — Backend: leads, admin, security"
-Cohesion: 0.20
-Nodes (9): 04 — Backend: leads, admin, security, Admin dashboard features (P0 → P2), API contract, Architecture in one picture, Error handling pattern, Setup steps, Spam protection layers (explain all four in the interview), Test checklist (do all before submit) (+1 more)
+Cohesion: 0.18
+Nodes (10): 04 — Backend: leads, admin, security, Admin auth guard (`src/lib/supabase/admin.ts`), Admin dashboard features (P0 → P2), API contract, Architecture in one picture, Error handling pattern, Setup steps, Spam protection layers (explain all four in the interview) (+2 more)
 
 ### Community 24 - "07 — Copy-paste prompts for the agent"
 Cohesion: 0.18
 Nodes (10): 07 — Copy-paste prompts for the agent, Prompt 0 — orientation, Prompt 1 — Phase 0 + 1 (setup + design system), Prompt 2 — Phase 2 (home), Prompt 3 — Phase 3 (backend), Prompt 4 — Phase 4 (inner pages + contact), Prompt 5 — Phase 5 (India layer + Hindi), Prompt 6 — Phase 6/7 (polish + performance) (+2 more)
 
 ### Community 25 - "04 — Backend: leads, admin, security"
-Cohesion: 0.20
-Nodes (9): 04 — Backend: leads, admin, security, Admin dashboard features (P0 → P2), API contract, Architecture in one picture, Error handling pattern, Setup steps, Spam protection layers (explain all four in the interview), Test checklist (do all before submit) (+1 more)
+Cohesion: 0.18
+Nodes (10): 04 — Backend: leads, admin, security, Admin auth guard (`src/lib/supabase/admin.ts`), Admin dashboard features (P0 → P2), API contract, Architecture in one picture, Error handling pattern, Setup steps, Spam protection layers (explain all four in the interview) (+2 more)
 
 ### Community 26 - "07 — Copy-paste prompts for Claude Code (or any coding agent)"
 Cohesion: 0.18
@@ -302,9 +303,9 @@ Nodes (7): Anti-patterns to reject, Before you finish a section, Design intent, 
 Cohesion: 0.25
 Nodes (7): Ethixweb motion, Feel-check before finishing, Gate every animation (in order), Implementation notes, Never ship, The approved motion list (everything else: don't add), Tokens (`globals.css`)
 
-### Community 46 - "leads/route.ts"
-Cohesion: 0.23
-Nodes (16): ref_crypto, loginSchema, POST(), POST(), POST(), fail(), HttpError, ok() (+8 more)
+### Community 46 - "next"
+Cohesion: 0.14
+Nodes (28): nextConfig, ref_crypto, next, @supabase/ssr, zod, GET(), sanitizeCsvCell(), DELETE() (+20 more)
 
 ### Community 47 - "India localization"
 Cohesion: 0.29
@@ -319,12 +320,12 @@ Cohesion: 0.29
 Nodes (6): Accessibility for Hindi, Checklist of India features, Honesty rules, India localization, README design-rationale template, The India concept (one sentence)
 
 ### Community 50 - "design/page.tsx"
-Cohesion: 0.27
-Nodes (6): AboutTeaserData, AboutTeaserProps, ChamferCard(), ChamferCardProps, TwoToneHeading(), TwoToneHeadingProps
+Cohesion: 0.19
+Nodes (9): AboutTeaser(), AboutTeaserData, AboutTeaserProps, ChamferCard(), ChamferCardProps, LangToggle(), LangToggleProps, SectionLabel() (+1 more)
 
-### Community 51 - "SectionLabel.tsx"
-Cohesion: 0.20
-Nodes (9): FaqData, FaqItem, FaqSection(), FaqSectionProps, Hero(), HeroData, HeroProps, SectionLabel() (+1 more)
+### Community 51 - "TwoToneHeading.tsx"
+Cohesion: 0.29
+Nodes (6): FaqData, FaqItem, FaqSection(), FaqSectionProps, TwoToneHeading(), TwoToneHeadingProps
 
 ### Community 52 - "graphify reference: query, path, explain"
 Cohesion: 0.33
@@ -378,29 +379,33 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 Cohesion: 0.18
 Nodes (10): Autonomous Execution Loop (LOOP.md), Detailed Step Protocol, Phases Roadmap, Step 1: Implement (Scope-Enforced), Step 2: Verify (Automated Evidence), Step 3: Review (Quality & Security Guardrails), Step 4: Update Context & Checklists, Step 5: Auto-Advance Gate (+2 more)
 
-### Community 71 - "requireAdmin"
-Cohesion: 0.33
-Nodes (6): Admin auth guard (`src/lib/supabase/admin.ts`), PHASE 7 — Admin auth + protected shell (45m), Admin auth guard (`src/lib/supabase/admin.ts`), PHASE 7 — Admin auth + protected shell (45m), AdminContent(), requireAdmin()
+### Community 71 - "PHASES — build in small milestones, verify, then move on"
+Cohesion: 0.11
+Nodes (18): Agent report format (agent must end every phase with this), Hours left? Compress like this, PHASE 0 — Setup (30m), PHASE 10 — India layer + Hindi (60m), PHASE 11 — Polish + accessibility (45m), PHASE 12 — Performance (60m), PHASE 13 — Ship (75m), PHASE 1 — Foundation (45m) (+10 more)
+
+### Community 72 - "app/layout.tsx"
+Cohesion: 0.36
+Nodes (5): metadata, inter, interTight, notoDeva, src_styles_globals
 
 ## Knowledge Gaps
-- **491 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+486 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 565 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **494 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+489 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 569 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `next` connect `next` to `package.json`, `(site)/page.tsx`, `ServicesSection.tsx`, `contact/page.tsx`, `leads/route.ts`, `design/page.tsx`?**
-  _High betweenness centrality (0.062) - this node is a cross-community bridge._
-- **Why does `requireAdmin()` connect `requireAdmin` to `next`, `Leads backend skill`, `Leads backend skill`, `leads/route.ts`, `Leads backend skill`?**
-  _High betweenness centrality (0.059) - this node is a cross-community bridge._
-- **Why does `react` connect `next` to `WorkSection.tsx`, `package.json`, `ContactForm.tsx`, `WhySection.tsx`, `PHASES — build in small milestones, verify, then move on`, `design/page.tsx`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
+- **Why does `next` connect `next` to `package.json`, `(site)/page.tsx`, `Button.tsx`, `app/layout.tsx`, `ServicesSection.tsx`, `contact/page.tsx`, `design/page.tsx`?**
+  _High betweenness centrality (0.073) - this node is a cross-community bridge._
+- **Why does `requireAdmin()` connect `next` to `Button.tsx`, `PHASES — build in small milestones, verify, then move on`, `Leads backend skill`, `Leads backend skill`, `PHASES — build in small milestones, verify, then move on`, `04 — Backend: leads, admin, security`, `04 — Backend: leads, admin, security`, `Leads backend skill`?**
+  _High betweenness centrality (0.063) - this node is a cross-community bridge._
+- **Why does `ContactForm()` connect `StatusPill.tsx` to `contact/page.tsx`, `ContactForm.tsx`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+- **Are the 7 inferred relationships involving `requireAdmin()` (e.g. with `Admin` and `Admin`) actually correct?**
+  _`requireAdmin()` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `eslintConfig`, `nextConfig`, `name` to the rest of the system?**
-  _491 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _494 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.046511627906976744 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05263157894736842 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
-- **Should `next` be split into smaller, more focused modules?**
-  _Cohesion score 0.057912457912457915 - nodes in this community are weakly interconnected._
