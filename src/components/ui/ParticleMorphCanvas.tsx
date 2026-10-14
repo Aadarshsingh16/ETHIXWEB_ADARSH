@@ -38,9 +38,9 @@ export function ParticleMorphCanvas({
   const [isLoaded, setIsLoaded] = useState(false);
   const animFrameRef = useRef<number | null>(null);
 
-  // Animation state refs
-  const morphValue = useRef(0); // 0 = Globe, 1 = Image
-  const targetMorph = useRef(0);
+  // Animation state refs: Default is 1 (Photograph), Touch/Hold morphs to 0 (3D Particle Globe)
+  const morphValue = useRef(1); // 1 = Image, 0 = Globe
+  const targetMorph = useRef(1);
   const globeAngle = useRef(0);
   const particlesRef = useRef<Particle[]>([]);
   const imgElementRef = useRef<HTMLImageElement | null>(null);
@@ -111,6 +111,9 @@ export function ParticleMorphCanvas({
       }
 
       particlesRef.current = particles;
+      // Start in assembled image state (m = 1)
+      morphValue.current = 1;
+      targetMorph.current = 1;
       setIsLoaded(true);
     };
 
@@ -133,12 +136,15 @@ export function ParticleMorphCanvas({
       const dt = Math.min((timeNow - lastTime) / 1000, 0.1);
       lastTime = timeNow;
 
-      // Smooth spring interpolation toward target morph (0 = globe, 1 = image)
+      // Smooth spring interpolation toward target morph (1 = Image, 0 = Globe)
       const diff = targetMorph.current - morphValue.current;
-      morphValue.current += diff * Math.min(dt * 7, 0.35);
+      morphValue.current += diff * Math.min(dt * 7.5, 0.38);
 
-      // Rotate globe when in globe state
-      globeAngle.current += dt * 0.45 * (1 - morphValue.current);
+      const m = morphValue.current;
+      const globeFactor = 1 - m; // 0 when image, 1 when globe
+
+      // Rotate globe when holding (m < 1)
+      globeAngle.current += dt * 0.5 * (1 - m * 0.7);
 
       const width = canvas.width;
       const height = canvas.height;
@@ -152,12 +158,11 @@ export function ParticleMorphCanvas({
 
       const cosYaw = Math.cos(globeAngle.current);
       const sinYaw = Math.sin(globeAngle.current);
-      const m = morphValue.current;
 
-      // 1. Draw High-Resolution Image fading in as particles settle
-      if (m > 0.08 && imgElementRef.current) {
+      // 1. Draw High-Resolution Image: default visible at m = 1, dissolves when touched/held
+      if (m > 0.05 && imgElementRef.current) {
         ctx.save();
-        const fadeAlpha = Math.min(1, Math.max(0, (m - 0.08) / 0.82));
+        const fadeAlpha = Math.min(1, Math.max(0, (m - 0.05) / 0.85));
         ctx.globalAlpha = fadeAlpha;
         ctx.drawImage(
           imgElementRef.current,
@@ -169,15 +174,15 @@ export function ParticleMorphCanvas({
         ctx.restore();
       }
 
-      // 2. Draw 3D Morphed Particles
+      // 2. Draw 3D Morphed Particles: lifts off image and forms rotating 3D globe on hold
       const particles = particlesRef.current;
       const count = particles.length;
 
       for (let i = 0; i < count; i++) {
         const p = particles[i];
 
-        // Globe state position with organic rotation
-        const turb = Math.sin(timeNow * 0.002 * p.speed + p.phase) * 0.035;
+        // 3D Globe state position with organic rotational turbulence
+        const turb = Math.sin(timeNow * 0.002 * p.speed + p.phase) * 0.04 * globeFactor;
         const spunX = (p.sphereX * cosYaw + p.sphereZ * sinYaw) * (1 + turb);
         const spunY = p.sphereY * (1 + turb);
         const spunZ = -p.sphereX * sinYaw + p.sphereZ * cosYaw;
@@ -185,20 +190,20 @@ export function ParticleMorphCanvas({
         const sphereScreenX = centerX + spunX * globeRadius;
         const sphereScreenY = centerY + spunY * globeRadius;
 
-        // Image state position
+        // 2D Image grid position
         const imgScreenX = centerX + (p.imgX * imgWidth) / 2;
         const imgScreenY = centerY + (p.imgY * imgHeight) / 2;
 
-        // Interpolated position between 3D sphere and 2D photograph
-        const posX = sphereScreenX * (1 - m) + imgScreenX * m;
-        const posY = sphereScreenY * (1 - m) + imgScreenY * m;
+        // Interpolated position between Photograph (m = 1) and 3D Globe (m = 0)
+        const posX = sphereScreenX * globeFactor + imgScreenX * m;
+        const posY = sphereScreenY * globeFactor + imgScreenY * m;
 
-        // Alpha and depth lighting
-        const depthAlpha = (1 - m) * ((spunZ + 1.2) / 2.4) + m * (1 - m * 0.5);
-        const finalAlpha = Math.max(0.18, Math.min(1, p.a * depthAlpha));
+        // Depth perspective and alpha: bright in 3D globe mode, soft subtle particles on photo
+        const depthAlpha = globeFactor * ((spunZ + 1.2) / 2.4) + m * 0.22;
+        const finalAlpha = Math.max(0.12, Math.min(1, p.a * depthAlpha));
 
         ctx.fillStyle = `rgba(${p.r}, ${p.g}, ${p.b}, ${finalAlpha})`;
-        const curSize = p.size * (0.9 + 0.3 * (1 - m));
+        const curSize = p.size * (0.85 + 0.35 * globeFactor);
         ctx.fillRect(posX - curSize / 2, posY - curSize / 2, curSize, curSize);
       }
 
@@ -231,14 +236,15 @@ export function ParticleMorphCanvas({
     return () => ro.disconnect();
   }, []);
 
+  // Hold to form particle globe; release to return to image
   const handlePointerDown = useCallback(() => {
     setIsPressed(true);
-    targetMorph.current = 1; // Morph to Image
+    targetMorph.current = 0; // Morph to 3D Globe
   }, []);
 
   const handlePointerUp = useCallback(() => {
     setIsPressed(false);
-    targetMorph.current = 0; // Morph back to Globe
+    targetMorph.current = 1; // Return to Image
   }, []);
 
   return (
@@ -249,12 +255,12 @@ export function ParticleMorphCanvas({
       onPointerLeave={handlePointerUp}
       role="button"
       tabIndex={0}
-      aria-label={`${title} - Hold anywhere to assemble image from rotating particles`}
+      aria-label={`${title} - Hold to form particle globe, release to view image`}
       onKeyDown={(e) => {
         if (e.key === " " || e.key === "Enter") {
-          const next = targetMorph.current === 0 ? 1 : 0;
+          const next = targetMorph.current === 1 ? 0 : 1;
           targetMorph.current = next;
-          setIsPressed(next === 1);
+          setIsPressed(next === 0);
         }
       }}
     >
@@ -279,8 +285,8 @@ export function ParticleMorphCanvas({
           />
           <span>
             {isPressed
-              ? "● Holding: Image Assembled"
-              : "Hold anywhere to assemble image"}
+              ? "● Holding: Particle Globe Active"
+              : "Hold anywhere to form particle globe"}
           </span>
         </div>
       </div>
