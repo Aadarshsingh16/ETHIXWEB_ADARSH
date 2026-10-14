@@ -198,9 +198,9 @@
     "semantic_hash": ""
   },
   "src/components/ui/TwoToneHeading.tsx": {
-    "mtime": 1791985273.2331975,
-    "seen": 1791985442.9692316,
-    "ast_hash": "0f21c1c3d53abad6208b9e56b0d6262e",
+    "mtime": 1791987085.3121326,
+    "seen": 1791987193.6218767,
+    "ast_hash": "8d895b52f1308f13116db4b2acb35e9b",
     "semantic_hash": ""
   },
   "src/components/ui/WorkCard.tsx": {
@@ -780,9 +780,9 @@
     "semantic_hash": ""
   },
   "src/app/[lang]/(site)/services/page.tsx": {
-    "mtime": 1791985216.7878985,
-    "seen": 1791985442.9692316,
-    "ast_hash": "aca6db8a9a884d0d566ea0fb0d7677b9",
+    "mtime": 1791987103.7887127,
+    "seen": 1791987193.6218767,
+    "ast_hash": "e2ec4a02e11d967e752710feffa8b406",
     "semantic_hash": ""
   },
   "src/app/error.tsx": {

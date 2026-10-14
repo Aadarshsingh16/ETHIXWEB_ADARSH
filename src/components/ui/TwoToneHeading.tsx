@@ -3,9 +3,9 @@ import React from "react";
 interface TwoToneHeadingProps {
   as?: "h1" | "h2" | "h3";
   main: string;
-  fade: string;
+  fade?: string;
   size?: "xl" | "lg" | "title";
-  theme?: "light" | "dark";
+  theme?: "light" | "dark" | "auto";
   className?: string;
   italicFade?: boolean;
 }
@@ -13,15 +13,22 @@ interface TwoToneHeadingProps {
 export function TwoToneHeading({
   as: Tag = "h2",
   main,
-  fade,
+  fade = "",
   size = "lg",
-  theme = "light",
+  theme = "auto",
   className = "",
   italicFade = true,
 }: TwoToneHeadingProps) {
-  const isDark = theme === "dark";
-  const mainColor = isDark ? "text-[#fcfcfc]" : "text-[#080808]";
-  const fadeColor = isDark ? "text-[#d4d2d2]/80" : "text-[#525252]";
+  let mainColor = "text-[#080808] dark:text-[#fcfcfc]";
+  let fadeColor = "text-[#525252] dark:text-[#d4d2d2]/80";
+
+  if (theme === "dark") {
+    mainColor = "text-[#fcfcfc]";
+    fadeColor = "text-[#d4d2d2]/80";
+  } else if (theme === "light") {
+    mainColor = "text-[#080808]";
+    fadeColor = "text-[#525252]";
+  }
 
   const sizeClasses = {
     xl: "text-[46px] sm:text-[68px] lg:text-[96px] xl:text-[120px] leading-[0.92] tracking-[-0.055em] font-bold font-[family-name:var(--font-display)]",

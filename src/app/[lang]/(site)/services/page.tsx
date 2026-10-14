@@ -57,7 +57,7 @@ export default async function ServicesPage({
             className="mt-4"
           />
           <p className="mt-4 text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-            22 specialized capabilities organized across 6 core practice areas. Engineered for speed, mobile conversions, and Indian buying habits.
+            {t.services.sub}
           </p>
         </div>
 
