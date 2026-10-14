@@ -1,4 +1,4 @@
-import { Inter_Tight, Inter, Noto_Sans_Devanagari } from "next/font/google";
+import { Inter_Tight, Inter, Noto_Sans_Devanagari, Playfair_Display } from "next/font/google";
 
 export const interTight = Inter_Tight({
   weight: ["600", "700"],
@@ -9,10 +9,19 @@ export const interTight = Inter_Tight({
 });
 
 export const inter = Inter({
-  weight: ["400", "500"],
+  weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+  adjustFontFallback: true,
+});
+
+export const editorialSerif = Playfair_Display({
+  weight: ["400", "500"],
+  style: ["italic"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-editorial",
   adjustFontFallback: true,
 });
 

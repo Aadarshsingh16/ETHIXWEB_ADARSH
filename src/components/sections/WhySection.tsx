@@ -1,6 +1,5 @@
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { TwoToneHeading } from "@/components/ui/TwoToneHeading";
-import { FeatureCard } from "@/components/ui/FeatureCard";
 
 interface WhyCard {
   title: string;
@@ -20,50 +19,54 @@ interface WhySectionProps {
 
 export function WhySection({ data }: WhySectionProps) {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 mb-16 sm:mb-24">
-      <div className="space-y-4 mb-10">
-        <SectionLabel>{data.label}</SectionLabel>
-        <TwoToneHeading
-          as="h2"
-          main={data.headingMain}
-          fade={data.headingFade}
-          size="lg"
-          className="max-w-3xl"
-        />
-      </div>
+    <section className="w-full bg-[#f3efef] text-[#080808] border-y border-[#d4d2d2] py-20 sm:py-28 my-16 sm:my-24 overflow-hidden relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div className="space-y-4 max-w-4xl">
+          <SectionLabel theme="light" hasDot={true}>
+            {data.label}
+          </SectionLabel>
+          <TwoToneHeading
+            as="h2"
+            main={data.headingMain}
+            fade={data.headingFade}
+            size="lg"
+            theme="light"
+            italicFade={true}
+          />
+        </div>
 
-      {/* Bento grid layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {data.cards.map((card, idx) => {
-          // Span 2 columns on first card for bento hierarchy
-          const isLarge = idx === 0 || idx === 3;
+        {/* SVZ Inverted Linen Bento Grid — 8px radius with 1px hairline border */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {data.cards.map((card, idx) => {
+            const isLarge = idx === 0 || idx === 3;
 
-          return (
-            <FeatureCard
-              key={idx}
-              className={`flex flex-col justify-between ${
-                isLarge ? "lg:col-span-2" : "lg:col-span-1"
-              }`}
-            >
-              <div className="space-y-4">
-                <div className="w-9 h-9 rounded-full bg-[#FDECEC] dark:bg-[#C1272D]/20 text-[#C1272D] flex items-center justify-center font-bold text-sm">
-                  ✦
+            return (
+              <div
+                key={idx}
+                className={`rounded-[8px] bg-white border border-[#d4d2d2] p-8 flex flex-col justify-between transition-transform duration-200 ease-out hover:-translate-y-0.5 shadow-sm ${
+                  isLarge ? "lg:col-span-2" : "lg:col-span-1"
+                }`}
+              >
+                <div className="space-y-4">
+                  <div className="w-8 h-8 rounded-[4px] bg-[#080808] text-[#fcfcfc] flex items-center justify-center font-mono text-xs font-bold">
+                    0{idx + 1}
+                  </div>
+                  <h3 className="text-[22px] font-bold text-[#080808] tracking-tight uppercase font-[family-name:var(--font-display)]">
+                    {card.title}
+                  </h3>
+                  <p className="text-[15px] text-[#525252] leading-relaxed font-normal">
+                    {card.desc}
+                  </p>
                 </div>
-                <h3 className="text-[22px] sm:text-[24px] font-semibold text-[#0C0C0D] dark:text-white tracking-tight">
-                  {card.title}
-                </h3>
-                <p className="text-[15px] sm:text-[16px] text-[#6E6E73] dark:text-[#A1A1A6] leading-relaxed">
-                  {card.desc}
-                </p>
-              </div>
 
-              <div className="pt-6 mt-6 border-t border-[#E6E6E8] dark:border-[#242426] flex items-center justify-between text-[12px] font-mono text-[#A1A1A6]">
-                <span>ETHIXWEB INDIA SPECIFICATION</span>
-                <span className="text-[#C1272D] font-bold">VERIFIED</span>
+                <div className="pt-6 mt-6 border-t border-[#d4d2d2]/60 flex items-center justify-between text-[11px] font-mono text-[#525252] tracking-[0.18em]">
+                  <span>INDIA STACK ARCHITECTURE</span>
+                  <span className="text-[#fe1e34] font-bold">VERIFIED</span>
+                </div>
               </div>
-            </FeatureCard>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </section>
   );

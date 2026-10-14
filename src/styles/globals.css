@@ -3,39 +3,58 @@
 @variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand */
-  --color-red-500: #C1272D;
-  --color-red-600: #A51F25;
-  --color-red-50:  #FDECEC;
+  /* SVZ Brand Palette */
+  --color-arterial-red:   #fe1e34;
+  --color-crimson-pure:   #ff0000;
+  --color-red-500:        #fe1e34;
+  --color-red-600:        #d81528;
+  --color-red-50:         #fdecec;
 
-  /* Neutrals */
-  --color-ink:       #0C0C0D;
-  --color-ink-2:     #161617;
-  --color-ink-3:     #242426;
-  --color-paper:     #FFFFFF;
-  --color-mist:      #F5F5F7;
-  --color-line:      #E6E6E8;
-  --color-mute:      #6E6E73;
-  --color-fade:      #A1A1A6;
-  --color-mute-dark: #A1A1A6;
+  /* SVZ Neutrals & Surfaces */
+  --color-void-canvas:    #080808;
+  --color-absolute-black: #000000;
+  --color-charcoal-plate: #171617;
+  --color-smoke-plate:    #262525;
+  --color-graphite-lift:  #393939;
+  --color-iron:           #525252;
+  --color-pebble:         #b5b2b2;
+  --color-ash:            #d4d2d2;
+  --color-linen:          #f3efef;
+  --color-bone-white:     #fcfcfc;
+
+  /* Backward Compatible Tokens */
+  --color-ink:            #080808;
+  --color-ink-2:          #171617;
+  --color-ink-3:          #262525;
+  --color-paper:          #fcfcfc;
+  --color-mist:           #080808;
+  --color-line:           #262525;
+  --color-mute:           #d4d2d2;
+  --color-fade:           #b5b2b2;
 
   /* Functional */
-  --color-wa: #25D366;
-  --color-ok: #16A34A;
+  --color-wa:             #25D366;
+  --color-ok:             #16A34A;
 
-  /* Fonts */
-  --font-display: var(--font-inter-tight), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-sans:    var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-deva:    var(--font-noto-deva), var(--font-inter), sans-serif;
+  /* Typography */
+  --font-display:         var(--font-inter-tight), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans:            var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-editorial:       var(--font-editorial), Georgia, serif;
+  --font-deva:            var(--font-noto-deva), var(--font-inter), sans-serif;
 
-  /* Radius */
-  --radius-card:  28px;
-  --radius-pill:  9999px;
-  --radius-input: 14px;
+  /* SVZ Precise Editorial Radii */
+  --radius-sm:            3px;
+  --radius-nav:           3px;
+  --radius-cards:         8px;
+  --radius-buttons:       8px;
+  --radius-card:          8px;
+  --radius-largecards:    14.4px;
+  --radius-pill:          9999px;
+  --radius-input:         8px;
 
   /* Easing */
-  --ease-out:    cubic-bezier(0.23, 1, 0.32, 1);
-  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-out:             cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out:          cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 :root {
@@ -47,37 +66,37 @@
   --dur-reveal:  480ms;
   --dur-hero:    700ms;
 
-  /* Light Theme Semantic Tokens */
-  --color-bg:             #F5F5F7;
-  --color-surface:        #FFFFFF;
-  --color-surface-hover:  #EEEEF0;
-  --color-border:         #E6E6E8;
-  --color-border-strong:  #D1D1D6;
-  --color-text:           #0C0C0D;
-  --color-text-secondary: #6E6E73;
-  --color-text-muted:     #6E6E73;
-  --color-fade:           #A1A1A6;
-  --color-red:            #C1272D;
-  --color-card:           #FFFFFF;
-  --color-card-border:    #E6E6E8;
-  --color-input-bg:       #FFFFFF;
+  /* Light Theme (Inverted Linen Surface) */
+  --color-bg:             #f3efef;
+  --color-surface:        #ffffff;
+  --color-surface-hover:  #eae6e6;
+  --color-border:         #d4d2d2;
+  --color-border-strong:  #525252;
+  --color-text:           #080808;
+  --color-text-secondary: #393939;
+  --color-text-muted:     #525252;
+  --color-fade:           #b5b2b2;
+  --color-red:            #fe1e34;
+  --color-card:           #ffffff;
+  --color-card-border:    #d4d2d2;
+  --color-input-bg:       #ffffff;
 }
 
 .dark {
-  /* Dark Theme Semantic Tokens */
-  --color-bg:             #0C0C0D;
-  --color-surface:        #161617;
-  --color-surface-hover:  #242426;
-  --color-border:         #242426;
-  --color-border-strong:  #38383B;
-  --color-text:           #FFFFFF;
-  --color-text-secondary: #A1A1A6;
-  --color-text-muted:     #A1A1A6;
-  --color-fade:           #6E6E73;
-  --color-red:            #C1272D;
-  --color-card:           #161617;
-  --color-card-border:    #242426;
-  --color-input-bg:       #161617;
+  /* SVZ Void Canvas Dark Theme (Primary) */
+  --color-bg:             #080808;
+  --color-surface:        #171617;
+  --color-surface-hover:  #262525;
+  --color-border:         #262525;
+  --color-border-strong:  #393939;
+  --color-text:           #fcfcfc;
+  --color-text-secondary: #d4d2d2;
+  --color-text-muted:     #b5b2b2;
+  --color-fade:           #525252;
+  --color-red:            #fe1e34;
+  --color-card:           #171617;
+  --color-card-border:    #262525;
+  --color-input-bg:       #171617;
 }
 
 /* Global resets & typography */

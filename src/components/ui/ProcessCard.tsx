@@ -11,26 +11,26 @@ interface ProcessCardProps {
 
 export function ProcessCard({ step, index }: ProcessCardProps) {
   // Staggered top offset on desktop for an organic editorial flow
-  const desktopOffset = index % 2 === 1 ? "md:translate-y-8" : "";
+  const desktopOffset = index % 2 === 1 ? "md:translate-y-6" : "";
 
   return (
     <div
-      className={`rounded-[28px] bg-white dark:bg-[#161617] border border-[#E6E6E8] dark:border-[#242426] p-8 flex flex-col justify-between transition-all duration-200 ease-out hover:-translate-y-1 ${desktopOffset}`}
+      className={`rounded-[8px] bg-[#171617] border border-[#262525] p-8 flex flex-col justify-between transition-all duration-200 ease-out hover:-translate-y-1 hover:border-[#393939] ${desktopOffset}`}
     >
-      <div className="flex items-center justify-between mb-6">
-        <span className="font-mono text-[28px] font-bold text-[#0C0C0D] dark:text-white tracking-tight">
+      <div className="flex items-center justify-between mb-8">
+        <span className="font-mono text-[26px] font-bold text-[#fcfcfc] tracking-tight">
           {step.number}
         </span>
-        <div className="w-10 h-10 rounded-full bg-[#FDECEC] dark:bg-[#C1272D]/20 flex items-center justify-center text-[#C1272D]">
-          <span className="text-[14px] font-bold">✦</span>
+        <div className="w-8 h-8 rounded-[3px] bg-[#080808] border border-[#262525] flex items-center justify-center text-[#fe1e34]">
+          <span className="text-[12px] font-bold">✦</span>
         </div>
       </div>
 
       <div className="space-y-3">
-        <h3 className="text-[22px] font-semibold text-[#0C0C0D] dark:text-white tracking-tight">
+        <h3 className="text-[20px] font-bold text-[#fcfcfc] tracking-tight font-[family-name:var(--font-display)]">
           {step.title}
         </h3>
-        <p className="text-[15px] sm:text-[16px] text-[#6E6E73] dark:text-[#A1A1A6] leading-relaxed">
+        <p className="text-[14px] text-[#b5b2b2] leading-relaxed font-light">
           {step.desc}
         </p>
       </div>

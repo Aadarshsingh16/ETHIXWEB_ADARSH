@@ -27,7 +27,7 @@ interface PricingSectionProps {
 export function PricingSection({ lang, data }: PricingSectionProps) {
   return (
     <section id="pricing" className="max-w-6xl mx-auto px-4 sm:px-6 mb-16 sm:mb-24">
-      <div className="space-y-4 mb-10">
+      <div className="space-y-4 mb-12">
         <SectionLabel>{data.label}</SectionLabel>
         <TwoToneHeading
           as="h2"
@@ -36,7 +36,7 @@ export function PricingSection({ lang, data }: PricingSectionProps) {
           size="lg"
           className="max-w-3xl"
         />
-        <p className="text-[14px] text-[#6E6E73] max-w-2xl">
+        <p className="text-[13px] font-mono uppercase tracking-[0.12em] text-[#8e8c8c] max-w-2xl">
           {data.disclaimer}
         </p>
       </div>

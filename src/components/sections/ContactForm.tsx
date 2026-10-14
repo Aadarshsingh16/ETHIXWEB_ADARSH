@@ -243,7 +243,7 @@ export function ContactForm({ content }: ContactFormProps) {
     <form
       onSubmit={handleSubmit}
       noValidate
-      className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 md:p-10 space-y-6"
+      className="rounded-[14.4px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 md:p-10 space-y-6"
       aria-label="Project enquiry form"
     >
       {/* Server Error Banner with WhatsApp fallback */}

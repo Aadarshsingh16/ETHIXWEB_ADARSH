@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export type ButtonVariant = "primary" | "accent" | "outline" | "whatsapp" | "secondary";
+export type ButtonVariant = "primary" | "accent" | "outline" | "whatsapp" | "secondary" | "ghost" | "discovery";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
@@ -21,25 +21,30 @@ export function Button({
   className = "",
   ...props
 }: ButtonProps) {
+  // SVZ Design Tokens: 8px radius, crisp uppercase typography, tracked letter-spacing
   const baseStyles =
-    "inline-flex items-center justify-center gap-2.5 h-12 px-6 rounded-full font-medium text-[15px] select-none transition-transform duration-120 ease-out active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C1272D]";
+    "inline-flex items-center justify-center gap-2.5 h-11 px-5 rounded-[8px] text-[12px] font-mono font-medium uppercase tracking-[0.12em] select-none transition-all duration-160 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#fe1e34] active:scale-[0.98]";
 
   const variantStyles: Record<ButtonVariant, string> = {
     primary:
-      "bg-[#0C0C0D] text-white hover:bg-[#242426] dark:bg-white dark:text-[#0C0C0D] dark:hover:bg-[#E6E6E8]",
+      "bg-[#fcfcfc] text-[#080808] hover:bg-[#d4d2d2] dark:bg-[#fcfcfc] dark:text-[#080808]",
     accent:
-      "bg-[#C1272D] text-white hover:bg-[#A51F25] active:bg-[#8F1A20]",
+      "bg-[#fe1e34] text-[#fcfcfc] hover:bg-[#d81528] active:bg-[#b01020] shadow-[0_0_20px_rgba(254,30,52,0.25)]",
+    discovery:
+      "bg-transparent text-[#fcfcfc] border border-[#d4d2d2]/40 hover:border-[#fcfcfc] hover:bg-white/5",
+    ghost:
+      "bg-transparent text-[#fcfcfc] hover:text-[#fe1e34] border-0 p-0 h-auto tracking-[0.16em]",
     outline:
-      "border border-[#E6E6E8] text-[#0C0C0D] hover:bg-[#F5F5F7] dark:border-[#242426] dark:text-white dark:hover:bg-[#161617]",
+      "border border-[#262525] text-[#fcfcfc] hover:border-[#525252] hover:bg-[#171617] dark:border-[#262525] dark:text-[#fcfcfc]",
     whatsapp:
-      "bg-[#25D366] text-white hover:bg-[#20BA5A] active:bg-[#1DA851]",
+      "bg-[#25D366] text-[#080808] hover:bg-[#20BA5A] font-semibold",
     secondary:
-      "bg-[#F5F5F7] text-[#0C0C0D] hover:bg-[#E6E6E8] dark:bg-[#161617] dark:text-white dark:hover:bg-[#242426]",
+      "bg-[#171617] text-[#fcfcfc] border border-[#262525] hover:border-[#525252]",
   };
 
   const arrowIcon = (
     <span
-      className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-black/10 dark:bg-white/15 transition-transform duration-160 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+      className="inline-flex items-center justify-center transition-transform duration-160 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
       aria-hidden="true"
     >
       <svg
@@ -64,7 +69,7 @@ export function Button({
     <>
       {variant === "whatsapp" && whatsappIcon}
       <span>{children}</span>
-      {arrow && arrowIcon}
+      {(arrow || variant === "discovery" || variant === "ghost") && arrowIcon}
     </>
   );
 

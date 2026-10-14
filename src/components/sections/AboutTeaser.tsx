@@ -32,16 +32,16 @@ export function AboutTeaser({ lang, data }: AboutTeaserProps) {
         />
       </div>
 
-      {/* 2 ChamferCards (Covix signature polygon) */}
+      {/* 2 Editorial Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-        {/* ChamferCard 1: Trustpilot */}
-        <ChamferCard theme="light">
+        {/* Card 1: Trustpilot */}
+        <ChamferCard>
           <div className="space-y-4">
-            <div className="flex items-center gap-1.5 text-[#16A34A]">
+            <div className="flex items-center gap-1.5 text-[#25D366]">
               {[...Array(5)].map((_, i) => (
                 <svg
                   key={i}
-                  className="w-5 h-5 fill-current"
+                  className="w-4 h-4 fill-current"
                   viewBox="0 0 20 20"
                   aria-hidden="true"
                 >
@@ -50,11 +50,11 @@ export function AboutTeaser({ lang, data }: AboutTeaserProps) {
               ))}
             </div>
 
-            <h3 className="text-[26px] sm:text-[30px] font-semibold text-[#0C0C0D] dark:text-white tracking-tight">
+            <h3 className="text-[24px] sm:text-[28px] font-bold text-[#fcfcfc] tracking-[-0.03em] font-[family-name:var(--font-display)]">
               {data.statTrustpilot}
             </h3>
 
-            <p className="text-[15px] text-[#6E6E73] dark:text-[#A1A1A6] leading-relaxed">
+            <p className="text-[14px] sm:text-[15px] text-[#b5b2b2] leading-relaxed font-light">
               Real client ratings verified on Trustpilot for global development and digital operations excellence.
             </p>
 
@@ -63,37 +63,37 @@ export function AboutTeaser({ lang, data }: AboutTeaserProps) {
                 href="https://www.trustpilot.com/review/ethixweb.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#C1272D] hover:underline"
+                className="inline-flex items-center gap-2 text-[12px] font-mono uppercase tracking-[0.18em] text-[#fe1e34] hover:text-white transition-colors duration-160 group/cta"
               >
                 <span>{data.trustpilotLink}</span>
-                <span aria-hidden="true">↗</span>
+                <span className="transition-transform duration-160 group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5" aria-hidden="true">↗</span>
               </a>
             </div>
           </div>
         </ChamferCard>
 
-        {/* ChamferCard 2: 22 Services & Hub */}
-        <ChamferCard theme="light">
+        {/* Card 2: 22 Services & Hub */}
+        <ChamferCard>
           <div className="space-y-4">
-            <div className="w-10 h-10 rounded-full bg-[#FDECEC] dark:bg-[#C1272D]/20 text-[#C1272D] flex items-center justify-center font-bold">
+            <div className="w-8 h-8 rounded-[3px] bg-[#080808] border border-[#262525] text-[#fe1e34] flex items-center justify-center font-bold text-xs">
               ✦
             </div>
 
-            <h3 className="text-[26px] sm:text-[30px] font-semibold text-[#0C0C0D] dark:text-white tracking-tight">
+            <h3 className="text-[24px] sm:text-[28px] font-bold text-[#fcfcfc] tracking-[-0.03em] font-[family-name:var(--font-display)]">
               {data.statServices}
             </h3>
 
-            <p className="text-[15px] text-[#6E6E73] dark:text-[#A1A1A6] leading-relaxed">
+            <p className="text-[14px] sm:text-[15px] text-[#b5b2b2] leading-relaxed font-light">
               {data.statAvailability}. Seattle, Utah, New York, Canada, UK, and our specialized India delivery team.
             </p>
 
             <div>
               <Link
                 href={`/${lang}/about`}
-                className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#0C0C0D] dark:text-white hover:text-[#C1272D] transition-colors"
+                className="inline-flex items-center gap-2 text-[12px] font-mono uppercase tracking-[0.18em] text-[#fcfcfc] hover:text-[#fe1e34] transition-colors duration-160 group/cta"
               >
                 <span>Read our India story</span>
-                <span aria-hidden="true">→</span>
+                <span className="transition-transform duration-160 group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5" aria-hidden="true">↗</span>
               </Link>
             </div>
           </div>

@@ -69,7 +69,7 @@ export default async function ContactPage({
 
           {/* Direct Support Side Card (5 cols) */}
           <aside className="lg:col-span-5 space-y-6">
-            <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 md:p-8 space-y-6">
+            <div className="rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 md:p-8 space-y-6">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#25D366]/10 text-[#25D366]">
                   <svg
@@ -139,7 +139,7 @@ export default async function ContactPage({
             </div>
 
             {/* Quick Reassurance Box */}
-            <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 space-y-3">
+            <div className="rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 space-y-3">
               <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--color-text)]">
                 Our Guarantee
               </h3>

@@ -15,31 +15,36 @@ interface WorkCardProps {
 }
 
 export function WorkCard({ project, index }: WorkCardProps) {
-  // Color palette variation for mockups (flat tones, no generic blue/green)
-  const mockupAccents = ["#C1272D", "#161617", "#242426", "#0C0C0D", "#A51F25"];
-  const accent = mockupAccents[index % mockupAccents.length];
+  const isFirst = index === 0;
 
   return (
     <div
-      className="sticky top-[100px] w-full mb-8 last:mb-0 transition-transform duration-200"
+      className="sticky top-[90px] w-full mb-8 last:mb-0 transition-transform duration-200"
       style={{
-        top: `calc(90px + ${index * 16}px)`,
+        top: `calc(80px + ${index * 16}px)`,
       }}
     >
-      <div className="rounded-[28px] bg-white dark:bg-[#161617] border border-[#E6E6E8] dark:border-[#242426] p-6 sm:p-10 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      {/* SVZ Gallery Card — 8px radius with 1px border; arterial red on first featured */}
+      <div
+        className={`rounded-[8px] bg-white dark:bg-[#171617] border p-6 sm:p-10 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center ${
+          isFirst
+            ? "border-[#fe1e34] shadow-[0_0_24px_rgba(254,30,52,0.12)]"
+            : "border-[#d4d2d2] dark:border-[#262525]"
+        }`}
+      >
         {/* Left: Info */}
-        <div className="lg:col-span-6 space-y-4">
+        <div className="lg:col-span-6 space-y-5">
           <div className="inline-flex items-center gap-2">
-            <span className="text-[11px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full bg-[#F5F5F7] dark:bg-[#242426] text-[#6E6E73] dark:text-[#A1A1A6] border border-[#E6E6E8] dark:border-[#2E2E31]">
+            <span className="text-[10px] font-mono font-bold tracking-[0.22em] uppercase px-2.5 py-1 rounded-[3px] bg-[#f3efef] dark:bg-[#262525] text-[#525252] dark:text-[#d4d2d2] border border-[#d4d2d2] dark:border-[#393939]">
               {project.badge}
             </span>
           </div>
 
-          <h3 className="text-[26px] sm:text-[34px] font-semibold text-[#0C0C0D] dark:text-white tracking-tight leading-tight">
+          <h3 className="text-[28px] sm:text-[38px] font-bold text-[#080808] dark:text-[#fcfcfc] tracking-[-0.035em] leading-[1.04] uppercase font-[family-name:var(--font-display)]">
             {project.title}
           </h3>
 
-          <p className="text-[16px] sm:text-[18px] text-[#6E6E73] dark:text-[#A1A1A6] leading-relaxed">
+          <p className="text-[15px] sm:text-[17px] text-[#525252] dark:text-[#d4d2d2] leading-relaxed font-light">
             {project.desc}
           </p>
 
@@ -47,7 +52,7 @@ export function WorkCard({ project, index }: WorkCardProps) {
             {project.tags.map((tag, tIdx) => (
               <span
                 key={tIdx}
-                className="text-[13px] px-3 py-1 rounded-full bg-[#F5F5F7] dark:bg-[#242426] text-[#0C0C0D] dark:text-[#E6E6E8] font-medium"
+                className="text-[11px] font-mono uppercase tracking-[0.12em] px-3 py-1 rounded-[3px] bg-[#f3efef] dark:bg-[#262525] text-[#080808] dark:text-[#fcfcfc] border border-[#d4d2d2] dark:border-[#393939]"
               >
                 {tag}
               </span>
@@ -57,22 +62,22 @@ export function WorkCard({ project, index }: WorkCardProps) {
 
         {/* Right: Indian Market Architecture Mockup / Image Container */}
         <div className="lg:col-span-6">
-          <div className="rounded-[20px] bg-[#F5F5F7] dark:bg-[#0C0C0D] border border-[#E6E6E8] dark:border-[#242426] p-4 sm:p-5 flex flex-col justify-between overflow-hidden relative shadow-inner">
+          <div className="rounded-[8px] bg-[#f3efef] dark:bg-[#080808] border border-[#d4d2d2] dark:border-[#262525] p-4 sm:p-5 flex flex-col justify-between overflow-hidden relative">
             {/* Browser top-bar */}
-            <div className="flex items-center justify-between border-b border-[#E6E6E8] dark:border-[#242426] pb-3 mb-2">
+            <div className="flex items-center justify-between border-b border-[#d4d2d2] dark:border-[#262525] pb-3 mb-2">
               <div className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#E6E6E8] dark:bg-[#2E2E31]" />
-                <span className="w-2.5 h-2.5 rounded-full bg-[#E6E6E8] dark:bg-[#2E2E31]" />
-                <span className="w-2.5 h-2.5 rounded-full bg-[#E6E6E8] dark:bg-[#2E2E31]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#d4d2d2] dark:bg-[#262525]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#d4d2d2] dark:bg-[#262525]" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#d4d2d2] dark:bg-[#262525]" />
               </div>
-              <div className="text-[11px] font-mono text-[#6E6E73] dark:text-[#A1A1A6] px-3 py-0.5 rounded-md bg-white dark:bg-[#161617] border border-[#E6E6E8] dark:border-[#242426]">
+              <div className="text-[11px] font-mono text-[#525252] dark:text-[#d4d2d2] px-3 py-0.5 rounded-[3px] bg-white dark:bg-[#171617] border border-[#d4d2d2] dark:border-[#262525] tracking-wider">
                 {project.id}.ethixweb.in
               </div>
               <span className="w-2.5 h-2.5" />
             </div>
 
             {/* Real High-Resolution Concept Mockup Image */}
-            <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden border border-[#E6E6E8] dark:border-[#242426] bg-[#0C0C0D] my-2 group/img">
+            <div className="relative w-full aspect-[16/10] rounded-[6px] overflow-hidden border border-[#d4d2d2] dark:border-[#262525] bg-[#080808] my-2 group/img">
               <Image
                 src={`/images/concept/work-${project.id}.jpg`}
                 alt={project.title}
@@ -83,10 +88,10 @@ export function WorkCard({ project, index }: WorkCardProps) {
             </div>
 
             {/* Bottom metric */}
-            <div className="flex items-center justify-between pt-2 border-t border-[#E6E6E8] dark:border-[#242426] text-[11px] text-[#6E6E73] dark:text-[#A1A1A6]">
-              <span>Next.js 16 + Core Web Vitals 95+</span>
-              <span className="font-semibold" style={{ color: accent }}>
-                India Stack Architecture
+            <div className="flex items-center justify-between pt-2 border-t border-[#d4d2d2] dark:border-[#262525] text-[11px] font-mono text-[#525252] dark:text-[#d4d2d2] tracking-[0.14em]">
+              <span>CORE WEB VITALS 95+</span>
+              <span className="font-semibold text-[#fe1e34]">
+                INDIA STACK ARCHITECTURE
               </span>
             </div>
           </div>

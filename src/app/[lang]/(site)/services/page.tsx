@@ -66,7 +66,7 @@ export default async function ServicesPage({
           {t.services.items.map((cat, idx) => (
             <div
               key={cat.id || idx}
-              className="flex flex-col justify-between rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8 hover:border-[var(--color-border-strong)] transition-all"
+              className="flex flex-col justify-between rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8 hover:border-[var(--color-border-strong)] transition-all"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
@@ -129,7 +129,7 @@ export default async function ServicesPage({
         </div>
 
         {/* Bottom CTA Card */}
-        <div className="mt-16 rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 md:p-12 text-center max-w-4xl mx-auto space-y-4">
+        <div className="mt-16 rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-8 md:p-12 text-center max-w-4xl mx-auto space-y-4">
           <h2 className="font-heading text-2xl md:text-3xl font-bold text-[var(--color-text)]">
             Not sure which service fits your stage?
           </h2>

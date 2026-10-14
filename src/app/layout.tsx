@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { interTight, inter, notoDeva } from "@/lib/fonts";
+import { interTight, inter, editorialSerif, notoDeva } from "@/lib/fonts";
 import "@/styles/globals.css";
 
 export const viewport: Viewport = {
-  themeColor: "#0C0C0D",
+  themeColor: "#080808",
   width: "device-width",
   initialScale: 1,
 };
@@ -52,7 +52,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${interTight.variable} ${inter.variable} ${notoDeva.variable} scroll-smooth`}
+      className={`${interTight.variable} ${inter.variable} ${editorialSerif.variable} ${notoDeva.variable} scroll-smooth`}
     >
       <head>
         <script

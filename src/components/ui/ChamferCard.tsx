@@ -8,17 +8,11 @@ interface ChamferCardProps {
 
 export function ChamferCard({
   children,
-  theme = "light",
   className = "",
 }: ChamferCardProps) {
-  const isDark = theme === "dark";
-  const bgStyles = isDark
-    ? "bg-[#161617] text-white border border-[#242426]"
-    : "bg-white dark:bg-[#161617] text-[#0C0C0D] dark:text-white border border-[#E6E6E8] dark:border-[#242426]";
-
   return (
     <div
-      className={`chamfer-card p-6 sm:p-8 transition-transform duration-200 ease-out hover:-translate-y-0.5 ${bgStyles} ${className}`}
+      className={`rounded-[8px] p-6 sm:p-8 bg-[#171617] text-[#fcfcfc] border border-[#262525] hover:border-[#393939] transition-all duration-200 ease-out hover:-translate-y-0.5 ${className}`}
     >
       {children}
     </div>

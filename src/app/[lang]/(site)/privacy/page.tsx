@@ -60,7 +60,7 @@ export default async function PrivacyPage({
         </div>
 
         {/* Core Principles */}
-        <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8 space-y-4">
+        <div className="rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8 space-y-4">
           <h2 className="font-heading text-lg font-bold text-[var(--color-text)]">
             Our Core Privacy Pledge
           </h2>

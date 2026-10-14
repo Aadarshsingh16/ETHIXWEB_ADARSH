@@ -62,7 +62,7 @@ export default async function AboutPage({
 
         {/* Narrative Chapters (Editorial Storytelling) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8 space-y-4">
+          <div className="rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8 space-y-4">
             <span className="font-mono text-xs font-semibold text-[var(--color-red)] tracking-wider">
               PART 01
             </span>
@@ -74,7 +74,7 @@ export default async function AboutPage({
             </p>
           </div>
 
-          <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8 space-y-4">
+          <div className="rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8 space-y-4">
             <span className="font-mono text-xs font-semibold text-[var(--color-red)] tracking-wider">
               PART 02
             </span>
@@ -86,7 +86,7 @@ export default async function AboutPage({
             </p>
           </div>
 
-          <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8 space-y-4">
+          <div className="rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 sm:p-8 space-y-4">
             <span className="font-mono text-xs font-semibold text-[var(--color-red)] tracking-wider">
               PART 03
             </span>
@@ -100,7 +100,7 @@ export default async function AboutPage({
         </div>
 
         {/* Core Principles */}
-        <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 md:p-12 space-y-8">
+        <div className="rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-8 md:p-12 space-y-8">
           <div>
             <span className="text-xs font-semibold uppercase tracking-wider text-[var(--color-red)]">
               How We Operate
@@ -129,7 +129,7 @@ export default async function AboutPage({
 
         {/* True Numbers Trust Bar */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-          <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
+          <div className="rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
             <div className="font-mono text-3xl md:text-4xl font-bold text-[var(--color-text)]">
               4.0★
             </div>
@@ -137,7 +137,7 @@ export default async function AboutPage({
               Verified Trustpilot Rating
             </div>
           </div>
-          <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
+          <div className="rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
             <div className="font-mono text-3xl md:text-4xl font-bold text-[var(--color-text)]">
               22
             </div>
@@ -145,7 +145,7 @@ export default async function AboutPage({
               Capabilities across 6 domains
             </div>
           </div>
-          <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
+          <div className="rounded-[8px] border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
             <div className="font-mono text-3xl md:text-4xl font-bold text-[var(--color-text)]">
               100% IST
             </div>

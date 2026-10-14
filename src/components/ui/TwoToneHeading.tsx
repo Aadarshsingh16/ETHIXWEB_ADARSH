@@ -7,6 +7,7 @@ interface TwoToneHeadingProps {
   size?: "xl" | "lg" | "title";
   theme?: "light" | "dark";
   className?: string;
+  italicFade?: boolean;
 }
 
 export function TwoToneHeading({
@@ -16,21 +17,37 @@ export function TwoToneHeading({
   size = "lg",
   theme = "light",
   className = "",
+  italicFade = true,
 }: TwoToneHeadingProps) {
   const isDark = theme === "dark";
-  const mainColor = isDark ? "text-white" : "text-[#0C0C0D] dark:text-white";
-  const fadeColor = isDark ? "text-[#6B6B70]" : "text-[#A1A1A6] dark:text-[#6B6B70]";
+  const mainColor = isDark ? "text-[#fcfcfc]" : "text-[#080808] dark:text-[#fcfcfc]";
+  const fadeColor = isDark
+    ? "text-[#d4d2d2]/80"
+    : "text-[#525252] dark:text-[#d4d2d2]/80";
 
   const sizeClasses = {
-    xl: "text-[40px] sm:text-[56px] lg:text-[76px] xl:text-[92px] leading-[1.02] tracking-[-0.03em] font-semibold font-[family-name:var(--font-display)]",
-    lg: "text-[28px] sm:text-[40px] lg:text-[52px] leading-[1.08] tracking-[-0.025em] font-semibold font-[family-name:var(--font-display)]",
-    title: "text-[22px] sm:text-[28px] leading-[1.2] tracking-[-0.02em] font-semibold font-[family-name:var(--font-display)]",
+    xl: "text-[46px] sm:text-[68px] lg:text-[96px] xl:text-[120px] leading-[0.92] tracking-[-0.055em] font-bold font-[family-name:var(--font-display)]",
+    lg: "text-[32px] sm:text-[48px] lg:text-[64px] leading-[0.98] tracking-[-0.045em] font-bold font-[family-name:var(--font-display)]",
+    title: "text-[24px] sm:text-[32px] leading-[1.08] tracking-[-0.035em] font-bold font-[family-name:var(--font-display)]",
   };
 
   return (
     <Tag className={`${sizeClasses[size]} ${className}`}>
-      <span className={mainColor}>{main}</span>{" "}
-      <span className={fadeColor}>{fade}</span>
+      <span className={`${mainColor} uppercase`}>{main}</span>
+      {fade && (
+        <>
+          {" "}
+          <span
+            className={`${fadeColor} ${
+              italicFade
+                ? "font-[family-name:var(--font-editorial)] font-normal italic lowercase tracking-normal"
+                : "font-normal"
+            }`}
+          >
+            {fade}
+          </span>
+        </>
+      )}
     </Tag>
   );
 }

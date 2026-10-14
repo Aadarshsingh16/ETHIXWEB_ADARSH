@@ -43,7 +43,8 @@ Add to every build prompt: *"Do only Phase N. Stop after the report. Do not star
 | 12 | Performance (PSI 90+) | 60m | ☑ | phase-12 |
 | 13 | Ship (README, video, Tally) | 75m | ☑ | phase-13 |
 | 14 | Full-width Dark Panels, Image Prompts & Theme Toggle | 45m | ☑ | phase-14 |
-| | **Total** | **≈ 13.75h** | | |
+| 15 | SVZ High-Fashion Editorial Transformation | 60m | ☑ | phase-15 |
+| | **Total** | **≈ 14.75h** | | |
 
 ## Hours left? Compress like this
 Check the clock now. Deadline Wed 14 Oct 2026, 9:26 PM IST; feature freeze 3h before.

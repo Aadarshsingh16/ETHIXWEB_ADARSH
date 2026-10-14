@@ -24,22 +24,23 @@ interface WorkSectionProps {
 
 export function WorkSection({ data }: WorkSectionProps) {
   return (
-    <section id="work" className="max-w-6xl mx-auto px-4 sm:px-6 mb-16 sm:mb-24">
-      <div className="space-y-4 mb-10">
-        <SectionLabel>{data.label}</SectionLabel>
+    <section id="work" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 sm:mb-28">
+      <div className="space-y-4 mb-12">
+        <SectionLabel hasDot={true}>{data.label}</SectionLabel>
         <TwoToneHeading
           as="h2"
           main={data.headingMain}
           fade={data.headingFade}
           size="lg"
-          className="max-w-3xl"
+          className="max-w-4xl"
+          italicFade={true}
         />
-        <p className="text-[14px] text-[#6E6E73] max-w-2xl">
+        <p className="text-[14px] font-mono uppercase tracking-[0.16em] text-[#b5b2b2] max-w-2xl">
           {data.note}
         </p>
       </div>
 
-      {/* Stacked Work Cards Pile */}
+      {/* Stacked Work Cards Pile — 8px Radius Editorial Gallery Presentation */}
       <div className="relative pt-4">
         {data.projects.map((project, idx) => (
           <WorkCard key={project.id} project={project} index={idx} />

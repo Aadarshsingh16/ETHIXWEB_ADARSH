@@ -27,9 +27,15 @@ interface ServicesSectionProps {
 
 export function ServicesSection({ lang, data }: ServicesSectionProps) {
   return (
-    <section id="services" className="w-full bg-[#0C0C0D] border-y border-[#242426] py-16 sm:py-24 mb-16 sm:mb-24">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        <div className="max-w-3xl space-y-4">
+    <section id="services" className="w-full bg-[#080808] border-y border-[#262525] py-20 sm:py-28 mb-16 sm:mb-24 relative overflow-hidden">
+      {/* Subtle arterial red ambient glow */}
+      <div
+        className="pointer-events-none absolute -top-40 -left-40 w-96 h-96 rounded-full bg-[#fe1e34]/5 blur-[120px]"
+        aria-hidden="true"
+      />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 relative z-10">
+        <div className="max-w-3xl space-y-5">
           <SectionLabel theme="dark">{data.label}</SectionLabel>
           <TwoToneHeading
             as="h2"
@@ -38,7 +44,7 @@ export function ServicesSection({ lang, data }: ServicesSectionProps) {
             size="lg"
             theme="dark"
           />
-          <p className="text-[16px] sm:text-[18px] text-[#A1A1A6] leading-relaxed">
+          <p className="text-[16px] sm:text-[18px] text-[#b5b2b2] leading-relaxed font-light">
             {data.sub}
           </p>
         </div>
