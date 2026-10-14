@@ -3,9 +3,8 @@
 An India-specific redesign of [ethixweb.com](https://www.ethixweb.com): a fast, premium site for Indian businesses with a working enquiry pipeline and a protected admin dashboard.
 
 - **Live:** https://YOUR-VERCEL-URL
-- **Repo:** https://github.com/YOUR-USER/ethixweb-india
-- **Demo admin:** `/admin/login` — email: `demo@…` · password: `…` *(demo account; sample data only)*
-- **Video walkthrough:** https://…
+- **Repo:** https://github.com/Aadarshsingh16/ETHIXWEB_ADARSH
+- **Demo admin:** `/admin/login` — Email: `admin@ethixweb.com` · Password: `admin123` *(1-click autofill enabled)*
 
 ## Tech stack
 | Layer | Choice | Why |
