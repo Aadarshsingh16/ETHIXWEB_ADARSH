@@ -48,7 +48,7 @@ function LoginForm() {
   return (
     <div className="w-full max-w-md space-y-8 rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-8 sm:p-10 shadow-sm">
       <div className="flex flex-col items-center text-center space-y-3">
-        <Logo theme="light" />
+        <Logo theme="dark" />
         <h1 className="font-heading text-2xl font-bold tracking-tight text-[var(--color-text)]">
           Admin Portal
         </h1>
