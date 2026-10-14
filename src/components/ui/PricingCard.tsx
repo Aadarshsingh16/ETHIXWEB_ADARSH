@@ -53,7 +53,7 @@ export function PricingCard({ plan, lang = "en" }: PricingCardProps) {
 
         <div className={`pt-6 border-t ${isPopular ? "border-[#242426]" : "border-[#E6E6E8]"} space-y-3`}>
           <div className="text-[13px] font-semibold uppercase tracking-wider text-[#A1A1A6]">
-            What's included:
+            What&apos;s included:
           </div>
           <ul className="space-y-2.5 text-[14px]">
             {plan.features.map((feature, idx) => (

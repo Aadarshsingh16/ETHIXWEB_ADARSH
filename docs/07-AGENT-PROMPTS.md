@@ -1,17 +1,16 @@
-# 07 — Copy-paste prompts for Claude Code (or any coding agent)
+# 07 — Copy-paste prompts for the agent
 
 Setup once:
 ```bash
 npx create-next-app@latest ethixweb-india --ts --tailwind --app --src-dir --eslint --use-pnpm
 cd ethixweb-india
-# copy this kit's CLAUDE.md, docs/, supabase/, .env.example and .claude/ into the project root
+# copy this kit's AGENTS.md, docs/, supabase/, .env.example and .agents/ into the project root
 npx skills add emilkowalski/skills@animate        # optional: original motion skill, complements ethixweb-motion
-claude
 ```
 
 ## Prompt 0 — orientation
 ```
-Read CLAUDE.md and every file in docs/. Summarise in 10 lines: the goal, the stack, the non-negotiable rules and the build phases. Then list any ambiguity or missing info you need from me (logo SVG, exact red, WhatsApp number, real service names). Do not write code yet.
+Read AGENTS.md and every file in docs/. Summarise in 10 lines: the goal, the stack, the non-negotiable rules and the build phases. Then list any ambiguity or missing info you need from me (logo SVG, exact red, WhatsApp number, real service names). Do not write code yet.
 ```
 
 ## Prompt 1 — Phase 0 + 1 (setup + design system)

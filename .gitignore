@@ -37,6 +37,10 @@ yarn-error.log*
 # local reference files
 /CURRENT SITE/
 
+# graphify internal cache
+graphify-out/cache/
+*.tmp
+
 # vercel
 .vercel
 

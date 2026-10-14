@@ -120,6 +120,14 @@ export default async function DesignTokensPage({
               Polygon clip-path removing 28px diagonally from top-right and bottom-left.
             </p>
           </ChamferCard>
+
+          <FeatureCard theme="light">
+            <SectionLabel>Apple Flat 28px Card</SectionLabel>
+            <h3 className="text-2xl font-bold mt-2 text-[#0C0C0D]">Feature Card</h3>
+            <p className="text-sm text-[#6E6E73] mt-1">
+              Clean 28px radius flat card with hairline border, no drop shadows.
+            </p>
+          </FeatureCard>
         </div>
       </section>
 

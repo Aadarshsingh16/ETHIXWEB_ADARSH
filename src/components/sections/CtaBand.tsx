@@ -28,7 +28,7 @@ export function CtaBand({ lang, data }: CtaBandProps) {
         <div className="relative z-10 max-w-3xl space-y-6">
           <div className="inline-flex items-center gap-2 text-[12px] font-bold tracking-widest uppercase px-3 py-1 rounded-full bg-white/15 text-white">
             <span>✦</span>
-            <span>LET'S BUILD TOGETHER</span>
+            <span>LET&apos;S BUILD TOGETHER</span>
           </div>
 
           <h2 className="text-[32px] sm:text-[46px] lg:text-[56px] font-bold font-[family-name:var(--font-display)] tracking-tight leading-[1.05]">

@@ -97,7 +97,7 @@ export function WorkCard({ project, index }: WorkCardProps) {
                   </div>
                   <div className="p-2.5 rounded-lg bg-[#F5F5F7] text-xs space-y-1">
                     <div className="text-[#6E6E73]">Automated Hinglish Followup:</div>
-                    <div className="font-medium">"नमस्ते राहुल! आपका डेमो क्लास स्लॉट बुक हो चुका है।"</div>
+                    <div className="font-medium">&ldquo;नमस्ते राहुल! आपका डेमो क्लास स्लॉट बुक हो चुका है।&rdquo;</div>
                   </div>
                 </div>
               )}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getDictionary, LOCALES, isValidLocale } from "@/lib/i18n";
+import { getDictionary, LOCALES } from "@/lib/i18n";
 import { Hero } from "@/components/sections/Hero";
 import { Marquee } from "@/components/ui/Marquee";
 import { AboutTeaser } from "@/components/sections/AboutTeaser";

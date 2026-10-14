@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 interface StatusPillProps {
   onlineText?: string;
@@ -8,38 +8,47 @@ interface StatusPillProps {
   className?: string;
 }
 
+function getOnlineSnapshot(): boolean {
+  if (typeof window === "undefined") {
+    return true;
+  }
+  try {
+    const now = new Date();
+    const formatter = new Intl.DateTimeFormat("en-US", {
+      timeZone: "Asia/Kolkata",
+      weekday: "short",
+      hour: "numeric",
+      hour12: false,
+    });
+
+    const parts = formatter.formatToParts(now);
+    const weekdayPart = parts.find((p) => p.type === "weekday")?.value;
+    const hourPart = parseInt(parts.find((p) => p.type === "hour")?.value || "12", 10);
+
+    const isWeekday = weekdayPart !== "Sun";
+    const isWorkHours = hourPart >= 10 && hourPart < 19;
+
+    return isWeekday && isWorkHours;
+  } catch {
+    return true;
+  }
+}
+
+function getServerSnapshot(): boolean {
+  return true;
+}
+
+function subscribe(callback: () => void) {
+  const timer = setInterval(callback, 60000);
+  return () => clearInterval(timer);
+}
+
 export function StatusPill({
   onlineText = "Online · IST",
   offlineText = "Offline · IST",
   className = "",
 }: StatusPillProps) {
-  const [isOnline, setIsOnline] = useState<boolean>(true);
-
-  useEffect(() => {
-    try {
-      const now = new Date();
-      // Format current time into Asia/Kolkata timezone components
-      const formatter = new Intl.DateTimeFormat("en-US", {
-        timeZone: "Asia/Kolkata",
-        weekday: "short",
-        hour: "numeric",
-        minute: "numeric",
-        hour12: false,
-      });
-
-      const parts = formatter.formatToParts(now);
-      const weekdayPart = parts.find((p) => p.type === "weekday")?.value;
-      const hourPart = parseInt(parts.find((p) => p.type === "hour")?.value || "12", 10);
-
-      // Business hours: Mon-Sat, 10:00 to 19:00 IST
-      const isWeekday = weekdayPart !== "Sun";
-      const isWorkHours = hourPart >= 10 && hourPart < 19;
-
-      setIsOnline(isWeekday && isWorkHours);
-    } catch {
-      setIsOnline(true);
-    }
-  }, []);
+  const isOnline = useSyncExternalStore(subscribe, getOnlineSnapshot, getServerSnapshot);
 
   return (
     <div

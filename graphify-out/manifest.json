@@ -30,16 +30,16 @@
     "semantic_hash": "fcc372de4184f93cf28818b06e4b8386"
   },
   "src/app/[lang]/(site)/page.tsx": {
-    "mtime": 1791974336.4521284,
-    "seen": 1791975259.5855215,
-    "ast_hash": "94b9d02c70ffdf73f6e561a4371c1f59",
-    "semantic_hash": "94b9d02c70ffdf73f6e561a4371c1f59"
+    "mtime": 1791975574.8765445,
+    "seen": 1791975694.1253169,
+    "ast_hash": "196d676d0c0bebe991d2b5427529d93c",
+    "semantic_hash": ""
   },
   "src/app/[lang]/design/page.tsx": {
-    "mtime": 1791974183.8884242,
-    "seen": 1791975259.5855215,
-    "ast_hash": "35cdccc691d9e2e3a7016cc3171fe132",
-    "semantic_hash": "35cdccc691d9e2e3a7016cc3171fe132"
+    "mtime": 1791975628.3526225,
+    "seen": 1791975694.1253169,
+    "ast_hash": "0d71edfb5de7eeb3a165a35a319759a4",
+    "semantic_hash": ""
   },
   "src/app/layout.tsx": {
     "mtime": 1791974082.855196,
@@ -78,10 +78,10 @@
     "semantic_hash": "c12cad38582194e9239251cdd3b2b58b"
   },
   "src/components/sections/CtaBand.tsx": {
-    "mtime": 1791974323.3310947,
-    "seen": 1791975259.5855215,
-    "ast_hash": "bbb814094d060fbc2837a16275768b11",
-    "semantic_hash": "bbb814094d060fbc2837a16275768b11"
+    "mtime": 1791975547.9620097,
+    "seen": 1791975694.1253169,
+    "ast_hash": "3522c0792b157a35c5f51f9e5e6abb55",
+    "semantic_hash": ""
   },
   "src/components/sections/FaqSection.tsx": {
     "mtime": 1791974311.6717262,
@@ -168,10 +168,10 @@
     "semantic_hash": "d6334159c331c474ae4bc31fb890dfc7"
   },
   "src/components/ui/PricingCard.tsx": {
-    "mtime": 1791973998.9564433,
-    "seen": 1791975259.5855215,
-    "ast_hash": "53d29ed0bb904d52fbc143b782f3133d",
-    "semantic_hash": "53d29ed0bb904d52fbc143b782f3133d"
+    "mtime": 1791975557.579014,
+    "seen": 1791975694.1253169,
+    "ast_hash": "29f41cd1317410e2b95e18bff2ca3528",
+    "semantic_hash": ""
   },
   "src/components/ui/ProcessCard.tsx": {
     "mtime": 1791973986.5493405,
@@ -192,10 +192,10 @@
     "semantic_hash": "9ee4d553372f5614b6c82f9102737daf"
   },
   "src/components/ui/StatusPill.tsx": {
-    "mtime": 1791973904.6195781,
-    "seen": 1791975259.5855215,
-    "ast_hash": "fefa0ef6de777daa0a9661a86f7a6bce",
-    "semantic_hash": "fefa0ef6de777daa0a9661a86f7a6bce"
+    "mtime": 1791975539.8478281,
+    "seen": 1791975694.1253169,
+    "ast_hash": "9b14387bd97d26d33cc8961d1374bc16",
+    "semantic_hash": ""
   },
   "src/components/ui/TwoToneHeading.tsx": {
     "mtime": 1791973893.9597242,
@@ -204,10 +204,10 @@
     "semantic_hash": "e6a8256815bf0cdd8bc535bf6452cd48"
   },
   "src/components/ui/WorkCard.tsx": {
-    "mtime": 1791973978.098024,
-    "seen": 1791975259.5855215,
-    "ast_hash": "e781d06f86aaf230c67c7186ac257a79",
-    "semantic_hash": "e781d06f86aaf230c67c7186ac257a79"
+    "mtime": 1791975566.7194908,
+    "seen": 1791975694.1253169,
+    "ast_hash": "9d2395bdb7acf7f69ad1aa922a7f5ce8",
+    "semantic_hash": ""
   },
   "src/content/en.ts": {
     "mtime": 1791973785.5170677,
@@ -256,5 +256,383 @@
     "seen": 1791975259.5855215,
     "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
     "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  },
+  ".agents/rules/graphify.md": {
+    "mtime": 1791975225.740358,
+    "seen": 1791975694.1253169,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ethixweb-design-system/SKILL.md": {
+    "mtime": 1791972959.7380807,
+    "seen": 1791975694.1253169,
+    "ast_hash": "b9f8df662fbc7c4734e85db4ed407009",
+    "semantic_hash": ""
+  },
+  ".agents/skills/ethixweb-motion/SKILL.md": {
+    "mtime": 1791972959.7710736,
+    "seen": 1791975694.1253169,
+    "ast_hash": "0119aebbdf771ca280362b217199178f",
+    "semantic_hash": ""
+  },
+  ".agents/skills/graphify/SKILL.md": {
+    "mtime": 1791975225.590461,
+    "seen": 1791975694.1253169,
+    "ast_hash": "b10224376cdb873ee154b818d39aa5bb",
+    "semantic_hash": ""
+  },
+  ".agents/skills/graphify/references/add-watch.md": {
+    "mtime": 1789995547.614567,
+    "seen": 1791975694.1253169,
+    "ast_hash": "d59d027fe449f06aa03905a01184e779",
+    "semantic_hash": ""
+  },
+  ".agents/skills/graphify/references/exports.md": {
+    "mtime": 1789995547.616568,
+    "seen": 1791975694.1253169,
+    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
+    "semantic_hash": ""
+  },
+  ".agents/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1789995547.6175678,
+    "seen": 1791975694.1253169,
+    "ast_hash": "42fef56a01698118f7fd722acdadea34",
+    "semantic_hash": ""
+  },
+  ".agents/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1789995547.619569,
+    "seen": 1791975694.1253169,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/graphify/references/hooks.md": {
+    "mtime": 1789995547.6205685,
+    "seen": 1791975694.1253169,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": ""
+  },
+  ".agents/skills/graphify/references/query.md": {
+    "mtime": 1789995547.622569,
+    "seen": 1791975694.1253169,
+    "ast_hash": "3c46f8ad006874260614ed8657d02307",
+    "semantic_hash": ""
+  },
+  ".agents/skills/graphify/references/transcribe.md": {
+    "mtime": 1789995547.6235688,
+    "seen": 1791975694.1253169,
+    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
+    "semantic_hash": ""
+  },
+  ".agents/skills/graphify/references/update.md": {
+    "mtime": 1789995547.6245687,
+    "seen": 1791975694.1253169,
+    "ast_hash": "9378bd03d56baaf78bd738ab3848f142",
+    "semantic_hash": ""
+  },
+  ".agents/skills/india-localization/SKILL.md": {
+    "mtime": 1791972959.754081,
+    "seen": 1791975694.1253169,
+    "ast_hash": "955ea45300e9a4c360e32f406fa784d9",
+    "semantic_hash": ""
+  },
+  ".agents/skills/leads-backend/SKILL.md": {
+    "mtime": 1791972959.723071,
+    "seen": 1791975694.1253169,
+    "ast_hash": "d792580ae0dae54ddc86d9cfcfcda6f3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/pagespeed-90/SKILL.md": {
+    "mtime": 1791972959.7069771,
+    "seen": 1791975694.1253169,
+    "ast_hash": "4cb206308f5cb8db2c50ab73258a4993",
+    "semantic_hash": ""
+  },
+  ".agents/workflows/graphify.md": {
+    "mtime": 1791975225.7426748,
+    "seen": 1791975694.1253169,
+    "ast_hash": "a831cf3669f1e6ab85d8a80ebe655f99",
+    "semantic_hash": ""
+  },
+  ".claude/skills/ethixweb-design-system/SKILL.md": {
+    "mtime": 1791972959.7380807,
+    "seen": 1791975694.1253169,
+    "ast_hash": "b9f8df662fbc7c4734e85db4ed407009",
+    "semantic_hash": ""
+  },
+  ".claude/skills/ethixweb-motion/SKILL.md": {
+    "mtime": 1791972959.7710736,
+    "seen": 1791975694.1253169,
+    "ast_hash": "0119aebbdf771ca280362b217199178f",
+    "semantic_hash": ""
+  },
+  ".claude/skills/india-localization/SKILL.md": {
+    "mtime": 1791972959.754081,
+    "seen": 1791975694.1253169,
+    "ast_hash": "955ea45300e9a4c360e32f406fa784d9",
+    "semantic_hash": ""
+  },
+  ".claude/skills/leads-backend/SKILL.md": {
+    "mtime": 1791972959.723071,
+    "seen": 1791975694.1253169,
+    "ast_hash": "d792580ae0dae54ddc86d9cfcfcda6f3",
+    "semantic_hash": ""
+  },
+  ".claude/skills/pagespeed-90/SKILL.md": {
+    "mtime": 1791972959.7069771,
+    "seen": 1791975694.1253169,
+    "ast_hash": "4cb206308f5cb8db2c50ab73258a4993",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1791975349.1108818,
+    "seen": 1791975694.1253169,
+    "ast_hash": "d53e3ae4a2ab41ce2f8bd232bc0514cf",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1791972921.1044786,
+    "seen": 1791975694.1253169,
+    "ast_hash": "f387181930d15cf2c823657beeb4dda4",
+    "semantic_hash": ""
+  },
+  "DECISIONS.md": {
+    "mtime": 1791974739.3806438,
+    "seen": 1791975694.1253169,
+    "ast_hash": "dfe0dbd41b9925fbad3ec35927a3bb0b",
+    "semantic_hash": ""
+  },
+  "GEMINI.md": {
+    "mtime": 1791975326.9892604,
+    "seen": 1791975694.1253169,
+    "ast_hash": "9e92f6d917ac2f25f1a31f66bf7a52e8",
+    "semantic_hash": ""
+  },
+  "PHASES.md": {
+    "mtime": 1791974731.7842555,
+    "seen": 1791975694.1253169,
+    "ast_hash": "2ea19ad861c83f6bb5cd5f03c354e692",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1791972959.5341618,
+    "seen": 1791975694.1253169,
+    "ast_hash": "bccd183f1ce6dc4cb38cfbc2d9072c88",
+    "semantic_hash": ""
+  },
+  "REVIEW.md": {
+    "mtime": 1791974738.1776843,
+    "seen": 1791975694.1253169,
+    "ast_hash": "d635c087c2b04a6559dd1ee3eef456b1",
+    "semantic_hash": ""
+  },
+  "docs/01-REQUIREMENTS.md": {
+    "mtime": 1791972959.614395,
+    "seen": 1791975694.1253169,
+    "ast_hash": "9d0900896c8c31cd56a77056d2d12eec",
+    "semantic_hash": ""
+  },
+  "docs/02-DESIGN-SYSTEM.md": {
+    "mtime": 1791972959.6533709,
+    "seen": 1791975694.1253169,
+    "ast_hash": "1fd83089c520fe61bafc2f1949ec433e",
+    "semantic_hash": ""
+  },
+  "docs/03-CONTENT.md": {
+    "mtime": 1791972959.6421647,
+    "seen": 1791975694.1253169,
+    "ast_hash": "c9322d56515fa6413ec292cd9549d38e",
+    "semantic_hash": ""
+  },
+  "docs/04-BACKEND.md": {
+    "mtime": 1791972959.5903552,
+    "seen": 1791975694.1253169,
+    "ast_hash": "a94544144feec3f89798de4b7a4a6f69",
+    "semantic_hash": ""
+  },
+  "docs/05-PERFORMANCE.md": {
+    "mtime": 1791972959.6743603,
+    "seen": 1791975694.1253169,
+    "ast_hash": "186621ec12aa4936e994d75c7680c6dc",
+    "semantic_hash": ""
+  },
+  "docs/06-BUILD-PLAN.md": {
+    "mtime": 1791972959.628401,
+    "seen": 1791975694.1253169,
+    "ast_hash": "a9ad8aabd4d90abc006ce1ba534af944",
+    "semantic_hash": ""
+  },
+  "docs/07-AGENT-PROMPTS.md": {
+    "mtime": 1791975120.4740543,
+    "seen": 1791975694.1253169,
+    "ast_hash": "88a1aaaabceafef3faa0147706a97c0f",
+    "semantic_hash": ""
+  },
+  "docs/08-SUBMISSION-CHECKLIST.md": {
+    "mtime": 1791972959.601881,
+    "seen": 1791975694.1253169,
+    "ast_hash": "482e3e3efa10b5640cf7ef7b064c8f33",
+    "semantic_hash": ""
+  },
+  "docs/DECISIONS.md": {
+    "mtime": 1791974739.3806438,
+    "seen": 1791975694.1253169,
+    "ast_hash": "dfe0dbd41b9925fbad3ec35927a3bb0b",
+    "semantic_hash": ""
+  },
+  "docs/PHASES.md": {
+    "mtime": 1791974731.7842555,
+    "seen": 1791975694.1253169,
+    "ast_hash": "2ea19ad861c83f6bb5cd5f03c354e692",
+    "semantic_hash": ""
+  },
+  "docs/REVIEW.md": {
+    "mtime": 1791974738.1776843,
+    "seen": 1791975694.1253169,
+    "ast_hash": "d635c087c2b04a6559dd1ee3eef456b1",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/.claude/skills/ethixweb-design-system/SKILL.md": {
+    "mtime": 1791972959.7380807,
+    "seen": 1791975694.1253169,
+    "ast_hash": "b9f8df662fbc7c4734e85db4ed407009",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/.claude/skills/ethixweb-motion/SKILL.md": {
+    "mtime": 1791972959.7710736,
+    "seen": 1791975694.1253169,
+    "ast_hash": "0119aebbdf771ca280362b217199178f",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/.claude/skills/india-localization/SKILL.md": {
+    "mtime": 1791972959.754081,
+    "seen": 1791975694.1253169,
+    "ast_hash": "955ea45300e9a4c360e32f406fa784d9",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/.claude/skills/leads-backend/SKILL.md": {
+    "mtime": 1791972959.723071,
+    "seen": 1791975694.1253169,
+    "ast_hash": "d792580ae0dae54ddc86d9cfcfcda6f3",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/.claude/skills/pagespeed-90/SKILL.md": {
+    "mtime": 1791972959.7069771,
+    "seen": 1791975694.1253169,
+    "ast_hash": "4cb206308f5cb8db2c50ab73258a4993",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/CLAUDE.md": {
+    "mtime": 1791972959.5491672,
+    "seen": 1791975694.1253169,
+    "ast_hash": "f387181930d15cf2c823657beeb4dda4",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/README.template.md": {
+    "mtime": 1791972959.5341618,
+    "seen": 1791975694.1253169,
+    "ast_hash": "bccd183f1ce6dc4cb38cfbc2d9072c88",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/docs/01-REQUIREMENTS.md": {
+    "mtime": 1791972959.614395,
+    "seen": 1791975694.1253169,
+    "ast_hash": "9d0900896c8c31cd56a77056d2d12eec",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/docs/02-DESIGN-SYSTEM.md": {
+    "mtime": 1791972959.6533709,
+    "seen": 1791975694.1253169,
+    "ast_hash": "1fd83089c520fe61bafc2f1949ec433e",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/docs/03-CONTENT.md": {
+    "mtime": 1791972959.6421647,
+    "seen": 1791975694.1253169,
+    "ast_hash": "c9322d56515fa6413ec292cd9549d38e",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/docs/04-BACKEND.md": {
+    "mtime": 1791972959.5903552,
+    "seen": 1791975694.1253169,
+    "ast_hash": "a94544144feec3f89798de4b7a4a6f69",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/docs/05-PERFORMANCE.md": {
+    "mtime": 1791972959.6743603,
+    "seen": 1791975694.1253169,
+    "ast_hash": "186621ec12aa4936e994d75c7680c6dc",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/docs/06-BUILD-PLAN.md": {
+    "mtime": 1791972959.628401,
+    "seen": 1791975694.1253169,
+    "ast_hash": "a9ad8aabd4d90abc006ce1ba534af944",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/docs/07-CLAUDE-CODE-PROMPTS.md": {
+    "mtime": 1791972959.663357,
+    "seen": 1791975694.1253169,
+    "ast_hash": "34140daa920320682e6c75da6a5c66ea",
+    "semantic_hash": ""
+  },
+  "ethixweb-india-kit/docs/08-SUBMISSION-CHECKLIST.md": {
+    "mtime": 1791972959.601881,
+    "seen": 1791975694.1253169,
+    "ast_hash": "482e3e3efa10b5640cf7ef7b064c8f33",
+    "semantic_hash": ""
+  },
+  "pnpm-workspace.yaml": {
+    "mtime": 1791973393.778865,
+    "seen": 1791975694.1253169,
+    "ast_hash": "8da04eb565427354036cd216afd527c0",
+    "semantic_hash": ""
+  },
+  "Ethixweb_Full_Stack_Developer_Assessment.pdf": {
+    "mtime": 1791930542.533297,
+    "seen": 1791975694.1253169,
+    "ast_hash": "2aa13f10a733ba68e734618fca6b3932",
+    "semantic_hash": ""
+  },
+  "ethixweb-logo-text-C-3knEeT.webp": {
+    "mtime": 1791973181.2907467,
+    "seen": 1791975694.1253169,
+    "ast_hash": "df3a876968f12b176fa900344f65cfa6",
+    "semantic_hash": ""
+  },
+  "public/ethixweb-logo.webp": {
+    "mtime": 1791973181.2907467,
+    "seen": 1791975694.1253169,
+    "ast_hash": "df3a876968f12b176fa900344f65cfa6",
+    "semantic_hash": ""
+  },
+  "public/file.svg": {
+    "mtime": 1791973392.9093518,
+    "seen": 1791975694.1253169,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": ""
+  },
+  "public/globe.svg": {
+    "mtime": 1791973392.9263515,
+    "seen": 1791975694.1253169,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": ""
+  },
+  "public/next.svg": {
+    "mtime": 1791973392.7637088,
+    "seen": 1791975694.1253169,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": ""
+  },
+  "public/vercel.svg": {
+    "mtime": 1791973392.7647092,
+    "seen": 1791975694.1253169,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": ""
+  },
+  "public/window.svg": {
+    "mtime": 1791973392.7647092,
+    "seen": 1791975694.1253169,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": ""
   }
 }
