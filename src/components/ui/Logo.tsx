@@ -26,7 +26,7 @@ export function Logo({ lang = "en", theme, className = "" }: LogoProps) {
             ? "text-white"
             : isLightExplicit
             ? "text-[#080808]"
-            : "text-[#080808] dark:text-white"
+            : "text-white dark:text-white"
         }`}
         aria-hidden="true"
       >

@@ -178,9 +178,9 @@ export function Hero({ lang, data }: HeroProps) {
             </div>
           </div>
 
-          {/* Right Column: Two Landscape Preview Cards + Timeline Progress Bar */}
-          <div className="lg:col-span-5 flex flex-col items-start lg:items-end gap-3.5">
-            <div className="flex items-center gap-3 sm:gap-3.5 w-full justify-start lg:justify-end">
+          {/* Right Column: Two Landscape Preview Cards */}
+          <div className="lg:col-span-5 flex flex-col items-end gap-3.5">
+            <div className="flex items-center gap-3 sm:gap-3.5 w-full justify-end">
               {/* Card 1: Strategy & Tech */}
               <div className="relative w-[150px] sm:w-[185px] md:w-[215px] aspect-[16/10] rounded-xl sm:rounded-2xl overflow-hidden border border-white/15 shadow-2xl group bg-[#141416]">
                 <Image
@@ -217,14 +217,7 @@ export function Hero({ lang, data }: HeroProps) {
               </div>
             </div>
 
-            {/* Timeline Progress Bar underneath the two cards */}
-            <div className="w-full max-w-[310px] sm:max-w-[380px] md:max-w-[440px] flex items-center justify-between gap-3 px-1 text-[11px] font-mono text-white/50 select-none">
-              <span className="tracking-wider">0.1</span>
-              <div className="flex-1 h-[2px] bg-white/20 rounded-full relative overflow-hidden">
-                <div className="h-full w-[45%] bg-[#fe1e34] rounded-full" />
-              </div>
-              <span className="tracking-wider">0.4</span>
-            </div>
+
           </div>
         </div>
       </div>
