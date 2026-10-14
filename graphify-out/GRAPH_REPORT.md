@@ -1,17 +1,17 @@
 # Graph Report - ETHIXWEB  (2026-10-14)
 
 ## Corpus Check
-- 128 files · ~143,481 words
+- 128 files · ~153,258 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 2, .example 2, .css 2)
 
 ## Summary
-- 852 nodes · 1123 edges · 74 communities (68 shown, 6 thin omitted)
+- 852 nodes · 1115 edges · 74 communities (68 shown, 6 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 20 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7026bdf8`
+- Built from commit: `3efdcbde`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -129,8 +129,8 @@ Cohesion: 0.05
 Nodes (39): eslintConfig, dependencies, next, react, react-dom, @supabase/ssr, @supabase/supabase-js, zod (+31 more)
 
 ### Community 2 - "(site)/page.tsx"
-Cohesion: 0.18
-Nodes (9): generateMetadata(), HomePage(), CtaBand(), CtaBandData, CtaBandProps, Hero(), HeroData, HeroProps (+1 more)
+Cohesion: 0.15
+Nodes (11): generateMetadata(), HomePage(), CtaBand(), CtaBandData, CtaBandProps, Hero(), HeroData, HeroProps (+3 more)
 
 ### Community 3 - "ContactForm.tsx"
 Cohesion: 0.18
@@ -321,8 +321,8 @@ Cohesion: 0.29
 Nodes (6): Accessibility for Hindi, Checklist of India features, Honesty rules, India localization, README design-rationale template, The India concept (one sentence)
 
 ### Community 50 - "design/page.tsx"
-Cohesion: 0.16
-Nodes (10): DesignTokensPage(), AboutTeaser(), AboutTeaserData, AboutTeaserProps, ChamferCard(), ChamferCardProps, FeatureCard(), FeatureCardProps (+2 more)
+Cohesion: 0.19
+Nodes (8): DesignTokensPage(), AboutTeaser(), AboutTeaserData, AboutTeaserProps, ChamferCard(), ChamferCardProps, FeatureCard(), FeatureCardProps
 
 ### Community 51 - "FaqSection.tsx"
 Cohesion: 0.25
@@ -401,11 +401,11 @@ Nodes (7): PlanItem, PricingData, PricingSection(), PricingSectionProps, PlanIte
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `next` connect `next` to `WorkSection.tsx`, `package.json`, `(site)/page.tsx`, `i18n.ts`, `app/layout.tsx`, `ServicesSection.tsx`, `getDictionary`, `PillNav.tsx`, `HttpError`, `design/page.tsx`?**
-  _High betweenness centrality (0.081) - this node is a cross-community bridge._
+  _High betweenness centrality (0.082) - this node is a cross-community bridge._
 - **Why does `requireAdmin()` connect `HttpError` to `PHASES — build in small milestones, verify, then move on`, `next`, `Leads backend skill`, `Leads backend skill`, `PHASES — build in small milestones, verify, then move on`, `04 — Backend: leads, admin, security`, `04 — Backend: leads, admin, security`, `Leads backend skill`?**
   _High betweenness centrality (0.061) - this node is a cross-community bridge._
 - **Why does `react` connect `next` to `WorkSection.tsx`, `package.json`, `ContactForm.tsx`, `getDictionary`, `PillNav.tsx`, `design/page.tsx`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **Are the 7 inferred relationships involving `requireAdmin()` (e.g. with `Admin` and `Admin`) actually correct?**
   _`requireAdmin()` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `eslintConfig`, `nextConfig`, `name` to the rest of the system?**

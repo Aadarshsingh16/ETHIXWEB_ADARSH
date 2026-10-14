@@ -1,21 +1,24 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
-import { SectionLabel } from "@/components/ui/SectionLabel";
-import { TwoToneHeading } from "@/components/ui/TwoToneHeading";
+import Link from "next/link";
 
 interface HeroData {
   label: string;
   headingMain: string;
-  headingFade: string;
+  headingLead?: string;
+  headingAccent?: string;
+  headingFade?: string;
   sub: string;
   ctaCall: string;
-  ctaWa: string;
-  conceptCard1: {
+  ctaWork?: string;
+  ctaWa?: string;
+  card1Badge?: string;
+  card2Badge?: string;
+  conceptCard1?: {
     badge: string;
     title: string;
     desc: string;
   };
-  conceptCard2: {
+  conceptCard2?: {
     badge: string;
     title: string;
     desc: string;
@@ -28,176 +31,182 @@ interface HeroProps {
   isHindi?: boolean;
 }
 
-export function Hero({ lang, data, isHindi = false }: HeroProps) {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919876543210";
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    "Hi Ethixweb, I'd like to book a consultation for my Indian business."
-  )}`;
+export function Hero({ lang, data }: HeroProps) {
+  const leadText = data.headingLead || "You run the ";
+  const accentText = data.headingAccent || "business.";
 
   return (
-    <section className="w-full bg-[#080808] border-b border-[#262525] pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-24 mb-16 sm:mb-24 relative overflow-hidden">
+    <section className="w-full bg-[#080808] border-b border-[#262525] pt-32 sm:pt-40 lg:pt-44 pb-20 sm:pb-28 lg:pb-32 mb-16 sm:mb-24 relative overflow-hidden">
+      {/* Silky Smoke Ribbon Atmospheric Drift */}
+      <div
+        className="absolute inset-0 pointer-events-none overflow-hidden select-none"
+        aria-hidden="true"
+      >
+        <svg
+          className="w-full h-full object-cover opacity-45 mix-blend-screen"
+          viewBox="0 0 1440 900"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice"
+        >
+          <defs>
+            <linearGradient id="smokeFlow1" x1="40%" y1="100%" x2="90%" y2="0%">
+              <stop offset="0%" stopColor="#ffffff" stopOpacity="0" />
+              <stop offset="35%" stopColor="#ffffff" stopOpacity="0.28" />
+              <stop offset="65%" stopColor="#d4d4d8" stopOpacity="0.14" />
+              <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+            </linearGradient>
+            <linearGradient id="smokeFlow2" x1="50%" y1="90%" x2="100%" y2="10%">
+              <stop offset="0%" stopColor="#ffffff" stopOpacity="0" />
+              <stop offset="40%" stopColor="#f4f4f5" stopOpacity="0.32" />
+              <stop offset="80%" stopColor="#a1a1aa" stopOpacity="0.12" />
+              <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+            </linearGradient>
+            <filter id="smokeGlow" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="40" />
+            </filter>
+            <filter id="smokeSoft" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="22" />
+            </filter>
+          </defs>
+
+          {/* Primary deep smoke plume */}
+          <path
+            d="M 680,950 C 780,720 820,540 960,380 C 1100,220 1280,180 1480,80"
+            stroke="url(#smokeFlow1)"
+            strokeWidth="150"
+            strokeLinecap="round"
+            filter="url(#smokeGlow)"
+          />
+
+          {/* Secondary silky ribbon with sharper definition */}
+          <path
+            d="M 640,920 C 760,700 800,510 940,360 C 1080,210 1240,150 1440,60"
+            stroke="url(#smokeFlow2)"
+            strokeWidth="70"
+            strokeLinecap="round"
+            filter="url(#smokeSoft)"
+          />
+
+          {/* Dynamic wisps curving around the red accent */}
+          <path
+            d="M 720,900 C 820,740 890,620 1020,460 C 1150,300 1320,240 1460,180"
+            stroke="url(#smokeFlow1)"
+            strokeWidth="45"
+            strokeLinecap="round"
+            filter="url(#smokeSoft)"
+          />
+        </svg>
+      </div>
+
       {/* Subtle Arterial Red ambient glow in top-right */}
       <div
-        className="absolute -top-40 -right-40 w-[420px] h-[420px] rounded-full bg-[#fe1e34]/15 blur-[120px] pointer-events-none animate-glow-pulse"
+        className="absolute top-1/4 right-1/4 w-[480px] h-[480px] rounded-full bg-[#fe1e34]/12 blur-[130px] pointer-events-none"
         aria-hidden="true"
       />
 
-      {/* Jaali lattice atmospheric mask */}
-      <div className="absolute inset-0 jaali opacity-40 pointer-events-none" aria-hidden="true" />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
-        {/* Top Metadata Label with Arterial Red Dot */}
-        <div>
-          <SectionLabel theme="dark">{data.label}</SectionLabel>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8 sm:space-y-12">
+        {/* Top Tagline with Red Star/Diamond Accent */}
+        <div className="flex items-center gap-2 select-none animate-hero-rise">
+          <span className="text-[#fe1e34] text-xs" aria-hidden="true">
+            ✦
+          </span>
+          <span className="text-white/80 text-[13px] sm:text-[14px] font-medium tracking-wide">
+            {data.label}
+          </span>
         </div>
 
-        {/* Monumental Typographic Dialogue — Server rendered for LCP 95+ */}
-        <div className="max-w-5xl space-y-6 animate-hero-rise">
-          <TwoToneHeading
-            as="h1"
-            main={data.headingMain}
-            fade={data.headingFade}
-            size="xl"
-            theme="dark"
-            italicFade={true}
-          />
+        {/* Monumental Display Headline */}
+        <div className="max-w-5xl animate-hero-rise">
+          <h1 className="text-[44px] sm:text-[68px] md:text-[84px] lg:text-[98px] xl:text-[108px] font-black tracking-tight leading-[0.96] text-white font-[family-name:var(--font-display)] select-none">
+            {data.headingMain}
+            <br />
+            <span>{leadText}</span>
+            <span className="text-[#fe1e34]">{accentText}</span>
+          </h1>
+        </div>
 
-          {/* Bilingual Hindi sub-heading */}
-          {!isHindi && (
-            <p
-              lang="hi"
-              className="text-[17px] sm:text-[20px] text-[#d4d2d2] font-medium font-[family-name:var(--font-deva)] tracking-normal"
-            >
-              आपका बिज़नेस, अब ऑनलाइन और हमेशा बुक।
+        {/* Bottom Split Layout: Value Prop + Action Buttons (Left) & Preview Cards + Timeline (Right) */}
+        <div className="pt-4 sm:pt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
+          {/* Left Column: Subtitle + Action Buttons */}
+          <div className="lg:col-span-7 space-y-6 sm:space-y-8">
+            <p className="text-[15px] sm:text-[17px] text-[#a8a6a6] leading-relaxed max-w-xl font-normal">
+              {data.sub}
             </p>
-          )}
 
-          {/* Value Proposition */}
-          <p className="text-[16px] sm:text-[19px] text-[#b5b2b2] leading-relaxed max-w-2xl font-light">
-            {data.sub}
-          </p>
-        </div>
+            <div className="flex flex-wrap items-center gap-3.5 sm:gap-4">
+              {/* Dark Pill Button: Explore Work · */}
+              <Link
+                href={`/${lang}#work`}
+                className="inline-flex items-center gap-1.5 px-6 py-3.5 rounded-full text-xs sm:text-sm font-medium bg-white/[0.06] hover:bg-white/[0.12] text-white border border-white/15 backdrop-blur-sm transition-all duration-200"
+              >
+                <span>{data.ctaWork || "Explore Work ·"}</span>
+              </Link>
 
-        {/* Action Row — SVZ Editorial CTAs */}
-        <div className="flex flex-wrap items-center gap-4 pt-2">
-          <Button variant="accent" href={`/${lang}/contact`} arrow>
-            {data.ctaCall}
-          </Button>
-          <Button
-            variant="whatsapp"
-            href={whatsappUrl}
-            external
-            aria-label="Chat on WhatsApp (opens in a new tab)"
-          >
-            {data.ctaWa}
-          </Button>
-          <div className="pl-2">
-            <Button variant="ghost" href={`/${lang}/services`} arrow>
-              EXPLORE 22 SERVICES
-            </Button>
-          </div>
-        </div>
-
-        {/* SVZ Concept Architecture Cards — Redesigned with Spacious Mockup Showcase */}
-        <div className="pt-10 border-t border-[#262525] grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          {/* Concept Card 1: D2C (Featured Arterial Red Border) */}
-          <div className="group rounded-[8px] bg-[#171617] border border-[#fe1e34] p-6 sm:p-7 space-y-4 transition-all duration-300 hover:border-[#fe1e34] hover:shadow-[0_0_30px_rgba(254,30,52,0.14)] flex flex-col justify-between overflow-hidden shadow-[0_0_24px_rgba(254,30,52,0.12)]">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-[3px] bg-[#262525] text-[#d4d2d2] border border-[#393939]">
-                  {data.conceptCard1.badge}
+              {/* Solid White Pill Button: Book a Call ↗ */}
+              <Link
+                href={`/${lang}/contact`}
+                className="group inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full text-xs sm:text-sm font-semibold bg-white hover:bg-[#ededed] text-black shadow-[0_4px_24px_rgba(255,255,255,0.15)] transition-all duration-200"
+              >
+                <span>{data.ctaCall || "Book a Call"}</span>
+                <span
+                  className="w-5 h-5 rounded-full bg-black text-white flex items-center justify-center text-[10px] font-bold group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                  aria-hidden="true"
+                >
+                  ↗
                 </span>
-                <span className="text-[11px] font-mono text-[#16A34A] flex items-center gap-1.5 uppercase tracking-wider">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#16A34A] pulse-dot" />
-                  UPI + COD Ready
-                </span>
-              </div>
-              <h3 className="text-[22px] font-bold text-[#fcfcfc] tracking-tight uppercase font-[family-name:var(--font-display)] group-hover:text-[#fe1e34] transition-colors duration-200">
-                {data.conceptCard1.title}
-              </h3>
-              <p className="text-[14px] text-[#b5b2b2] leading-relaxed font-light">
-                {data.conceptCard1.desc}
-              </p>
+              </Link>
             </div>
+          </div>
 
-            {/* Visual Image Showcase — Generous aspect ratio with browser chrome */}
-            <div className="mt-4 rounded-[6px] border border-[#262525] bg-[#080808] overflow-hidden flex flex-col">
-              {/* Browser chrome header */}
-              <div className="flex items-center justify-between px-3.5 py-2.5 border-b border-[#262525] bg-[#121213] text-[11px] font-mono">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
-                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
-                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
-                  <span className="text-[#8e8c8c] ml-1.5 tracking-wider text-[11px]">checkout.store.ethixweb.in</span>
-                </div>
-                <span className="text-[#fe1e34] font-bold text-[10px] tracking-widest uppercase">₹1,499 UPI</span>
-              </div>
-
-              {/* Full-view Image Container */}
-              <div className="relative w-full aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-[#080808]">
+          {/* Right Column: Two Landscape Preview Cards + Timeline Progress Bar */}
+          <div className="lg:col-span-5 flex flex-col items-start lg:items-end gap-3.5">
+            <div className="flex items-center gap-3 sm:gap-3.5 w-full justify-start lg:justify-end">
+              {/* Card 1: Strategy & Tech */}
+              <div className="relative w-[150px] sm:w-[185px] md:w-[215px] aspect-[16/10] rounded-xl sm:rounded-2xl overflow-hidden border border-white/15 shadow-2xl group bg-[#141416]">
                 <Image
-                  src="/images/concept/hero-d2c.jpg"
-                  alt={data.conceptCard1.title}
+                  src="/images/concept/hero-card-1.jpg"
+                  alt={data.card1Badge || "Strategy & Tech"}
                   fill
-                  className="object-contain sm:object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                  sizes="(max-width: 768px) 150px, 215px"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-              </div>
-            </div>
-          </div>
-
-          {/* Concept Card 2: Clinic Booking */}
-          <div className="group rounded-[8px] bg-[#171617] border border-[#262525] p-6 sm:p-7 space-y-4 transition-all duration-300 hover:border-[#393939] hover:shadow-[0_0_24px_rgba(255,255,255,0.04)] flex flex-col justify-between overflow-hidden">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] px-2.5 py-1 rounded-[3px] bg-[#262525] text-[#d4d2d2] border border-[#393939]">
-                  {data.conceptCard2.badge}
-                </span>
-                <span className="text-[11px] font-mono text-[#25D366] flex items-center gap-1.5 uppercase tracking-wider">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#25D366]" />
-                  WhatsApp Synced
-                </span>
-              </div>
-              <h3 className="text-[22px] font-bold text-[#fcfcfc] tracking-tight uppercase font-[family-name:var(--font-display)] group-hover:text-[#fe1e34] transition-colors duration-200">
-                {data.conceptCard2.title}
-              </h3>
-              <p className="text-[14px] text-[#b5b2b2] leading-relaxed font-light">
-                {data.conceptCard2.desc}
-              </p>
-            </div>
-
-            {/* Visual Image Showcase — Generous aspect ratio with browser chrome */}
-            <div className="mt-4 rounded-[6px] border border-[#262525] bg-[#080808] overflow-hidden flex flex-col">
-              {/* Browser chrome header */}
-              <div className="flex items-center justify-between px-3.5 py-2.5 border-b border-[#262525] bg-[#121213] text-[11px] font-mono">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
-                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
-                  <span className="w-2 h-2 rounded-full bg-[#262525]" />
-                  <span className="text-[#8e8c8c] ml-1.5 tracking-wider text-[11px]">drverma.clinic.ethixweb.in</span>
+                {/* Bottom-left Pill Badge */}
+                <div className="absolute bottom-2 left-2 sm:bottom-2.5 sm:left-2.5 bg-black/75 backdrop-blur-md border border-white/15 rounded-full px-2.5 py-1 flex items-center gap-1.5 text-[10px] sm:text-[11px] font-medium text-white shadow-lg pointer-events-none">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#fe1e34] animate-pulse" />
+                  <span>{data.card1Badge || "Strategy & Tech"}</span>
                 </div>
-                <span className="text-[#25D366] font-bold text-[10px] tracking-widest uppercase">Slot: 02:30 PM IST</span>
               </div>
 
-              {/* Full-view Image Container */}
-              <div className="relative w-full aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-[#080808]">
+              {/* Card 2: ethixweb® studio */}
+              <div className="relative w-[150px] sm:w-[185px] md:w-[215px] aspect-[16/10] rounded-xl sm:rounded-2xl overflow-hidden border border-white/15 shadow-2xl group bg-[#141416]">
                 <Image
-                  src="/images/concept/hero-clinic.jpg"
-                  alt={data.conceptCard2.title}
+                  src="/images/concept/hero-card-2.jpg"
+                  alt={data.card2Badge || "ethixweb® studio"}
                   fill
-                  className="object-contain sm:object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                  sizes="(max-width: 768px) 150px, 215px"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+                {/* Center Frosted Pill Badge */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <div className="bg-black/60 backdrop-blur-md border border-white/20 rounded-full px-3 py-1 text-[10px] sm:text-[11px] font-medium text-white tracking-wide shadow-lg">
+                    {data.card2Badge || "ethixweb® studio"}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* Bottom Progress Line */}
-        <div className="flex items-center justify-between pt-2 text-[11px] font-mono text-[#525252] select-none tracking-[0.2em]">
-          <span>DISCOVERY & ARCHITECTURE</span>
-          <span className="hidden sm:inline">01 ────────────────────────────── 04</span>
-          <span>PRODUCTION DEPLOYMENT</span>
+            {/* Timeline Progress Bar underneath the two cards */}
+            <div className="w-full max-w-[310px] sm:max-w-[380px] md:max-w-[440px] flex items-center justify-between gap-3 px-1 text-[11px] font-mono text-white/50 select-none">
+              <span className="tracking-wider">0.1</span>
+              <div className="flex-1 h-[2px] bg-white/20 rounded-full relative overflow-hidden">
+                <div className="h-full w-[45%] bg-[#fe1e34] rounded-full" />
+              </div>
+              <span className="tracking-wider">0.4</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

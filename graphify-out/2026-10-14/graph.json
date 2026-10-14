@@ -69,17 +69,108 @@
       "source_location": "L12"
     },
     {
-      "id": "src_lib_i18n_lang",
-      "label": "Lang",
+      "id": "src_components_sections_whysection_whycard",
+      "label": "WhyCard",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 10,
       "community_name": "getDictionary",
       "file_type": "code",
-      "norm_label": "lang",
-      "source_file": "src/lib/i18n.ts",
+      "norm_label": "whycard",
+      "source_file": "src/components/sections/WhySection.tsx",
       "source_location": "L4"
+    },
+    {
+      "id": "src_components_sections_whysection_whydata",
+      "label": "WhyData",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "whydata",
+      "source_file": "src/components/sections/WhySection.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_components_sections_whysection_whysectionprops",
+      "label": "WhySectionProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "whysectionprops",
+      "source_file": "src/components/sections/WhySection.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "src_components_ui_sectionlabel_sectionlabelprops",
+      "label": "SectionLabelProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "sectionlabelprops",
+      "source_file": "src/components/ui/SectionLabel.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_components_ui_twotoneheading_twotoneheadingprops",
+      "label": "TwoToneHeadingProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "twotoneheadingprops",
+      "source_file": "src/components/ui/TwoToneHeading.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_components_layout_pillnav_navlabels",
+      "label": "NavLabels",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "navlabels",
+      "source_file": "src/components/layout/PillNav.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "src_components_layout_pillnav_pillnavprops",
+      "label": "PillNavProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "pillnavprops",
+      "source_file": "src/components/layout/PillNav.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "src_components_ui_langtoggle_langtoggleprops",
+      "label": "LangToggleProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "langtoggleprops",
+      "source_file": "src/components/ui/LangToggle.tsx",
+      "source_location": "L1"
     },
     {
       "id": "src_components_ui_statuspill_statuspillprops",
@@ -87,12 +178,25 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 14,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "community": 13,
+      "community_name": "PillNav.tsx",
       "file_type": "code",
       "norm_label": "statuspillprops",
       "source_file": "src/components/ui/StatusPill.tsx",
       "source_location": "L5"
+    },
+    {
+      "id": "src_components_ui_themetoggle_themetoggleprops",
+      "label": "ThemeToggleProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "themetoggleprops",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L34"
     },
     {
       "id": "src_components_sections_ctaband_ctabanddata",
@@ -121,17 +225,30 @@
       "source_location": "L10"
     },
     {
-      "id": "src_components_ui_marquee_marqueeprops",
-      "label": "MarqueeProps",
+      "id": "src_components_sections_hero_herodata",
+      "label": "HeroData",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 2,
       "community_name": "(site)/page.tsx",
       "file_type": "code",
-      "norm_label": "marqueeprops",
-      "source_file": "src/components/ui/Marquee.tsx",
-      "source_location": "L1"
+      "norm_label": "herodata",
+      "source_file": "src/components/sections/Hero.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_components_sections_hero_heroprops",
+      "label": "HeroProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "(site)/page.tsx",
+      "file_type": "code",
+      "norm_label": "heroprops",
+      "source_file": "src/components/sections/Hero.tsx",
+      "source_location": "L25"
     },
     {
       "id": "src_components_sections_contactform_contactformprops",
@@ -186,43 +303,43 @@
       "source_location": "L65"
     },
     {
-      "id": "src_components_ui_langtoggle_langtoggleprops",
-      "label": "LangToggleProps",
+      "id": "src_components_sections_processsection_processdata",
+      "label": "ProcessData",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "design/page.tsx",
+      "community_name": "ProcessSection.tsx",
       "file_type": "code",
-      "norm_label": "langtoggleprops",
-      "source_file": "src/components/ui/LangToggle.tsx",
-      "source_location": "L1"
+      "norm_label": "processdata",
+      "source_file": "src/components/sections/ProcessSection.tsx",
+      "source_location": "L11"
     },
     {
-      "id": "src_components_ui_pricingcard_planitem",
-      "label": "PlanItem",
+      "id": "src_components_sections_processsection_processsectionprops",
+      "label": "ProcessSectionProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "design/page.tsx",
+      "community_name": "ProcessSection.tsx",
       "file_type": "code",
-      "norm_label": "planitem",
-      "source_file": "src/components/ui/PricingCard.tsx",
-      "source_location": "L3"
+      "norm_label": "processsectionprops",
+      "source_file": "src/components/sections/ProcessSection.tsx",
+      "source_location": "L18"
     },
     {
-      "id": "src_components_ui_pricingcard_pricingcardprops",
-      "label": "PricingCardProps",
+      "id": "src_components_sections_processsection_stepitem",
+      "label": "StepItem",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "design/page.tsx",
+      "community_name": "ProcessSection.tsx",
       "file_type": "code",
-      "norm_label": "pricingcardprops",
-      "source_file": "src/components/ui/PricingCard.tsx",
-      "source_location": "L12"
+      "norm_label": "stepitem",
+      "source_file": "src/components/sections/ProcessSection.tsx",
+      "source_location": "L5"
     },
     {
       "id": "src_components_ui_processcard_processcardprops",
@@ -231,7 +348,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "design/page.tsx",
+      "community_name": "ProcessSection.tsx",
       "file_type": "code",
       "norm_label": "processcardprops",
       "source_file": "src/components/ui/ProcessCard.tsx",
@@ -244,7 +361,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "design/page.tsx",
+      "community_name": "ProcessSection.tsx",
       "file_type": "code",
       "norm_label": "stepitem",
       "source_file": "src/components/ui/ProcessCard.tsx",
@@ -296,7 +413,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 50,
-      "community_name": "AboutTeaser.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
       "norm_label": "aboutteaserdata",
       "source_file": "src/components/sections/AboutTeaser.tsx",
@@ -309,7 +426,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 50,
-      "community_name": "AboutTeaser.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
       "norm_label": "aboutteaserprops",
       "source_file": "src/components/sections/AboutTeaser.tsx",
@@ -322,11 +439,37 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 50,
-      "community_name": "AboutTeaser.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
       "norm_label": "chamfercardprops",
       "source_file": "src/components/ui/ChamferCard.tsx",
       "source_location": "L3"
+    },
+    {
+      "id": "src_components_ui_featurecard_featurecardprops",
+      "label": "FeatureCardProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "featurecardprops",
+      "source_file": "src/components/ui/FeatureCard.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_components_ui_marquee_marqueeprops",
+      "label": "MarqueeProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "marqueeprops",
+      "source_file": "src/components/ui/Marquee.tsx",
+      "source_location": "L1"
     },
     {
       "id": "src_components_sections_faqsection_faqdata",
@@ -420,71 +563,6 @@
       "source_location": "L6"
     },
     {
-      "id": "src_components_layout_footer_footerdata",
-      "label": "FooterData",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "footerdata",
-      "source_file": "src/components/layout/Footer.tsx",
-      "source_location": "L4"
-    },
-    {
-      "id": "src_components_layout_footer_footerprops",
-      "label": "FooterProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "footerprops",
-      "source_file": "src/components/layout/Footer.tsx",
-      "source_location": "L17"
-    },
-    {
-      "id": "src_components_layout_pillnav_navlabels",
-      "label": "NavLabels",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "navlabels",
-      "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L12"
-    },
-    {
-      "id": "src_components_layout_pillnav_pillnavprops",
-      "label": "PillNavProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "pillnavprops",
-      "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L24"
-    },
-    {
-      "id": "src_components_layout_stickywhatsapp_stickywhatsappprops",
-      "label": "StickyWhatsAppProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "stickywhatsappprops",
-      "source_file": "src/components/layout/StickyWhatsApp.tsx",
-      "source_location": "L6"
-    },
-    {
       "id": "src_components_ui_button_buttonprops",
       "label": "ButtonProps",
       "_callable": true,
@@ -524,95 +602,56 @@
       "source_location": "L3"
     },
     {
-      "id": "src_components_ui_themetoggle_themetoggleprops",
-      "label": "ThemeToggleProps",
+      "id": "src_components_layout_footer_footerdata",
+      "label": "FooterData",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
+      "community": 71,
+      "community_name": "i18n.ts",
       "file_type": "code",
-      "norm_label": "themetoggleprops",
-      "source_file": "src/components/ui/ThemeToggle.tsx",
-      "source_location": "L34"
+      "norm_label": "footerdata",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L4"
     },
     {
-      "id": "src_components_sections_whysection_whycard",
-      "label": "WhyCard",
+      "id": "src_components_layout_footer_footerprops",
+      "label": "FooterProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 73,
-      "community_name": "WhySection.tsx",
+      "community": 71,
+      "community_name": "i18n.ts",
       "file_type": "code",
-      "norm_label": "whycard",
-      "source_file": "src/components/sections/WhySection.tsx",
-      "source_location": "L5"
-    },
-    {
-      "id": "src_components_sections_whysection_whydata",
-      "label": "WhyData",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "WhySection.tsx",
-      "file_type": "code",
-      "norm_label": "whydata",
-      "source_file": "src/components/sections/WhySection.tsx",
-      "source_location": "L10"
-    },
-    {
-      "id": "src_components_sections_whysection_whysectionprops",
-      "label": "WhySectionProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "WhySection.tsx",
-      "file_type": "code",
-      "norm_label": "whysectionprops",
-      "source_file": "src/components/sections/WhySection.tsx",
+      "norm_label": "footerprops",
+      "source_file": "src/components/layout/Footer.tsx",
       "source_location": "L17"
     },
     {
-      "id": "src_components_ui_featurecard_featurecardprops",
-      "label": "FeatureCardProps",
+      "id": "src_components_layout_stickywhatsapp_stickywhatsappprops",
+      "label": "StickyWhatsAppProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 73,
-      "community_name": "WhySection.tsx",
+      "community": 71,
+      "community_name": "i18n.ts",
       "file_type": "code",
-      "norm_label": "featurecardprops",
-      "source_file": "src/components/ui/FeatureCard.tsx",
-      "source_location": "L3"
-    },
-    {
-      "id": "src_components_sections_hero_herodata",
-      "label": "HeroData",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "TwoToneHeading.tsx",
-      "file_type": "code",
-      "norm_label": "herodata",
-      "source_file": "src/components/sections/Hero.tsx",
+      "norm_label": "stickywhatsappprops",
+      "source_file": "src/components/layout/StickyWhatsApp.tsx",
       "source_location": "L6"
     },
     {
-      "id": "src_components_sections_hero_heroprops",
-      "label": "HeroProps",
+      "id": "src_lib_i18n_lang",
+      "label": "Lang",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 74,
-      "community_name": "TwoToneHeading.tsx",
+      "community": 71,
+      "community_name": "i18n.ts",
       "file_type": "code",
-      "norm_label": "heroprops",
-      "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L25"
+      "norm_label": "lang",
+      "source_file": "src/lib/i18n.ts",
+      "source_location": "L4"
     },
     {
       "id": "src_components_sections_pricingsection_planitem",
@@ -621,7 +660,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 74,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "PricingSection.tsx",
       "file_type": "code",
       "norm_label": "planitem",
       "source_file": "src/components/sections/PricingSection.tsx",
@@ -634,7 +673,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 74,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "PricingSection.tsx",
       "file_type": "code",
       "norm_label": "pricingdata",
       "source_file": "src/components/sections/PricingSection.tsx",
@@ -647,76 +686,37 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 74,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "PricingSection.tsx",
       "file_type": "code",
       "norm_label": "pricingsectionprops",
       "source_file": "src/components/sections/PricingSection.tsx",
       "source_location": "L22"
     },
     {
-      "id": "src_components_sections_processsection_processdata",
-      "label": "ProcessData",
+      "id": "src_components_ui_pricingcard_planitem",
+      "label": "PlanItem",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 74,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "PricingSection.tsx",
       "file_type": "code",
-      "norm_label": "processdata",
-      "source_file": "src/components/sections/ProcessSection.tsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "src_components_sections_processsection_processsectionprops",
-      "label": "ProcessSectionProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "TwoToneHeading.tsx",
-      "file_type": "code",
-      "norm_label": "processsectionprops",
-      "source_file": "src/components/sections/ProcessSection.tsx",
-      "source_location": "L18"
-    },
-    {
-      "id": "src_components_sections_processsection_stepitem",
-      "label": "StepItem",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "TwoToneHeading.tsx",
-      "file_type": "code",
-      "norm_label": "stepitem",
-      "source_file": "src/components/sections/ProcessSection.tsx",
-      "source_location": "L5"
-    },
-    {
-      "id": "src_components_ui_sectionlabel_sectionlabelprops",
-      "label": "SectionLabelProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "TwoToneHeading.tsx",
-      "file_type": "code",
-      "norm_label": "sectionlabelprops",
-      "source_file": "src/components/ui/SectionLabel.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_ui_twotoneheading_twotoneheadingprops",
-      "label": "TwoToneHeadingProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "TwoToneHeading.tsx",
-      "file_type": "code",
-      "norm_label": "twotoneheadingprops",
-      "source_file": "src/components/ui/TwoToneHeading.tsx",
+      "norm_label": "planitem",
+      "source_file": "src/components/ui/PricingCard.tsx",
       "source_location": "L3"
+    },
+    {
+      "id": "src_components_ui_pricingcard_pricingcardprops",
+      "label": "PricingCardProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 74,
+      "community_name": "PricingSection.tsx",
+      "file_type": "code",
+      "norm_label": "pricingcardprops",
+      "source_file": "src/components/ui/PricingCard.tsx",
+      "source_location": "L12"
     },
     {
       "id": "src_components_sections_servicessection_serviceitem",
@@ -844,6 +844,18 @@
       "source_location": "L12"
     },
     {
+      "id": "src_app_lang_site_about_page_generatestaticparams",
+      "label": "generateStaticParams()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "generatestaticparams()",
+      "source_file": "src/app/[lang]/(site)/about/page.tsx",
+      "source_location": "L8"
+    },
+    {
       "id": "src_app_lang_site_contact_page_contactpage",
       "label": "ContactPage()",
       "_callable": true,
@@ -878,30 +890,6 @@
       "norm_label": "generatestaticparams()",
       "source_file": "src/app/[lang]/(site)/contact/page.tsx",
       "source_location": "L8"
-    },
-    {
-      "id": "src_app_lang_site_page_generatemetadata",
-      "label": "generateMetadata()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "getDictionary",
-      "file_type": "code",
-      "norm_label": "generatemetadata()",
-      "source_file": "src/app/[lang]/(site)/page.tsx",
-      "source_location": "L18"
-    },
-    {
-      "id": "src_app_lang_site_page_homepage",
-      "label": "HomePage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "getDictionary",
-      "file_type": "code",
-      "norm_label": "homepage()",
-      "source_file": "src/app/[lang]/(site)/page.tsx",
-      "source_location": "L45"
     },
     {
       "id": "src_app_lang_site_privacy_page_generatemetadata",
@@ -976,6 +964,30 @@
       "source_location": "L35"
     },
     {
+      "id": "src_components_ui_sectionlabel_sectionlabel",
+      "label": "SectionLabel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "sectionlabel()",
+      "source_file": "src/components/ui/SectionLabel.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "src_components_ui_twotoneheading_twotoneheading",
+      "label": "TwoToneHeading()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "twotoneheading()",
+      "source_file": "src/components/ui/TwoToneHeading.tsx",
+      "source_location": "L13"
+    },
+    {
       "id": "src_lib_i18n_getdictionary",
       "label": "getDictionary()",
       "_callable": true,
@@ -1000,6 +1012,126 @@
       "source_location": "L15"
     },
     {
+      "id": "src_components_layout_pillnav_pillnav",
+      "label": "PillNav()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "pillnav()",
+      "source_file": "src/components/layout/PillNav.tsx",
+      "source_location": "L29"
+    },
+    {
+      "id": "src_components_ui_langtoggle_langtoggle",
+      "label": "LangToggle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "langtoggle()",
+      "source_file": "src/components/ui/LangToggle.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "src_components_ui_statuspill_getonlinesnapshot",
+      "label": "getOnlineSnapshot()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "getonlinesnapshot()",
+      "source_file": "src/components/ui/StatusPill.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_components_ui_statuspill_getserversnapshot",
+      "label": "getServerSnapshot()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "getserversnapshot()",
+      "source_file": "src/components/ui/StatusPill.tsx",
+      "source_location": "L37"
+    },
+    {
+      "id": "src_components_ui_statuspill_statuspill",
+      "label": "StatusPill()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "statuspill()",
+      "source_file": "src/components/ui/StatusPill.tsx",
+      "source_location": "L46"
+    },
+    {
+      "id": "src_components_ui_statuspill_subscribe",
+      "label": "subscribe()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "subscribe()",
+      "source_file": "src/components/ui/StatusPill.tsx",
+      "source_location": "L41"
+    },
+    {
+      "id": "src_components_ui_themetoggle_getserversnapshot",
+      "label": "getServerSnapshot()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "getserversnapshot()",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L30"
+    },
+    {
+      "id": "src_components_ui_themetoggle_getsnapshot",
+      "label": "getSnapshot()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "getsnapshot()",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "src_components_ui_themetoggle_subscribe",
+      "label": "subscribe()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "subscribe()",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_components_ui_themetoggle_themetoggle",
+      "label": "ThemeToggle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "themetoggle()",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
+      "source_location": "L38"
+    },
+    {
       "id": "src_components_sections_contactform_contactform",
       "label": "ContactForm()",
       "_callable": true,
@@ -1012,52 +1144,16 @@
       "source_location": "L39"
     },
     {
-      "id": "src_components_ui_statuspill_getonlinesnapshot",
-      "label": "getOnlineSnapshot()",
+      "id": "src_app_lang_site_page_generatemetadata",
+      "label": "generateMetadata()",
       "_callable": true,
       "_origin": "ast",
-      "community": 14,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "community": 2,
+      "community_name": "(site)/page.tsx",
       "file_type": "code",
-      "norm_label": "getonlinesnapshot()",
-      "source_file": "src/components/ui/StatusPill.tsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "src_components_ui_statuspill_getserversnapshot",
-      "label": "getServerSnapshot()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "code",
-      "norm_label": "getserversnapshot()",
-      "source_file": "src/components/ui/StatusPill.tsx",
-      "source_location": "L37"
-    },
-    {
-      "id": "src_components_ui_statuspill_statuspill",
-      "label": "StatusPill()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "code",
-      "norm_label": "statuspill()",
-      "source_file": "src/components/ui/StatusPill.tsx",
-      "source_location": "L46"
-    },
-    {
-      "id": "src_components_ui_statuspill_subscribe",
-      "label": "subscribe()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 14,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
-      "file_type": "code",
-      "norm_label": "subscribe()",
-      "source_file": "src/components/ui/StatusPill.tsx",
-      "source_location": "L41"
+      "norm_label": "generatemetadata()",
+      "source_file": "src/app/[lang]/(site)/page.tsx",
+      "source_location": "L18"
     },
     {
       "id": "src_app_lang_site_page_generatestaticparams",
@@ -1070,6 +1166,18 @@
       "norm_label": "generatestaticparams()",
       "source_file": "src/app/[lang]/(site)/page.tsx",
       "source_location": "L14"
+    },
+    {
+      "id": "src_app_lang_site_page_homepage",
+      "label": "HomePage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "(site)/page.tsx",
+      "file_type": "code",
+      "norm_label": "homepage()",
+      "source_file": "src/app/[lang]/(site)/page.tsx",
+      "source_location": "L45"
     },
     {
       "id": "src_components_sections_ctaband_ctaband",
@@ -1096,28 +1204,16 @@
       "source_location": "L31"
     },
     {
-      "id": "src_components_sections_processsection_processsection",
-      "label": "ProcessSection()",
+      "id": "src_components_sections_whysection_whysection",
+      "label": "WhySection()",
       "_callable": true,
       "_origin": "ast",
       "community": 2,
       "community_name": "(site)/page.tsx",
       "file_type": "code",
-      "norm_label": "processsection()",
-      "source_file": "src/components/sections/ProcessSection.tsx",
-      "source_location": "L22"
-    },
-    {
-      "id": "src_components_ui_marquee_marquee",
-      "label": "Marquee()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "(site)/page.tsx",
-      "file_type": "code",
-      "norm_label": "marquee()",
-      "source_file": "src/components/ui/Marquee.tsx",
-      "source_location": "L6"
+      "norm_label": "whysection()",
+      "source_file": "src/components/sections/WhySection.tsx",
+      "source_location": "L20"
     },
     {
       "id": "src_components_ui_turnstilewidget_turnstilewidget",
@@ -1144,52 +1240,16 @@
       "source_location": "L42"
     },
     {
-      "id": "src_app_lang_design_page_designtokenspage",
-      "label": "DesignTokensPage()",
+      "id": "src_components_sections_processsection_processsection",
+      "label": "ProcessSection()",
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "design/page.tsx",
+      "community_name": "ProcessSection.tsx",
       "file_type": "code",
-      "norm_label": "designtokenspage()",
-      "source_file": "src/app/[lang]/design/page.tsx",
-      "source_location": "L19"
-    },
-    {
-      "id": "src_app_lang_design_page_generatestaticparams",
-      "label": "generateStaticParams()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "design/page.tsx",
-      "file_type": "code",
-      "norm_label": "generatestaticparams()",
-      "source_file": "src/app/[lang]/design/page.tsx",
-      "source_location": "L15"
-    },
-    {
-      "id": "src_components_ui_langtoggle_langtoggle",
-      "label": "LangToggle()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "design/page.tsx",
-      "file_type": "code",
-      "norm_label": "langtoggle()",
-      "source_file": "src/components/ui/LangToggle.tsx",
-      "source_location": "L8"
-    },
-    {
-      "id": "src_components_ui_pricingcard_pricingcard",
-      "label": "PricingCard()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "design/page.tsx",
-      "file_type": "code",
-      "norm_label": "pricingcard()",
-      "source_file": "src/components/ui/PricingCard.tsx",
-      "source_location": "L17"
+      "norm_label": "processsection()",
+      "source_file": "src/components/sections/ProcessSection.tsx",
+      "source_location": "L22"
     },
     {
       "id": "src_components_ui_processcard_processcard",
@@ -1197,7 +1257,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "design/page.tsx",
+      "community_name": "ProcessSection.tsx",
       "file_type": "code",
       "norm_label": "processcard()",
       "source_file": "src/components/ui/ProcessCard.tsx",
@@ -1420,12 +1480,36 @@
       "source_location": "L10"
     },
     {
+      "id": "src_app_lang_design_page_designtokenspage",
+      "label": "DesignTokensPage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "designtokenspage()",
+      "source_file": "src/app/[lang]/design/page.tsx",
+      "source_location": "L19"
+    },
+    {
+      "id": "src_app_lang_design_page_generatestaticparams",
+      "label": "generateStaticParams()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "generatestaticparams()",
+      "source_file": "src/app/[lang]/design/page.tsx",
+      "source_location": "L15"
+    },
+    {
       "id": "src_components_sections_aboutteaser_aboutteaser",
       "label": "AboutTeaser()",
       "_callable": true,
       "_origin": "ast",
       "community": 50,
-      "community_name": "AboutTeaser.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
       "norm_label": "aboutteaser()",
       "source_file": "src/components/sections/AboutTeaser.tsx",
@@ -1437,11 +1521,35 @@
       "_callable": true,
       "_origin": "ast",
       "community": 50,
-      "community_name": "AboutTeaser.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
       "norm_label": "chamfercard()",
       "source_file": "src/components/ui/ChamferCard.tsx",
       "source_location": "L9"
+    },
+    {
+      "id": "src_components_ui_featurecard_featurecard",
+      "label": "FeatureCard()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "featurecard()",
+      "source_file": "src/components/ui/FeatureCard.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_components_ui_marquee_marquee",
+      "label": "Marquee()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "marquee()",
+      "source_file": "src/components/ui/Marquee.tsx",
+      "source_location": "L6"
     },
     {
       "id": "src_components_sections_faqsection_faqsection",
@@ -1528,42 +1636,6 @@
       "source_location": "L7"
     },
     {
-      "id": "src_app_lang_site_about_page_generatestaticparams",
-      "label": "generateStaticParams()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "generatestaticparams()",
-      "source_file": "src/app/[lang]/(site)/about/page.tsx",
-      "source_location": "L8"
-    },
-    {
-      "id": "src_app_lang_site_layout_generatestaticparams",
-      "label": "generateStaticParams()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "generatestaticparams()",
-      "source_file": "src/app/[lang]/(site)/layout.tsx",
-      "source_location": "L6"
-    },
-    {
-      "id": "src_app_lang_site_layout_sitelayout",
-      "label": "SiteLayout()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "sitelayout()",
-      "source_file": "src/app/[lang]/(site)/layout.tsx",
-      "source_location": "L10"
-    },
-    {
       "id": "src_app_not_found_notfound",
       "label": "NotFound()",
       "_callable": true,
@@ -1648,42 +1720,6 @@
       "source_location": "L6"
     },
     {
-      "id": "src_components_layout_footer_footer",
-      "label": "Footer()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "footer()",
-      "source_file": "src/components/layout/Footer.tsx",
-      "source_location": "L22"
-    },
-    {
-      "id": "src_components_layout_pillnav_pillnav",
-      "label": "PillNav()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "pillnav()",
-      "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L29"
-    },
-    {
-      "id": "src_components_layout_stickywhatsapp_stickywhatsapp",
-      "label": "StickyWhatsApp()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "stickywhatsapp()",
-      "source_file": "src/components/layout/StickyWhatsApp.tsx",
-      "source_location": "L12"
-    },
-    {
       "id": "src_components_ui_button_button",
       "label": "Button()",
       "_callable": true,
@@ -1708,52 +1744,52 @@
       "source_location": "L9"
     },
     {
-      "id": "src_components_ui_themetoggle_getserversnapshot",
-      "label": "getServerSnapshot()",
+      "id": "src_app_lang_site_layout_generatestaticparams",
+      "label": "generateStaticParams()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
+      "community": 71,
+      "community_name": "i18n.ts",
       "file_type": "code",
-      "norm_label": "getserversnapshot()",
-      "source_file": "src/components/ui/ThemeToggle.tsx",
-      "source_location": "L30"
+      "norm_label": "generatestaticparams()",
+      "source_file": "src/app/[lang]/(site)/layout.tsx",
+      "source_location": "L6"
     },
     {
-      "id": "src_components_ui_themetoggle_getsnapshot",
-      "label": "getSnapshot()",
+      "id": "src_app_lang_site_layout_sitelayout",
+      "label": "SiteLayout()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
+      "community": 71,
+      "community_name": "i18n.ts",
       "file_type": "code",
-      "norm_label": "getsnapshot()",
-      "source_file": "src/components/ui/ThemeToggle.tsx",
-      "source_location": "L26"
+      "norm_label": "sitelayout()",
+      "source_file": "src/app/[lang]/(site)/layout.tsx",
+      "source_location": "L10"
     },
     {
-      "id": "src_components_ui_themetoggle_subscribe",
-      "label": "subscribe()",
+      "id": "src_components_layout_footer_footer",
+      "label": "Footer()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
+      "community": 71,
+      "community_name": "i18n.ts",
       "file_type": "code",
-      "norm_label": "subscribe()",
-      "source_file": "src/components/ui/ThemeToggle.tsx",
-      "source_location": "L5"
+      "norm_label": "footer()",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L22"
     },
     {
-      "id": "src_components_ui_themetoggle_themetoggle",
-      "label": "ThemeToggle()",
+      "id": "src_components_layout_stickywhatsapp_stickywhatsapp",
+      "label": "StickyWhatsApp()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
+      "community": 71,
+      "community_name": "i18n.ts",
       "file_type": "code",
-      "norm_label": "themetoggle()",
-      "source_file": "src/components/ui/ThemeToggle.tsx",
-      "source_location": "L38"
+      "norm_label": "stickywhatsapp()",
+      "source_file": "src/components/layout/StickyWhatsApp.tsx",
+      "source_location": "L12"
     },
     {
       "id": "src_app_layout_rootlayout",
@@ -1768,64 +1804,28 @@
       "source_location": "L46"
     },
     {
-      "id": "src_components_sections_whysection_whysection",
-      "label": "WhySection()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "WhySection.tsx",
-      "file_type": "code",
-      "norm_label": "whysection()",
-      "source_file": "src/components/sections/WhySection.tsx",
-      "source_location": "L21"
-    },
-    {
-      "id": "src_components_ui_featurecard_featurecard",
-      "label": "FeatureCard()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "WhySection.tsx",
-      "file_type": "code",
-      "norm_label": "featurecard()",
-      "source_file": "src/components/ui/FeatureCard.tsx",
-      "source_location": "L9"
-    },
-    {
       "id": "src_components_sections_pricingsection_pricingsection",
       "label": "PricingSection()",
       "_callable": true,
       "_origin": "ast",
       "community": 74,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "PricingSection.tsx",
       "file_type": "code",
       "norm_label": "pricingsection()",
       "source_file": "src/components/sections/PricingSection.tsx",
       "source_location": "L27"
     },
     {
-      "id": "src_components_ui_sectionlabel_sectionlabel",
-      "label": "SectionLabel()",
+      "id": "src_components_ui_pricingcard_pricingcard",
+      "label": "PricingCard()",
       "_callable": true,
       "_origin": "ast",
       "community": 74,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "PricingSection.tsx",
       "file_type": "code",
-      "norm_label": "sectionlabel()",
-      "source_file": "src/components/ui/SectionLabel.tsx",
-      "source_location": "L7"
-    },
-    {
-      "id": "src_components_ui_twotoneheading_twotoneheading",
-      "label": "TwoToneHeading()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "TwoToneHeading.tsx",
-      "file_type": "code",
-      "norm_label": "twotoneheading()",
-      "source_file": "src/components/ui/TwoToneHeading.tsx",
-      "source_location": "L12"
+      "norm_label": "pricingcard()",
+      "source_file": "src/components/ui/PricingCard.tsx",
+      "source_location": "L17"
     },
     {
       "id": "src_components_sections_servicessection_servicessection",
@@ -2336,6 +2336,17 @@
       "source_location": "L28"
     },
     {
+      "id": "src_app_lang_site_about_page",
+      "label": "about/page.tsx",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "getDictionary",
+      "file_type": "code",
+      "norm_label": "about/page.tsx",
+      "source_file": "src/app/[lang]/(site)/about/page.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "src_app_lang_site_contact_page",
       "label": "contact/page.tsx",
       "_origin": "ast",
@@ -2369,70 +2380,37 @@
       "source_location": "L1"
     },
     {
-      "id": "src_content_en",
-      "label": "en.ts",
+      "id": "src_components_sections_whysection",
+      "label": "WhySection.tsx",
       "_origin": "ast",
       "community": 10,
       "community_name": "getDictionary",
       "file_type": "code",
-      "norm_label": "en.ts",
-      "source_file": "src/content/en.ts",
+      "norm_label": "whysection.tsx",
+      "source_file": "src/components/sections/WhySection.tsx",
       "source_location": "L1"
     },
     {
-      "id": "src_content_en_en",
-      "label": "en",
+      "id": "src_components_ui_sectionlabel",
+      "label": "SectionLabel.tsx",
       "_origin": "ast",
       "community": 10,
       "community_name": "getDictionary",
       "file_type": "code",
-      "norm_label": "en",
-      "source_file": "src/content/en.ts",
+      "norm_label": "sectionlabel.tsx",
+      "source_file": "src/components/ui/SectionLabel.tsx",
       "source_location": "L1"
     },
     {
-      "id": "src_content_hi",
-      "label": "hi.ts",
+      "id": "src_components_ui_twotoneheading",
+      "label": "TwoToneHeading.tsx",
       "_origin": "ast",
       "community": 10,
       "community_name": "getDictionary",
       "file_type": "code",
-      "norm_label": "hi.ts",
-      "source_file": "src/content/hi.ts",
+      "norm_label": "twotoneheading.tsx",
+      "source_file": "src/components/ui/TwoToneHeading.tsx",
       "source_location": "L1"
-    },
-    {
-      "id": "src_content_hi_hi",
-      "label": "hi",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "getDictionary",
-      "file_type": "code",
-      "norm_label": "hi",
-      "source_file": "src/content/hi.ts",
-      "source_location": "L3"
-    },
-    {
-      "id": "src_lib_i18n",
-      "label": "i18n.ts",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "getDictionary",
-      "file_type": "code",
-      "norm_label": "i18n.ts",
-      "source_file": "src/lib/i18n.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_lib_i18n_default_locale",
-      "label": "DEFAULT_LOCALE",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "getDictionary",
-      "file_type": "code",
-      "norm_label": "default_locale",
-      "source_file": "src/lib/i18n.ts",
-      "source_location": "L6"
     },
     {
       "id": "supabase_schema",
@@ -2655,14 +2633,47 @@
       "source_location": "L5"
     },
     {
+      "id": "src_components_layout_pillnav",
+      "label": "PillNav.tsx",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "pillnav.tsx",
+      "source_file": "src/components/layout/PillNav.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_langtoggle",
+      "label": "LangToggle.tsx",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "langtoggle.tsx",
+      "source_file": "src/components/ui/LangToggle.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "src_components_ui_statuspill",
       "label": "StatusPill.tsx",
       "_origin": "ast",
-      "community": 14,
-      "community_name": "PHASES \u2014 build in small milestones, verify, then move on",
+      "community": 13,
+      "community_name": "PillNav.tsx",
       "file_type": "code",
       "norm_label": "statuspill.tsx",
       "source_file": "src/components/ui/StatusPill.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_themetoggle",
+      "label": "ThemeToggle.tsx",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "PillNav.tsx",
+      "file_type": "code",
+      "norm_label": "themetoggle.tsx",
+      "source_file": "src/components/ui/ThemeToggle.tsx",
       "source_location": "L1"
     },
     {
@@ -2879,7 +2890,7 @@
       "node_kind": "heading",
       "norm_label": "hours left? compress like this",
       "source_file": "PHASES.md",
-      "source_location": "L48"
+      "source_location": "L49"
     },
     {
       "id": "phases_phase_0_setup_30m",
@@ -2891,7 +2902,7 @@
       "node_kind": "heading",
       "norm_label": "phase 0 \u2014 setup (30m)",
       "source_file": "PHASES.md",
-      "source_location": "L60"
+      "source_location": "L61"
     },
     {
       "id": "phases_phase_10_india_layer_hindi_60m",
@@ -2903,7 +2914,7 @@
       "node_kind": "heading",
       "norm_label": "phase 10 \u2014 india layer + hindi (60m)",
       "source_file": "PHASES.md",
-      "source_location": "L167"
+      "source_location": "L168"
     },
     {
       "id": "phases_phase_11_polish_accessibility_45m",
@@ -2915,7 +2926,7 @@
       "node_kind": "heading",
       "norm_label": "phase 11 \u2014 polish + accessibility (45m)",
       "source_file": "PHASES.md",
-      "source_location": "L175"
+      "source_location": "L176"
     },
     {
       "id": "phases_phase_12_performance_60m",
@@ -2927,7 +2938,7 @@
       "node_kind": "heading",
       "norm_label": "phase 12 \u2014 performance (60m)",
       "source_file": "PHASES.md",
-      "source_location": "L181"
+      "source_location": "L182"
     },
     {
       "id": "phases_phase_13_ship_75m",
@@ -2939,7 +2950,7 @@
       "node_kind": "heading",
       "norm_label": "phase 13 \u2014 ship (75m)",
       "source_file": "PHASES.md",
-      "source_location": "L188"
+      "source_location": "L189"
     },
     {
       "id": "phases_phase_1_foundation_45m",
@@ -2951,7 +2962,7 @@
       "node_kind": "heading",
       "norm_label": "phase 1 \u2014 foundation (45m)",
       "source_file": "PHASES.md",
-      "source_location": "L72"
+      "source_location": "L73"
     },
     {
       "id": "phases_phase_2_hero_marquee_60m_biggest_design_score_moment",
@@ -2963,7 +2974,7 @@
       "node_kind": "heading",
       "norm_label": "phase 2 \u2014 hero + marquee (60m)  \u2190 biggest design-score moment",
       "source_file": "PHASES.md",
-      "source_location": "L85"
+      "source_location": "L86"
     },
     {
       "id": "phases_phase_3_home_a_about_services_60m",
@@ -2975,7 +2986,7 @@
       "node_kind": "heading",
       "norm_label": "phase 3 \u2014 home a: about + services (60m)",
       "source_file": "PHASES.md",
-      "source_location": "L98"
+      "source_location": "L99"
     },
     {
       "id": "phases_phase_4_home_b_work_process_why_pricing_faq_cta_75m",
@@ -2987,7 +2998,7 @@
       "node_kind": "heading",
       "norm_label": "phase 4 \u2014 home b: work, process, why, pricing, faq, cta (75m)",
       "source_file": "PHASES.md",
-      "source_location": "L109"
+      "source_location": "L110"
     },
     {
       "id": "phases_phase_5_database_lead_api_no_ui_60m",
@@ -2999,7 +3010,7 @@
       "node_kind": "heading",
       "norm_label": "phase 5 \u2014 database + lead api, no ui (60m)",
       "source_file": "PHASES.md",
-      "source_location": "L119"
+      "source_location": "L120"
     },
     {
       "id": "phases_phase_6_contact_page_form_end_to_end_45m",
@@ -3011,7 +3022,7 @@
       "node_kind": "heading",
       "norm_label": "phase 6 \u2014 contact page + form, end-to-end (45m)",
       "source_file": "PHASES.md",
-      "source_location": "L132"
+      "source_location": "L133"
     },
     {
       "id": "phases_phase_7_admin_auth_protected_shell_45m",
@@ -3023,7 +3034,7 @@
       "node_kind": "heading",
       "norm_label": "phase 7 \u2014 admin auth + protected shell (45m)",
       "source_file": "PHASES.md",
-      "source_location": "L141"
+      "source_location": "L142"
     },
     {
       "id": "phases_phase_8_admin_dashboard_60m",
@@ -3035,7 +3046,7 @@
       "node_kind": "heading",
       "norm_label": "phase 8 \u2014 admin dashboard (60m)",
       "source_file": "PHASES.md",
-      "source_location": "L150"
+      "source_location": "L151"
     },
     {
       "id": "phases_phase_9_inner_pages_60m",
@@ -3047,7 +3058,7 @@
       "node_kind": "heading",
       "norm_label": "phase 9 \u2014 inner pages (60m)",
       "source_file": "PHASES.md",
-      "source_location": "L159"
+      "source_location": "L160"
     },
     {
       "id": "phases_phases_build_in_small_milestones_verify_then_move_on",
@@ -3546,7 +3557,7 @@
       "label": "docs/02-DESIGN-SYSTEM.md",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "docs/02-design-system.md",
@@ -3554,148 +3565,232 @@
       "source_location": "L1"
     },
     {
-      "id": "docs_02_design_system_02_design_system",
-      "label": "02 \u2014 Design system",
+      "id": "docs_02_design_system_02_design_system_svz_high_fashion_editorial_india_adaptation",
+      "label": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "02 \u2014 design system",
+      "norm_label": "02 \u2014 design system (svz high-fashion editorial \u00d7 india adaptation)",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
       "source_location": "L1"
     },
     {
-      "id": "docs_02_design_system_brand_tokens_tailwind_v4_theme_in_src_styles_globals_css",
-      "label": "Brand tokens (Tailwind v4 `@theme` in `src/styles/globals.css`)",
+      "id": "docs_02_design_system_1_color_palette",
+      "label": "1. Color Palette",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "brand tokens (tailwind v4 `@theme` in `src/styles/globals.css`)",
+      "norm_label": "1. color palette",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L11"
+      "source_location": "L17"
     },
     {
-      "id": "docs_02_design_system_components_src_components_ui",
-      "label": "Components (`src/components/ui`)",
+      "id": "docs_02_design_system_1_ghost_cta_link",
+      "label": "1. Ghost CTA Link",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "components (`src/components/ui`)",
+      "norm_label": "1. ghost cta link",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L71"
+      "source_location": "L77"
     },
     {
-      "id": "docs_02_design_system_home_page_layout_top_bottom",
-      "label": "Home page layout (top \u2192 bottom)",
+      "id": "docs_02_design_system_2_discovery_call_outlined_button",
+      "label": "2. Discovery Call Outlined Button",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "home page layout (top \u2192 bottom)",
+      "norm_label": "2. discovery call outlined button",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L112"
+      "source_location": "L80"
     },
     {
-      "id": "docs_02_design_system_india_layer_30_of_the_score_make_it_visible_above_the_fold",
-      "label": "India layer (30% of the score \u2014 make it visible above the fold)",
+      "id": "docs_02_design_system_2_typography_system",
+      "label": "2. Typography System",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "india layer (30% of the score \u2014 make it visible above the fold)",
+      "norm_label": "2. typography system",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L92"
+      "source_location": "L36"
     },
     {
-      "id": "docs_02_design_system_inner_pages",
-      "label": "Inner pages",
+      "id": "docs_02_design_system_3_arterial_red_accent_dot_fe1e34",
+      "label": "3. Arterial Red Accent Dot (`#fe1e34`)",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "inner pages",
+      "norm_label": "3. arterial red accent dot (`#fe1e34`)",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L137"
+      "source_location": "L83"
     },
     {
-      "id": "docs_02_design_system_jaali_pattern_tiny_inline_svg",
-      "label": "Jaali pattern (tiny inline SVG)",
+      "id": "docs_02_design_system_3_shapes_radii_spacing",
+      "label": "3. Shapes, Radii & Spacing",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "jaali pattern (tiny inline svg)",
+      "norm_label": "3. shapes, radii & spacing",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L102"
+      "source_location": "L61"
     },
     {
-      "id": "docs_02_design_system_quality_bar_for_every_section",
-      "label": "Quality bar for every section",
+      "id": "docs_02_design_system_4_bordered_brand_card_card_featured_svz",
+      "label": "4. Bordered Brand Card (`card-featured-svz`)",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "quality bar for every section",
+      "norm_label": "4. bordered brand card (`card-featured-svz`)",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L146"
+      "source_location": "L86"
     },
     {
-      "id": "docs_02_design_system_responsive_rules",
-      "label": "Responsive rules",
+      "id": "docs_02_design_system_4_component_affordances",
+      "label": "4. Component Affordances",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "responsive rules",
+      "norm_label": "4. component affordances",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L142"
+      "source_location": "L75"
     },
     {
-      "id": "docs_02_design_system_spacing_and_layout",
-      "label": "Spacing and layout",
+      "id": "docs_02_design_system_5_inverted_linen_body_panel_f3efef",
+      "label": "5. Inverted Linen Body Panel (`#f3efef`)",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "spacing and layout",
+      "norm_label": "5. inverted linen body panel (`#f3efef`)",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L66"
+      "source_location": "L90"
     },
     {
-      "id": "docs_02_design_system_typography",
-      "label": "Typography",
+      "id": "docs_02_design_system_5_strict_do_s_don_ts",
+      "label": "5. Strict Do's & Don'ts",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "typography",
+      "norm_label": "5. strict do's & don'ts",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L49"
+      "source_location": "L95"
     },
     {
-      "id": "docs_02_design_system_where_this_comes_from",
-      "label": "Where this comes from",
+      "id": "docs_02_design_system_a_primary_display_ui_inter_tight_inter",
+      "label": "A. Primary Display & UI (Inter Tight & Inter)",
       "_origin": "ast",
       "community": 17,
-      "community_name": "02 \u2014 Design system",
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "where this comes from",
+      "norm_label": "a. primary display & ui (inter tight & inter)",
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L38"
+    },
+    {
+      "id": "docs_02_design_system_b_editorial_serif_italic_companion_playfair_display_italic_editorialnew",
+      "label": "B. Editorial Serif Italic Companion (Playfair Display Italic / Editorialnew)",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "b. editorial serif italic companion (playfair display italic / editorialnew)",
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L43"
+    },
+    {
+      "id": "docs_02_design_system_c_devanagari_companion_noto_sans_devanagari",
+      "label": "C. Devanagari Companion (Noto Sans Devanagari)",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "c. devanagari companion (noto sans devanagari)",
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L46"
+    },
+    {
+      "id": "docs_02_design_system_design_philosophy_inspiration_svz_io",
+      "label": "Design Philosophy & Inspiration (svz.io)",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "design philosophy & inspiration (svz.io)",
       "source_file": "docs/02-DESIGN-SYSTEM.md",
       "source_location": "L3"
+    },
+    {
+      "id": "docs_02_design_system_do",
+      "label": "Do",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "do",
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L97"
+    },
+    {
+      "id": "docs_02_design_system_don_t",
+      "label": "Don't",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "don't",
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L104"
+    },
+    {
+      "id": "docs_02_design_system_token_architecture_src_styles_globals_css",
+      "label": "Token Architecture (`src/styles/globals.css`)",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "token architecture (`src/styles/globals.css`)",
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "docs_02_design_system_type_scale",
+      "label": "Type Scale",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "02 \u2014 Design System (SVZ High-Fashion Editorial \u00d7 India Adaptation)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "type scale",
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L49"
     },
     {
       "id": "docs_review",
@@ -4032,14 +4127,14 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_ui_marquee",
-      "label": "Marquee.tsx",
+      "id": "src_components_sections_hero",
+      "label": "Hero.tsx",
       "_origin": "ast",
       "community": 2,
       "community_name": "(site)/page.tsx",
       "file_type": "code",
-      "norm_label": "marquee.tsx",
-      "source_file": "src/components/ui/Marquee.tsx",
+      "norm_label": "hero.tsx",
+      "source_file": "src/components/sections/Hero.tsx",
       "source_location": "L1"
     },
     {
@@ -6436,6 +6531,222 @@
       "source_location": "L5"
     },
     {
+      "id": "prompts",
+      "label": "PROMPTS.md",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "prompts.md",
+      "source_file": "PROMPTS.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "prompts_1_background_video_loops_ambient_void_canvas",
+      "label": "1. Background Video Loops (Ambient Void Canvas)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. background video loops (ambient void canvas)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "prompts_2_atmospheric_editorial_collage_textures",
+      "label": "2. Atmospheric Editorial Collage Textures",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. atmospheric editorial collage textures",
+      "source_file": "PROMPTS.md",
+      "source_location": "L26"
+    },
+    {
+      "id": "prompts_3_high_converting_indian_concept_project_showcase_work_section",
+      "label": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. high-converting indian concept project showcase (work section)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L44"
+    },
+    {
+      "id": "prompts_4_hero_section_preview_micro_cards",
+      "label": "4. Hero Section Preview Micro-Cards",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. hero section preview micro-cards",
+      "source_file": "PROMPTS.md",
+      "source_location": "L80"
+    },
+    {
+      "id": "prompts_5_css_animation_placeholder_instructions",
+      "label": "5. CSS Animation Placeholder Instructions",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. css animation placeholder instructions",
+      "source_file": "PROMPTS.md",
+      "source_location": "L96"
+    },
+    {
+      "id": "prompts_prompt_h1_d2c_store_quick_drawer_hero_d2c_jpg",
+      "label": "Prompt H1 \u2014 D2C Store Quick Drawer (`hero-d2c.jpg`)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prompt h1 \u2014 d2c store quick drawer (`hero-d2c.jpg`)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L82"
+    },
+    {
+      "id": "prompts_prompt_h2_healthcare_appointment_sync_hero_clinic_jpg",
+      "label": "Prompt H2 \u2014 Healthcare Appointment Sync (`hero-clinic.jpg`)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prompt h2 \u2014 healthcare appointment sync (`hero-clinic.jpg`)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L88"
+    },
+    {
+      "id": "prompts_prompt_t1_large_bleeding_background_glyph_mid_page_punctuation",
+      "label": "Prompt T1 \u2014 Large Bleeding Background Glyph (Mid-page Punctuation)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prompt t1 \u2014 large bleeding background glyph (mid-page punctuation)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L30"
+    },
+    {
+      "id": "prompts_prompt_t2_organic_high_fashion_pattern_accent",
+      "label": "Prompt T2 \u2014 Organic High-Fashion Pattern Accent",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prompt t2 \u2014 organic high-fashion pattern accent",
+      "source_file": "PROMPTS.md",
+      "source_location": "L36"
+    },
+    {
+      "id": "prompts_prompt_v1_hero_atmospheric_void_liquid_primary_canvas",
+      "label": "Prompt V1 \u2014 Hero Atmospheric Void Liquid (Primary Canvas)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prompt v1 \u2014 hero atmospheric void liquid (primary canvas)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L11"
+    },
+    {
+      "id": "prompts_prompt_v2_services_section_structural_drift",
+      "label": "Prompt V2 \u2014 Services Section Structural Drift",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prompt v2 \u2014 services section structural drift",
+      "source_file": "PROMPTS.md",
+      "source_location": "L18"
+    },
+    {
+      "id": "prompts_prompt_w1_d2c_skincare_instant_checkout_work_d2c_jpg",
+      "label": "Prompt W1 \u2014 D2C Skincare Instant Checkout (`work-d2c.jpg`)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prompt w1 \u2014 d2c skincare instant checkout (`work-d2c.jpg`)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L48"
+    },
+    {
+      "id": "prompts_prompt_w2_hinglish_edtech_coaching_lead_funnel_work_edtech_jpg",
+      "label": "Prompt W2 \u2014 Hinglish EdTech & Coaching Lead Funnel (`work-edtech.jpg`)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prompt w2 \u2014 hinglish edtech & coaching lead funnel (`work-edtech.jpg`)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L54"
+    },
+    {
+      "id": "prompts_prompt_w3_multi_doctor_clinic_patient_scheduler_work_clinic_jpg",
+      "label": "Prompt W3 \u2014 Multi-Doctor Clinic & Patient Scheduler (`work-clinic.jpg`)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prompt w3 \u2014 multi-doctor clinic & patient scheduler (`work-clinic.jpg`)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L60"
+    },
+    {
+      "id": "prompts_prompt_w4_bengaluru_high_rise_luxury_condos_work_realestate_jpg",
+      "label": "Prompt W4 \u2014 Bengaluru High-Rise Luxury Condos (`work-realestate.jpg`)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prompt w4 \u2014 bengaluru high-rise luxury condos (`work-realestate.jpg`)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L66"
+    },
+    {
+      "id": "prompts_prompt_w5_heritage_bridal_jewellery_bullion_catalog_work_jewellery_jpg",
+      "label": "Prompt W5 \u2014 Heritage Bridal Jewellery Bullion Catalog (`work-jewellery.jpg`)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "prompt w5 \u2014 heritage bridal jewellery bullion catalog (`work-jewellery.jpg`)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L72"
+    },
+    {
+      "id": "prompts_svz_inspired_asset_generation_prompts_ethixweb_india_redesign",
+      "label": "SVZ-Inspired Asset Generation Prompts (Ethixweb India Redesign)",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "3. High-Converting Indian Concept Project Showcase (Work Section)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "svz-inspired asset generation prompts (ethixweb india redesign)",
+      "source_file": "PROMPTS.md",
+      "source_location": "L1"
+    },
+    {
       "id": "agents_skills_ethixweb_design_system_skill",
       "label": ".agents/skills/ethixweb-design-system/SKILL.md",
       "_origin": "ast",
@@ -6636,36 +6947,14 @@
       "source_location": "L18"
     },
     {
-      "id": "src_app_lang_design_page",
-      "label": "design/page.tsx",
+      "id": "src_components_sections_processsection",
+      "label": "ProcessSection.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "design/page.tsx",
+      "community_name": "ProcessSection.tsx",
       "file_type": "code",
-      "norm_label": "design/page.tsx",
-      "source_file": "src/app/[lang]/design/page.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_ui_langtoggle",
-      "label": "LangToggle.tsx",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "design/page.tsx",
-      "file_type": "code",
-      "norm_label": "langtoggle.tsx",
-      "source_file": "src/components/ui/LangToggle.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_ui_pricingcard",
-      "label": "PricingCard.tsx",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "design/page.tsx",
-      "file_type": "code",
-      "norm_label": "pricingcard.tsx",
-      "source_file": "src/components/ui/PricingCard.tsx",
+      "norm_label": "processsection.tsx",
+      "source_file": "src/components/sections/ProcessSection.tsx",
       "source_location": "L1"
     },
     {
@@ -6673,7 +6962,7 @@
       "label": "ProcessCard.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "design/page.tsx",
+      "community_name": "ProcessSection.tsx",
       "file_type": "code",
       "norm_label": "processcard.tsx",
       "source_file": "src/components/ui/ProcessCard.tsx",
@@ -7907,11 +8196,22 @@
       "source_location": "L25"
     },
     {
+      "id": "src_app_lang_design_page",
+      "label": "design/page.tsx",
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "design/page.tsx",
+      "source_file": "src/app/[lang]/design/page.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "src_components_sections_aboutteaser",
       "label": "AboutTeaser.tsx",
       "_origin": "ast",
       "community": 50,
-      "community_name": "AboutTeaser.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
       "norm_label": "aboutteaser.tsx",
       "source_file": "src/components/sections/AboutTeaser.tsx",
@@ -7922,10 +8222,32 @@
       "label": "ChamferCard.tsx",
       "_origin": "ast",
       "community": 50,
-      "community_name": "AboutTeaser.tsx",
+      "community_name": "design/page.tsx",
       "file_type": "code",
       "norm_label": "chamfercard.tsx",
       "source_file": "src/components/ui/ChamferCard.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_featurecard",
+      "label": "FeatureCard.tsx",
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "featurecard.tsx",
+      "source_file": "src/components/ui/FeatureCard.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_marquee",
+      "label": "Marquee.tsx",
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "design/page.tsx",
+      "file_type": "code",
+      "norm_label": "marquee.tsx",
+      "source_file": "src/components/ui/Marquee.tsx",
       "source_location": "L1"
     },
     {
@@ -8569,28 +8891,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_app_lang_site_about_page",
-      "label": "about/page.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "about/page.tsx",
-      "source_file": "src/app/[lang]/(site)/about/page.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_lang_site_layout",
-      "label": "(site)/layout.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "(site)/layout.tsx",
-      "source_file": "src/app/[lang]/(site)/layout.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_app_not_found",
       "label": "not-found.tsx",
       "_origin": "ast",
@@ -8657,39 +8957,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_layout_footer",
-      "label": "Footer.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "footer.tsx",
-      "source_file": "src/components/layout/Footer.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_layout_pillnav",
-      "label": "PillNav.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "pillnav.tsx",
-      "source_file": "src/components/layout/PillNav.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_layout_stickywhatsapp",
-      "label": "StickyWhatsApp.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "stickywhatsapp.tsx",
-      "source_file": "src/components/layout/StickyWhatsApp.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_components_ui_button",
       "label": "Button.tsx",
       "_origin": "ast",
@@ -8710,28 +8977,6 @@
       "norm_label": "logo.tsx",
       "source_file": "src/components/ui/Logo.tsx",
       "source_location": "L1"
-    },
-    {
-      "id": "src_components_ui_themetoggle",
-      "label": "ThemeToggle.tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "themetoggle.tsx",
-      "source_file": "src/components/ui/ThemeToggle.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_lib_i18n_locales",
-      "label": "LOCALES",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "next",
-      "file_type": "code",
-      "norm_label": "locales",
-      "source_file": "src/lib/i18n.ts",
-      "source_location": "L5"
     },
     {
       "id": "ref_next",
@@ -9600,6 +9845,116 @@
       "source_location": "L6"
     },
     {
+      "id": "src_app_lang_site_layout",
+      "label": "(site)/layout.tsx",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "i18n.ts",
+      "file_type": "code",
+      "norm_label": "(site)/layout.tsx",
+      "source_file": "src/app/[lang]/(site)/layout.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_layout_footer",
+      "label": "Footer.tsx",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "i18n.ts",
+      "file_type": "code",
+      "norm_label": "footer.tsx",
+      "source_file": "src/components/layout/Footer.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_layout_stickywhatsapp",
+      "label": "StickyWhatsApp.tsx",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "i18n.ts",
+      "file_type": "code",
+      "norm_label": "stickywhatsapp.tsx",
+      "source_file": "src/components/layout/StickyWhatsApp.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_content_en",
+      "label": "en.ts",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "i18n.ts",
+      "file_type": "code",
+      "norm_label": "en.ts",
+      "source_file": "src/content/en.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_content_en_en",
+      "label": "en",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "i18n.ts",
+      "file_type": "code",
+      "norm_label": "en",
+      "source_file": "src/content/en.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_content_hi",
+      "label": "hi.ts",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "i18n.ts",
+      "file_type": "code",
+      "norm_label": "hi.ts",
+      "source_file": "src/content/hi.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_content_hi_hi",
+      "label": "hi",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "i18n.ts",
+      "file_type": "code",
+      "norm_label": "hi",
+      "source_file": "src/content/hi.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_lib_i18n",
+      "label": "i18n.ts",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "i18n.ts",
+      "file_type": "code",
+      "norm_label": "i18n.ts",
+      "source_file": "src/lib/i18n.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_lib_i18n_default_locale",
+      "label": "DEFAULT_LOCALE",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "i18n.ts",
+      "file_type": "code",
+      "norm_label": "default_locale",
+      "source_file": "src/lib/i18n.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_lib_i18n_locales",
+      "label": "LOCALES",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "i18n.ts",
+      "file_type": "code",
+      "norm_label": "locales",
+      "source_file": "src/lib/i18n.ts",
+      "source_location": "L5"
+    },
+    {
       "id": "src_app_layout",
       "label": "app/layout.tsx",
       "_origin": "ast",
@@ -9644,6 +9999,17 @@
       "source_location": "L1"
     },
     {
+      "id": "src_lib_fonts_editorialserif",
+      "label": "editorialSerif",
+      "_origin": "ast",
+      "community": 72,
+      "community_name": "app/layout.tsx",
+      "file_type": "code",
+      "norm_label": "editorialserif",
+      "source_file": "src/lib/fonts.ts",
+      "source_location": "L19"
+    },
+    {
       "id": "src_lib_fonts_inter",
       "label": "inter",
       "_origin": "ast",
@@ -9674,83 +10040,28 @@
       "file_type": "code",
       "norm_label": "notodeva",
       "source_file": "src/lib/fonts.ts",
-      "source_location": "L19"
-    },
-    {
-      "id": "src_components_sections_whysection",
-      "label": "WhySection.tsx",
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "WhySection.tsx",
-      "file_type": "code",
-      "norm_label": "whysection.tsx",
-      "source_file": "src/components/sections/WhySection.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_ui_featurecard",
-      "label": "FeatureCard.tsx",
-      "_origin": "ast",
-      "community": 73,
-      "community_name": "WhySection.tsx",
-      "file_type": "code",
-      "norm_label": "featurecard.tsx",
-      "source_file": "src/components/ui/FeatureCard.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_sections_hero",
-      "label": "Hero.tsx",
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "TwoToneHeading.tsx",
-      "file_type": "code",
-      "norm_label": "hero.tsx",
-      "source_file": "src/components/sections/Hero.tsx",
-      "source_location": "L1"
+      "source_location": "L28"
     },
     {
       "id": "src_components_sections_pricingsection",
       "label": "PricingSection.tsx",
       "_origin": "ast",
       "community": 74,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "PricingSection.tsx",
       "file_type": "code",
       "norm_label": "pricingsection.tsx",
       "source_file": "src/components/sections/PricingSection.tsx",
       "source_location": "L1"
     },
     {
-      "id": "src_components_sections_processsection",
-      "label": "ProcessSection.tsx",
+      "id": "src_components_ui_pricingcard",
+      "label": "PricingCard.tsx",
       "_origin": "ast",
       "community": 74,
-      "community_name": "TwoToneHeading.tsx",
+      "community_name": "PricingSection.tsx",
       "file_type": "code",
-      "norm_label": "processsection.tsx",
-      "source_file": "src/components/sections/ProcessSection.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_ui_sectionlabel",
-      "label": "SectionLabel.tsx",
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "TwoToneHeading.tsx",
-      "file_type": "code",
-      "norm_label": "sectionlabel.tsx",
-      "source_file": "src/components/ui/SectionLabel.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_ui_twotoneheading",
-      "label": "TwoToneHeading.tsx",
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "TwoToneHeading.tsx",
-      "file_type": "code",
-      "norm_label": "twotoneheading.tsx",
-      "source_file": "src/components/ui/TwoToneHeading.tsx",
+      "norm_label": "pricingcard.tsx",
+      "source_file": "src/components/ui/PricingCard.tsx",
       "source_location": "L1"
     },
     {
@@ -11859,6 +12170,18 @@
     },
     {
       "source": "src_app_layout",
+      "target": "src_lib_fonts_editorialserif",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_layout",
       "target": "src_lib_fonts_inter",
       "relation": "imports",
       "_origin": "ast",
@@ -12347,18 +12670,6 @@
       "context": "import",
       "source_file": "src/components/sections/WhySection.tsx",
       "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_sections_whysection",
-      "target": "src_components_ui_featurecard_featurecard",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/sections/WhySection.tsx",
-      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -14184,18 +14495,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_components_sections_whysection",
-      "target": "src_components_ui_featurecard",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/sections/WhySection.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
       "source": "src_components_sections_worksection",
       "target": "src_components_ui_sectionlabel",
       "relation": "imports_from",
@@ -14312,6 +14611,18 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ui/PricingCard.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_sectionlabel",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ui/SectionLabel.tsx",
       "source_location": "L1",
       "weight": 1.0
     },
@@ -16254,7 +16565,7 @@
     },
     {
       "source": "docs_02_design_system",
-      "target": "docs_02_design_system_02_design_system",
+      "target": "docs_02_design_system_02_design_system_svz_high_fashion_editorial_india_adaptation",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -16264,63 +16575,19 @@
       "weight": 1.0
     },
     {
-      "source": "docs_02_design_system_02_design_system",
-      "target": "docs_02_design_system_brand_tokens_tailwind_v4_theme_in_src_styles_globals_css",
+      "source": "docs_02_design_system_02_design_system_svz_high_fashion_editorial_india_adaptation",
+      "target": "docs_02_design_system_token_architecture_src_styles_globals_css",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L11",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
-      "source": "docs_02_design_system_02_design_system",
-      "target": "docs_02_design_system_home_page_layout_top_bottom",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L112",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_02_design_system_02_design_system",
-      "target": "docs_02_design_system_inner_pages",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L137",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_02_design_system_02_design_system",
-      "target": "docs_02_design_system_responsive_rules",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L142",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_02_design_system_02_design_system",
-      "target": "docs_02_design_system_quality_bar_for_every_section",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L146",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_02_design_system_02_design_system",
-      "target": "docs_02_design_system_where_this_comes_from",
+      "source": "docs_02_design_system_02_design_system_svz_high_fashion_editorial_india_adaptation",
+      "target": "docs_02_design_system_design_philosophy_inspiration_svz_io",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -16330,8 +16597,85 @@
       "weight": 1.0
     },
     {
-      "source": "docs_02_design_system_02_design_system",
-      "target": "docs_02_design_system_typography",
+      "source": "docs_02_design_system_02_design_system_svz_high_fashion_editorial_india_adaptation",
+      "target": "docs_02_design_system_2_typography_system",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_02_design_system_02_design_system_svz_high_fashion_editorial_india_adaptation",
+      "target": "docs_02_design_system_3_shapes_radii_spacing",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_02_design_system_02_design_system_svz_high_fashion_editorial_india_adaptation",
+      "target": "docs_02_design_system_4_component_affordances",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_02_design_system_02_design_system_svz_high_fashion_editorial_india_adaptation",
+      "target": "docs_02_design_system_5_strict_do_s_don_ts",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_02_design_system_2_typography_system",
+      "target": "docs_02_design_system_a_primary_display_ui_inter_tight_inter",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_02_design_system_2_typography_system",
+      "target": "docs_02_design_system_b_editorial_serif_italic_companion_playfair_display_italic_editorialnew",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_02_design_system_2_typography_system",
+      "target": "docs_02_design_system_c_devanagari_companion_noto_sans_devanagari",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_02_design_system_2_typography_system",
+      "target": "docs_02_design_system_type_scale",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -16341,47 +16685,91 @@
       "weight": 1.0
     },
     {
-      "source": "docs_02_design_system_02_design_system",
-      "target": "docs_02_design_system_spacing_and_layout",
+      "source": "docs_02_design_system_4_component_affordances",
+      "target": "docs_02_design_system_1_ghost_cta_link",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L66",
+      "source_location": "L77",
       "weight": 1.0
     },
     {
-      "source": "docs_02_design_system_02_design_system",
-      "target": "docs_02_design_system_components_src_components_ui",
+      "source": "docs_02_design_system_4_component_affordances",
+      "target": "docs_02_design_system_2_discovery_call_outlined_button",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L71",
+      "source_location": "L80",
       "weight": 1.0
     },
     {
-      "source": "docs_02_design_system_02_design_system",
-      "target": "docs_02_design_system_india_layer_30_of_the_score_make_it_visible_above_the_fold",
+      "source": "docs_02_design_system_4_component_affordances",
+      "target": "docs_02_design_system_3_arterial_red_accent_dot_fe1e34",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L92",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
-      "source": "docs_02_design_system_india_layer_30_of_the_score_make_it_visible_above_the_fold",
-      "target": "docs_02_design_system_jaali_pattern_tiny_inline_svg",
+      "source": "docs_02_design_system_4_component_affordances",
+      "target": "docs_02_design_system_4_bordered_brand_card_card_featured_svz",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/02-DESIGN-SYSTEM.md",
-      "source_location": "L102",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_02_design_system_4_component_affordances",
+      "target": "docs_02_design_system_5_inverted_linen_body_panel_f3efef",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_02_design_system_5_strict_do_s_don_ts",
+      "target": "docs_02_design_system_don_t",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_02_design_system_5_strict_do_s_don_ts",
+      "target": "docs_02_design_system_do",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_02_design_system_token_architecture_src_styles_globals_css",
+      "target": "docs_02_design_system_1_color_palette",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/02-DESIGN-SYSTEM.md",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -19505,7 +19893,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L109",
+      "source_location": "L110",
       "weight": 1.0
     },
     {
@@ -19516,7 +19904,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L119",
+      "source_location": "L120",
       "weight": 1.0
     },
     {
@@ -19527,7 +19915,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L132",
+      "source_location": "L133",
       "weight": 1.0
     },
     {
@@ -19538,7 +19926,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L141",
+      "source_location": "L142",
       "weight": 1.0
     },
     {
@@ -19549,18 +19937,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L150",
-      "weight": 1.0
-    },
-    {
-      "source": "phases_phases_build_in_small_milestones_verify_then_move_on",
-      "target": "phases_phase_9_inner_pages_60m",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "PHASES.md",
-      "source_location": "L159",
+      "source_location": "L151",
       "weight": 1.0
     },
     {
@@ -19576,13 +19953,24 @@
     },
     {
       "source": "phases_phases_build_in_small_milestones_verify_then_move_on",
+      "target": "phases_phase_9_inner_pages_60m",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PHASES.md",
+      "source_location": "L160",
+      "weight": 1.0
+    },
+    {
+      "source": "phases_phases_build_in_small_milestones_verify_then_move_on",
       "target": "phases_phase_10_india_layer_hindi_60m",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L167",
+      "source_location": "L168",
       "weight": 1.0
     },
     {
@@ -19593,7 +19981,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L175",
+      "source_location": "L176",
       "weight": 1.0
     },
     {
@@ -19604,7 +19992,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L181",
+      "source_location": "L182",
       "weight": 1.0
     },
     {
@@ -19615,7 +20003,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L188",
+      "source_location": "L189",
       "weight": 1.0
     },
     {
@@ -19637,7 +20025,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -19659,7 +20047,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L60",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -19670,7 +20058,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L72",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -19681,7 +20069,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L85",
+      "source_location": "L86",
       "weight": 1.0
     },
     {
@@ -19692,7 +20080,194 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "PHASES.md",
-      "source_location": "L98",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts",
+      "target": "prompts_svz_inspired_asset_generation_prompts_ethixweb_india_redesign",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_1_background_video_loops_ambient_void_canvas",
+      "target": "prompts_prompt_v1_hero_atmospheric_void_liquid_primary_canvas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_1_background_video_loops_ambient_void_canvas",
+      "target": "prompts_prompt_v2_services_section_structural_drift",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_2_atmospheric_editorial_collage_textures",
+      "target": "prompts_prompt_t1_large_bleeding_background_glyph_mid_page_punctuation",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_2_atmospheric_editorial_collage_textures",
+      "target": "prompts_prompt_t2_organic_high_fashion_pattern_accent",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_3_high_converting_indian_concept_project_showcase_work_section",
+      "target": "prompts_prompt_w1_d2c_skincare_instant_checkout_work_d2c_jpg",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_3_high_converting_indian_concept_project_showcase_work_section",
+      "target": "prompts_prompt_w2_hinglish_edtech_coaching_lead_funnel_work_edtech_jpg",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_3_high_converting_indian_concept_project_showcase_work_section",
+      "target": "prompts_prompt_w3_multi_doctor_clinic_patient_scheduler_work_clinic_jpg",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_3_high_converting_indian_concept_project_showcase_work_section",
+      "target": "prompts_prompt_w4_bengaluru_high_rise_luxury_condos_work_realestate_jpg",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_3_high_converting_indian_concept_project_showcase_work_section",
+      "target": "prompts_prompt_w5_heritage_bridal_jewellery_bullion_catalog_work_jewellery_jpg",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_4_hero_section_preview_micro_cards",
+      "target": "prompts_prompt_h1_d2c_store_quick_drawer_hero_d2c_jpg",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_4_hero_section_preview_micro_cards",
+      "target": "prompts_prompt_h2_healthcare_appointment_sync_hero_clinic_jpg",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_svz_inspired_asset_generation_prompts_ethixweb_india_redesign",
+      "target": "prompts_2_atmospheric_editorial_collage_textures",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_svz_inspired_asset_generation_prompts_ethixweb_india_redesign",
+      "target": "prompts_3_high_converting_indian_concept_project_showcase_work_section",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_svz_inspired_asset_generation_prompts_ethixweb_india_redesign",
+      "target": "prompts_1_background_video_loops_ambient_void_canvas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_svz_inspired_asset_generation_prompts_ethixweb_india_redesign",
+      "target": "prompts_4_hero_section_preview_micro_cards",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "prompts_svz_inspired_asset_generation_prompts_ethixweb_india_redesign",
+      "target": "prompts_5_css_animation_placeholder_instructions",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "PROMPTS.md",
+      "source_location": "L96",
       "weight": 1.0
     },
     {
@@ -20885,24 +21460,13 @@
     },
     {
       "source": "src_components_sections_whysection",
-      "target": "src_components_sections_whysection_whydata",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/sections/WhySection.tsx",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_sections_whysection",
       "target": "src_components_sections_whysection_whysectionprops",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/sections/WhySection.tsx",
-      "source_location": "L17",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -20913,7 +21477,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/sections/WhySection.tsx",
-      "source_location": "L21",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -20924,7 +21488,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/sections/WhySection.tsx",
-      "source_location": "L5",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_sections_whysection",
+      "target": "src_components_sections_whysection_whydata",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/sections/WhySection.tsx",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -21215,24 +21790,24 @@
     },
     {
       "source": "src_components_ui_sectionlabel",
-      "target": "src_components_ui_sectionlabel_sectionlabelprops",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/ui/SectionLabel.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_sectionlabel",
       "target": "src_components_ui_sectionlabel_sectionlabel",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/SectionLabel.tsx",
-      "source_location": "L7",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_sectionlabel",
+      "target": "src_components_ui_sectionlabel_sectionlabelprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SectionLabel.tsx",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -21419,7 +21994,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/TwoToneHeading.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -21501,13 +22076,24 @@
     },
     {
       "source": "src_lib_fonts",
-      "target": "src_lib_fonts_notodeva",
+      "target": "src_lib_fonts_editorialserif",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/lib/fonts.ts",
       "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_fonts",
+      "target": "src_lib_fonts_notodeva",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/fonts.ts",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -22157,7 +22743,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "src/components/ui/StatusPill.tsx",
-      "source_location": "L51",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -22169,7 +22755,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "src/components/ui/StatusPill.tsx",
-      "source_location": "L51",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -22181,7 +22767,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "src/components/ui/StatusPill.tsx",
-      "source_location": "L51",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -22277,7 +22863,7 @@
       "confidence_score": 0.95,
       "context": "ContactForm",
       "source_file": "PHASES.md",
-      "source_location": "L133",
+      "source_location": "L134",
       "weight": 1.0
     },
     {
@@ -22385,10 +22971,10 @@
       "confidence_score": 0.95,
       "context": "requireAdmin()",
       "source_file": "PHASES.md",
-      "source_location": "L142",
+      "source_location": "L143",
       "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "cdd98e7283e38efe79c178edfa97f5d048f30caa"
+  "built_at_commit": "3efdcbde391d0e4bad519ff827ff4ee3b6056152"
 }

@@ -53,18 +53,18 @@ export function StatusPill({
 
   return (
     <div
-      className={`inline-flex items-center gap-2 h-8 px-3 rounded-[6px] text-[11px] font-mono select-none border border-[#262525] bg-[#121213] whitespace-nowrap transition-colors duration-160 ${
-        isOnline ? "text-[#d4d2d2]" : "text-[#8e8c8c]"
+      className={`inline-flex items-center gap-2 h-8 px-3.5 rounded-full text-xs font-medium select-none border border-white/10 bg-white/[0.06] backdrop-blur-md whitespace-nowrap transition-colors duration-160 ${
+        isOnline ? "text-white/90" : "text-white/50"
       } ${className}`}
       title={isOnline ? "Team active during IST business hours" : "Team offline · replies next working day"}
     >
       <span
-        className={`w-1.5 h-1.5 rounded-full ${
-          isOnline ? "bg-[#16A34A] pulse-dot text-[#16A34A]" : "bg-[#525252]"
+        className={`w-2 h-2 rounded-full ${
+          isOnline ? "bg-[#10b981] shadow-[0_0_8px_#10b981]" : "bg-neutral-500"
         }`}
         aria-hidden="true"
       />
-      <span className="tracking-wider">{displayText}</span>
+      <span className="tracking-wide">{displayText}</span>
     </div>
   );
 }
