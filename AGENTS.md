@@ -61,8 +61,9 @@ supabase/schema.sql
 ```
 
 ## Working style
-- Build in the phases from `docs/06-BUILD-PLAN.md`; finish and verify each before the next.
-- After each phase: list what was done, what was verified, what is left.
+- Follow `LOOP.md`: execute phases, verify (lint, typecheck, build), review, update trackers and knowledge graph, and automatically advance once gate checks pass.
+- Build in the phases from `PHASES.md` / `docs/06-BUILD-PLAN.md`; finish and verify each before the next.
+- After each phase: log what was done, what was verified, and advance.
 - If something in the docs conflicts with the brief, the brief (docs/01) wins.
 - Prefer small, boring, explainable code over clever code.
 - Ask the human before: adding dependencies > 10 kB gzipped, changing the stack, or inventing business claims.
