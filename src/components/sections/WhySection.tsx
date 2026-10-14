@@ -1,9 +1,8 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
-import Image from "next/image";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { TwoToneHeading } from "@/components/ui/TwoToneHeading";
+import { ParticleMorphCanvas } from "@/components/ui/ParticleMorphCanvas";
 
 interface WhyCard {
   title: string;
@@ -85,61 +84,21 @@ function ParallaxCard({
 }: {
   item: ParallaxItem;
 }) {
-  const cardRef = useRef<HTMLDivElement>(null);
-  const [offsetY, setOffsetY] = useState(0);
-
-  useEffect(() => {
-    let ticking = false;
-
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          if (cardRef.current) {
-            const rect = cardRef.current.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-            // Calculate progress of card through the viewport (-1 to 1)
-            const progress = (rect.top - windowHeight / 2) / (windowHeight / 2);
-            // Limit parallax movement to a smooth subtle range
-            setOffsetY(Math.max(-28, Math.min(28, progress * 24)));
-          }
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div
-      ref={cardRef}
       className="group relative w-full min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] rounded-2xl overflow-hidden flex flex-col justify-between p-7 sm:p-10 lg:p-14 border border-[#262525] hover:border-[#fe1e34]/70 transition-colors duration-500 shadow-2xl bg-[#080808]"
     >
-      {/* Parallax Background Container */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none select-none">
-        <div
-          className="relative w-full h-[120%] -top-[10%] transition-transform duration-100 ease-out will-change-transform"
-          style={{
-            transform: `translate3d(0, ${offsetY}px, 0) scale(1.04)`,
-          }}
-        >
-          <Image
-            src={item.image}
-            alt={item.title}
-            fill
-            sizes="(max-width: 1024px) 100vw, 1200px"
-            className="object-cover object-center filter grayscale-[35%] contrast-[110%] group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700 ease-out"
-            priority={item.number === "01"}
-          />
-        </div>
+      {/* Interactive Particle Morph Background Container */}
+      <div className="absolute inset-0 overflow-hidden select-none">
+        <ParticleMorphCanvas
+          imageSrc={item.image}
+          title={item.title}
+          accentColor="#fe1e34"
+        />
 
-        {/* Dramatic Multi-Stop Obsidian Vignette Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/85 to-black/35" />
-        <div className="absolute inset-0 bg-radial from-transparent via-[#080808]/50 to-[#080808]" />
+        {/* Dramatic Multi-Stop Obsidian Vignette Overlay (pointer-events-none so canvas receives gestures) */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/75 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-radial from-transparent via-[#080808]/40 to-[#080808] pointer-events-none" />
 
         {/* Arterial Red Ambient Glow Accent */}
         <div

@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "src/components/sections/WhySection.tsx": {
-    "mtime": 1791987768.5220764,
-    "seen": 1791987887.4748487,
-    "ast_hash": "0a647c723659cccfa471066254568ead",
+    "mtime": 1791988160.989895,
+    "seen": 1791988241.3738215,
+    "ast_hash": "a1eccbd73ee85454044ee99074018884",
     "semantic_hash": ""
   },
   "src/components/sections/WorkSection.tsx": {
@@ -975,6 +975,12 @@
     "mtime": 1791980887.6354077,
     "seen": 1791987887.4748487,
     "ast_hash": "9724038d71e1e18928401120d531af8d",
+    "semantic_hash": ""
+  },
+  "src/components/ui/ParticleMorphCanvas.tsx": {
+    "mtime": 1791988093.4439154,
+    "seen": 1791988241.3738215,
+    "ast_hash": "5f5c49ec083aed9bd06708b2b54b8580",
     "semantic_hash": ""
   }
 }

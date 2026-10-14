@@ -1,17 +1,17 @@
 # Graph Report - ETHIXWEB  (2026-10-14)
 
 ## Corpus Check
-- 128 files · ~184,272 words
+- 128 files · ~204,987 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 2, .example 2, .css 2)
 
 ## Summary
-- 859 nodes · 1122 edges · 77 communities (71 shown, 6 thin omitted)
+- 867 nodes · 1132 edges · 76 communities (70 shown, 6 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 20 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d8a5140d`
+- Built from commit: `b3a18060`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -20,13 +20,13 @@
 - package.json
 - (site)/page.tsx
 - ContactForm.tsx
-- ProcessSection.tsx
+- PHASES — build in small milestones, verify, then move on
 - compilerOptions
 - next
 - What You Must Do When Invoked
-- TwoToneHeading.tsx
-- ethixweb-india-kit/supabase/schema.sql
 - SectionLabel.tsx
+- ethixweb-india-kit/supabase/schema.sql
+- getDictionary
 - supabase/schema.sql
 - Detailed Step Protocol
 - PillNav.tsx
@@ -52,8 +52,8 @@
 - 01 — Requirements checklist (from the Ethixweb brief)
 - 08 — Submission checklist (Tally: https://tally.so/r/KY7Ao8)
 - graphify reference: extra exports and benchmark
-- StatusPill.tsx
-- 6. Service Section Category Posters (Services Grid)
+- Logo.tsx
+- SVZ-Inspired Asset Generation Prompts (Ethixweb India Redesign)
 - Ethixweb design system (India edition)
 - Ethixweb motion
 - Leads backend skill
@@ -67,7 +67,7 @@
 - India localization
 - India localization
 - design/page.tsx
-- FaqSection.tsx
+- Button.tsx
 - graphify reference: query, path, explain
 - PageSpeed 90+ skill
 - PageSpeed 90+ skill
@@ -87,23 +87,22 @@
 - workflows/graphify.md
 - Detailed Step Protocol
 - loop.md
-- (site)/layout.tsx
-- app/layout.tsx
-- react
-- PricingSection.tsx
 - i18n.ts
+- app/layout.tsx
+- AdminDashboard.tsx
+- react
 - WhySection.tsx
 
 ## God Nodes (most connected - your core abstractions)
-1. `next` - 33 edges
+1. `next` - 34 edges
 2. `HttpError` - 19 edges
 3. `getDictionary()` - 19 edges
 4. `requireAdmin()` - 19 edges
 5. `PHASES — build in small milestones, verify, then move on` - 19 edges
 6. `PHASES — build in small milestones, verify, then move on` - 19 edges
-7. `03 — Content (EN + HI). No lorem ipsum. No invented facts.` - 18 edges
+7. `react` - 18 edges
 8. `03 — Content (EN + HI). No lorem ipsum. No invented facts.` - 18 edges
-9. `react` - 17 edges
+9. `03 — Content (EN + HI). No lorem ipsum. No invented facts.` - 18 edges
 10. `compilerOptions` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -121,51 +120,51 @@
 ## Import Cycles
 - None detected.
 
-## Communities (77 total, 6 thin omitted)
+## Communities (76 total, 6 thin omitted)
 
 ### Community 0 - "WorkSection.tsx"
-Cohesion: 0.25
-Nodes (7): ProjectItem, WorkData, WorkSection(), WorkSectionProps, ProjectItem, WorkCard(), WorkCardProps
+Cohesion: 0.40
+Nodes (4): ProjectItem, WorkData, WorkSection(), WorkSectionProps
 
 ### Community 1 - "package.json"
 Cohesion: 0.05
 Nodes (39): eslintConfig, dependencies, next, react, react-dom, @supabase/ssr, @supabase/supabase-js, zod (+31 more)
 
 ### Community 2 - "(site)/page.tsx"
-Cohesion: 0.15
-Nodes (12): DesignTokensPage(), generateMetadata(), HomePage(), CtaBand(), CtaBandData, CtaBandProps, Hero(), HeroData (+4 more)
+Cohesion: 0.14
+Nodes (12): generateMetadata(), CtaBand(), CtaBandData, CtaBandProps, FaqSection(), Hero(), HeroData, HeroProps (+4 more)
 
 ### Community 3 - "ContactForm.tsx"
 Cohesion: 0.18
 Nodes (13): invalidPhoneResult, testPhones, validLeadResult, ContactFormProps, TurnstileWidget(), TurnstileWidgetProps, Window, BUDGETS (+5 more)
 
-### Community 4 - "ProcessSection.tsx"
-Cohesion: 0.25
-Nodes (7): ProcessData, ProcessSection(), ProcessSectionProps, StepItem, ProcessCard(), ProcessCardProps, StepItem
+### Community 4 - "PHASES — build in small milestones, verify, then move on"
+Cohesion: 0.11
+Nodes (18): Agent report format (agent must end every phase with this), Hours left? Compress like this, PHASE 0 — Setup (30m), PHASE 10 — India layer + Hindi (60m), PHASE 11 — Polish + accessibility (45m), PHASE 12 — Performance (60m), PHASE 13 — Ship (75m), PHASE 1 — Foundation (45m) (+10 more)
 
 ### Community 5 - "compilerOptions"
 Cohesion: 0.11
 Nodes (18): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+10 more)
 
 ### Community 6 - "next"
-Cohesion: 0.13
-Nodes (7): nextConfig, next, Button(), ButtonProps, ButtonVariant, Logo(), LogoProps
+Cohesion: 0.15
+Nodes (5): nextConfig, next, AdminContent(), metadata, AdminLogoutButton()
 
 ### Community 7 - "What You Must Do When Invoked"
 Cohesion: 0.07
 Nodes (26): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+18 more)
 
-### Community 8 - "TwoToneHeading.tsx"
-Cohesion: 0.20
-Nodes (9): AboutTeaser(), AboutTeaserData, AboutTeaserProps, ServiceItem, ServicesData, ServicesSection(), ServicesSectionProps, TwoToneHeading() (+1 more)
+### Community 8 - "SectionLabel.tsx"
+Cohesion: 0.12
+Nodes (18): AboutTeaser(), AboutTeaserData, AboutTeaserProps, FaqData, FaqItem, FaqSectionProps, PlanItem, PricingData (+10 more)
 
 ### Community 9 - "ethixweb-india-kit/supabase/schema.sql"
 Cohesion: 0.36
 Nodes (6): leads_created_at_idx, leads_ip_hash_idx, leads_set_updated_at, leads_status_idx, public.leads, public.set_updated_at
 
-### Community 10 - "SectionLabel.tsx"
-Cohesion: 0.18
-Nodes (11): AboutPage(), generateMetadata(), ContactPage(), generateMetadata(), generateMetadata(), PrivacyPage(), generateMetadata(), ServicesPage() (+3 more)
+### Community 10 - "getDictionary"
+Cohesion: 0.19
+Nodes (12): DesignTokensPage(), AboutPage(), generateMetadata(), ContactPage(), generateMetadata(), HomePage(), generateMetadata(), PrivacyPage() (+4 more)
 
 ### Community 11 - "supabase/schema.sql"
 Cohesion: 0.36
@@ -176,12 +175,12 @@ Cohesion: 0.18
 Nodes (10): Autonomous Execution Loop (LOOP.md), Detailed Step Protocol, Phases Roadmap, Step 1: Implement (Scope-Enforced), Step 2: Verify (Automated Evidence), Step 3: Review (Quality & Security Guardrails), Step 4: Update Context & Checklists, Step 5: Auto-Advance Gate (+2 more)
 
 ### Community 13 - "PillNav.tsx"
-Cohesion: 0.24
-Nodes (9): NavLabels, PillNavProps, LangToggle(), LangToggleProps, getServerSnapshot(), getSnapshot(), subscribe(), ThemeToggle() (+1 more)
+Cohesion: 0.22
+Nodes (10): NavLabels, PillNav(), PillNavProps, LangToggle(), LangToggleProps, getServerSnapshot(), getSnapshot(), subscribe() (+2 more)
 
 ### Community 14 - "PHASES — build in small milestones, verify, then move on"
-Cohesion: 0.04
-Nodes (45): 05 — PageSpeed Insights 90+ (mobile AND desktop), Budget rules for the agent, If a score is below 90, Measuring correctly, Targets (mobile), What we do, Agent report format (agent must end every phase with this), Hours left? Compress like this (+37 more)
+Cohesion: 0.05
+Nodes (38): 05 — PageSpeed Insights 90+ (mobile AND desktop), Budget rules for the agent, If a score is below 90, Measuring correctly, Targets (mobile), What we do, PHASE 6 — Contact page + form, end-to-end (45m), 05 — PageSpeed Insights 90+ (mobile AND desktop) (+30 more)
 
 ### Community 15 - "03 — Content (EN + HI). No lorem ipsum. No invented facts."
 Cohesion: 0.11
@@ -267,13 +266,13 @@ Nodes (9): 08 — Submission checklist (Tally: https://tally.so/r/KY7Ao8), Admin
 Cohesion: 0.22
 Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
 
-### Community 36 - "StatusPill.tsx"
-Cohesion: 0.19
-Nodes (11): 05 — PageSpeed Insights 90+ (mobile AND desktop), Budget rules for the agent, If a score is below 90, Measuring correctly, Targets (mobile), What we do, getOnlineSnapshot(), getServerSnapshot() (+3 more)
+### Community 36 - "Logo.tsx"
+Cohesion: 0.21
+Nodes (5): Footer(), FooterData, FooterProps, Logo(), LogoProps
 
-### Community 37 - "6. Service Section Category Posters (Services Grid)"
-Cohesion: 0.08
-Nodes (24): 1. Background Video Loops (Ambient Void Canvas), 2. Atmospheric Editorial Collage Textures, 3. High-Converting Indian Concept Project Showcase (Work Section), 4. Hero Section Preview Micro-Cards, 5. CSS Animation Placeholder Instructions, 6. Service Section Category Posters (Services Grid), Prompt H1 — D2C Store Quick Drawer (`hero-d2c.jpg`), Prompt H2 — Healthcare Appointment Sync (`hero-clinic.jpg`) (+16 more)
+### Community 37 - "SVZ-Inspired Asset Generation Prompts (Ethixweb India Redesign)"
+Cohesion: 0.07
+Nodes (29): 1. Background Video Loops (Ambient Void Canvas), 2. Atmospheric Editorial Collage Textures, 3. High-Converting Indian Concept Project Showcase (Work Section), 4. Hero Section Preview Micro-Cards, 5. CSS Animation Placeholder Instructions, 6. Service Section Category Posters (Services Grid), 7. Why Ethixweb Parallax Section Backgrounds, Prompt H1 — D2C Store Quick Drawer (`hero-d2c.jpg`) (+21 more)
 
 ### Community 38 - "Ethixweb design system (India edition)"
 Cohesion: 0.25
@@ -325,11 +324,11 @@ Nodes (6): Accessibility for Hindi, Checklist of India features, Honesty rules, 
 
 ### Community 50 - "design/page.tsx"
 Cohesion: 0.16
-Nodes (10): ChamferCard(), ChamferCardProps, FeatureCard(), FeatureCardProps, PlanItem, PricingCard(), PricingCardProps, ServiceAccordion() (+2 more)
+Nodes (10): FeatureCard(), FeatureCardProps, Marquee(), MarqueeProps, ProcessCard(), ProcessCardProps, StepItem, ServiceAccordion() (+2 more)
 
-### Community 51 - "FaqSection.tsx"
-Cohesion: 0.25
-Nodes (7): FaqData, FaqItem, FaqSection(), FaqSectionProps, FaqAccordion(), FaqAccordionProps, FaqItem
+### Community 51 - "Button.tsx"
+Cohesion: 0.18
+Nodes (9): Button(), ButtonProps, ButtonVariant, FaqAccordion(), FaqAccordionProps, FaqItem, PlanItem, PricingCard() (+1 more)
 
 ### Community 52 - "graphify reference: query, path, explain"
 Cohesion: 0.33
@@ -383,49 +382,45 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 Cohesion: 0.18
 Nodes (10): Autonomous Execution Loop (LOOP.md), Detailed Step Protocol, Phases Roadmap, Step 1: Implement (Scope-Enforced), Step 2: Verify (Automated Evidence), Step 3: Review (Quality & Security Guardrails), Step 4: Update Context & Checklists, Step 5: Auto-Advance Gate (+2 more)
 
-### Community 71 - "(site)/layout.tsx"
-Cohesion: 0.20
-Nodes (8): SiteLayout(), Footer(), FooterData, FooterProps, PillNav(), StickyWhatsApp(), StickyWhatsAppProps, LOCALES
+### Community 71 - "i18n.ts"
+Cohesion: 0.21
+Nodes (8): SiteLayout(), StickyWhatsApp(), StickyWhatsAppProps, en, hi, DEFAULT_LOCALE, Lang, LOCALES
 
 ### Community 72 - "app/layout.tsx"
 Cohesion: 0.29
 Nodes (7): metadata, viewport, editorialSerif, inter, interTight, notoDeva, src_styles_globals
 
-### Community 73 - "react"
-Cohesion: 0.23
-Nodes (7): react, AdminContent(), metadata, AdminDashboard(), Counts, Lead, AdminLogoutButton()
-
-### Community 74 - "PricingSection.tsx"
+### Community 73 - "AdminDashboard.tsx"
 Cohesion: 0.40
-Nodes (4): PlanItem, PricingData, PricingSection(), PricingSectionProps
+Nodes (3): AdminDashboard(), Counts, Lead
 
-### Community 75 - "i18n.ts"
-Cohesion: 0.48
-Nodes (4): en, hi, DEFAULT_LOCALE, Lang
+### Community 74 - "react"
+Cohesion: 0.25
+Nodes (6): react, ChamferCard(), ChamferCardProps, ProjectItem, WorkCard(), WorkCardProps
 
 ### Community 76 - "WhySection.tsx"
-Cohesion: 0.40
-Nodes (4): WhyCard, WhyData, WhySection(), WhySectionProps
+Cohesion: 0.25
+Nodes (6): PARALLAX_ITEMS, ParallaxItem, WhyCard, WhyData, WhySection(), WhySectionProps
 
 ## Knowledge Gaps
-- **518 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+513 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 601 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **524 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+519 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 608 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `next` connect `next` to `WorkSection.tsx`, `package.json`, `(site)/page.tsx`, `(site)/layout.tsx`, `app/layout.tsx`, `react`, `SectionLabel.tsx`, `TwoToneHeading.tsx`, `PillNav.tsx`, `HttpError`, `design/page.tsx`?**
+- **Why does `next` connect `next` to `package.json`, `(site)/page.tsx`, `Logo.tsx`, `i18n.ts`, `app/layout.tsx`, `SectionLabel.tsx`, `getDictionary`, `react`, `WhySection.tsx`, `PillNav.tsx`, `HttpError`, `design/page.tsx`, `Button.tsx`?**
   _High betweenness centrality (0.081) - this node is a cross-community bridge._
-- **Why does `requireAdmin()` connect `HttpError` to `Leads backend skill`, `react`, `Leads backend skill`, `PHASES — build in small milestones, verify, then move on`, `04 — Backend: leads, admin, security`, `04 — Backend: leads, admin, security`, `Leads backend skill`?**
+- **Why does `requireAdmin()` connect `HttpError` to `PHASES — build in small milestones, verify, then move on`, `next`, `Leads backend skill`, `Leads backend skill`, `PHASES — build in small milestones, verify, then move on`, `04 — Backend: leads, admin, security`, `04 — Backend: leads, admin, security`, `Leads backend skill`?**
   _High betweenness centrality (0.060) - this node is a cross-community bridge._
-- **Why does `react` connect `react` to `WorkSection.tsx`, `package.json`, `ContactForm.tsx`, `StatusPill.tsx`, `next`, `TwoToneHeading.tsx`, `SectionLabel.tsx`, `PillNav.tsx`, `design/page.tsx`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Why does `react` connect `react` to `package.json`, `ContactForm.tsx`, `Logo.tsx`, `next`, `SectionLabel.tsx`, `AdminDashboard.tsx`, `WhySection.tsx`, `PillNav.tsx`, `PHASES — build in small milestones, verify, then move on`, `design/page.tsx`, `Button.tsx`?**
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **Are the 7 inferred relationships involving `requireAdmin()` (e.g. with `Admin` and `Admin`) actually correct?**
   _`requireAdmin()` has 7 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `eslintConfig`, `nextConfig`, `name` to the rest of the system?**
-  _518 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _524 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.047619047619047616 - nodes in this community are weakly interconnected._
-- **Should `compilerOptions` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
+- **Should `(site)/page.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.13970588235294118 - nodes in this community are weakly interconnected._
