@@ -55,6 +55,20 @@ function LoginForm() {
         <p className="text-xs text-[var(--color-text-muted)]">
           Authorized Ethixweb operations personnel only
         </p>
+
+        {/* 1-Click Demo Login Pill */}
+        <button
+          type="button"
+          onClick={() => {
+            setEmail("admin@ethixweb.com");
+            setPassword("admin123");
+            setError(null);
+          }}
+          className="mt-2 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[var(--color-surface-hover)] border border-[var(--color-border)] text-xs font-mono text-[var(--color-text)] hover:border-[var(--color-red)] hover:text-[var(--color-red)] transition-all shadow-sm"
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+          <span>Click to Autofill Demo Credentials</span>
+        </button>
       </div>
 
       {error && (

@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 import { requireAdmin, createAdminClient } from "@/lib/supabase/admin";
 import { fail, HttpError } from "@/lib/http";
+import { isSupabaseConfigured, getDemoLeads } from "@/lib/mock-leads";
 
 /**
  * Sanitises CSV cells against formula injection (CSV injection attack).
@@ -32,28 +33,36 @@ export async function GET(req: NextRequest) {
     const status = searchParams.get("status")?.trim().toLowerCase();
     const q = searchParams.get("q")?.trim();
 
-    const supabase = createAdminClient();
+    let leads = null;
 
-    let query = supabase
-      .from("leads")
-      .select("*")
-      .order("created_at", { ascending: false });
+    if (!isSupabaseConfigured()) {
+      leads = getDemoLeads(status, q, 1, 1000).items;
+    } else {
+      const supabase = createAdminClient();
 
-    if (status && status !== "all") {
-      query = query.eq("status", status);
-    }
+      let query = supabase
+        .from("leads")
+        .select("*")
+        .order("created_at", { ascending: false });
 
-    if (q) {
-      query = query.or(
-        `name.ilike.%${q}%,email.ilike.%${q}%,phone.ilike.%${q}%,company.ilike.%${q}%`
-      );
-    }
+      if (status && status !== "all") {
+        query = query.eq("status", status);
+      }
 
-    const { data: leads, error } = await query;
+      if (q) {
+        query = query.or(
+          `name.ilike.%${q}%,email.ilike.%${q}%,phone.ilike.%${q}%,company.ilike.%${q}%`
+        );
+      }
 
-    if (error) {
-      console.error("Export leads error:", error);
-      throw new HttpError(500, "db_error", "Failed to query leads for export");
+      const { data, error } = await query;
+
+      if (error) {
+        console.error("Export leads error:", error);
+        throw new HttpError(500, "db_error", "Failed to query leads for export");
+      }
+
+      leads = data;
     }
 
     const headers = [

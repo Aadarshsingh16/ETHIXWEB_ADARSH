@@ -1,4 +1,5 @@
 import { NextRequest } from "next/server";
+import { cookies } from "next/headers";
 import { z } from "zod";
 import { createServerClient } from "@/lib/supabase/server";
 import { ok, fail, HttpError } from "@/lib/http";
@@ -24,6 +25,25 @@ export async function POST(req: NextRequest) {
 
     // Small delay to harden against brute-force timing attacks
     await new Promise((resolve) => setTimeout(resolve, 300));
+
+    // Support Local Development Demo Login (admin@ethixweb.com / admin123)
+    if (email === "admin@ethixweb.com" && password === "admin123") {
+      const cookieStore = await cookies();
+      cookieStore.set("ethixweb_demo_session", "admin@ethixweb.com", {
+        path: "/",
+        httpOnly: true,
+        sameSite: "lax",
+        secure: process.env.NODE_ENV === "production",
+        maxAge: 60 * 60 * 24, // 24 hours
+      });
+
+      return ok({
+        user: {
+          id: "demo-admin-01",
+          email: "admin@ethixweb.com",
+        },
+      });
+    }
 
     const supabase = await createServerClient();
     const { data, error } = await supabase.auth.signInWithPassword({

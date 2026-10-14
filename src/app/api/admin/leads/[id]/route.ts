@@ -2,6 +2,7 @@ import { NextRequest } from "next/server";
 import { z } from "zod";
 import { requireAdmin, createAdminClient } from "@/lib/supabase/admin";
 import { ok, fail, HttpError } from "@/lib/http";
+import { isSupabaseConfigured, updateDemoLead, deleteDemoLead } from "@/lib/mock-leads";
 
 const updateSchema = z.object({
   status: z.enum(["new", "contacted", "won", "lost"]).optional(),
@@ -26,12 +27,20 @@ export async function PATCH(
       return fail(new HttpError(422, "validation_failed", "Invalid update payload"));
     }
 
-    const updates: Record<string, unknown> = {};
+    const updates: { status?: "new" | "contacted" | "won" | "lost"; notes?: string } = {};
     if (parsed.data.status !== undefined) updates.status = parsed.data.status;
     if (parsed.data.notes !== undefined) updates.notes = parsed.data.notes;
 
     if (Object.keys(updates).length === 0) {
       return fail(new HttpError(400, "empty_update", "No update fields provided"));
+    }
+
+    if (!isSupabaseConfigured()) {
+      const updated = updateDemoLead(id, updates);
+      if (!updated) {
+        return fail(new HttpError(404, "not_found", "Lead not found"));
+      }
+      return ok({ lead: updated });
     }
 
     const supabase = createAdminClient();
@@ -59,6 +68,14 @@ export async function DELETE(
   try {
     await requireAdmin();
     const { id } = await params;
+
+    if (!isSupabaseConfigured()) {
+      const deleted = deleteDemoLead(id);
+      if (!deleted) {
+        return fail(new HttpError(404, "not_found", "Lead not found"));
+      }
+      return ok({ deleted: true, id });
+    }
 
     const supabase = createAdminClient();
     const { error } = await supabase

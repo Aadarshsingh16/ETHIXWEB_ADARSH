@@ -1,6 +1,7 @@
 import { NextRequest } from "next/server";
 import { requireAdmin, createAdminClient } from "@/lib/supabase/admin";
 import { ok, fail, HttpError } from "@/lib/http";
+import { isSupabaseConfigured, getDemoLeads } from "@/lib/mock-leads";
 
 export async function GET(req: NextRequest) {
   try {
@@ -14,6 +15,12 @@ export async function GET(req: NextRequest) {
       100,
       Math.max(1, parseInt(searchParams.get("pageSize") || "20", 10) || 20)
     );
+
+    // If Supabase is not configured, return realistic demo Indian leads
+    if (!isSupabaseConfigured()) {
+      const demoData = getDemoLeads(status, q, page, pageSize);
+      return ok(demoData);
+    }
 
     const supabase = createAdminClient();
 

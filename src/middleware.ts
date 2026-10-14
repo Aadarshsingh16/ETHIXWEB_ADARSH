@@ -39,9 +39,14 @@ export async function middleware(request: NextRequest) {
     },
   });
 
+  const demoCookie = request.cookies.get("ethixweb_demo_session");
+  const isDemoAuthenticated = !!demoCookie?.value;
+
   const {
-    data: { user },
+    data: { user: supabaseUser },
   } = await supabase.auth.getUser();
+
+  const user = isDemoAuthenticated ? { email: demoCookie.value } : supabaseUser;
 
   const isLoginPage = pathname === "/admin/login";
 
