@@ -25,6 +25,21 @@ export function isSupabaseConfigured(): boolean {
 // In-memory persistent array for local development preview
 let DEMO_LEADS: LeadRecord[] = [
   {
+    id: "lead-in-000",
+    created_at: new Date(Date.now() - 1000 * 60 * 2).toISOString(), // 2 mins ago
+    name: "Adarsh",
+    email: "adarshsingh4106@gmail.com",
+    phone: "9876543210",
+    company: "Ethixweb Operations & Tech",
+    city: "Mumbai",
+    service: "Website",
+    budget: "₹75,000–2,00,000",
+    contact_pref: "whatsapp",
+    message: "Enquiry submitted via contact form for website engineering and full-stack development.",
+    status: "new",
+    notes: "Recently submitted enquiry from contact form.",
+  },
+  {
     id: "lead-in-001",
     created_at: new Date(Date.now() - 1000 * 60 * 35).toISOString(), // 35 mins ago
     name: "Vikramaditya Roy",
@@ -173,4 +188,28 @@ export function deleteDemoLead(id: string): boolean {
   const beforeLen = DEMO_LEADS.length;
   DEMO_LEADS = DEMO_LEADS.filter((l) => l.id !== id);
   return DEMO_LEADS.length < beforeLen;
+}
+
+export function addDemoLead(
+  lead: Omit<LeadRecord, "id" | "created_at" | "status" | "notes"> & { notes?: string | null }
+): LeadRecord {
+  const newLead: LeadRecord = {
+    id: `lead-in-${Date.now().toString().slice(-4)}`,
+    created_at: new Date().toISOString(),
+    status: "new",
+    notes: lead.notes || null,
+    name: lead.name,
+    email: lead.email,
+    phone: lead.phone,
+    company: lead.company || null,
+    city: lead.city,
+    service: lead.service,
+    budget: lead.budget || null,
+    contact_pref: lead.contact_pref || "whatsapp",
+    message: lead.message || null,
+  };
+
+  // Prepend at index 0 so newly submitted enquiry appears at the very top of Admin Dashboard
+  DEMO_LEADS.unshift(newLead);
+  return newLead;
 }

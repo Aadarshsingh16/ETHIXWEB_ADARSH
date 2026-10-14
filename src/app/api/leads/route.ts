@@ -4,6 +4,7 @@ import { HttpError, ok, fail } from "@/lib/http";
 import { verifyTurnstile } from "@/lib/turnstile";
 import { hashIp, getClientIp, checkRateLimit } from "@/lib/rate-limit";
 import { createAdminClient } from "@/lib/supabase/admin";
+import { isSupabaseConfigured, addDemoLead } from "@/lib/mock-leads";
 
 export async function POST(req: NextRequest) {
   try {
@@ -61,7 +62,24 @@ export async function POST(req: NextRequest) {
     const ipHash = hashIp(clientIp);
     await checkRateLimit(ipHash);
 
-    // 7. Insert lead using Supabase Service-Role Admin Client (RLS bypassed on server)
+    // 7. Store lead
+    // In local development when Supabase is not configured, save directly to demo store
+    if (!isSupabaseConfigured()) {
+      const demoLead = addDemoLead({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        company: data.company || null,
+        city: data.city,
+        service: data.service,
+        budget: data.budget || null,
+        contact_pref: data.contactPref,
+        message: data.message || null,
+      });
+      return ok({ id: demoLead.id }, 201);
+    }
+
+    // Insert lead using Supabase Service-Role Admin Client (RLS bypassed on server)
     const supabase = createAdminClient();
     const userAgent = req.headers.get("user-agent") || "";
     const sourcePage = req.headers.get("referer") || "/contact";
