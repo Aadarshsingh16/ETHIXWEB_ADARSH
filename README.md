@@ -70,22 +70,20 @@ Tested on [Google PageSpeed Insights](https://pagespeed.web.dev/) on the deploye
 |---|---|
 | ![Desktop PageSpeed Audit](public/pagespeed/desktop.png) | ![Mobile PageSpeed Audit](public/pagespeed/mobile.png) |
 
-## Run locally
-```bash
-pnpm install
-cp .env.example .env.local      # fill values
-# run supabase/schema.sql in the Supabase SQL editor, create an admin user
-pnpm dev
-```
-| Variable | Purpose | Public? |
-|---|---|---|
-| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL | yes |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Used for admin login session handling | yes |
-| `SUPABASE_SERVICE_ROLE_KEY` | Server-side lead access | **no** |
-| `ADMIN_EMAILS` | Comma-separated admin allowlist | no |
-| `NEXT_PUBLIC_TURNSTILE_SITE_KEY` / `TURNSTILE_SECRET_KEY` | Spam protection | site key yes / secret no |
-| `IP_HASH_SALT` | Salt for IP hashing | no |
-| `NEXT_PUBLIC_SITE_URL` / `NEXT_PUBLIC_WHATSAPP_NUMBER` | Site config | yes |
+## Interface & Experience Showcase
+
+| Hero & Dynamic Navigation | Work & Concept Projects |
+|---|---|
+| ![Hero & Dynamic Navigation](public/screenshots/hero-desktop.png) | ![Work & Concept Projects](public/screenshots/work-showcase.png) |
+
+| Why Section (3D Particle Globe) | Services Architecture |
+|---|---|
+| ![Why Section](public/screenshots/why-section.png) | ![Services Architecture](public/screenshots/services-overview.png) |
+
+| Direct WhatsApp & Lead Inquiry Flow |
+|---|
+| ![Inquiry & WhatsApp Flow](public/screenshots/contact-pipeline.png) |
+
 
 ## Assumptions and honesty notes
 - Featured work items are **concept projects** built for this assessment, not real client work.
