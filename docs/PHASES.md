@@ -28,12 +28,12 @@ Add to every build prompt: *"Do only Phase N. Stop after the report. Do not star
 ## Progress tracker
 | # | Phase | Box | Status | Commit/tag |
 |---|---|---|---|---|
-| 0 | Setup | 30m | ☐ | |
-| 1 | Foundation (tokens, fonts, shell) | 45m | ☐ | |
-| 2 | Hero + marquee | 60m | ☐ | |
-| 3 | Home A: About + Services | 60m | ☐ | |
-| 4 | Home B: Work, Process, Why, Pricing, FAQ, CTA | 75m | ☐ | |
-| 5 | Database + lead API (no UI) | 60m | ☐ | |
+| 0 | Setup | 30m | ☑ | `29cbbca` |
+| 1 | Foundation (tokens, fonts, shell) | 45m | ☑ | `4600189` |
+| 2 | Hero + marquee | 60m | ☑ | `b802c81` |
+| 3 | Home A: About + Services | 60m | ☑ | `b802c81` |
+| 4 | Home B: Work, Process, Why, Pricing, FAQ, CTA | 75m | ☑ | `b802c81` |
+| 5 | Database + lead API (no UI) | 60m | ☑ | phase-5 |
 | 6 | Contact page + form (end-to-end) | 45m | ☐ | |
 | 7 | Admin auth + protected shell | 45m | ☐ | |
 | 8 | Admin dashboard | 60m | ☐ | |
