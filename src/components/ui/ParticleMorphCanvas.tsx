@@ -8,6 +8,7 @@ interface ParticleMorphCanvasProps {
   accentColor?: string;
   className?: string;
   aspectRatio?: number;
+  isActive?: boolean;
 }
 
 interface Particle {
@@ -30,6 +31,7 @@ export function ParticleMorphCanvas({
   title,
   accentColor = "#fe1e34",
   className = "",
+  isActive = true,
 }: ParticleMorphCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [isPressed, setIsPressed] = useState(false);
@@ -116,7 +118,7 @@ export function ParticleMorphCanvas({
 
   // Main render loop
   useEffect(() => {
-    if (!isLoaded) return;
+    if (!isLoaded || !isActive) return;
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
@@ -189,7 +191,7 @@ export function ParticleMorphCanvas({
     return () => {
       if (animFrameRef.current) cancelAnimationFrame(animFrameRef.current);
     };
-  }, [isLoaded]);
+  }, [isLoaded, isActive]);
 
   // Canvas resize listener
   useEffect(() => {
