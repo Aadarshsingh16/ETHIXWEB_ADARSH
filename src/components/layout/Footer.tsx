@@ -160,7 +160,7 @@ export function Footer({ lang, data }: FooterProps) {
         {/* Bottom copyright row */}
         <div className="border-t border-[#242426] py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-[#6E6E73]">
           <div>
-            © {new Date().getFullYear()} {data.copyright}
+            © 2026 {data.copyright}
           </div>
           <div className="flex items-center gap-4">
             <span>Made for Indian Businesses</span>
