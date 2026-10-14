@@ -299,8 +299,8 @@ export function WhySection({ data }: WhySectionProps) {
                     />
 
                     {/* Editorial Contrast Gradient: Photo shines through when assembled, text crystal clear */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/60 to-transparent pointer-events-none" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#080808]/90 via-[#080808]/40 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/30 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#080808]/75 via-transparent to-transparent pointer-events-none" />
 
                     {/* Arterial Red Ambient Glow Accent */}
                     <div

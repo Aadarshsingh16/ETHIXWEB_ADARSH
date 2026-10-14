@@ -208,12 +208,27 @@ export function ParticleMorphCanvas({
         const posX = sphereScreenX * globeFactor + imgScreenX * m;
         const posY = sphereScreenY * globeFactor + imgScreenY * m;
 
-        // Depth perspective and alpha: bright in 3D globe mode, soft subtle particles on photo
-        const depthAlpha = globeFactor * ((spunZ + 1.2) / 2.4) + m * 0.22;
-        const finalAlpha = Math.max(0.12, Math.min(1, p.a * depthAlpha));
+        // Enhanced luminescence & glow: boost brightness and inject luminous base so dark pixels shine
+        const brightness = 1 + globeFactor * 2.2;
+        const baseGlow = 80 * globeFactor;
+        const r = Math.min(255, Math.round(p.r * brightness + baseGlow));
+        const g = Math.min(255, Math.round(p.g * brightness + baseGlow * 0.45));
+        const b = Math.min(255, Math.round(p.b * brightness + baseGlow * 0.55));
 
-        ctx.fillStyle = `rgba(${p.r}, ${p.g}, ${p.b}, ${finalAlpha})`;
-        const curSize = p.size * (0.85 + 0.35 * globeFactor);
+        // High visibility alpha: front particles are crystal clear and brilliant
+        const depthAlpha = globeFactor * ((spunZ + 1.2) / 2.0) * 0.95 + 0.35 * globeFactor + m * 0.25;
+        const finalAlpha = Math.max(0.35 * globeFactor + 0.1, Math.min(1, depthAlpha));
+
+        const curSize = p.size * (1.1 + 1.1 * globeFactor);
+
+        // Luminous glow halo on prominent front-facing particles
+        if (globeFactor > 0.3 && spunZ > 0.2) {
+          const haloSize = curSize * 2.2;
+          ctx.fillStyle = `rgba(${Math.min(255, r + 50)}, ${Math.min(255, g + 30)}, ${Math.min(255, b + 40)}, ${finalAlpha * 0.25})`;
+          ctx.fillRect(posX - haloSize / 2, posY - haloSize / 2, haloSize, haloSize);
+        }
+
+        ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${finalAlpha})`;
         ctx.fillRect(posX - curSize / 2, posY - curSize / 2, curSize, curSize);
       }
 
@@ -310,28 +325,6 @@ export function ParticleMorphCanvas({
         className="w-full h-full block"
         style={{ touchAction: "pan-y" }}
       />
-
-      {/* Interactive Status Pill Hint — placed safely near top, zero overlap with footer text */}
-      <div className="absolute top-16 sm:top-14 inset-x-0 flex justify-center pointer-events-none z-20">
-        <div
-          className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-mono tracking-wider transition-colors duration-200 backdrop-blur-md border ${
-            isPressed
-              ? "bg-[#fe1e34]/90 text-white border-white/30 shadow-[0_0_16px_rgba(254,30,52,0.4)]"
-              : "bg-black/75 text-white/80 border-white/15"
-          }`}
-        >
-          <span
-            className="w-1.5 h-1.5 rounded-full animate-pulse"
-            style={{ backgroundColor: isPressed ? "#ffffff" : accentColor }}
-          />
-          <span className="hidden sm:inline">
-            {isPressed ? "3D Particles Active" : "Hover for 3D Globe"}
-          </span>
-          <span className="sm:hidden">
-            {isPressed ? "3D Particles Active" : "Tap for 3D Globe"}
-          </span>
-        </div>
-      </div>
     </div>
   );
 }
