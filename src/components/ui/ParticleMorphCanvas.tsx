@@ -150,10 +150,20 @@ export function ParticleMorphCanvas({
       const height = canvas.height;
       ctx.clearRect(0, 0, width, height);
 
-      const centerX = width / 2;
-      const centerY = height / 2;
-      const globeRadius = Math.min(width, height) * 0.34;
-      const imgWidth = Math.min(width * 0.9, height * 0.9 * (16 / 10));
+      // Distinguish mobile vs desktop based on css clientWidth
+      const isMobile = canvas.clientWidth > 0 ? canvas.clientWidth < 640 : false;
+      const isLarge = canvas.clientWidth >= 1024;
+
+      const centerX = isMobile ? width / 2 : isLarge ? width * 0.62 : width / 2;
+      const centerY = isMobile ? height * 0.28 : height / 2;
+
+      const globeRadius = isMobile
+        ? Math.min(width * 0.5, height * 0.22)
+        : Math.min(width, height) * 0.34;
+
+      const imgWidth = isMobile
+        ? Math.min(width * 0.72, height * 0.32 * (16 / 10))
+        : Math.min(width * 0.9, height * 0.9 * (16 / 10));
       const imgHeight = imgWidth / (16 / 10);
 
       const cosYaw = Math.cos(globeAngle.current);
@@ -236,50 +246,57 @@ export function ParticleMorphCanvas({
     return () => ro.disconnect();
   }, []);
 
-  const pointerDownTime = useRef<number>(0);
-  const wasGlobeOnDown = useRef<boolean>(false);
+  const pointerDownPos = useRef<{ x: number; y: number; time: number } | null>(null);
 
-  // Instant single-touch toggle + hold support
-  const handlePointerDown = useCallback(() => {
-    pointerDownTime.current = performance.now();
-    wasGlobeOnDown.current = targetMorph.current === 0;
-
-    // Trigger immediately on the very first millisecond of touch
-    if (wasGlobeOnDown.current) {
-      targetMorph.current = 1;
-      setIsPressed(false);
-    } else {
+  // Desktop hover sensitivity
+  const handlePointerEnter = useCallback((e: React.PointerEvent) => {
+    if (e.pointerType === "mouse" || e.pointerType === "pen") {
       targetMorph.current = 0;
       setIsPressed(true);
     }
   }, []);
 
-  const handlePointerUp = useCallback(() => {
-    const elapsed = performance.now() - pointerDownTime.current;
-
-    // If quick tap (< 280ms) and was starting from image:
-    // keep it in 3D globe mode so the user can enjoy the motion without holding!
-    if (elapsed < 280) {
-      if (!wasGlobeOnDown.current) {
-        targetMorph.current = 0;
-        setIsPressed(true);
-      }
-    } else {
-      // Long press release: return to image
+  const handlePointerLeave = useCallback((e: React.PointerEvent) => {
+    if (e.pointerType === "mouse" || e.pointerType === "pen") {
       targetMorph.current = 1;
       setIsPressed(false);
+    }
+  }, []);
+
+  // Mobile tap and touch handling
+  const handlePointerDown = useCallback((e: React.PointerEvent) => {
+    pointerDownPos.current = {
+      x: e.clientX,
+      y: e.clientY,
+      time: performance.now(),
+    };
+  }, []);
+
+  const handlePointerUp = useCallback((e: React.PointerEvent) => {
+    if (!pointerDownPos.current) return;
+    const dx = Math.abs(e.clientX - pointerDownPos.current.x);
+    const dy = Math.abs(e.clientY - pointerDownPos.current.y);
+    const dt = performance.now() - pointerDownPos.current.time;
+    pointerDownPos.current = null;
+
+    // Fast, clean tap without dragging/swiping
+    if (dx < 14 && dy < 14 && dt < 450) {
+      const next = targetMorph.current === 0 ? 1 : 0;
+      targetMorph.current = next;
+      setIsPressed(next === 0);
     }
   }, []);
 
   return (
     <div
       className={`relative w-full h-full select-none cursor-pointer overflow-hidden ${className}`}
+      onPointerEnter={handlePointerEnter}
+      onPointerLeave={handlePointerLeave}
       onPointerDown={handlePointerDown}
       onPointerUp={handlePointerUp}
-      onPointerLeave={handlePointerUp}
       role="button"
       tabIndex={0}
-      aria-label={`${title} - Tap or hold to form particle globe`}
+      aria-label={`${title} - Tap or hover to view 3D particles`}
       onKeyDown={(e) => {
         if (e.key === " " || e.key === "Enter") {
           const next = targetMorph.current === 1 ? 0 : 1;
@@ -291,15 +308,15 @@ export function ParticleMorphCanvas({
       <canvas
         ref={canvasRef}
         className="w-full h-full block"
-        style={{ touchAction: "none" }}
+        style={{ touchAction: "pan-y" }}
       />
 
-      {/* Interactive Status Pill Hint */}
-      <div className="absolute bottom-4 inset-x-0 flex justify-center pointer-events-none z-20">
+      {/* Interactive Status Pill Hint — placed safely near top, zero overlap with footer text */}
+      <div className="absolute top-16 sm:top-14 inset-x-0 flex justify-center pointer-events-none z-20">
         <div
-          className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-mono tracking-wider transition-all duration-300 backdrop-blur-md border ${
+          className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-mono tracking-wider transition-colors duration-200 backdrop-blur-md border ${
             isPressed
-              ? "bg-[#fe1e34]/90 text-white border-white/30 shadow-[0_0_20px_rgba(254,30,52,0.4)] scale-105"
+              ? "bg-[#fe1e34]/90 text-white border-white/30 shadow-[0_0_16px_rgba(254,30,52,0.4)]"
               : "bg-black/75 text-white/80 border-white/15"
           }`}
         >
@@ -307,10 +324,11 @@ export function ParticleMorphCanvas({
             className="w-1.5 h-1.5 rounded-full animate-pulse"
             style={{ backgroundColor: isPressed ? "#ffffff" : accentColor }}
           />
-          <span>
-            {isPressed
-              ? "● 3D Particle Globe Active · Tap to view image"
-              : "Tap or hold to form 3D particle globe"}
+          <span className="hidden sm:inline">
+            {isPressed ? "3D Particles Active" : "Hover for 3D Globe"}
+          </span>
+          <span className="sm:hidden">
+            {isPressed ? "3D Particles Active" : "Tap for 3D Globe"}
           </span>
         </div>
       </div>

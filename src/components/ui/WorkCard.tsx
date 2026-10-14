@@ -32,8 +32,8 @@ export function WorkCard({ project, index }: WorkCardProps) {
             : "border-[#d4d2d2] dark:border-[#262525]"
         }`}
       >
-        {/* Left: Info */}
-        <div className="lg:col-span-6 space-y-5">
+        {/* Left: Info (order-2 on mobile, order-1 on desktop) */}
+        <div className="lg:col-span-6 space-y-5 order-2 lg:order-1">
           <div className="inline-flex items-center gap-2">
             <span className="text-[10px] font-mono font-bold tracking-[0.22em] uppercase px-2.5 py-1 rounded-[3px] bg-[#f3efef] dark:bg-[#262525] text-[#525252] dark:text-[#d4d2d2] border border-[#d4d2d2] dark:border-[#393939]">
               {project.badge}
@@ -67,8 +67,8 @@ export function WorkCard({ project, index }: WorkCardProps) {
           </div>
         </div>
 
-        {/* Right: Indian Market Architecture Mockup / Image Container */}
-        <div className="lg:col-span-6">
+        {/* Right: Indian Market Architecture Mockup / Image Container (order-1 on mobile, order-2 on desktop) */}
+        <div className="lg:col-span-6 order-1 lg:order-2">
           <div className="rounded-[8px] bg-[#f3efef] dark:bg-[#080808] border border-[#d4d2d2] dark:border-[#262525] p-4 sm:p-5 flex flex-col justify-between overflow-hidden relative">
             {/* Browser top-bar */}
             <div className="flex items-center justify-between border-b border-[#d4d2d2] dark:border-[#262525] pb-3 mb-2">

@@ -287,7 +287,7 @@ export function WhySection({ data }: WhySectionProps) {
               return (
                 <div
                   key={item.id}
-                  className="group w-full shrink-0 min-w-full min-h-[460px] sm:min-h-[500px] lg:min-h-[560px] flex flex-col justify-between p-6 sm:p-10 lg:p-12 relative select-none"
+                  className="group w-full shrink-0 min-w-full min-h-[520px] sm:min-h-[500px] lg:min-h-[560px] flex flex-col justify-between p-6 sm:p-10 lg:p-12 relative select-none"
                 >
                   {/* Interactive Particle Morph Background with Hold Motion */}
                   <div className="absolute inset-0 overflow-hidden select-none">
@@ -299,8 +299,8 @@ export function WhySection({ data }: WhySectionProps) {
                     />
 
                     {/* Editorial Contrast Gradient: Photo shines through when assembled, text crystal clear */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/50 to-transparent pointer-events-none" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#080808]/80 via-[#080808]/30 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-[#080808]/60 to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#080808]/90 via-[#080808]/40 to-transparent pointer-events-none" />
 
                     {/* Arterial Red Ambient Glow Accent */}
                     <div
@@ -310,7 +310,7 @@ export function WhySection({ data }: WhySectionProps) {
                   </div>
 
                   {/* Top Header Row inside Card */}
-                  <div className="relative z-10 flex items-center justify-between gap-3">
+                  <div className="relative z-10 flex items-center justify-between gap-3 pointer-events-none">
                     <div className="flex items-center gap-2.5">
                       <span className="font-mono text-xs sm:text-sm font-bold text-[#fe1e34] tracking-widest px-3 py-1 rounded-full bg-[#080808]/85 border border-[#fe1e34]/40 backdrop-blur-md shadow-lg">
                         {item.number}
@@ -327,9 +327,9 @@ export function WhySection({ data }: WhySectionProps) {
                     </div>
                   </div>
 
-                  {/* Bottom Main Content Layer */}
-                  <div className="relative z-10 space-y-4 sm:space-y-5 pt-16 sm:pt-20 max-w-3xl">
-                    <h3 className="text-[28px] sm:text-[40px] lg:text-[48px] font-black uppercase text-[#fcfcfc] tracking-tight leading-[1] font-[family-name:var(--font-display)]">
+                  {/* Bottom Main Content Layer — positioned cleanly below upper 3D globe on mobile */}
+                  <div className="relative z-10 space-y-3 sm:space-y-5 pt-36 sm:pt-20 max-w-3xl pointer-events-none">
+                    <h3 className="text-[24px] sm:text-[40px] lg:text-[48px] font-black uppercase text-[#fcfcfc] tracking-tight leading-[1.05] font-[family-name:var(--font-display)]">
                       {item.title}
                     </h3>
 
@@ -338,7 +338,7 @@ export function WhySection({ data }: WhySectionProps) {
                     </p>
 
                     {/* Footer Metadata Badges */}
-                    <div className="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono tracking-[0.16em] text-[#b5b2b2]">
+                    <div className="pt-3 sm:pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-[11px] font-mono tracking-[0.16em] text-[#b5b2b2]">
                       <span className="flex items-center gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
                         {item.metaLeft}
