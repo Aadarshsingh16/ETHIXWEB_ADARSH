@@ -20,9 +20,16 @@
 # production
 /build
 
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
 # misc
 .DS_Store
+Thumbs.db
 *.pem
+*.key
+*.tmp
 
 # debug
 npm-debug.log*
@@ -30,20 +37,39 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files
+# env files & secrets (NEVER COMMIT)
 .env*
 !.env.example
 
-# local reference files
-/CURRENT SITE/
+# assessment briefs & PDFs
+*.pdf
+Ethixweb_Full_Stack_Developer_Assessment.pdf
 
-# graphify internal cache
-graphify-out/cache/
-*.tmp
+# AI agent internal skills, prompts & workflows
+.agents/
+.claude/
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+LOOP.md
+PHASES.md
+PROMPTS.md
+REVIEW.md
+DECISIONS.md
+GIT_RULES.md
+docs/
+
+# knowledge graph & analysis artifacts
+graphify-out/
+.graphify*
+
+# scratch design folders & reference materials
+design/
+why-desgin/
+ethixweb-india-kit/
+/CURRENT SITE/
+ethixweb-logo-text-C-3knEeT.webp
 
 # vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
