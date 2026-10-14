@@ -53,8 +53,8 @@ export function StatusPill({
 
   return (
     <div
-      className={`inline-flex items-center gap-2 h-8 px-3.5 rounded-full text-xs font-medium select-none border border-white/10 bg-white/[0.06] backdrop-blur-md whitespace-nowrap transition-colors duration-160 ${
-        isOnline ? "text-white/90" : "text-white/50"
+      className={`inline-flex items-center gap-2 h-8 px-3.5 rounded-full text-xs font-medium select-none border border-black/10 dark:border-white/10 bg-white/90 dark:bg-white/[0.06] backdrop-blur-md shadow-sm dark:shadow-none whitespace-nowrap transition-colors duration-160 ${
+        isOnline ? "text-neutral-900 dark:text-white/90" : "text-neutral-500 dark:text-white/50"
       } ${className}`}
       title={isOnline ? "Team active during IST business hours" : "Team offline · replies next working day"}
     >

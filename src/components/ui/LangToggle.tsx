@@ -17,7 +17,7 @@ export function LangToggle({
 
   return (
     <div
-      className={`inline-flex items-center h-8 rounded-full px-3.5 border border-white/10 bg-white/[0.06] backdrop-blur-md text-xs font-medium select-none whitespace-nowrap gap-1.5 ${className}`}
+      className={`inline-flex items-center h-8 rounded-full px-3.5 border border-black/10 dark:border-white/10 bg-white/90 dark:bg-white/[0.06] backdrop-blur-md shadow-sm dark:shadow-none text-xs font-medium select-none whitespace-nowrap gap-1.5 ${className}`}
       role="group"
       aria-label="Language selection"
     >
@@ -26,22 +26,22 @@ export function LangToggle({
         hrefLang="en"
         className={`transition-colors duration-160 ${
           currentLang === "en"
-            ? "text-white font-bold"
-            : "text-white/50 hover:text-white"
+            ? "text-black dark:text-white font-bold"
+            : "text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white"
         }`}
         aria-current={currentLang === "en" ? "true" : undefined}
       >
         EN
       </a>
-      <span className="text-white/20 select-none text-[11px]">|</span>
+      <span className="text-black/20 dark:text-white/20 select-none text-[11px]">|</span>
       <a
         href={hiHref}
         hrefLang="hi"
         lang="hi"
         className={`transition-colors duration-160 font-[family-name:var(--font-deva)] ${
           currentLang === "hi"
-            ? "text-white font-bold"
-            : "text-white/50 hover:text-white"
+            ? "text-black dark:text-white font-bold"
+            : "text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white"
         }`}
         aria-current={currentLang === "hi" ? "true" : undefined}
       >

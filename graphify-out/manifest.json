@@ -60,9 +60,9 @@
     "semantic_hash": ""
   },
   "src/components/layout/PillNav.tsx": {
-    "mtime": 1791986472.3363297,
-    "seen": 1791986672.0118217,
-    "ast_hash": "a025974c0f7e2fafe3f652b6276ba257",
+    "mtime": 1791987346.4437344,
+    "seen": 1791987397.983106,
+    "ast_hash": "842077f77db058370575788a6e229b02",
     "semantic_hash": ""
   },
   "src/components/layout/StickyWhatsApp.tsx": {
@@ -150,15 +150,15 @@
     "semantic_hash": ""
   },
   "src/components/ui/LangToggle.tsx": {
-    "mtime": 1791986364.8052454,
-    "seen": 1791986672.0118217,
-    "ast_hash": "fc072651d6e73a254909e526402b57b1",
+    "mtime": 1791987299.3078635,
+    "seen": 1791987397.983106,
+    "ast_hash": "842e60ae050a94c3e2c60b403484db65",
     "semantic_hash": ""
   },
   "src/components/ui/Logo.tsx": {
-    "mtime": 1791979567.0214677,
-    "seen": 1791979669.9618785,
-    "ast_hash": "e58fbe22d17423d0f5eee9e1da1531b9",
+    "mtime": 1791987260.521886,
+    "seen": 1791987397.983106,
+    "ast_hash": "58bfc29f697443be52f7a028b729e1f6",
     "semantic_hash": ""
   },
   "src/components/ui/Marquee.tsx": {
@@ -192,9 +192,9 @@
     "semantic_hash": ""
   },
   "src/components/ui/StatusPill.tsx": {
-    "mtime": 1791986345.209731,
-    "seen": 1791986672.0118217,
-    "ast_hash": "9c8f61a921f37543d4d85f3a81b34ab4",
+    "mtime": 1791987277.8728638,
+    "seen": 1791987397.983106,
+    "ast_hash": "df0bc6ac7bd8a13df0f9f26f938b3d76",
     "semantic_hash": ""
   },
   "src/components/ui/TwoToneHeading.tsx": {
@@ -810,9 +810,9 @@
     "semantic_hash": ""
   },
   "src/components/ui/ThemeToggle.tsx": {
-    "mtime": 1791986384.5741837,
-    "seen": 1791986672.0118217,
-    "ast_hash": "d1ebb503d9c353c9cb8482623356d811",
+    "mtime": 1791987314.824595,
+    "seen": 1791987397.983106,
+    "ast_hash": "9756a7cd030a2f1b5e8ca967a509a5e8",
     "semantic_hash": ""
   },
   "design/E-commerce_website_UI_mockup_serum_20261014175636.jpg": {

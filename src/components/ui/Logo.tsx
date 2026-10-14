@@ -6,8 +6,9 @@ interface LogoProps {
   className?: string;
 }
 
-export function Logo({ lang = "en", theme = "dark", className = "" }: LogoProps) {
-  const isDark = theme === "dark";
+export function Logo({ lang = "en", theme, className = "" }: LogoProps) {
+  const isDarkExplicit = theme === "dark";
+  const isLightExplicit = theme === "light";
 
   return (
     <Link
@@ -20,7 +21,13 @@ export function Logo({ lang = "en", theme = "dark", className = "" }: LogoProps)
         viewBox="0 0 168 28"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={`h-6 w-auto ${isDark ? "text-white" : "text-[#0C0C0D] dark:text-white"}`}
+        className={`h-6 w-auto transition-colors duration-200 ${
+          isDarkExplicit
+            ? "text-white"
+            : isLightExplicit
+            ? "text-[#080808]"
+            : "text-[#080808] dark:text-white"
+        }`}
         aria-hidden="true"
       >
         <text
@@ -38,7 +45,7 @@ export function Logo({ lang = "en", theme = "dark", className = "" }: LogoProps)
 
       {/* Small India chip */}
       <span
-        className="text-[10px] font-bold px-1.5 py-0.5 rounded-[4px] bg-[#C1272D] text-white tracking-widest uppercase leading-none shadow-sm"
+        className="text-[10px] font-bold px-1.5 py-0.5 rounded-[4px] bg-[#fe1e34] text-white tracking-widest uppercase leading-none shadow-sm"
         aria-label="India edition"
       >
         IN
