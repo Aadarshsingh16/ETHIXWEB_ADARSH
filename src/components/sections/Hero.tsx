@@ -208,11 +208,9 @@ export function Hero({ lang, data }: HeroProps) {
                   sizes="(max-width: 768px) 150px, 215px"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                {/* Center Frosted Pill Badge */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="bg-black/60 backdrop-blur-md border border-white/20 rounded-full px-3 py-1 text-[10px] sm:text-[11px] font-medium text-white tracking-wide shadow-lg">
-                    {data.card2Badge || "ethixweb® studio"}
-                  </div>
+                {/* Bottom-left Pill Badge */}
+                <div className="absolute bottom-2 left-2 sm:bottom-2.5 sm:left-2.5 bg-black/75 backdrop-blur-md border border-white/15 rounded-full px-2.5 py-1 flex items-center gap-1.5 text-[10px] sm:text-[11px] font-medium text-white shadow-lg pointer-events-none">
+                  {data.card2Badge || "ethixweb® studio"}
                 </div>
               </div>
             </div>

@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "@/components/ui/Logo";
-import { StatusPill } from "@/components/ui/StatusPill";
 import { LangToggle } from "@/components/ui/LangToggle";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
@@ -77,10 +76,6 @@ export function PillNav({ lang, labels }: PillNavProps) {
 
         {/* Right Controls: Online status, Lang toggle, Theme toggle, Start Project button */}
         <div className="flex items-center gap-2 sm:gap-2.5">
-          <div className="hidden sm:block">
-            <StatusPill />
-          </div>
-
           <LangToggle currentLang={lang} currentPath={pathname} />
 
           <ThemeToggle />
@@ -131,8 +126,7 @@ export function PillNav({ lang, labels }: PillNavProps) {
               </Link>
             ))}
             <div className="pt-3 border-t border-black/10 dark:border-white/10 flex flex-col gap-3">
-              <div className="flex items-center justify-between">
-                <StatusPill onlineText={labels.onlineIst} offlineText={labels.offlineIst} />
+              <div className="flex items-center justify-end">
                 <ThemeToggle />
               </div>
               <Link
