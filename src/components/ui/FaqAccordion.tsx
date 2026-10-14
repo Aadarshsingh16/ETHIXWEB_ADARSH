@@ -27,7 +27,7 @@ export function FaqAccordion({
       {/* FAQ items */}
       <div className="lg:col-span-8 divide-y divide-[#262525]">
         {items.map((item, idx) => (
-          <details key={idx} className="group py-6" open={idx === 0}>
+          <details key={idx} className="group py-6">
             <summary className="flex items-center justify-between cursor-pointer list-none select-none">
               <span className="text-[17px] sm:text-[19px] font-bold text-[#fcfcfc] tracking-[-0.02em] font-[family-name:var(--font-display)] pr-4 group-hover:text-[#fe1e34] transition-colors duration-160">
                 {item.q}

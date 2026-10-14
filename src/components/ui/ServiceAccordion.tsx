@@ -22,12 +22,11 @@ export function ServiceAccordion({
 }: ServiceAccordionProps) {
   return (
     <div className="divide-y divide-[#262525] border-y border-[#262525]">
-      {services.map((item, index) => (
+      {services.map((item) => (
         <details
           key={item.id}
           name="services"
-          className="group py-6 transition-colors duration-200"
-          open={index === 0}
+          className="group py-6 px-3 sm:px-4 -mx-3 sm:-mx-4 rounded-lg hover:bg-white/[0.02] transition-colors duration-200"
         >
           <summary className="flex items-center justify-between cursor-pointer list-none select-none">
             <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 pr-4">
@@ -45,7 +44,7 @@ export function ServiceAccordion({
             </div>
 
             {/* Hairline + / - indicator with SVZ 8px radius */}
-            <div className="shrink-0 w-9 h-9 rounded-[8px] border border-[#262525] bg-[#171617]/50 flex items-center justify-center text-[#d4d2d2] group-hover:border-[#fe1e34] group-hover:text-[#fe1e34] transition-colors duration-160">
+            <div className="shrink-0 w-9 h-9 rounded-[8px] border border-[#262525] bg-[#171617]/50 flex items-center justify-center text-[#d4d2d2] group-hover:border-[#fe1e34] group-hover:text-[#fe1e34] group-hover:shadow-[0_0_14px_rgba(254,30,52,0.25)] transition-all duration-200">
               <span className="text-lg font-light transition-transform duration-200 group-open:rotate-45" aria-hidden="true">
                 +
               </span>
