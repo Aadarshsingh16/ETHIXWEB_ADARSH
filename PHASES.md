@@ -38,7 +38,7 @@ Add to every build prompt: *"Do only Phase N. Stop after the report. Do not star
 | 7 | Admin auth + protected shell | 45m | ☑ | phase-7 |
 | 8 | Admin dashboard | 60m | ☑ | phase-8 |
 | 9 | Inner pages (Services, About, Privacy, 404) | 60m | ☑ | phase-9 |
-| 10 | India layer + Hindi | 60m | ☐ | |
+| 10 | India layer + Hindi | 60m | ☑ | phase-10 |
 | 11 | Polish + accessibility | 45m | ☐ | |
 | 12 | Performance (PSI 90+) | 60m | ☐ | |
 | 13 | Ship (README, video, Tally) | 75m | ☐ | |

@@ -19,6 +19,11 @@ export default async function SiteLayout({
 
   return (
     <div className="flex flex-col min-h-screen">
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `document.documentElement.lang = ${JSON.stringify(lang)};`,
+        }}
+      />
       <PillNav lang={lang} labels={dict.nav} />
       <main className="flex-1 pt-24 sm:pt-28 pb-16">{children}</main>
       <Footer lang={lang} data={dict.footer} />
