@@ -1,0 +1,370 @@
+{
+  "communities": {
+    "0": [
+      "src_app_lang_site_page",
+      "src_app_lang_site_page_generatestaticparams",
+      "src_components_sections_aboutteaser",
+      "src_components_sections_aboutteaser_aboutteaser",
+      "src_components_sections_aboutteaser_aboutteaserdata",
+      "src_components_sections_aboutteaser_aboutteaserprops",
+      "src_components_sections_ctaband",
+      "src_components_sections_ctaband_ctaband",
+      "src_components_sections_ctaband_ctabanddata",
+      "src_components_sections_ctaband_ctabandprops",
+      "src_components_sections_faqsection",
+      "src_components_sections_faqsection_faqdata",
+      "src_components_sections_faqsection_faqitem",
+      "src_components_sections_faqsection_faqsection",
+      "src_components_sections_faqsection_faqsectionprops",
+      "src_components_sections_hero",
+      "src_components_sections_hero_hero",
+      "src_components_sections_hero_herodata",
+      "src_components_sections_hero_heroprops",
+      "src_components_sections_processsection",
+      "src_components_sections_processsection_processdata",
+      "src_components_sections_processsection_processsection",
+      "src_components_sections_processsection_processsectionprops",
+      "src_components_sections_processsection_stepitem",
+      "src_components_sections_whysection",
+      "src_components_sections_whysection_whycard",
+      "src_components_sections_whysection_whydata",
+      "src_components_sections_whysection_whysection",
+      "src_components_sections_whysection_whysectionprops",
+      "src_components_sections_worksection",
+      "src_components_sections_worksection_projectitem",
+      "src_components_sections_worksection_workdata",
+      "src_components_sections_worksection_worksection",
+      "src_components_sections_worksection_worksectionprops",
+      "src_components_ui_sectionlabel",
+      "src_components_ui_sectionlabel_sectionlabel",
+      "src_components_ui_sectionlabel_sectionlabelprops",
+      "src_components_ui_twotoneheading",
+      "src_components_ui_twotoneheading_twotoneheading",
+      "src_components_ui_twotoneheading_twotoneheadingprops",
+      "src_components_ui_workcard",
+      "src_components_ui_workcard_projectitem",
+      "src_components_ui_workcard_workcard",
+      "src_components_ui_workcard_workcardprops"
+    ],
+    "1": [
+      "eslint_config",
+      "eslint_config_eslintconfig",
+      "package",
+      "package_dependencies",
+      "package_dependencies_next",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_supabase_ssr",
+      "package_dependencies_supabase_supabase_js",
+      "package_dependencies_zod",
+      "package_name",
+      "package_packagemanager",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_scripts_typecheck",
+      "package_version",
+      "ref_eslint",
+      "ref_eslint_config_next",
+      "ref_react_dom",
+      "ref_supabase_ssr",
+      "ref_supabase_supabase_js",
+      "ref_tailwindcss",
+      "ref_tailwindcss_turbopack",
+      "ref_types_node",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_typescript"
+    ],
+    "2": [
+      "ref_react",
+      "src_app_lang_design_page",
+      "src_app_lang_design_page_generatestaticparams",
+      "src_components_layout_pillnav",
+      "src_components_layout_pillnav_navlabels",
+      "src_components_layout_pillnav_pillnavprops",
+      "src_components_ui_chamfercard",
+      "src_components_ui_chamfercard_chamfercard",
+      "src_components_ui_chamfercard_chamfercardprops",
+      "src_components_ui_featurecard",
+      "src_components_ui_featurecard_featurecard",
+      "src_components_ui_featurecard_featurecardprops",
+      "src_components_ui_langtoggle",
+      "src_components_ui_langtoggle_langtoggle",
+      "src_components_ui_langtoggle_langtoggleprops",
+      "src_components_ui_logo",
+      "src_components_ui_logo_logo",
+      "src_components_ui_logo_logoprops",
+      "src_components_ui_marquee",
+      "src_components_ui_marquee_marquee",
+      "src_components_ui_marquee_marqueeprops",
+      "src_components_ui_processcard",
+      "src_components_ui_processcard_processcard",
+      "src_components_ui_processcard_processcardprops",
+      "src_components_ui_processcard_stepitem",
+      "src_components_ui_statuspill",
+      "src_components_ui_statuspill_statuspill",
+      "src_components_ui_statuspill_statuspillprops"
+    ],
+    "3": [
+      "src_app_lang_design_page_designtokenspage",
+      "src_app_lang_site_layout",
+      "src_app_lang_site_layout_generatestaticparams",
+      "src_app_lang_site_layout_sitelayout",
+      "src_app_lang_site_page_generatemetadata",
+      "src_app_lang_site_page_homepage",
+      "src_components_layout_footer",
+      "src_components_layout_footer_footer",
+      "src_components_layout_footer_footerdata",
+      "src_components_layout_footer_footerprops",
+      "src_components_layout_pillnav_pillnav",
+      "src_content_en",
+      "src_content_en_en",
+      "src_content_hi",
+      "src_content_hi_hi",
+      "src_lib_i18n",
+      "src_lib_i18n_default_locale",
+      "src_lib_i18n_getdictionary",
+      "src_lib_i18n_isvalidlocale",
+      "src_lib_i18n_lang",
+      "src_lib_i18n_locales"
+    ],
+    "4": [
+      "src_components_layout_stickywhatsapp",
+      "src_components_layout_stickywhatsapp_stickywhatsapp",
+      "src_components_layout_stickywhatsapp_stickywhatsappprops",
+      "src_components_sections_pricingsection",
+      "src_components_sections_pricingsection_planitem",
+      "src_components_sections_pricingsection_pricingdata",
+      "src_components_sections_pricingsection_pricingsection",
+      "src_components_sections_pricingsection_pricingsectionprops",
+      "src_components_ui_button",
+      "src_components_ui_button_button",
+      "src_components_ui_button_buttonprops",
+      "src_components_ui_button_buttonvariant",
+      "src_components_ui_faqaccordion",
+      "src_components_ui_faqaccordion_faqaccordion",
+      "src_components_ui_faqaccordion_faqaccordionprops",
+      "src_components_ui_faqaccordion_faqitem",
+      "src_components_ui_pricingcard",
+      "src_components_ui_pricingcard_planitem",
+      "src_components_ui_pricingcard_pricingcard",
+      "src_components_ui_pricingcard_pricingcardprops"
+    ],
+    "5": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "6": [
+      "next_config",
+      "next_config_nextconfig",
+      "ref_next",
+      "src_app_layout",
+      "src_app_layout_metadata",
+      "src_app_layout_rootlayout",
+      "src_app_page",
+      "src_app_page_rootpage",
+      "src_lib_fonts",
+      "src_lib_fonts_inter",
+      "src_lib_fonts_intertight",
+      "src_lib_fonts_notodeva",
+      "src_styles_globals"
+    ],
+    "7": [
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_config_next",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_turbopack",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript"
+    ],
+    "8": [
+      "src_components_sections_servicessection",
+      "src_components_sections_servicessection_serviceitem",
+      "src_components_sections_servicessection_servicesdata",
+      "src_components_sections_servicessection_servicessection",
+      "src_components_sections_servicessection_servicessectionprops",
+      "src_components_ui_serviceaccordion",
+      "src_components_ui_serviceaccordion_serviceaccordion",
+      "src_components_ui_serviceaccordion_serviceaccordionprops",
+      "src_components_ui_serviceaccordion_serviceitem"
+    ],
+    "9": [
+      "ethixweb_india_kit_supabase_schema",
+      "ethixweb_india_kit_supabase_schema_leads_created_at_idx",
+      "ethixweb_india_kit_supabase_schema_leads_ip_hash_idx",
+      "ethixweb_india_kit_supabase_schema_leads_set_updated_at",
+      "ethixweb_india_kit_supabase_schema_leads_status_idx",
+      "ethixweb_india_kit_supabase_schema_public_leads",
+      "ethixweb_india_kit_supabase_schema_public_set_updated_at",
+      "ethixweb_india_kit_supabase_schema_sql_public_set_updated_at"
+    ],
+    "10": [
+      "ref_zod",
+      "src_lib_validation",
+      "src_lib_validation_budgets",
+      "src_lib_validation_cities",
+      "src_lib_validation_leadinput",
+      "src_lib_validation_leadschema",
+      "src_lib_validation_normalizephone",
+      "src_lib_validation_services"
+    ],
+    "11": [
+      "supabase_schema",
+      "supabase_schema_leads_created_at_idx",
+      "supabase_schema_leads_ip_hash_idx",
+      "supabase_schema_leads_set_updated_at",
+      "supabase_schema_leads_status_idx",
+      "supabase_schema_public_leads",
+      "supabase_schema_public_set_updated_at",
+      "supabase_schema_sql_public_set_updated_at"
+    ],
+    "12": [
+      "src_lib_http",
+      "src_lib_http_fail",
+      "src_lib_http_httperror",
+      "src_lib_http_httperror_constructor",
+      "src_lib_http_ok"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07716701902748414,
+    "1": 0.06666666666666667,
+    "2": 0.1111111111111111,
+    "3": 0.13333333333333333,
+    "4": 0.12105263157894737,
+    "5": 0.10526315789473684,
+    "6": 0.20512820512820512,
+    "7": 0.2222222222222222,
+    "8": 0.25,
+    "9": 0.35714285714285715,
+    "10": 0.25,
+    "11": 0.35714285714285715,
+    "12": 0.4
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "ref_next",
+      "label": "next",
+      "degree": 13
+    },
+    {
+      "id": "src_components_ui_sectionlabel_sectionlabel",
+      "label": "SectionLabel()",
+      "degree": 10
+    },
+    {
+      "id": "src_components_ui_twotoneheading_twotoneheading",
+      "label": "TwoToneHeading()",
+      "degree": 10
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 8
+    },
+    {
+      "id": "src_components_ui_button_button",
+      "label": "Button()",
+      "degree": 8
+    },
+    {
+      "id": "src_lib_i18n_getdictionary",
+      "label": "getDictionary()",
+      "degree": 8
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 6
+    },
+    {
+      "id": "ethixweb_india_kit_supabase_schema_public_leads",
+      "label": "public.leads",
+      "degree": 4
+    },
+    {
+      "id": "src_components_ui_logo_logo",
+      "label": "Logo()",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "SiteLayout()",
+      "target": "getDictionary()",
+      "source_files": [
+        "src/app/[lang]/(site)/layout.tsx",
+        "src/lib/i18n.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `SiteLayout()` unexpectedly reaches hub `getDictionary()`"
+    },
+    {
+      "source": "generateMetadata()",
+      "target": "getDictionary()",
+      "source_files": [
+        "src/app/[lang]/(site)/page.tsx",
+        "src/lib/i18n.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `generateMetadata()` unexpectedly reaches hub `getDictionary()`"
+    },
+    {
+      "source": "HomePage()",
+      "target": "getDictionary()",
+      "source_files": [
+        "src/app/[lang]/(site)/page.tsx",
+        "src/lib/i18n.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `HomePage()` unexpectedly reaches hub `getDictionary()`"
+    },
+    {
+      "source": "DesignTokensPage()",
+      "target": "getDictionary()",
+      "source_files": [
+        "src/app/[lang]/design/page.tsx",
+        "src/lib/i18n.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `DesignTokensPage()` unexpectedly reaches hub `getDictionary()`"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
