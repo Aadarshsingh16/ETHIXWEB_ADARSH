@@ -26,7 +26,7 @@ export function WorkCard({ project, index }: WorkCardProps) {
     >
       {/* SVZ Gallery Card — 8px radius with 1px border; arterial red on first featured */}
       <div
-        className={`rounded-[8px] bg-white dark:bg-[#171617] border p-6 sm:p-10 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center ${
+        className={`group rounded-[8px] bg-white dark:bg-[#171617] border p-6 sm:p-10 shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center transition-all duration-300 hover:border-[#fe1e34]/70 hover:shadow-[0_0_30px_rgba(254,30,52,0.1)] ${
           isFirst
             ? "border-[#fe1e34] shadow-[0_0_24px_rgba(254,30,52,0.12)]"
             : "border-[#d4d2d2] dark:border-[#262525]"
@@ -40,7 +40,7 @@ export function WorkCard({ project, index }: WorkCardProps) {
             </span>
           </div>
 
-          <h3 className="text-[28px] sm:text-[38px] font-bold text-[#080808] dark:text-[#fcfcfc] tracking-[-0.035em] leading-[1.04] uppercase font-[family-name:var(--font-display)]">
+          <h3 className="text-[28px] sm:text-[38px] font-bold text-[#080808] dark:text-[#fcfcfc] tracking-[-0.035em] leading-[1.04] uppercase font-[family-name:var(--font-display)] group-hover:text-[#fe1e34] transition-colors duration-200">
             {project.title}
           </h3>
 
@@ -57,6 +57,13 @@ export function WorkCard({ project, index }: WorkCardProps) {
                 {tag}
               </span>
             ))}
+          </div>
+
+          <div className="pt-2">
+            <span className="inline-flex items-center gap-2 text-[12px] font-mono uppercase tracking-[0.18em] text-[#080808] dark:text-[#fcfcfc] group-hover:text-[#fe1e34] transition-colors duration-160">
+              <span>View Case Architecture</span>
+              <span className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1" aria-hidden="true">↗</span>
+            </span>
           </div>
         </div>
 

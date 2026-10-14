@@ -38,7 +38,7 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
     <section className="w-full bg-[#080808] border-b border-[#262525] py-16 sm:py-24 lg:py-28 mb-16 sm:mb-24 relative overflow-hidden">
       {/* Subtle Arterial Red ambient glow in top-right */}
       <div
-        className="absolute -top-40 -right-40 w-[420px] h-[420px] rounded-full bg-[#fe1e34]/10 blur-[120px] pointer-events-none"
+        className="absolute -top-40 -right-40 w-[420px] h-[420px] rounded-full bg-[#fe1e34]/15 blur-[120px] pointer-events-none animate-glow-pulse"
         aria-hidden="true"
       />
 
@@ -52,7 +52,7 @@ export function Hero({ lang, data, isHindi = false }: HeroProps) {
         </div>
 
         {/* Monumental Typographic Dialogue — Server rendered for LCP 95+ */}
-        <div className="max-w-5xl space-y-6">
+        <div className="max-w-5xl space-y-6 animate-hero-rise">
           <TwoToneHeading
             as="h1"
             main={data.headingMain}
