@@ -84,6 +84,44 @@ Tested on [Google PageSpeed Insights](https://pagespeed.web.dev/) on the deploye
 |---|
 | ![Inquiry & WhatsApp Flow](public/screenshots/contact-pipeline.png) |
 
+## How to run locally
+
+### 1. Clone & install dependencies
+```bash
+git clone https://github.com/Aadarshsingh16/ETHIXWEB_ADARSH.git
+cd ETHIXWEB
+pnpm install
+```
+
+### 2. Configure environment
+```bash
+cp .env.example .env.local
+```
+*(The project includes an instant built-in demo backend store, so reviewers can submit leads on `/contact` and explore the `/admin` dashboard immediately without external database provisioning).*
+
+### 3. Start development server
+```bash
+pnpm dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### 4. Production build & verification
+```bash
+pnpm typecheck   # Zero TypeScript errors
+pnpm build       # Optimized Next.js production build
+pnpm start       # Start production server
+```
+
+### Environment variables reference
+| Variable | Purpose | Public? |
+|---|---|---|
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL (Mumbai `ap-south-1`) | yes |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Used for admin login session handling | yes |
+| `SUPABASE_SERVICE_ROLE_KEY` | Server-side lead access | **no** (server only) |
+| `ADMIN_EMAILS` | Comma-separated admin allowlist | no |
+| `NEXT_PUBLIC_TURNSTILE_SITE_KEY` / `TURNSTILE_SECRET_KEY` | Cloudflare Turnstile spam protection | site key yes / secret no |
+| `IP_HASH_SALT` | Salt for one-way IP privacy hashing | no |
+| `NEXT_PUBLIC_SITE_URL` / `NEXT_PUBLIC_WHATSAPP_NUMBER` | Canonical URL & WhatsApp contact number | yes |
 
 ## Assumptions and honesty notes
 - Featured work items are **concept projects** built for this assessment, not real client work.
