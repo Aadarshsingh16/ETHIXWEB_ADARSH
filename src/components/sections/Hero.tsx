@@ -37,24 +37,6 @@ export function Hero({ lang, data }: HeroProps) {
 
   return (
     <section className="w-full bg-[#080808] border-b border-[#262525] pt-32 sm:pt-40 lg:pt-44 pb-20 sm:pb-28 lg:pb-32 mb-16 sm:mb-24 relative overflow-hidden">
-      {/* Ambient Void Liquid Video Loop */}
-      <div
-        className="absolute inset-0 pointer-events-none overflow-hidden select-none"
-        aria-hidden="true"
-      >
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-screen pointer-events-none"
-        >
-          <source src="/videos/hero-ambient-void.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-[#080808]/70 pointer-events-none" />
-      </div>
-
       {/* Silky Smoke Ribbon Atmospheric Drift */}
       <div
         className="absolute inset-0 pointer-events-none overflow-hidden select-none"

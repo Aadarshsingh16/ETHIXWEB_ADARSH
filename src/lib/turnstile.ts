@@ -1,4 +1,3 @@
-import { HttpError } from "./http";
 
 interface TurnstileVerifyResponse {
   success: boolean;
